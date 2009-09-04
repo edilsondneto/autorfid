@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaGUI", "CamadaGUI\CamadaGUI.csproj", "{5BC083B3-BE13-4545-9AE6-49FC84FB4696}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaFachada", "CamadaFachada\CamadaFachada.csproj", "{1D375787-F7C4-4C45-978A-394AB10418EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaControlador", "CamadaControlador\CamadaControlador.csproj", "{8D19BE66-2F97-4EFC-936D-769A78725C07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaBasicas", "CamadaBasicas\CamadaBasicas.csproj", "{C5DBCB40-4083-46AB-B7C4-932DD0558CF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaInterface", "CamadaInterface\CamadaInterface.csproj", "{D294D653-3E04-4103-B726-C08600CCA038}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaRepositorio", "CamadaRepositorio\CamadaRepositorio.csproj", "{B95F7C3B-BEFC-4B3F-90ED-7AAB4F7D0CF3}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = AutoRFIDDesktop.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BC083B3-BE13-4545-9AE6-49FC84FB4696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BC083B3-BE13-4545-9AE6-49FC84FB4696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BC083B3-BE13-4545-9AE6-49FC84FB4696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BC083B3-BE13-4545-9AE6-49FC84FB4696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D375787-F7C4-4C45-978A-394AB10418EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D375787-F7C4-4C45-978A-394AB10418EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D375787-F7C4-4C45-978A-394AB10418EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D375787-F7C4-4C45-978A-394AB10418EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D19BE66-2F97-4EFC-936D-769A78725C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D19BE66-2F97-4EFC-936D-769A78725C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D19BE66-2F97-4EFC-936D-769A78725C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D19BE66-2F97-4EFC-936D-769A78725C07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5DBCB40-4083-46AB-B7C4-932DD0558CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5DBCB40-4083-46AB-B7C4-932DD0558CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5DBCB40-4083-46AB-B7C4-932DD0558CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DBCB40-4083-46AB-B7C4-932DD0558CF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D294D653-3E04-4103-B726-C08600CCA038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D294D653-3E04-4103-B726-C08600CCA038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D294D653-3E04-4103-B726-C08600CCA038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D294D653-3E04-4103-B726-C08600CCA038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B95F7C3B-BEFC-4B3F-90ED-7AAB4F7D0CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B95F7C3B-BEFC-4B3F-90ED-7AAB4F7D0CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B95F7C3B-BEFC-4B3F-90ED-7AAB4F7D0CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B95F7C3B-BEFC-4B3F-90ED-7AAB4F7D0CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

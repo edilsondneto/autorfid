@@ -1,0 +1,71 @@
+
+body
+{
+	background: #2765AF;
+	color: #000000;
+	margin: 20px 0;
+	padding: 0;
+	font-family: "Trebuchet MS" , verdana, arial, "Times New Roman" , serif;
+	font-size: 90%;
+}
+
+.principal
+{
+	position:inherit;
+	background-color:Aqua;
+	width: 800px;
+	height: 400px;
+	top: 143px;
+	left: 98px;
+}
+
+p .principal
+{
+	text-align:justify;
+	color:Green;
+}
+
+
+div.container
+{
+	text-align: center;
+	width: 800px;
+	position: fixed;
+	top: 23px;
+	left: 99px;
+}
+
+div.logo
+{
+	background: #FFFFFF;
+	text-align: left;
+	height: 71px;
+	width: 758px;
+	font-weight: normal;
+	font-size: 50px;
+	margin: 0;
+	padding: 0;
+	color: #225799;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+.menu
+{
+	padding-right: 10px;
+}
+
+.menu a:hover
+{
+	color: Green;
+	text-decoration: none;
+}
+
+
+.holder
+{
+	padding: 20px 20px 5px 20px;
+	background: #FFFFFF;
+	text-align: left;
+}

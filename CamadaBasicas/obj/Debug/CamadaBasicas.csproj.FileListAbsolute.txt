@@ -1,0 +1,5 @@
+C:\svn_repository\AutoRFIDWeb\CamadaBasicas\bin\Debug\CamadaBasicas.dll
+C:\svn_repository\AutoRFIDWeb\CamadaBasicas\bin\Debug\CamadaBasicas.pdb
+C:\svn_repository\AutoRFIDWeb\CamadaBasicas\obj\Debug\ResolveAssemblyReference.cache
+C:\svn_repository\AutoRFIDWeb\CamadaBasicas\obj\Debug\CamadaBasicas.dll
+C:\svn_repository\AutoRFIDWeb\CamadaBasicas\obj\Debug\CamadaBasicas.pdb
