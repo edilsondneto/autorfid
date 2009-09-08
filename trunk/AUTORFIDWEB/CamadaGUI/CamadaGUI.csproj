@@ -64,12 +64,26 @@
       <DependentUpon>principal.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Webforms\Cadastro.aspx.cs">
+      <DependentUpon>Cadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webforms\Cadastro.aspx.designer.cs">
+      <DependentUpon>Cadastro.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Webforms\Contato.aspx.cs">
       <DependentUpon>Contato.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Webforms\Contato.aspx.designer.cs">
       <DependentUpon>Contato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webforms\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webforms\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Webforms\principal.aspx.cs">
       <DependentUpon>principal.aspx</DependentUpon>
@@ -83,8 +97,15 @@
     <Content Include="Content\style.css" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\fundodegrade.jpg" />
+    <Content Include="Content\logo.jpg" />
+    <Content Include="Content\menubar.jpg" />
+    <Content Include="Content\niftycube.js" />
+    <Content Include="Content\teste.jpg" />
     <Content Include="MasterPage\principal.Master" />
+    <Content Include="Webforms\Cadastro.aspx" />
     <Content Include="Webforms\Contato.aspx" />
+    <Content Include="Webforms\Login.aspx" />
     <Content Include="Webforms\principal.aspx" />
   </ItemGroup>
   <ItemGroup>

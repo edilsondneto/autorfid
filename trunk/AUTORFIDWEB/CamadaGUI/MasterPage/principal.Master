@@ -3,8 +3,8 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" type="text/css" href="/Content/style.css" />
 <head runat="server">
-    <link rel="stylesheet" type="text/css" href="/Content/style.css" />
     <title>AutoRFID</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -12,29 +12,33 @@
 <body>
     <div class="container">
         <form id="form1" runat="server">
-        <div class="holder">
-            <div class="logo">
-                <h1>
-                    <asp:Image ID="Image1" runat="server" />
-                    AUTORFID</h1>
+            <div class="logomarca">
             </div>
-            <div>
-                <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" CssClass="menu">
+            <div class="menubar">
+                <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" CssClass="menu" 
+                    DynamicHorizontalOffset="2" Font-Names="Verdana" 
+                    Font-Size="0.8em" ForeColor="White" StaticSubMenuIndent="10px">
+                    <StaticSelectedStyle BackColor="#507CD1" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                    <DynamicMenuStyle BackColor="#B5C7DE" />
+                    <DynamicSelectedStyle BackColor="#507CD1" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
                     <Items>
                         <asp:MenuItem Text="Principal" Value="Principal" 
                             NavigateUrl="~/Webforms/principal.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Contato" Value="Contato" 
                             NavigateUrl="~/Webforms/Contato.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Sobre" Value="Sobre"></asp:MenuItem>
-                        <asp:MenuItem Text="Pré-cadastro" Value="Pré-cadastro"></asp:MenuItem>
-                        <asp:MenuItem Text="Login" Value="Login"></asp:MenuItem>
+                        <asp:MenuItem Text="Pré-cadastro" Value="Pré-cadastro" 
+                            NavigateUrl="~/Webforms/Cadastro.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Login" Value="Login" NavigateUrl="~/Webforms/Login.aspx"></asp:MenuItem>
                     </Items>
                 </asp:Menu>
             </div>
-         </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-        </div>
         </form>
     </div>
 </body>
