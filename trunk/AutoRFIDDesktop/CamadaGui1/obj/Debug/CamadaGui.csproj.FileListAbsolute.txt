@@ -1,0 +1,13 @@
+C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\ResolveAssemblyReference.cache
+C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.frCadPad.resources
+C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.frMenuPrincipal.resources
+C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.csproj.GenerateResource.Cache
+C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.FrEstabCad.resources
+C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.FrVenda.resources
+C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\bin\Debug\CamadaGui.exe
+C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\bin\Debug\CamadaGui.pdb
+C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.Properties.Resources.resources
+C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.exe
+C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.pdb
+C:\autorfid\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.exe
+C:\autorfid\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.pdb

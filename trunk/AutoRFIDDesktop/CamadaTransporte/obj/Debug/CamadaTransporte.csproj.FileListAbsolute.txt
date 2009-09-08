@@ -1,0 +1,10 @@
+F:\AutoRFIDDesktop\CamadaTransporte\bin\Debug\CamadaTransporte.dll
+F:\AutoRFIDDesktop\CamadaTransporte\bin\Debug\CamadaTransporte.pdb
+F:\AutoRFIDDesktop\CamadaTransporte\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoRFIDDesktop\CamadaTransporte\obj\Debug\CamadaTransporte.dll
+F:\AutoRFIDDesktop\CamadaTransporte\obj\Debug\CamadaTransporte.pdb
+C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaTransporte\bin\Debug\CamadaTransporte.dll
+C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaTransporte\bin\Debug\CamadaTransporte.pdb
+C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaTransporte\obj\Debug\ResolveAssemblyReference.cache
+C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaTransporte\obj\Debug\CamadaTransporte.dll
+C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaTransporte\obj\Debug\CamadaTransporte.pdb
