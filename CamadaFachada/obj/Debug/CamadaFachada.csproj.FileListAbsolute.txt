@@ -1,5 +1,0 @@
-C:\svn_repository\AutoRFIDWeb\CamadaFachada\bin\Debug\CamadaFachada.dll
-C:\svn_repository\AutoRFIDWeb\CamadaFachada\bin\Debug\CamadaFachada.pdb
-C:\svn_repository\AutoRFIDWeb\CamadaFachada\obj\Debug\ResolveAssemblyReference.cache
-C:\svn_repository\AutoRFIDWeb\CamadaFachada\obj\Debug\CamadaFachada.dll
-C:\svn_repository\AutoRFIDWeb\CamadaFachada\obj\Debug\CamadaFachada.pdb

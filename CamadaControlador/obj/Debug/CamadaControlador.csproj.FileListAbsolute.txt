@@ -1,5 +1,0 @@
-C:\svn_repository\AutoRFIDWeb\CamadaControlador\bin\Debug\CamadaControlador.dll
-C:\svn_repository\AutoRFIDWeb\CamadaControlador\bin\Debug\CamadaControlador.pdb
-C:\svn_repository\AutoRFIDWeb\CamadaControlador\obj\Debug\ResolveAssemblyReference.cache
-C:\svn_repository\AutoRFIDWeb\CamadaControlador\obj\Debug\CamadaControlador.dll
-C:\svn_repository\AutoRFIDWeb\CamadaControlador\obj\Debug\CamadaControlador.pdb

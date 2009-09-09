@@ -1,5 +1,0 @@
-C:\svn_repository\AutoRFIDWeb\CamadaGUI\bin\CamadaGUI.dll
-C:\svn_repository\AutoRFIDWeb\CamadaGUI\bin\CamadaGUI.pdb
-C:\svn_repository\AutoRFIDWeb\CamadaGUI\obj\Debug\ResolveAssemblyReference.cache
-C:\svn_repository\AutoRFIDWeb\CamadaGUI\obj\Debug\CamadaGUI.dll
-C:\svn_repository\AutoRFIDWeb\CamadaGUI\obj\Debug\CamadaGUI.pdb
