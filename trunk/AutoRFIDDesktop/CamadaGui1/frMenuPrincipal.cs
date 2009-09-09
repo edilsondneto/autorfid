@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using CamadaGUI.Login;
 
 namespace CamadaGui1
 {
@@ -43,6 +44,35 @@ namespace CamadaGui1
             FrTpPagCad frTpPagCad = new FrTpPagCad();
             frTpPagCad.MdiParent = this;
             frTpPagCad.Show();
+        }
+
+        private void MnEtiqCad_Click(object sender, EventArgs e)
+        {
+            FrEtiqCad frEtiqCad = new FrEtiqCad();
+            frEtiqCad.MdiParent = this;
+            frEtiqCad.Show();
+        }
+
+        private void MnAssocCad_Click(object sender, EventArgs e)
+        {
+            FrAssocCad frAssocCad = new FrAssocCad();
+            frAssocCad.MdiParent = this;
+            frAssocCad.Show();
+        }
+
+        private void MnMovVenda_Click(object sender, EventArgs e)
+        {
+            FrVenda frVenda = new FrVenda();
+            frVenda.MdiParent = this;
+            frVenda.Show();
+        }
+
+        private void frMenuPrincipal_Load(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            FrTelaLogin frTelaLogin = new FrTelaLogin();
+            frTelaLogin.ShowDialog();
+            this.Visible = true;
         }
         
 

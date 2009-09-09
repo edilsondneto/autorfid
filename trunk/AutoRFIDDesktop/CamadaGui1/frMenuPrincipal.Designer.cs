@@ -96,14 +96,14 @@
             // MnTpFuncCad
             // 
             this.MnTpFuncCad.Name = "MnTpFuncCad";
-            this.MnTpFuncCad.Size = new System.Drawing.Size(152, 22);
+            this.MnTpFuncCad.Size = new System.Drawing.Size(142, 22);
             this.MnTpFuncCad.Text = "Funcionários";
             this.MnTpFuncCad.Click += new System.EventHandler(this.MnTpFuncCad_Click);
             // 
             // MnTpPagCad
             // 
             this.MnTpPagCad.Name = "MnTpPagCad";
-            this.MnTpPagCad.Size = new System.Drawing.Size(152, 22);
+            this.MnTpPagCad.Size = new System.Drawing.Size(142, 22);
             this.MnTpPagCad.Text = "Pagamentos";
             this.MnTpPagCad.Click += new System.EventHandler(this.MnTpPagCad_Click);
             // 
@@ -112,12 +112,14 @@
             this.MnEtiqCad.Name = "MnEtiqCad";
             this.MnEtiqCad.Size = new System.Drawing.Size(166, 22);
             this.MnEtiqCad.Text = "Etiquetas";
+            this.MnEtiqCad.Click += new System.EventHandler(this.MnEtiqCad_Click);
             // 
             // MnAssocCad
             // 
             this.MnAssocCad.Name = "MnAssocCad";
             this.MnAssocCad.Size = new System.Drawing.Size(166, 22);
             this.MnAssocCad.Text = "Associado";
+            this.MnAssocCad.Click += new System.EventHandler(this.MnAssocCad_Click);
             // 
             // MnMovimentacao
             // 
@@ -133,6 +135,7 @@
             this.MnMovVenda.Name = "MnMovVenda";
             this.MnMovVenda.Size = new System.Drawing.Size(170, 22);
             this.MnMovVenda.Text = "Venda de Créditos";
+            this.MnMovVenda.Click += new System.EventHandler(this.MnMovVenda_Click);
             // 
             // MnMovBaixaTik
             // 
@@ -173,6 +176,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu AutoRFID";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frMenuPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
