@@ -25,7 +25,7 @@ namespace CamadaGUI.Webforms
             if (validaCampos())
             {
                 Alert.Show("Cadastro Efetuado");
-                limparCampos();
+                Response.Redirect("/WebForms/Principal.aspx");
             }
         }
 
@@ -34,7 +34,7 @@ namespace CamadaGUI.Webforms
             //if (string.IsNullOrEmpty(txtRazaoSocial.Text))
               //  Alert.Show("teste");
 
-            if (Uteis.ValidaCNPJ(txtCnpj.Text) && !string.IsNullOrEmpty(txtCnpj.Text))
+            if (!Uteis.ValidaCNPJ(txtCnpj.Text) && rbtPesJur.Checked)
             {
                 Alert.Show("Cnpj não é valido");
                 return false;
@@ -46,7 +46,7 @@ namespace CamadaGUI.Webforms
                 return false;
             }
 
-            if (Uteis.ValidaCPF(txtCpf.Text))
+            if (!Uteis.ValidaCPF(txtCpf.Text))
             {
                 Alert.Show("Cpf não é válido");
                 return false;
@@ -106,26 +106,24 @@ namespace CamadaGUI.Webforms
         public void preencherEntidade()
         { }
 
-        public void limparCampos()
+        protected void rbtPesFis_CheckedChanged(object sender, EventArgs e)
         {
-            int count = 0;
-            foreach(Control c in Page.Controls)
-            {
-                if (c.Controls.Count > 0)
-                {
-                    foreach (Control c2 in c.Controls)
-                    {
-                        count++;
-                        
-                        if (c2.Controls.GetType() == typeof(TextBox))
-                        {
-                            TextBox txt = (TextBox)c2.Controls[count];
-                        }
-                    }
-                }
-            }
-                    
-            
+            txtRazaoSocial.Enabled = false;
+            txtCnpj.Enabled = false;
+            txtCnpj.Text = "------------";
+            txtRazaoSocial.Text = "------------";
+            revCnpj.ValidationExpression = "------------";
         }
+
+        protected void rbtPesJur_CheckedChanged(object sender, EventArgs e)
+        {
+            txtRazaoSocial.Enabled = true;
+            txtCnpj.Enabled = true;
+            txtCnpj.Text = "";
+            txtRazaoSocial.Text = "";
+            revCnpj.ValidationExpression = @"\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}";
+        }
+
+
     }
 }

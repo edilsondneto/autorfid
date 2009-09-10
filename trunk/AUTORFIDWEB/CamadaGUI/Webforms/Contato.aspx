@@ -7,8 +7,16 @@
     <br />
     <br />
     <br />
-    <p>
-        Contato
+    <p class="principal">
+    Contato<br />
+    <br />
+    Walmir Silva - walmirsaraujo@gmail.com></a>  Fone: 9983-2340;<br />
+    Josenilton Leandro - jlaleandro@gmail.com Fone: <br />
+    Rafael Freire - rfmelo@gmail.com    Fone: <br />
+    Diego Bezerra - dbezera21@gmail.com    Fone: <br />
+    Kildare Alexandre -  kps@gmail.com     Fone: <br />
+    Dyego Valença   -  d7@gmail.com      Fone:<br />
+    
     </p>
     </body>
     </div>

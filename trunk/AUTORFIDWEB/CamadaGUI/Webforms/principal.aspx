@@ -7,8 +7,8 @@
     <br />
     <br />
     <br />
-    <p>
-      PRINCIPAL  
+    <p class="principal">
+      Sistema para controle de acesso automático para estacionamentos através da tecnologia RFID. O cliente usuário do estabelecimento terá a opção de emitir o boleto na internet para carregar seus créditos a serem usados nos estabelecimentos credenciados. O dono do estacionamento terá controle sobre seu negócio usando  relatórios gerenciais.;
     </p>
     </body>
     </div>
