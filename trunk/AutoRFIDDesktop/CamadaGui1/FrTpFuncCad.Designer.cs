@@ -28,7 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.pnlBotoes.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // btIncluir
+            // 
+            this.btIncluir.Click += new System.EventHandler(this.btIncluir_Click);
+            // 
+            // FrTpFuncCad
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(740, 278);
+            this.Name = "FrTpFuncCad";
+            this.pnlBotoes.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

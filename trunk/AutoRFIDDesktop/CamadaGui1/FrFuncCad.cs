@@ -14,5 +14,15 @@ namespace CamadaGui1
         {
             InitializeComponent();
         }
+
+        private void btPesquisar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btCancelar_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

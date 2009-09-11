@@ -14,5 +14,16 @@ namespace CamadaGui1
         {
             InitializeComponent();
         }
+
+        private void btConfirmar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btIncluir_Click(object sender, EventArgs e)
+        {
+           
+            
+        }
     }
 }

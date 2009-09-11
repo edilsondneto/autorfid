@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frCadPad));
             this.pnlBotoes = new System.Windows.Forms.Panel();
+            this.btSair = new System.Windows.Forms.Button();
             this.btConfirmar = new System.Windows.Forms.Button();
             this.btPesquisar = new System.Windows.Forms.Button();
             this.btCancelar = new System.Windows.Forms.Button();
@@ -42,6 +43,7 @@
             // pnlBotoes
             // 
             this.pnlBotoes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlBotoes.Controls.Add(this.btSair);
             this.pnlBotoes.Controls.Add(this.btConfirmar);
             this.pnlBotoes.Controls.Add(this.btPesquisar);
             this.pnlBotoes.Controls.Add(this.btCancelar);
@@ -51,30 +53,45 @@
             resources.ApplyResources(this.pnlBotoes, "pnlBotoes");
             this.pnlBotoes.Name = "pnlBotoes";
             // 
+            // btSair
+            // 
+            this.btSair.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btSair, "btSair");
+            this.btSair.Image = global::CamadaGui.Properties.Resources.format_indent_less;
+            this.btSair.Name = "btSair";
+            this.btSair.UseVisualStyleBackColor = true;
+            // 
             // btConfirmar
             // 
             this.btConfirmar.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.btConfirmar, "btConfirmar");
+            this.btConfirmar.Image = global::CamadaGui.Properties.Resources.document_save;
             this.btConfirmar.Name = "btConfirmar";
             this.btConfirmar.UseVisualStyleBackColor = true;
+            this.btConfirmar.Click += new System.EventHandler(this.btConfirmar_Click);
             // 
             // btPesquisar
             // 
             this.btPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btPesquisar.Image = global::CamadaGui.Properties.Resources.system_search;
             resources.ApplyResources(this.btPesquisar, "btPesquisar");
             this.btPesquisar.Name = "btPesquisar";
             this.btPesquisar.UseVisualStyleBackColor = true;
+            this.btPesquisar.Click += new System.EventHandler(this.btPesquisar_Click);
             // 
             // btCancelar
             // 
             this.btCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.btCancelar, "btCancelar");
+            this.btCancelar.Image = global::CamadaGui.Properties.Resources.view_refresh;
             this.btCancelar.Name = "btCancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
+            this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
             // btExcluir
             // 
             this.btExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btExcluir.Image = global::CamadaGui.Properties.Resources.mail_mark_not_junk;
             resources.ApplyResources(this.btExcluir, "btExcluir");
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.UseVisualStyleBackColor = true;
@@ -85,13 +102,16 @@
             resources.ApplyResources(this.btIncluir, "btIncluir");
             this.btIncluir.Name = "btIncluir";
             this.btIncluir.UseVisualStyleBackColor = true;
+            this.btIncluir.Click += new System.EventHandler(this.btIncluir_Click);
             // 
             // btAlterar
             // 
             this.btAlterar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btAlterar.Image = global::CamadaGui.Properties.Resources.format_justify_right;
             resources.ApplyResources(this.btAlterar, "btAlterar");
             this.btAlterar.Name = "btAlterar";
             this.btAlterar.UseVisualStyleBackColor = true;
+            this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
             // 
             // frCadPad
             // 
@@ -99,7 +119,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlBotoes);
             this.Name = "frCadPad";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frCadPad_Load);
             this.pnlBotoes.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -114,5 +134,6 @@
         protected System.Windows.Forms.Button btIncluir;
         protected System.Windows.Forms.Button btAlterar;
         protected System.Windows.Forms.Panel pnlBotoes;
+        protected System.Windows.Forms.Button btSair;
     }
 }

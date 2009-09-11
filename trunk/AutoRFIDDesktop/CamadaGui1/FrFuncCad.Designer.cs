@@ -28,7 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.pnlBotoes.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // btPesquisar
+            // 
+            this.btPesquisar.Click += new System.EventHandler(this.btPesquisar_Click);
+            // 
+            // btCancelar
+            // 
+            this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
+            // 
+            // FrFuncCad
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(674, 278);
+            this.Name = "FrFuncCad";
+            this.pnlBotoes.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
