@@ -3,3 +3,8 @@ C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDe
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaTransporte\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaTransporte\obj\Debug\CamadaTransporte.dll
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaTransporte\obj\Debug\CamadaTransporte.pdb
+C:\autorfid\trunk\AutoRFIDDesktop\CamadaTransporte\bin\Debug\CamadaTransporte.dll
+C:\autorfid\trunk\AutoRFIDDesktop\CamadaTransporte\bin\Debug\CamadaTransporte.pdb
+C:\autorfid\trunk\AutoRFIDDesktop\CamadaTransporte\obj\Debug\ResolveAssemblyReference.cache
+C:\autorfid\trunk\AutoRFIDDesktop\CamadaTransporte\obj\Debug\CamadaTransporte.dll
+C:\autorfid\trunk\AutoRFIDDesktop\CamadaTransporte\obj\Debug\CamadaTransporte.pdb

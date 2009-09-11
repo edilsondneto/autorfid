@@ -65,6 +65,11 @@ namespace CamadaGUI.Login
         {
             campo.GetType();
             return true;
+        }
+
+        private void FrTelaLogin_Load(object sender, EventArgs e)
+        {
+
         }    
     }
 

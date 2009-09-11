@@ -111,6 +111,7 @@
             this.Name = "FrTelaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrTelaLogin";
+            this.Load += new System.EventHandler(this.FrTelaLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

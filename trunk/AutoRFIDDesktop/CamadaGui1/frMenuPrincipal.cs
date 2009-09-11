@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-//using CamadaGUI.Login;
+using CamadaGUI.Login;
 
 namespace CamadaGui1
 {
@@ -69,10 +69,10 @@ namespace CamadaGui1
 
         private void frMenuPrincipal_Load(object sender, EventArgs e)
         {
-           // this.Visible = false;
-           // FrTelaLogin frTelaLogin = new FrTelaLogin();
-           //.. frTelaLogin.ShowDialog();
-           // this.Visible = true;
+            this.Visible = false;
+            FrTelaLogin frTelaLogin = new FrTelaLogin();
+            frTelaLogin.ShowDialog();
+            this.Visible = true;
         }
 
         private void MnCadastro_Click(object sender, EventArgs e)

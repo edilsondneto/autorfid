@@ -99,6 +99,12 @@
     <Compile Include="frMenuPrincipal.Designer.cs">
       <DependentUpon>frMenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrTelaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrTelaLogin.designer.cs">
+      <DependentUpon>FrTelaLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrTpFuncCad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     <EmbeddedResource Include="frMenuPrincipal.resx">
       <DependentUpon>frMenuPrincipal.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrTelaLogin.resx">
+      <DependentUpon>FrTelaLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrTpFuncCad.resx">
       <DependentUpon>FrTpFuncCad.cs</DependentUpon>
