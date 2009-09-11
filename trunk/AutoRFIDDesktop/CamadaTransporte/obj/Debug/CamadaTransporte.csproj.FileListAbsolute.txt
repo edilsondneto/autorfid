@@ -8,8 +8,16 @@ C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaTransporte\bin\Debug\Ca
 C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaTransporte\obj\Debug\ResolveAssemblyReference.cache
 C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaTransporte\obj\Debug\CamadaTransporte.dll
 C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaTransporte\obj\Debug\CamadaTransporte.pdb
+<<<<<<< .mine
+C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaTransporte\bin\Debug\CamadaTransporte.dll
+C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaTransporte\bin\Debug\CamadaTransporte.pdb
+C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaTransporte\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaTransporte\obj\Debug\CamadaTransporte.dll
+C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaTransporte\obj\Debug\CamadaTransporte.pdb
+=======
 C:\workSpace\trunk\AutoRFIDDesktop\CamadaTransporte\bin\Debug\CamadaTransporte.dll
 C:\workSpace\trunk\AutoRFIDDesktop\CamadaTransporte\bin\Debug\CamadaTransporte.pdb
 C:\workSpace\trunk\AutoRFIDDesktop\CamadaTransporte\obj\Debug\ResolveAssemblyReference.cache
 C:\workSpace\trunk\AutoRFIDDesktop\CamadaTransporte\obj\Debug\CamadaTransporte.dll
 C:\workSpace\trunk\AutoRFIDDesktop\CamadaTransporte\obj\Debug\CamadaTransporte.pdb
+>>>>>>> .r46

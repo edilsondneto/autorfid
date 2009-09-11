@@ -30,7 +30,7 @@
                             NavigateUrl="~/Webforms/principal.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Contato" Value="Contato" 
                             NavigateUrl="~/Webforms/Contato.aspx"></asp:MenuItem>
-                        <asp:MenuItem Text="Sobre" Value="Sobre"></asp:MenuItem>
+                        <asp:MenuItem Text="Sobre" Value="Sobre" NavigateUrl="~/Webforms/Sobre.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Pré-cadastro" Value="Pré-cadastro" 
                             NavigateUrl="~/Webforms/Cadastro.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Login" Value="Login" NavigateUrl="~/Webforms/Login.aspx"></asp:MenuItem>

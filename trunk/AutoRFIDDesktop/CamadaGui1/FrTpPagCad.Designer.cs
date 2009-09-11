@@ -28,7 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.pnlBotoes.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // FrTpPagCad
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(674, 278);
+            this.Location = new System.Drawing.Point(0, 0);
+            this.Name = "FrTpPagCad";
+            this.Text = "Cadasrto de Tipo de Pagamento";
+            this.pnlBotoes.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

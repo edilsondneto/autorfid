@@ -8,8 +8,16 @@ C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaRede\bin\Debug\CamadaRe
 C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaRede\obj\Debug\ResolveAssemblyReference.cache
 C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaRede\obj\Debug\CamadaRede.dll
 C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaRede\obj\Debug\CamadaRede.pdb
+<<<<<<< .mine
+C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaRede\bin\Debug\CamadaRede.dll
+C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaRede\bin\Debug\CamadaRede.pdb
+C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaRede\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaRede\obj\Debug\CamadaRede.dll
+C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaRede\obj\Debug\CamadaRede.pdb
+=======
 C:\workSpace\trunk\AutoRFIDDesktop\CamadaRede\bin\Debug\CamadaRede.dll
 C:\workSpace\trunk\AutoRFIDDesktop\CamadaRede\bin\Debug\CamadaRede.pdb
 C:\workSpace\trunk\AutoRFIDDesktop\CamadaRede\obj\Debug\ResolveAssemblyReference.cache
 C:\workSpace\trunk\AutoRFIDDesktop\CamadaRede\obj\Debug\CamadaRede.dll
 C:\workSpace\trunk\AutoRFIDDesktop\CamadaRede\obj\Debug\CamadaRede.pdb
+>>>>>>> .r46
