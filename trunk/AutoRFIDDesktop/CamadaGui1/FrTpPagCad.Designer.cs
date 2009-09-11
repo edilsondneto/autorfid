@@ -31,11 +31,14 @@
             this.pnlBotoes.SuspendLayout();
             this.SuspendLayout();
             // 
+            // pnlBotoes
+            // 
+            this.pnlBotoes.Size = new System.Drawing.Size(746, 30);
+            // 
             // FrTpPagCad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(674, 278);
-            this.Location = new System.Drawing.Point(0, 0);
+            this.ClientSize = new System.Drawing.Size(746, 278);
             this.Name = "FrTpPagCad";
             this.Text = "Cadasrto de Tipo de Pagamento";
             this.pnlBotoes.ResumeLayout(false);

@@ -39,14 +39,17 @@
             // 
             this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
+            // pnlBotoes
+            // 
+            this.pnlBotoes.Size = new System.Drawing.Size(750, 30);
+            // 
             // FrFuncCad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(674, 278);
+            this.ClientSize = new System.Drawing.Size(750, 278);
             this.Name = "FrFuncCad";
             this.pnlBotoes.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

@@ -28,7 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.pnlBotoes.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // pnlBotoes
+            // 
+            this.pnlBotoes.Size = new System.Drawing.Size(749, 30);
+            // 
+            // FrEtiqCad
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(749, 278);
+            this.Name = "FrEtiqCad";
+            this.pnlBotoes.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -41,12 +41,12 @@
             // 
             // pnlBotoes
             // 
-            this.pnlBotoes.Size = new System.Drawing.Size(674, 30);
+            this.pnlBotoes.Size = new System.Drawing.Size(745, 30);
             // 
             // FrEstabCad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(674, 278);
+            this.ClientSize = new System.Drawing.Size(745, 278);
             this.Name = "FrEstabCad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.pnlBotoes.ResumeLayout(false);

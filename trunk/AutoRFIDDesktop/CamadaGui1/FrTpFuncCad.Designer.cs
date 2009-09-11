@@ -35,10 +35,14 @@
             // 
             this.btIncluir.Click += new System.EventHandler(this.btIncluir_Click);
             // 
+            // pnlBotoes
+            // 
+            this.pnlBotoes.Size = new System.Drawing.Size(746, 30);
+            // 
             // FrTpFuncCad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(740, 278);
+            this.ClientSize = new System.Drawing.Size(746, 278);
             this.Name = "FrTpFuncCad";
             this.pnlBotoes.ResumeLayout(false);
             this.ResumeLayout(false);

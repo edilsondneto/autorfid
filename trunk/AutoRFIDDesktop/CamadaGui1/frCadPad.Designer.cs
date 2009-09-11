@@ -60,6 +60,7 @@
             this.btSair.Image = global::CamadaGui.Properties.Resources.format_indent_less;
             this.btSair.Name = "btSair";
             this.btSair.UseVisualStyleBackColor = true;
+            this.btSair.Click += new System.EventHandler(this.btSair_Click);
             // 
             // btConfirmar
             // 
@@ -118,6 +119,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlBotoes);
+            this.MinimizeBox = false;
             this.Name = "frCadPad";
             this.Load += new System.EventHandler(this.frCadPad_Load);
             this.pnlBotoes.ResumeLayout(false);

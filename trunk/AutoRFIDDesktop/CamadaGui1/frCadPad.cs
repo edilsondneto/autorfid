@@ -13,9 +13,9 @@ namespace CamadaGui1
     {
         public frCadPad()
         {
-            
+
             InitializeComponent();
-            
+
         }
 
         private void btPesquisar_Click(object sender, EventArgs e)
@@ -25,16 +25,17 @@ namespace CamadaGui1
 
         private void frCadPad_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btIncluir_Click(object sender, EventArgs e)
         {
+
             this.habilita(false);
         }
 
 
-        //Abilitar botões e text
+        //habilitar botões
         private void habilita(bool estado)
         {
             //Estado dos botões.
@@ -44,10 +45,13 @@ namespace CamadaGui1
             this.btCancelar.Enabled = !estado;
             this.btConfirmar.Enabled = !estado;
             this.btSair.Enabled = estado;
+            this.btPesquisar.Enabled = estado;
+
         }
 
         private void btAlterar_Click(object sender, EventArgs e)
         {
+
             this.habilita(false);
         }
 
@@ -61,6 +65,26 @@ namespace CamadaGui1
             this.habilita(true);
         }
 
-  
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        
     }
 }

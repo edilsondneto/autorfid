@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{94B9034F-12D3-4036-B300-111CB2159FBB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -12,6 +12,21 @@
     <AssemblyName>CamadaGui</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>http://localhost/CamadaGui/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -84,12 +99,6 @@
     <Compile Include="frMenuPrincipal.Designer.cs">
       <DependentUpon>frMenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrTelaLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrTelaLogin.designer.cs">
-      <DependentUpon>FrTelaLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrTpFuncCad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +119,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrAssocCad.resx">
+      <DependentUpon>FrAssocCad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frCadPad.resx">
       <DependentUpon>frCadPad.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -118,13 +130,18 @@
       <DependentUpon>FrEstabCad.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrEtiqCad.resx">
+      <DependentUpon>FrEtiqCad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrFuncCad.resx">
+      <DependentUpon>FrFuncCad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frMenuPrincipal.resx">
       <DependentUpon>frMenuPrincipal.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrTelaLogin.resx">
-      <DependentUpon>FrTelaLogin.cs</DependentUpon>
-      <SubType>Designer</SubType>
+    <EmbeddedResource Include="FrTpFuncCad.resx">
+      <DependentUpon>FrTpFuncCad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrTpPagCad.resx">
       <DependentUpon>FrTpPagCad.cs</DependentUpon>
@@ -153,6 +170,41 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RFID.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

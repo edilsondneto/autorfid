@@ -117,15 +117,123 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;btSair.Name" xml:space="preserve">
+    <value>btSair</value>
+  </data>
+  <data name="&gt;&gt;btSair.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btSair.Parent" xml:space="preserve">
+    <value>pnlBotoes</value>
+  </data>
+  <data name="&gt;&gt;btSair.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btConfirmar.Name" xml:space="preserve">
+    <value>btConfirmar</value>
+  </data>
+  <data name="&gt;&gt;btConfirmar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btConfirmar.Parent" xml:space="preserve">
+    <value>pnlBotoes</value>
+  </data>
+  <data name="&gt;&gt;btConfirmar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btPesquisar.Name" xml:space="preserve">
+    <value>btPesquisar</value>
+  </data>
+  <data name="&gt;&gt;btPesquisar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btPesquisar.Parent" xml:space="preserve">
+    <value>pnlBotoes</value>
+  </data>
+  <data name="&gt;&gt;btPesquisar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btCancelar.Name" xml:space="preserve">
+    <value>btCancelar</value>
+  </data>
+  <data name="&gt;&gt;btCancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btCancelar.Parent" xml:space="preserve">
+    <value>pnlBotoes</value>
+  </data>
+  <data name="&gt;&gt;btCancelar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btExcluir.Name" xml:space="preserve">
+    <value>btExcluir</value>
+  </data>
+  <data name="&gt;&gt;btExcluir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btExcluir.Parent" xml:space="preserve">
+    <value>pnlBotoes</value>
+  </data>
+  <data name="&gt;&gt;btExcluir.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btIncluir.Name" xml:space="preserve">
+    <value>btIncluir</value>
+  </data>
+  <data name="&gt;&gt;btIncluir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btIncluir.Parent" xml:space="preserve">
+    <value>pnlBotoes</value>
+  </data>
+  <data name="&gt;&gt;btIncluir.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btAlterar.Name" xml:space="preserve">
+    <value>btAlterar</value>
+  </data>
+  <data name="&gt;&gt;btAlterar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btAlterar.Parent" xml:space="preserve">
+    <value>pnlBotoes</value>
+  </data>
+  <data name="&gt;&gt;btAlterar.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pnlBotoes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pnlBotoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 248</value>
+  </data>
+  <data name="pnlBotoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>744, 30</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pnlBotoes.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;pnlBotoes.Name" xml:space="preserve">
+    <value>pnlBotoes</value>
+  </data>
+  <data name="&gt;&gt;pnlBotoes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlBotoes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlBotoes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btSair.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btSair.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btSair.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -363,30 +471,6 @@
   <data name="&gt;&gt;btAlterar.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="pnlBotoes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="pnlBotoes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 248</value>
-  </data>
-  <data name="pnlBotoes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>740, 30</value>
-  </data>
-  <data name="pnlBotoes.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;pnlBotoes.Name" xml:space="preserve">
-    <value>pnlBotoes</value>
-  </data>
-  <data name="&gt;&gt;pnlBotoes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlBotoes.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnlBotoes.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -394,10 +478,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>740, 278</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+    <value>744, 278</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>

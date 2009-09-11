@@ -31,36 +31,25 @@
             this.pnlBotoes.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btConfirmar
-            // 
-            this.btConfirmar.Size = new System.Drawing.Size(96, 23);
-            // 
             // btCancelar
             // 
             this.btCancelar.Location = new System.Drawing.Point(388, 3);
-            this.btCancelar.Size = new System.Drawing.Size(96, 23);
-            // 
-            // btExcluir
-            // 
-            this.btExcluir.Size = new System.Drawing.Size(96, 23);
             // 
             // btIncluir
             // 
             this.btIncluir.Location = new System.Drawing.Point(113, 3);
-            this.btIncluir.Size = new System.Drawing.Size(96, 23);
             // 
-            // btAlterar
+            // pnlBotoes
             // 
-            this.btAlterar.Size = new System.Drawing.Size(96, 23);
+            this.pnlBotoes.Size = new System.Drawing.Size(753, 30);
             // 
             // FrVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(674, 278);
+            this.ClientSize = new System.Drawing.Size(753, 278);
             this.Name = "FrVenda";
             this.pnlBotoes.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

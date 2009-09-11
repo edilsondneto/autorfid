@@ -88,6 +88,13 @@ namespace CamadaGui.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap RFID {
+            get {
+                object obj = ResourceManager.GetObject("RFID", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap system_search {
             get {
                 object obj = ResourceManager.GetObject("system-search", resourceCulture);

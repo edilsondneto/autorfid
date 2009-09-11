@@ -74,6 +74,11 @@ namespace CamadaGui1
            //.. frTelaLogin.ShowDialog();
            // this.Visible = true;
         }
+
+        private void MnCadastro_Click(object sender, EventArgs e)
+        {
+
+        }
         
 
 

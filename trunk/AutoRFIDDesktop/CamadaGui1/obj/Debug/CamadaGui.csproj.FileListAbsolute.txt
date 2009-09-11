@@ -1,38 +1,16 @@
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\ResolveAssemblyReference.cache
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.frCadPad.resources
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.frMenuPrincipal.resources
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.csproj.GenerateResource.Cache
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.FrEstabCad.resources
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.FrVenda.resources
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\bin\Debug\CamadaGui.exe
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\bin\Debug\CamadaGui.pdb
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.Properties.Resources.resources
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.exe
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.pdb
-C:\autorfid\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.exe
-C:\autorfid\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.pdb
-<<<<<<< .mine
-C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.exe
-C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.pdb
-C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaGui1\bin\Debug\CamadaGui.exe
-C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaGui1\bin\Debug\CamadaGui.pdb
-C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.frCadPad.resources
-C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.FrEstabCad.resources
-C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.frMenuPrincipal.resources
-C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.FrVenda.resources
-C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.Properties.Resources.resources
-C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.csproj.GenerateResource.Cache
-=======
-C:\workSpace\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.exe
-C:\workSpace\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.pdb
-C:\workSpace\trunk\AutoRFIDDesktop\CamadaGui1\bin\Debug\CamadaGui.exe
-C:\workSpace\trunk\AutoRFIDDesktop\CamadaGui1\bin\Debug\CamadaGui.pdb
-C:\workSpace\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\ResolveAssemblyReference.cache
-C:\workSpace\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.frCadPad.resources
-C:\workSpace\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.FrEstabCad.resources
-C:\workSpace\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.frMenuPrincipal.resources
-C:\workSpace\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.FrVenda.resources
-C:\workSpace\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.Properties.Resources.resources
-C:\workSpace\trunk\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.csproj.GenerateResource.Cache
->>>>>>> .r46
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaGui1\bin\Debug\CamadaGui.exe
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaGui1\bin\Debug\CamadaGui.pdb
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaGui1\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.frCadPad.resources
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.FrEstabCad.resources
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.frMenuPrincipal.resources
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.FrTpPagCad.resources
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.FrVenda.resources
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.Properties.Resources.resources
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.csproj.GenerateResource.Cache
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.exe
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui.pdb
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.FrEtiqCad.resources
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.FrFuncCad.resources
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.FrTpFuncCad.resources
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.FrAssocCad.resources

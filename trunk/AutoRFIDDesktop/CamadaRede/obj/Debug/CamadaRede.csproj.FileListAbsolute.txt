@@ -1,23 +1,5 @@
-F:\AutoRFIDDesktop\CamadaRede\bin\Debug\CamadaRede.dll
-F:\AutoRFIDDesktop\CamadaRede\bin\Debug\CamadaRede.pdb
-F:\AutoRFIDDesktop\CamadaRede\obj\Debug\ResolveAssemblyReference.cache
-F:\AutoRFIDDesktop\CamadaRede\obj\Debug\CamadaRede.dll
-F:\AutoRFIDDesktop\CamadaRede\obj\Debug\CamadaRede.pdb
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaRede\bin\Debug\CamadaRede.dll
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaRede\bin\Debug\CamadaRede.pdb
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaRede\obj\Debug\ResolveAssemblyReference.cache
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaRede\obj\Debug\CamadaRede.dll
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaRede\obj\Debug\CamadaRede.pdb
-<<<<<<< .mine
-C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaRede\bin\Debug\CamadaRede.dll
-C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaRede\bin\Debug\CamadaRede.pdb
-C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaRede\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaRede\obj\Debug\CamadaRede.dll
-C:\Documents and Settings\RFM\Meus documentos\ProjetoFinalUnibratec\trunk\AutoRFIDDesktop\CamadaRede\obj\Debug\CamadaRede.pdb
-=======
-C:\workSpace\trunk\AutoRFIDDesktop\CamadaRede\bin\Debug\CamadaRede.dll
-C:\workSpace\trunk\AutoRFIDDesktop\CamadaRede\bin\Debug\CamadaRede.pdb
-C:\workSpace\trunk\AutoRFIDDesktop\CamadaRede\obj\Debug\ResolveAssemblyReference.cache
-C:\workSpace\trunk\AutoRFIDDesktop\CamadaRede\obj\Debug\CamadaRede.dll
-C:\workSpace\trunk\AutoRFIDDesktop\CamadaRede\obj\Debug\CamadaRede.pdb
->>>>>>> .r46
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaRede\bin\Debug\CamadaRede.dll
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaRede\bin\Debug\CamadaRede.pdb
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaRede\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaRede\obj\Debug\CamadaRede.dll
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFIDDesktop\CamadaRede\obj\Debug\CamadaRede.pdb
