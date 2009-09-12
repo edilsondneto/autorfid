@@ -37,6 +37,8 @@
             this.btExcluir = new System.Windows.Forms.Button();
             this.btIncluir = new System.Windows.Forms.Button();
             this.btAlterar = new System.Windows.Forms.Button();
+            this.panelManutencao = new System.Windows.Forms.GroupBox();
+            this.panelConsulta = new System.Windows.Forms.GroupBox();
             this.pnlBotoes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,8 +58,8 @@
             // btSair
             // 
             this.btSair.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.btSair, "btSair");
             this.btSair.Image = global::CamadaGui.Properties.Resources.format_indent_less;
+            resources.ApplyResources(this.btSair, "btSair");
             this.btSair.Name = "btSair";
             this.btSair.UseVisualStyleBackColor = true;
             this.btSair.Click += new System.EventHandler(this.btSair_Click);
@@ -96,6 +98,7 @@
             resources.ApplyResources(this.btExcluir, "btExcluir");
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.UseVisualStyleBackColor = true;
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
             // 
             // btIncluir
             // 
@@ -114,10 +117,24 @@
             this.btAlterar.UseVisualStyleBackColor = true;
             this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
             // 
+            // panelManutencao
+            // 
+            resources.ApplyResources(this.panelManutencao, "panelManutencao");
+            this.panelManutencao.Name = "panelManutencao";
+            this.panelManutencao.TabStop = false;
+            // 
+            // panelConsulta
+            // 
+            resources.ApplyResources(this.panelConsulta, "panelConsulta");
+            this.panelConsulta.Name = "panelConsulta";
+            this.panelConsulta.TabStop = false;
+            // 
             // frCadPad
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panelConsulta);
+            this.Controls.Add(this.panelManutencao);
             this.Controls.Add(this.pnlBotoes);
             this.MinimizeBox = false;
             this.Name = "frCadPad";
@@ -137,5 +154,7 @@
         protected System.Windows.Forms.Button btAlterar;
         protected System.Windows.Forms.Panel pnlBotoes;
         protected System.Windows.Forms.Button btSair;
+        protected System.Windows.Forms.GroupBox panelManutencao;
+        protected System.Windows.Forms.GroupBox panelConsulta;
     }
 }

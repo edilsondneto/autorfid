@@ -226,10 +226,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pnlBotoes.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btSair.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+    <value>2</value>
   </data>
   <data name="btSair.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
@@ -396,19 +393,19 @@
   <data name="btIncluir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN1QAA
-        DdUBPdZY8QAAAoBJREFUOE+Nkd1PUmEcxw823brpj2m+1FXdtLC8YQVqJ+MKaa5x40Viy1bNzWqrTZNS
-        TEM5pyBGpCu05pQlc1yYxIsKgiKKvDmr1UJA+PY8j9PpVunZPjvPznl+n9+bhOd5bv+TL2S3JBLJMQDk
-        JWG/SkpK2Lm0tDTw+9fWmbKysvReTGtr64BWq93YRVF3GZlMBtlsFrlcDvl8nrG9vY3BoUHwV+tWSNIT
-        NDFL3tLS8t3lcmF6ehpTU1OQ115CMBiE1+tleDwezM7OYmZmBsViEV1dnUX+2hWfXC4/zgTNzc3fnE4n
-        bDYbLBYLE4RCIfS96DuA3+9jgkKhAN0zXZFvqO9lAo1Gs+lwTLJgs9kM2kI0GsXy8jKWlpYY4XAYkUgE
-        yWQSsVgMbrcbDUr+BxM0NTVtjI+Pw2QyQRAEJlhfX8fAy35SgX4PKlldXWW4v7pBKvjJBCqVKm232yGK
-        IgwGA2rr5Uin00ilUgyalZJIJBjxeByBQIAMs36nAqVSmRwZGcHZGwJOXd+hilDZuEMFw7hHucqIXarU
-        4hpdRdJqtbKLk/7UX3GQ7465g3zyJIhIKHIKhSJO+6dZPpNLne8XD6V7NIQxdxzljcYCJ5PJYoJgJOUa
-        4ZxP4/lY+FC67SGMfonTqvNcTU3NGh1elVrAhCcJ/ccwev+BjgQ+GQ7ikW0B71xrVJDjpFJpVK/Xs+EJ
-        jhU8Hg7g4dsFtFvmcd88h7smP9pe+aAd8uLmoIdxS/Ci+8MiKtTiFlddXR3p6enBaSJ4Svq/Z/bjtuj7
-        L3de+9D+xk+3lKEVRNo6dEwg75iA4sHkkbjYZkelWgxw5y7I+vfv9qjnCpVx86RKOP8Hckqu3SnPB+oA
-        AAAASUVORK5CYII=
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN1AAA
+        DdQB75G6FQAAAntJREFUOE+Nkt9PklEYx9/bbrrrH2midddNC8sbVqD4aqwLpLnmjReJLVs1N6utNk1K
+        MQ3lfQtiRrpCa05ZMsYFQfxQQVBEkF/Oal2g/Pp2zmE63Sq9+Oy8O3vO53yf57wcz/PcYRRN13YblfIi
+        WUtkZSj5xnJzS1NZdaN1SS6Xnzlcz3V3d49ptdrtfchB5PN57O3toVAooFgsMkqlEsYnxsG3NG0Qwel9
+        CdfV1fXT5XLB6XRicXER8sarCIfD8Pv9DJ/PB4/HA7fbjUqlgoGB/gp/vTlAkpyiEq6zs/OHw+GA1WqF
+        xWJhgkgkgpFXI0cIBgNMUC6XoXuhq/CtymEm6Ojo2LHbF9hhs9kM2kI8Hsf6+jrW1tYY0WgUsVgMmUwG
+        yWQSXq8XrSr+FxO0t7dvz83NwWQyQRAEJtja2sLY61GSQH8AlWxubjK8370gCX4zgVqtztlsNoiiCIPB
+        ADJ15HI5ZLNZBr2Vkk6nGalUCqFQiAxTWU2gUqky09PTuHBLwLmbVeoItW1VJAzjATVqI/ap04gJ+g9k
+        JicnWeFCMPtX7GTfvnSUL740EQkVTqFQpGj/9JavpKj/4+qxDM5EMOtNoabNWOZkMllSEIwkrhGO5Rxe
+        zkaPZdAWwcy3FE1d5BoaGhJ0eHUaAfO+DPSfoxj+Bzpy8NlUGE+sK/jgSlBBgZNKpXG9Xs+GJ9g38HQq
+        hMfvV9BrWcZD8xLum4LoeROAdsKP2+M+xh3Bj8FPq5BoxF2uvr4+NjQ0hPNE8Jz0/8AcxF0x8F/uvQ2g
+        912QvlKeJoj19OmYQN43D8WjhRNxpceGWo0Y4i5elo0eftuTfkvUxp2zauHSH4lNulZIvAiJAAAAAElF
+        TkSuQmCC
 </value>
   </data>
   <data name="btIncluir.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
@@ -470,6 +467,60 @@
   </data>
   <data name="&gt;&gt;btAlterar.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="panelManutencao.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="panelManutencao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>253, 12</value>
+  </data>
+  <data name="panelManutencao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>732, 214</value>
+  </data>
+  <data name="panelManutencao.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="panelManutencao.Text" xml:space="preserve">
+    <value>Manutenção</value>
+  </data>
+  <data name="&gt;&gt;panelManutencao.Name" xml:space="preserve">
+    <value>panelManutencao</value>
+  </data>
+  <data name="&gt;&gt;panelManutencao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelManutencao.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelManutencao.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelConsulta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 2</value>
+  </data>
+  <data name="panelConsulta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>729, 240</value>
+  </data>
+  <data name="panelConsulta.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="panelConsulta.Text" xml:space="preserve">
+    <value>Consulta</value>
+  </data>
+  <data name="panelConsulta.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelConsulta.Name" xml:space="preserve">
+    <value>panelConsulta</value>
+  </data>
+  <data name="&gt;&gt;panelConsulta.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelConsulta.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelConsulta.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
