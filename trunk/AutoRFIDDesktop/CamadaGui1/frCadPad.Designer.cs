@@ -37,9 +37,14 @@
             this.btExcluir = new System.Windows.Forms.Button();
             this.btIncluir = new System.Windows.Forms.Button();
             this.btAlterar = new System.Windows.Forms.Button();
-            this.panelManutencao = new System.Windows.Forms.GroupBox();
             this.panelConsulta = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panelManutencao = new System.Windows.Forms.GroupBox();
             this.pnlBotoes.SuspendLayout();
+            this.panelConsulta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBotoes
@@ -117,29 +122,54 @@
             this.btAlterar.UseVisualStyleBackColor = true;
             this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
             // 
+            // panelConsulta
+            // 
+            this.panelConsulta.Controls.Add(this.dataGridView1);
+            resources.ApplyResources(this.panelConsulta, "panelConsulta");
+            this.panelConsulta.Name = "panelConsulta";
+            this.panelConsulta.TabStop = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codigo,
+            this.descricao});
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // codigo
+            // 
+            resources.ApplyResources(this.codigo, "codigo");
+            this.codigo.Name = "codigo";
+            // 
+            // descricao
+            // 
+            resources.ApplyResources(this.descricao, "descricao");
+            this.descricao.Name = "descricao";
+            // 
             // panelManutencao
             // 
             resources.ApplyResources(this.panelManutencao, "panelManutencao");
             this.panelManutencao.Name = "panelManutencao";
             this.panelManutencao.TabStop = false;
             // 
-            // panelConsulta
-            // 
-            resources.ApplyResources(this.panelConsulta, "panelConsulta");
-            this.panelConsulta.Name = "panelConsulta";
-            this.panelConsulta.TabStop = false;
-            // 
             // frCadPad
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panelConsulta);
-            this.Controls.Add(this.panelManutencao);
             this.Controls.Add(this.pnlBotoes);
+            this.Controls.Add(this.panelManutencao);
+            this.Controls.Add(this.panelConsulta);
+            this.KeyPreview = true;
             this.MinimizeBox = false;
             this.Name = "frCadPad";
             this.Load += new System.EventHandler(this.frCadPad_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frCadPad_KeyPress);
             this.pnlBotoes.ResumeLayout(false);
+            this.panelConsulta.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -154,7 +184,10 @@
         protected System.Windows.Forms.Button btAlterar;
         protected System.Windows.Forms.Panel pnlBotoes;
         protected System.Windows.Forms.Button btSair;
-        protected System.Windows.Forms.GroupBox panelManutencao;
         protected System.Windows.Forms.GroupBox panelConsulta;
+        protected System.Windows.Forms.GroupBox panelManutencao;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descricao;
     }
 }

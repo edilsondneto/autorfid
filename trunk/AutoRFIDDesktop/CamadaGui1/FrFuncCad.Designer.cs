@@ -43,6 +43,16 @@
             // 
             this.pnlBotoes.Size = new System.Drawing.Size(750, 30);
             // 
+            // panelManutencao
+            // 
+            this.panelManutencao.Location = new System.Drawing.Point(3, 6);
+            this.panelManutencao.Size = new System.Drawing.Size(738, 240);
+            // 
+            // panelConsulta
+            // 
+            this.panelConsulta.Location = new System.Drawing.Point(3, 6);
+            this.panelConsulta.Size = new System.Drawing.Size(738, 240);
+            // 
             // FrFuncCad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

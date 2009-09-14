@@ -55,7 +55,7 @@ namespace CamadaGui1
 
         private void MnAssocCad_Click(object sender, EventArgs e)
         {
-            FrAssocCad frAssocCad = new FrAssocCad();
+            CamadaGui.FrAssocCad frAssocCad = new CamadaGui.FrAssocCad();
             //frAssocCad.MdiParent = this;
             frAssocCad.ShowDialog();
         }

@@ -1,0 +1,5 @@
+C:\autorfid\trunk\AutoRFIDDesktop\CamadaRede\bin\Release\CamadaRede.dll
+C:\autorfid\trunk\AutoRFIDDesktop\CamadaRede\bin\Release\CamadaRede.pdb
+C:\autorfid\trunk\AutoRFIDDesktop\CamadaRede\obj\Release\ResolveAssemblyReference.cache
+C:\autorfid\trunk\AutoRFIDDesktop\CamadaRede\obj\Release\CamadaRede.dll
+C:\autorfid\trunk\AutoRFIDDesktop\CamadaRede\obj\Release\CamadaRede.pdb

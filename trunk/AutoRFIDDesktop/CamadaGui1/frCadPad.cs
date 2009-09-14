@@ -22,7 +22,10 @@ namespace CamadaGui1
         {
             this.panelConsulta.Visible = true;
             this.panelManutencao.Visible = false;
-            btPesquisar.Enabled = false;
+            this.habilita();
+            this.btCancelar.Enabled = false;
+            this.btConfirmar.Enabled = false;
+
         }
 
         private void frCadPad_Load(object sender, EventArgs e)
@@ -31,9 +34,16 @@ namespace CamadaGui1
         }
 
         private void btIncluir_Click(object sender, EventArgs e)
-        {
-            this.panelConsulta.Visible = false;
-            this.panelManutencao.Visible = true;
+        {   //limpar campos
+            foreach (Control campo in this.panelManutencao.Controls)
+            {
+                if (campo is TextBox)
+                { ((TextBox)campo).Clear(); }
+                else if (campo is MaskedTextBox)
+                { ((MaskedTextBox)campo).Clear(); }
+
+            }
+
             this.habilita();
         }
 
@@ -50,7 +60,10 @@ namespace CamadaGui1
             this.btSair.Enabled          = !(this.btSair.Enabled);
             this.btPesquisar.Enabled     = !(this.btPesquisar.Enabled);
 
-            
+            //Estado dos campos
+            this.panelManutencao.Enabled = !(this.btIncluir.Enabled);
+
+
         }
 
 
@@ -66,6 +79,19 @@ namespace CamadaGui1
 
         private void btConfirmar_Click(object sender, EventArgs e)
         {
+            //Validar campos
+            foreach (Control campo in this.panelManutencao.Controls)
+            {
+                if (campo is TextBox){
+                 if (((TextBox)campo).Tag != null)
+                 { if (((TextBox)campo).Tag.Equals("1") & ((TextBox)campo).Text.Length.Equals(0)){
+                    MessageBox.Show("Campo não pode ser branco!");
+                    return;
+                 }
+                }
+                }
+            }
+            
             this.habilita();
         }
 
@@ -96,6 +122,26 @@ namespace CamadaGui1
 
         private void btExcluir_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.panelConsulta.Visible = false;
+            this.panelManutencao.Visible = true;
+            this.habilita();
+            this.btCancelar.Enabled  = false;
+            this.btConfirmar.Enabled = false;
+
+        }
+
+        private void frCadPad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar.CompareTo((char)Keys.Return)) == 0)
+            {
+                e.Handled = true;
+                SendKeys.Send("{TAB}");
+            }
 
         }
 
