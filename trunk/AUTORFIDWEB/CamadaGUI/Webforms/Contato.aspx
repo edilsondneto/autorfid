@@ -1,23 +1,66 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage/principal.Master" AutoEventWireup="true" CodeBehind="Contato.aspx.cs" Inherits="CamadaGUI.Webforms.Contato" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage/principal.Master" AutoEventWireup="true"
+    CodeBehind="Contato.aspx.cs" Inherits="CamadaGUI.Webforms.Contato" Title="Untitled Page" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="principal">
-    <body>
-    <br />
-    <br />
-    <br />
-    <p class="principal">
-    Contato<br />
-    <br />
-    Walmir Silva - walmirsaraujo@gmail.com></a>  Fone: 9983-2340;<br />
-    Josenilton Leandro - jlaleandro@gmail.com Fone: <br />
-    Rafael Freire - rfmelo@gmail.com    Fone: <br />
-    Diego Bezerra - dbezera21@gmail.com    Fone: <br />
-    Kildare Alexandre -  kps@gmail.com     Fone: <br />
-    Dyego Valença   -  d7@gmail.com      Fone:<br />
-    
-    </p>
-    </body>
+        <br />
+        <br />
+        <center>
+            Contato
+        </center>
+        <br />
+        <br />
+        <table class="contato">
+            <tr>
+                <td>
+                    Walmir Silva
+                </td>
+                <td>
+                    walmirsaraujo@gmail.com
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Josenilton Leandro
+                </td>
+                <td>
+                    jlaleandro@gmail.com
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Rafael Freire
+                </td>
+                <td>
+                    rfmelo@gmail.com
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Diego Bezerra
+                </td>
+                <td>
+                    dbezera21@gmail.com
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Kildare Alexandre
+                </td>
+                <td>
+                    kps@gmail.com
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dyego Valença
+                </td>
+                <td>
+                    d7@gmail.com
+                </td>
+            </tr>
+        </table>
     </div>
 </asp:Content>

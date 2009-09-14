@@ -1,67 +1,76 @@
 
 div.container
 {
-	position:static;
-	width: 740px;
-	margin: 0 auto;
-	padding: 10px;
-	text-align: left; /* "remédio" para o hack do IE */
+	/*position:static; 	width: 740px; 	margin: 0 auto; 	padding: 10px; 	text-align: left; /* "remédio" para o hack do IE */
+	width: 700px;
+	height: 500px;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -350px;
+	position: absolute;
+	border: 1px solid black;
 }
 
 div.logomarca
 {
-	position:relative;
-	background-image:url('/Content/logo.jpg');
-	background-repeat:no-repeat;
-	background-color:#3a3e61;
-	width: 760px;
-	height:113px;
-	margin-left: -10px;
-	margin-top: -10px;
-	text-align: left;
+	position: relative;
+	background-image: url( '/Content/logo.jpg' );
+	background-repeat: no-repeat;
+	background-color: #3a3e61;
+	height: 113px; /*margin-left: -10px; 	margin-top: -10px; 	text-align: left;*/
 }
 
 div.menubar
 {
-	width: 760px;
-	margin: 0 auto;
+	position: relative;
 	background-color: #3a3e61;
-	margin-left: -10px;
-	color:White;
+	height: 30px;
+	color: White;
 }
 
 div.principal
 {
-	background-color:#ece9d8;
-	width: 760px;
-	height: 400px;
-	margin-left:-10px;
+	position: relative;
+	background-color: #ece9d8;
+	height: 355px;
 }
 
-body 
+body
 {
-	background:url("/Content/fundodegrade.jpg");
-	
+	background: url( "/Content/fundodegrade.jpg" );
 }
 
 .menu
 {
 	padding-right: 10px;
 	background-color: #3a3e61;
-	height:30px;
-	color:White;
+	height: 30px;
+	color: White;
 }
 
 
 div.login
-{	
-	width: 348px;
-	margin-top:120px;
-	margin-left:280px;
+{
+	position:relative;
+	top: 30%;
+	margin-left:250px;
 }
 
 div.cad
 {
-	margin-left:10px;
-	margin-top:20px;
+	margin-left: 10px;
+}
+
+.principal p
+{
+	text-indent:50px;
+	margin-left:15px;
+	margin-right:15px;
+	text-align:justify;
+}
+
+table.contato
+{
+	margin-left:220px;
 }

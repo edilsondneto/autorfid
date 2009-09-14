@@ -3,8 +3,8 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<link rel="stylesheet" type="text/css" href="/Content/style.css" />
 <head runat="server">
+<link rel="stylesheet" type="text/css" href="/Content/style.css" />
     <title>AutoRFID</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -37,8 +37,10 @@
                     </Items>
                 </asp:Menu>
             </div>
+            <div class="principal">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+            </div>
         </form>
     </div>
 </body>
