@@ -28,78 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textNome = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textCodigo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnlBotoes.SuspendLayout();
-            this.panelConsulta.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panelManutencao.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btConfirmar
-            // 
-            this.btConfirmar.Location = new System.Drawing.Point(524, 2);
             // 
             // pnlBotoes
             // 
-            this.pnlBotoes.Size = new System.Drawing.Size(741, 30);
-            // 
-            // btSair
-            // 
-            this.btSair.Location = new System.Drawing.Point(639, 3);
+            this.pnlBotoes.Size = new System.Drawing.Size(746, 30);
             // 
             // panelManutencao
             // 
-            this.panelManutencao.Location = new System.Drawing.Point(4, 2);
-            this.panelManutencao.Size = new System.Drawing.Size(729, 214);
+            this.panelManutencao.Controls.Add(this.textNome);
+            this.panelManutencao.Controls.Add(this.label3);
+            this.panelManutencao.Controls.Add(this.textCodigo);
+            this.panelManutencao.Controls.Add(this.label2);
             // 
-            // panelConsulta
+            // textNome
             // 
-            this.panelConsulta.Controls.Add(this.dataGridView1);
-            this.panelConsulta.Location = new System.Drawing.Point(4, 2);
+            this.textNome.Location = new System.Drawing.Point(112, 35);
+            this.textNome.Name = "textNome";
+            this.textNome.Size = new System.Drawing.Size(503, 20);
+            this.textNome.TabIndex = 62;
+            this.textNome.Tag = "1";
             // 
-            // dataGridView1
+            // label3
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Codigo,
-            this.Descricao});
-            this.dataGridView1.Location = new System.Drawing.Point(9, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(720, 205);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(109, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(107, 13);
+            this.label3.TabIndex = 61;
+            this.label3.Text = "Tipo de Pagamento *";
             // 
-            // Codigo
+            // textCodigo
             // 
-            this.Codigo.HeaderText = "Codigo";
-            this.Codigo.Name = "Codigo";
-            this.Codigo.ReadOnly = true;
+            this.textCodigo.Location = new System.Drawing.Point(6, 35);
+            this.textCodigo.Name = "textCodigo";
+            this.textCodigo.Size = new System.Drawing.Size(100, 20);
+            this.textCodigo.TabIndex = 60;
+            this.textCodigo.Tag = "1";
             // 
-            // Descricao
+            // label2
             // 
-            this.Descricao.HeaderText = "Descrição";
-            this.Descricao.Name = "Descricao";
-            this.Descricao.ReadOnly = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.TabIndex = 59;
+            this.label2.Text = "Código *";
             // 
             // FrTpPagCad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(741, 278);
+            this.ClientSize = new System.Drawing.Size(746, 278);
             this.Name = "FrTpPagCad";
-            this.Text = "Cadasrto de Tipo de Pagamento";
+            this.Text = "Manutenção Tipo de Pagamento";
             this.pnlBotoes.ResumeLayout(false);
-            this.panelConsulta.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panelManutencao.ResumeLayout(false);
+            this.panelManutencao.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descricao;
-
+        private System.Windows.Forms.TextBox textNome;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textCodigo;
+        private System.Windows.Forms.Label label2;
     }
 }
