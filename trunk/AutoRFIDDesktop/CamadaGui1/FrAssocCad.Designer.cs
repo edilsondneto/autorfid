@@ -98,6 +98,7 @@
             this.maskedTextBox5.Name = "maskedTextBox5";
             this.maskedTextBox5.Size = new System.Drawing.Size(100, 20);
             this.maskedTextBox5.TabIndex = 74;
+            this.maskedTextBox5.Tag = "1";
             // 
             // maskedTextBox4
             // 
@@ -286,9 +287,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(238, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 13);
+            this.label4.Size = new System.Drawing.Size(72, 13);
             this.label4.TabIndex = 55;
-            this.label4.Text = "CPF / CNPJ";
+            this.label4.Text = "CPF / CNPJ *";
             // 
             // textNome
             // 
@@ -303,18 +304,18 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(347, 18);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 13);
+            this.label3.Size = new System.Drawing.Size(116, 13);
             this.label3.TabIndex = 53;
-            this.label3.Text = "Nome / Razão Social";
+            this.label3.Text = "Nome / Razão Social *";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(111, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 13);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 52;
-            this.label1.Text = "Tipo";
+            this.label1.Text = "Tipo *";
             // 
             // boxTipo
             // 
@@ -326,6 +327,7 @@
             this.boxTipo.Name = "boxTipo";
             this.boxTipo.Size = new System.Drawing.Size(121, 21);
             this.boxTipo.TabIndex = 51;
+            this.boxTipo.Tag = "1";
             // 
             // textCodigo
             // 
@@ -333,22 +335,23 @@
             this.textCodigo.Name = "textCodigo";
             this.textCodigo.Size = new System.Drawing.Size(100, 20);
             this.textCodigo.TabIndex = 50;
-            this.textCodigo.Tag = "";
+            this.textCodigo.Tag = "1";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(5, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 49;
-            this.label2.Text = "Código";
+            this.label2.Text = "Código *";
             // 
             // FrAssocCad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(744, 278);
             this.Name = "FrAssocCad";
+            this.Text = "Manutenção de Associado";
             this.pnlBotoes.ResumeLayout(false);
             this.panelManutencao.ResumeLayout(false);
             this.panelManutencao.PerformLayout();

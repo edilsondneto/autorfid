@@ -25,5 +25,10 @@ namespace CamadaGui1
            
             
         }
+
+        private void lblRazãoSocial_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

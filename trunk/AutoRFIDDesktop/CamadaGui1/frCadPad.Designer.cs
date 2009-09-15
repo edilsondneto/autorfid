@@ -186,8 +186,8 @@
         protected System.Windows.Forms.Button btSair;
         protected System.Windows.Forms.GroupBox panelConsulta;
         protected System.Windows.Forms.GroupBox panelManutencao;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn descricao;
+        protected System.Windows.Forms.DataGridView dataGridView1;
     }
 }
