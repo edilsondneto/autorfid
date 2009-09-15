@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
+            this.cpfcnpj = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
@@ -64,7 +64,7 @@
             // 
             // panelManutencao
             // 
-            this.panelManutencao.Controls.Add(this.maskedTextBox5);
+            this.panelManutencao.Controls.Add(this.cpfcnpj);
             this.panelManutencao.Controls.Add(this.maskedTextBox4);
             this.panelManutencao.Controls.Add(this.maskedTextBox3);
             this.panelManutencao.Controls.Add(this.maskedTextBox2);
@@ -91,14 +91,14 @@
             this.panelManutencao.Controls.Add(this.textCodigo);
             this.panelManutencao.Controls.Add(this.label2);
             // 
-            // maskedTextBox5
+            // cpfcnpj
             // 
-            this.maskedTextBox5.Location = new System.Drawing.Point(241, 35);
-            this.maskedTextBox5.Mask = "999.999.999-99";
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            this.maskedTextBox5.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox5.TabIndex = 74;
-            this.maskedTextBox5.Tag = "1";
+            this.cpfcnpj.Location = new System.Drawing.Point(241, 35);
+            this.cpfcnpj.Mask = "999,999,999-99";
+            this.cpfcnpj.Name = "cpfcnpj";
+            this.cpfcnpj.Size = new System.Drawing.Size(115, 20);
+            this.cpfcnpj.TabIndex = 74;
+            this.cpfcnpj.Tag = "2";
             // 
             // maskedTextBox4
             // 
@@ -293,16 +293,16 @@
             // 
             // textNome
             // 
-            this.textNome.Location = new System.Drawing.Point(347, 35);
+            this.textNome.Location = new System.Drawing.Point(362, 35);
             this.textNome.Name = "textNome";
-            this.textNome.Size = new System.Drawing.Size(376, 20);
+            this.textNome.Size = new System.Drawing.Size(361, 20);
             this.textNome.TabIndex = 54;
             this.textNome.Tag = "1";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(347, 18);
+            this.label3.Location = new System.Drawing.Point(359, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 13);
             this.label3.TabIndex = 53;
@@ -328,6 +328,7 @@
             this.boxTipo.Size = new System.Drawing.Size(121, 21);
             this.boxTipo.TabIndex = 51;
             this.boxTipo.Tag = "1";
+            this.boxTipo.TextChanged += new System.EventHandler(this.boxTipo_TextChanged);
             // 
             // textCodigo
             // 
@@ -361,7 +362,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
+        private System.Windows.Forms.MaskedTextBox cpfcnpj;
         private System.Windows.Forms.MaskedTextBox maskedTextBox4;
         private System.Windows.Forms.MaskedTextBox maskedTextBox3;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;

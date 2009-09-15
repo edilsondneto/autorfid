@@ -19,8 +19,8 @@ namespace CamadaGUI.Login
         private Boolean f_validaCampos()
         {
             string sVazio = "";
-            string sLogin = "RFID";
-            string sSenha = "1234";
+            string sLogin = "rf";
+            string sSenha = "id";
 
             if (txbLogin.Text.Equals(sVazio))
             {

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.foto = new System.Windows.Forms.PictureBox();
             this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
@@ -56,15 +57,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pnlBotoes.SuspendLayout();
             this.panelManutencao.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btPesquisar
-            // 
-            this.btPesquisar.Click += new System.EventHandler(this.btPesquisar_Click);
-            // 
-            // btCancelar
-            // 
-            this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
             // pnlBotoes
             // 
@@ -77,6 +71,7 @@
             // 
             // panelManutencao
             // 
+            this.panelManutencao.Controls.Add(this.foto);
             this.panelManutencao.Controls.Add(this.maskedTextBox5);
             this.panelManutencao.Controls.Add(this.maskedTextBox4);
             this.panelManutencao.Controls.Add(this.maskedTextBox3);
@@ -105,31 +100,42 @@
             this.panelManutencao.Controls.Add(this.label2);
             this.panelManutencao.Location = new System.Drawing.Point(3, 6);
             this.panelManutencao.Size = new System.Drawing.Size(738, 240);
+            this.panelManutencao.TabIndex = 1;
+            // 
+            // foto
+            // 
+            this.foto.Location = new System.Drawing.Point(633, 6);
+            this.foto.Name = "foto";
+            this.foto.Size = new System.Drawing.Size(105, 122);
+            this.foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.foto.TabIndex = 101;
+            this.foto.TabStop = false;
             // 
             // maskedTextBox5
             // 
-            this.maskedTextBox5.Location = new System.Drawing.Point(242, 35);
+            this.maskedTextBox5.Location = new System.Drawing.Point(239, 35);
             this.maskedTextBox5.Mask = "999.999.999-99";
             this.maskedTextBox5.Name = "maskedTextBox5";
             this.maskedTextBox5.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox5.TabIndex = 100;
+            this.maskedTextBox5.TabIndex = 78;
             this.maskedTextBox5.Tag = "2";
+            this.maskedTextBox5.TextChanged += new System.EventHandler(this.maskedTextBox5_TextChanged);
             // 
             // maskedTextBox4
             // 
-            this.maskedTextBox4.Location = new System.Drawing.Point(348, 79);
+            this.maskedTextBox4.Location = new System.Drawing.Point(239, 78);
             this.maskedTextBox4.Mask = "999999";
             this.maskedTextBox4.Name = "maskedTextBox4";
             this.maskedTextBox4.Size = new System.Drawing.Size(41, 20);
-            this.maskedTextBox4.TabIndex = 99;
+            this.maskedTextBox4.TabIndex = 81;
             // 
             // maskedTextBox3
             // 
             this.maskedTextBox3.Location = new System.Drawing.Point(541, 131);
             this.maskedTextBox3.Mask = "(99) 0000-0000";
             this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(183, 20);
-            this.maskedTextBox3.TabIndex = 98;
+            this.maskedTextBox3.Size = new System.Drawing.Size(86, 20);
+            this.maskedTextBox3.TabIndex = 88;
             // 
             // maskedTextBox2
             // 
@@ -137,7 +143,7 @@
             this.maskedTextBox2.Mask = "(99) 0000-0000";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(140, 20);
-            this.maskedTextBox2.TabIndex = 97;
+            this.maskedTextBox2.TabIndex = 87;
             // 
             // maskedTextBox1
             // 
@@ -145,7 +151,7 @@
             this.maskedTextBox1.Mask = "00000-999";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(115, 20);
-            this.maskedTextBox1.TabIndex = 96;
+            this.maskedTextBox1.TabIndex = 85;
             // 
             // label13
             // 
@@ -170,7 +176,7 @@
             this.textBox7.Location = new System.Drawing.Point(189, 131);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(200, 20);
-            this.textBox7.TabIndex = 93;
+            this.textBox7.TabIndex = 86;
             this.textBox7.Tag = "";
             // 
             // label11
@@ -226,7 +232,7 @@
             this.comboBox1.Location = new System.Drawing.Point(9, 131);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(53, 21);
-            this.comboBox1.TabIndex = 90;
+            this.comboBox1.TabIndex = 84;
             // 
             // label9
             // 
@@ -239,16 +245,16 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(541, 79);
+            this.textBox5.Location = new System.Drawing.Point(437, 79);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(183, 20);
-            this.textBox5.TabIndex = 88;
+            this.textBox5.Size = new System.Drawing.Size(190, 20);
+            this.textBox5.TabIndex = 83;
             this.textBox5.Tag = "";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(540, 62);
+            this.label8.Location = new System.Drawing.Point(437, 62);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(40, 13);
             this.label8.TabIndex = 87;
@@ -256,16 +262,16 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(395, 79);
+            this.textBox4.Location = new System.Drawing.Point(286, 78);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(140, 20);
-            this.textBox4.TabIndex = 86;
+            this.textBox4.Size = new System.Drawing.Size(145, 20);
+            this.textBox4.TabIndex = 82;
             this.textBox4.Tag = "";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(391, 62);
+            this.label7.Location = new System.Drawing.Point(282, 61);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(34, 13);
             this.label7.TabIndex = 85;
@@ -274,7 +280,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(345, 62);
+            this.label6.Location = new System.Drawing.Point(239, 62);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 13);
             this.label6.TabIndex = 84;
@@ -284,8 +290,8 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(9, 79);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(333, 20);
-            this.textBox2.TabIndex = 83;
+            this.textBox2.Size = new System.Drawing.Size(227, 20);
+            this.textBox2.TabIndex = 80;
             this.textBox2.Tag = "";
             // 
             // label5
@@ -310,8 +316,8 @@
             // 
             this.textNome.Location = new System.Drawing.Point(348, 35);
             this.textNome.Name = "textNome";
-            this.textNome.Size = new System.Drawing.Size(376, 20);
-            this.textNome.TabIndex = 80;
+            this.textNome.Size = new System.Drawing.Size(279, 20);
+            this.textNome.TabIndex = 79;
             this.textNome.Tag = "1";
             // 
             // label3
@@ -320,7 +326,7 @@
             this.label3.Location = new System.Drawing.Point(348, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 13);
-            this.label3.TabIndex = 79;
+            this.label3.TabIndex = 21;
             this.label3.Text = "Nome *";
             // 
             // label1
@@ -371,6 +377,7 @@
             this.pnlBotoes.ResumeLayout(false);
             this.panelManutencao.ResumeLayout(false);
             this.panelManutencao.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.foto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -403,5 +410,6 @@
         private System.Windows.Forms.ComboBox boxTipo;
         private System.Windows.Forms.TextBox textCodigo;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.PictureBox foto;
     }
 }

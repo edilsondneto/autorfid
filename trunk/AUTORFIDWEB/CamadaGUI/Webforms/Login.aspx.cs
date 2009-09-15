@@ -22,7 +22,7 @@ namespace CamadaGUI.Webforms
 
         protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
         {
-            if (this.Login1.UserName.Equals("auto") && this.Login1.Password.Equals("rfid"))
+            if (this.Login1.UserName.Equals("rf") && this.Login1.Password.Equals("id"))
             {
                 Response.Redirect("/webforms/principal.aspx");
             }

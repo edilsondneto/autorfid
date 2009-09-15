@@ -60,6 +60,13 @@ namespace CamadaGui.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap _00000000191 {
+            get {
+                object obj = ResourceManager.GetObject("00000000191", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap document_save {
             get {
                 object obj = ResourceManager.GetObject("document-save", resourceCulture);

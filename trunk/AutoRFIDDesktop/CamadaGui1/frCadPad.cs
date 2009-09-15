@@ -92,10 +92,19 @@ namespace CamadaGui1
                         {
                             if(!ValidaCPF(campo.Text))
                             {
-                                MessageBox.Show("Campo Cpf não pode ser branco!");
+                                MessageBox.Show("Campo Cpf inválido!");
                                 return;
                             }
                         }
+                        else if (((MaskedTextBox)campo).Tag.Equals("3"))
+                        {
+                            if (!ValidaCNPJ(campo.Text))
+                            {
+                                MessageBox.Show("Campo CNPJ inválido!");
+                                return;
+                            }
+                        }
+                                                   
                     }
                 }
             }

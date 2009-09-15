@@ -36,7 +36,6 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblEstado = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.lblNUmero = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -48,6 +47,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblRazãoSocial = new System.Windows.Forms.Label();
             this.lblCnpj = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.pnlBotoes.SuspendLayout();
             this.panelManutencao.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +66,7 @@
             // 
             // panelManutencao
             // 
+            this.panelManutencao.Controls.Add(this.comboBox2);
             this.panelManutencao.Controls.Add(this.maskedTextBox1);
             this.panelManutencao.Controls.Add(this.txtQuantidade);
             this.panelManutencao.Controls.Add(this.lblQuantidade);
@@ -74,7 +75,6 @@
             this.panelManutencao.Controls.Add(this.textBox5);
             this.panelManutencao.Controls.Add(this.lblEmail);
             this.panelManutencao.Controls.Add(this.lblEstado);
-            this.panelManutencao.Controls.Add(this.comboBox1);
             this.panelManutencao.Controls.Add(this.textBox4);
             this.panelManutencao.Controls.Add(this.lblNUmero);
             this.panelManutencao.Controls.Add(this.textBox3);
@@ -90,23 +90,23 @@
             // maskedTextBox1
             // 
             this.maskedTextBox1.Location = new System.Drawing.Point(11, 35);
-            this.maskedTextBox1.Mask = "00.000.000/0000-00";
+            this.maskedTextBox1.Mask = "00,000,000/0000-00";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(111, 20);
             this.maskedTextBox1.TabIndex = 76;
-            this.maskedTextBox1.Tag = "2";
+            this.maskedTextBox1.Tag = "3";
             // 
             // txtQuantidade
             // 
-            this.txtQuantidade.Location = new System.Drawing.Point(555, 88);
+            this.txtQuantidade.Location = new System.Drawing.Point(655, 88);
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(68, 20);
-            this.txtQuantidade.TabIndex = 73;
+            this.txtQuantidade.TabIndex = 85;
             // 
             // lblQuantidade
             // 
             this.lblQuantidade.AutoSize = true;
-            this.lblQuantidade.Location = new System.Drawing.Point(552, 71);
+            this.lblQuantidade.Location = new System.Drawing.Point(652, 71);
             this.lblQuantidade.Name = "lblQuantidade";
             this.lblQuantidade.Size = new System.Drawing.Size(65, 13);
             this.lblQuantidade.TabIndex = 72;
@@ -114,15 +114,15 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(319, 88);
+            this.textBox6.Location = new System.Drawing.Point(426, 88);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(111, 20);
-            this.textBox6.TabIndex = 71;
+            this.textBox6.TabIndex = 83;
             // 
             // lblCep
             // 
             this.lblCep.AutoSize = true;
-            this.lblCep.Location = new System.Drawing.Point(319, 71);
+            this.lblCep.Location = new System.Drawing.Point(426, 71);
             this.lblCep.Name = "lblCep";
             this.lblCep.Size = new System.Drawing.Size(29, 13);
             this.lblCep.TabIndex = 70;
@@ -130,15 +130,15 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(435, 88);
+            this.textBox5.Location = new System.Drawing.Point(546, 88);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(111, 20);
-            this.textBox5.TabIndex = 69;
+            this.textBox5.Size = new System.Drawing.Size(103, 20);
+            this.textBox5.TabIndex = 84;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(432, 71);
+            this.lblEmail.Location = new System.Drawing.Point(543, 71);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(35, 13);
             this.lblEmail.TabIndex = 68;
@@ -147,31 +147,23 @@
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(246, 71);
+            this.lblEstado.Location = new System.Drawing.Point(335, 70);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(43, 13);
             this.lblEstado.TabIndex = 67;
             this.lblEstado.Text = "Estado:";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(248, 87);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(65, 21);
-            this.comboBox1.TabIndex = 66;
-            // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(131, 87);
+            this.textBox4.Location = new System.Drawing.Point(247, 88);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(111, 20);
-            this.textBox4.TabIndex = 65;
+            this.textBox4.Size = new System.Drawing.Size(84, 20);
+            this.textBox4.TabIndex = 81;
             // 
             // lblNUmero
             // 
             this.lblNUmero.AutoSize = true;
-            this.lblNUmero.Location = new System.Drawing.Point(128, 71);
+            this.lblNUmero.Location = new System.Drawing.Point(244, 72);
             this.lblNUmero.Name = "lblNUmero";
             this.lblNUmero.Size = new System.Drawing.Size(47, 13);
             this.lblNUmero.TabIndex = 64;
@@ -181,8 +173,8 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(11, 87);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(111, 20);
-            this.textBox3.TabIndex = 63;
+            this.textBox3.Size = new System.Drawing.Size(230, 20);
+            this.textBox3.TabIndex = 80;
             // 
             // lblCidade
             // 
@@ -197,8 +189,8 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(546, 35);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(111, 20);
-            this.textBox2.TabIndex = 61;
+            this.textBox2.Size = new System.Drawing.Size(177, 20);
+            this.textBox2.TabIndex = 79;
             // 
             // lblBairro
             // 
@@ -214,7 +206,7 @@
             this.txtEndereco.Location = new System.Drawing.Point(337, 35);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(200, 20);
-            this.txtEndereco.TabIndex = 59;
+            this.txtEndereco.TabIndex = 78;
             // 
             // lblEndereco
             // 
@@ -230,7 +222,7 @@
             this.textBox1.Location = new System.Drawing.Point(131, 35);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 57;
+            this.textBox1.TabIndex = 77;
             // 
             // lblRazãoSocial
             // 
@@ -250,6 +242,43 @@
             this.lblCnpj.Size = new System.Drawing.Size(31, 13);
             this.lblCnpj.TabIndex = 55;
             this.lblCnpj.Text = "Cnpj:";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "  ",
+            "AC",
+            "AL",
+            "AM",
+            "AP",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MG",
+            "MS",
+            "MT",
+            "PA",
+            "PB",
+            "PE",
+            "PI",
+            "PR",
+            "RJ",
+            "RN",
+            "RO",
+            "RR",
+            "RS",
+            "SC",
+            "SE",
+            "SP",
+            "TO"});
+            this.comboBox2.Location = new System.Drawing.Point(338, 88);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(82, 21);
+            this.comboBox2.TabIndex = 82;
             // 
             // FrEstabCad
             // 
@@ -274,7 +303,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblEstado;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label lblNUmero;
         private System.Windows.Forms.TextBox textBox3;
@@ -286,5 +314,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblRazãoSocial;
         private System.Windows.Forms.Label lblCnpj;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

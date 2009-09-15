@@ -15,14 +15,25 @@ namespace CamadaGui1
             InitializeComponent();
         }
 
-        private void btPesquisar_Click(object sender, EventArgs e)
+        private void maskedTextBox5_TextChanged(object sender, EventArgs e)
         {
+            (sender as MaskedTextBox).TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
+
+            string cpf = (sender as MaskedTextBox).Text;
+
+            try
+            {
+                foto.Load(@"C:\autorfid\trunk\AutoRFIDDesktop\CamadaGui1\Resources\" + cpf + ".bmp");
+                foto.Visible = true;
+            }
+            catch
+            {
+                foto.Visible = false;
+            }
+                
 
         }
 
-        private void btCancelar_Click(object sender, EventArgs e)
-        {
-            
-        }
+             
     }
 }
