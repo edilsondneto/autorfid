@@ -1,0 +1,5 @@
+C:\autorfid\trunk\AUTORFIDWEB\CamadaFachada\bin\Debug\CamadaFachada.dll
+C:\autorfid\trunk\AUTORFIDWEB\CamadaFachada\bin\Debug\CamadaFachada.pdb
+C:\autorfid\trunk\AUTORFIDWEB\CamadaFachada\obj\Debug\ResolveAssemblyReference.cache
+C:\autorfid\trunk\AUTORFIDWEB\CamadaFachada\obj\Debug\CamadaFachada.dll
+C:\autorfid\trunk\AUTORFIDWEB\CamadaFachada\obj\Debug\CamadaFachada.pdb

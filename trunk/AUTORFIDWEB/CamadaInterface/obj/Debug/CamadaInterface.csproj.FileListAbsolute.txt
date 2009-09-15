@@ -1,0 +1,5 @@
+C:\autorfid\trunk\AUTORFIDWEB\CamadaInterface\bin\Debug\CamadaInterface.dll
+C:\autorfid\trunk\AUTORFIDWEB\CamadaInterface\bin\Debug\CamadaInterface.pdb
+C:\autorfid\trunk\AUTORFIDWEB\CamadaInterface\obj\Debug\ResolveAssemblyReference.cache
+C:\autorfid\trunk\AUTORFIDWEB\CamadaInterface\obj\Debug\CamadaInterface.dll
+C:\autorfid\trunk\AUTORFIDWEB\CamadaInterface\obj\Debug\CamadaInterface.pdb

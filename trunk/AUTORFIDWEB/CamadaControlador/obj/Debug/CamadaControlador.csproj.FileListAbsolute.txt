@@ -1,0 +1,5 @@
+C:\autorfid\trunk\AUTORFIDWEB\CamadaControlador\bin\Debug\CamadaControlador.dll
+C:\autorfid\trunk\AUTORFIDWEB\CamadaControlador\bin\Debug\CamadaControlador.pdb
+C:\autorfid\trunk\AUTORFIDWEB\CamadaControlador\obj\Debug\ResolveAssemblyReference.cache
+C:\autorfid\trunk\AUTORFIDWEB\CamadaControlador\obj\Debug\CamadaControlador.dll
+C:\autorfid\trunk\AUTORFIDWEB\CamadaControlador\obj\Debug\CamadaControlador.pdb
