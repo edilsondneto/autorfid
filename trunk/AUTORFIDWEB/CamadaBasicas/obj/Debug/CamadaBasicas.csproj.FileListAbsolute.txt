@@ -1,0 +1,5 @@
+C:\autorfid\trunk\AUTORFIDWEB\CamadaBasicas\bin\Debug\CamadaBasicas.dll
+C:\autorfid\trunk\AUTORFIDWEB\CamadaBasicas\bin\Debug\CamadaBasicas.pdb
+C:\autorfid\trunk\AUTORFIDWEB\CamadaBasicas\obj\Debug\ResolveAssemblyReference.cache
+C:\autorfid\trunk\AUTORFIDWEB\CamadaBasicas\obj\Debug\CamadaBasicas.dll
+C:\autorfid\trunk\AUTORFIDWEB\CamadaBasicas\obj\Debug\CamadaBasicas.pdb
