@@ -106,6 +106,7 @@
     <Content Include="Content\style.css" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bg_header.jpg" />
     <Content Include="Content\fundodegrade.jpg" />
     <Content Include="Content\imageRfid.jpg" />
     <Content Include="Content\logo.jpg" />

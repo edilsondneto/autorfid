@@ -15,7 +15,7 @@ div.container
 div.logomarca
 {
 	position: relative;
-	background-image: url( '/Content/logo.jpg' );
+	background-image: url( '/Content/bg_header.jpg' );
 	background-repeat: no-repeat;
 	background-color: #3a3e61;
 	height: 113px; /*margin-left: -10px; 	margin-top: -10px; 	text-align: left;*/
@@ -26,7 +26,7 @@ div.menubar
 	position: relative;
 	background-color: #3a3e61;
 	height: 30px;
-	color: White;
+	color: Black;
 }
 
 div.principal
@@ -38,7 +38,8 @@ div.principal
 
 body
 {
-	background: url( "/Content/fundodegrade.jpg" );
+	background-color:Black;
+	/*background: url( "/Content/fundodegrade.jpg" );*/
 }
 
 .menu

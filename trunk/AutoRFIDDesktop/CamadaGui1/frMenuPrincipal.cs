@@ -73,10 +73,31 @@ namespace CamadaGui1
             FrTelaLogin frTelaLogin = new FrTelaLogin();
             frTelaLogin.ShowDialog();
             this.Visible = true;
+         
+            timer1.Interval = 50;
+            timer1.Tick += new EventHandler(this.timer1_Tick);
+            timer1.Enabled = true;
+            this.Opacity = 0;
+
         }
 
         private void MnCadastro_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private bool increase = true;
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (increase)
+                this.Opacity += 0.02D;
+
+            if (this.Opacity == 1)
+            {
+                increase = false;
+                //this.Close();
+            }
 
         }
         

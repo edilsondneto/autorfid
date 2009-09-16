@@ -30,6 +30,10 @@ namespace CamadaGui1
 
         private void frCadPad_Load(object sender, EventArgs e)
         {
+            timer1.Interval = 50;
+            timer1.Tick += new EventHandler(this.timer1_Tick);
+            timer1.Enabled = true;
+            this.Opacity = 0;
 
         }
 
@@ -68,6 +72,8 @@ namespace CamadaGui1
         private void btCancelar_Click(object sender, EventArgs e)
         {
             this.habilita();
+            //limpar campos
+            this.limparCampos();
         }
 
         private void btConfirmar_Click(object sender, EventArgs e)
@@ -112,31 +118,14 @@ namespace CamadaGui1
             this.habilita();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+   
+    
         private void btSair_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+     
         private void btExcluir_Click(object sender, EventArgs e)
         {
             //limpar campos
@@ -292,6 +281,19 @@ namespace CamadaGui1
             catch
             {
                 return false;
+            }
+        }
+
+        private bool increase = true;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (increase)
+                this.Opacity += 0.02D;
+
+            if (this.Opacity == 1)
+            {
+                increase = false;
+                //this.Close();
             }
         }
         

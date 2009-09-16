@@ -110,7 +110,7 @@
             this.MinimizeBox = false;
             this.Name = "FrTelaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrTelaLogin";
+            this.Text = "Entre com seu login";
             this.Load += new System.EventHandler(this.FrTelaLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

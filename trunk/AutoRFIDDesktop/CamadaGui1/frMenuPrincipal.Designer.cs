@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MnCadastro = new System.Windows.Forms.ToolStripMenuItem();
             this.MnEstabCad = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,6 +44,7 @@
             this.MnRelatorios = new System.Windows.Forms.ToolStripMenuItem();
             this.MnRelOcupac = new System.Windows.Forms.ToolStripMenuItem();
             this.MnRelVendas = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -165,6 +167,10 @@
             this.MnRelVendas.Size = new System.Drawing.Size(122, 22);
             this.MnRelVendas.Text = "Vendas";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // frMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,6 +211,7 @@
         private System.Windows.Forms.ToolStripMenuItem MnRelatorios;
         private System.Windows.Forms.ToolStripMenuItem MnRelOcupac;
         private System.Windows.Forms.ToolStripMenuItem MnRelVendas;
+        private System.Windows.Forms.Timer timer1;
 
 
 
