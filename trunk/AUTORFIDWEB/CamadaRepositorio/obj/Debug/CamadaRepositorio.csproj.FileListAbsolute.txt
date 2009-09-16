@@ -3,3 +3,8 @@ C:\autorfid\trunk\AUTORFIDWEB\CamadaRepositorio\bin\Debug\CamadaRepositorio.pdb
 C:\autorfid\trunk\AUTORFIDWEB\CamadaRepositorio\obj\Debug\ResolveAssemblyReference.cache
 C:\autorfid\trunk\AUTORFIDWEB\CamadaRepositorio\obj\Debug\CamadaRepositorio.dll
 C:\autorfid\trunk\AUTORFIDWEB\CamadaRepositorio\obj\Debug\CamadaRepositorio.pdb
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AUTORFIDWEB\CamadaRepositorio\bin\Debug\CamadaRepositorio.dll
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AUTORFIDWEB\CamadaRepositorio\bin\Debug\CamadaRepositorio.pdb
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AUTORFIDWEB\CamadaRepositorio\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AUTORFIDWEB\CamadaRepositorio\obj\Debug\CamadaRepositorio.dll
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AUTORFIDWEB\CamadaRepositorio\obj\Debug\CamadaRepositorio.pdb

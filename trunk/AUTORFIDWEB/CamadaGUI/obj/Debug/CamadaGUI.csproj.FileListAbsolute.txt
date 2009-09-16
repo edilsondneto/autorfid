@@ -3,3 +3,8 @@ C:\autorfid\trunk\AUTORFIDWEB\CamadaGUI\bin\CamadaGUI.pdb
 C:\autorfid\trunk\AUTORFIDWEB\CamadaGUI\obj\Debug\ResolveAssemblyReference.cache
 C:\autorfid\trunk\AUTORFIDWEB\CamadaGUI\obj\Debug\CamadaGUI.dll
 C:\autorfid\trunk\AUTORFIDWEB\CamadaGUI\obj\Debug\CamadaGUI.pdb
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AUTORFIDWEB\CamadaGUI\bin\CamadaGUI.dll
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AUTORFIDWEB\CamadaGUI\bin\CamadaGUI.pdb
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AUTORFIDWEB\CamadaGUI\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AUTORFIDWEB\CamadaGUI\obj\Debug\CamadaGUI.dll
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AUTORFIDWEB\CamadaGUI\obj\Debug\CamadaGUI.pdb

@@ -1,61 +1,53 @@
+body
+{
+	/*background:#13181e;*/
+	background: url( '/Content/degrade.jpg' );
+}
 
 div.container
 {
-	/*position:static; 	width: 740px; 	margin: 0 auto; 	padding: 10px; 	text-align: left; /* "remédio" para o hack do IE */
-	width: 700px;
-	height: 500px;
+	width: 750px;
+	height: 580px;
 	top: 50%;
 	left: 50%;
-	margin-top: -250px;
-	margin-left: -350px;
+	margin-top: -290px;
+	margin-left: -375px;
 	position: absolute;
-	border: 1px solid black;
+}
+
+div.cabecalho
+{
+	position:relative;
+	height: 65px;
+	background:url('/Content/teste1.jpg');
 }
 
 div.logomarca
 {
-	position: relative;
-	background-image: url( '/Content/bg_header.jpg' );
-	background-repeat: no-repeat;
-	background-color: #3a3e61;
-	height: 113px; /*margin-left: -10px; 	margin-top: -10px; 	text-align: left;*/
+	position:relative;
+	height: 130px;
+	background: url('/Content/imgcarro.jpg');
 }
 
 div.menubar
 {
-	position: relative;
-	background-color: #3a3e61;
-	height: 30px;
-	color: Black;
+	position:relative;
+	height:30px;
+	background: url('/Content/menudegrade.jpg');
 }
 
 div.principal
 {
-	position: relative;
-	background-color: #ece9d8;
-	height: 355px;
+	position:relative;
+	height:350px;
+	background:#f4f6fa;
 }
-
-body
-{
-	background-color:Black;
-	/*background: url( "/Content/fundodegrade.jpg" );*/
-}
-
-.menu
-{
-	padding-right: 10px;
-	background-color: #3a3e61;
-	height: 30px;
-	color: White;
-}
-
 
 div.login
 {
-	position:relative;
+	position: relative;
 	top: 30%;
-	margin-left:250px;
+	margin-left: 275px;
 }
 
 div.cad
@@ -65,13 +57,13 @@ div.cad
 
 .principal p
 {
-	text-indent:50px;
-	margin-left:15px;
-	margin-right:15px;
-	text-align:justify;
+	text-indent: 50px;
+	margin-left: 15px;
+	margin-right: 15px;
+	text-align: justify;
 }
 
 table.contato
 {
-	margin-left:220px;
+	margin-left: 220px;
 }
