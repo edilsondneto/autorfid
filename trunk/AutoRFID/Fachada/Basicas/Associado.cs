@@ -9,6 +9,7 @@ namespace Fachada.Basicas
     {
         private int idAssociado;
         private string cpf_cnpj;
+        private string NOME_RAZAOSOCIAL;
 
         public Associado()
         {
