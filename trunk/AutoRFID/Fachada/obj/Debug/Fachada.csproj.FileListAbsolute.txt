@@ -1,0 +1,6 @@
+C:\autorfid\trunk\AutoRFID\Fachada\bin\Debug\Fachada.dll.config
+C:\autorfid\trunk\AutoRFID\Fachada\bin\Debug\Fachada.dll
+C:\autorfid\trunk\AutoRFID\Fachada\bin\Debug\Fachada.pdb
+C:\autorfid\trunk\AutoRFID\Fachada\obj\Debug\ResolveAssemblyReference.cache
+C:\autorfid\trunk\AutoRFID\Fachada\obj\Debug\Fachada.dll
+C:\autorfid\trunk\AutoRFID\Fachada\obj\Debug\Fachada.pdb

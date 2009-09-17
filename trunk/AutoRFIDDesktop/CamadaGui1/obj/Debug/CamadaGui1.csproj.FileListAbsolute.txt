@@ -1,8 +1,0 @@
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\bin\Debug\CamadaGui1.exe
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\bin\Debug\CamadaGui1.pdb
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\ResolveAssemblyReference.cache
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.Form1.resources
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.Properties.Resources.resources
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.csproj.GenerateResource.Cache
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.exe
-C:\Unibratec\Sexto periodo\Projeto\AutoRFIDDesktop\CamadaGui1\obj\Debug\CamadaGui1.pdb

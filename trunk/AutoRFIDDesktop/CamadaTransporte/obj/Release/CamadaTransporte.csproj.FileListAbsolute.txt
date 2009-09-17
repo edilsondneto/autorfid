@@ -1,5 +1,0 @@
-C:\autorfid\trunk\AutoRFIDDesktop\CamadaTransporte\bin\Release\CamadaTransporte.dll
-C:\autorfid\trunk\AutoRFIDDesktop\CamadaTransporte\bin\Release\CamadaTransporte.pdb
-C:\autorfid\trunk\AutoRFIDDesktop\CamadaTransporte\obj\Release\ResolveAssemblyReference.cache
-C:\autorfid\trunk\AutoRFIDDesktop\CamadaTransporte\obj\Release\CamadaTransporte.dll
-C:\autorfid\trunk\AutoRFIDDesktop\CamadaTransporte\obj\Release\CamadaTransporte.pdb
