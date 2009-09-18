@@ -31,7 +31,6 @@
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.txtQuantidade = new System.Windows.Forms.TextBox();
             this.lblQuantidade = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.lblCep = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -47,7 +46,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblRazãoSocial = new System.Windows.Forms.Label();
             this.lblCnpj = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pnlBotoes.SuspendLayout();
             this.panelManutencao.SuspendLayout();
             this.SuspendLayout();
@@ -66,11 +66,11 @@
             // 
             // panelManutencao
             // 
-            this.panelManutencao.Controls.Add(this.comboBox2);
+            this.panelManutencao.Controls.Add(this.maskedTextBox2);
+            this.panelManutencao.Controls.Add(this.comboBox1);
             this.panelManutencao.Controls.Add(this.maskedTextBox1);
             this.panelManutencao.Controls.Add(this.txtQuantidade);
             this.panelManutencao.Controls.Add(this.lblQuantidade);
-            this.panelManutencao.Controls.Add(this.textBox6);
             this.panelManutencao.Controls.Add(this.lblCep);
             this.panelManutencao.Controls.Add(this.textBox5);
             this.panelManutencao.Controls.Add(this.lblEmail);
@@ -112,17 +112,10 @@
             this.lblQuantidade.TabIndex = 72;
             this.lblQuantidade.Text = "Quantidade:";
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(426, 88);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(111, 20);
-            this.textBox6.TabIndex = 83;
-            // 
             // lblCep
             // 
             this.lblCep.AutoSize = true;
-            this.lblCep.Location = new System.Drawing.Point(426, 71);
+            this.lblCep.Location = new System.Drawing.Point(393, 70);
             this.lblCep.Name = "lblCep";
             this.lblCep.Size = new System.Drawing.Size(29, 13);
             this.lblCep.TabIndex = 70;
@@ -130,15 +123,15 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(546, 88);
+            this.textBox5.Location = new System.Drawing.Point(475, 89);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(103, 20);
+            this.textBox5.Size = new System.Drawing.Size(174, 20);
             this.textBox5.TabIndex = 84;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(543, 71);
+            this.lblEmail.Location = new System.Drawing.Point(472, 72);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(35, 13);
             this.lblEmail.TabIndex = 68;
@@ -243,10 +236,19 @@
             this.lblCnpj.TabIndex = 55;
             this.lblCnpj.Text = "Cnpj:";
             // 
-            // comboBox2
+            // maskedTextBox2
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.maskedTextBox2.Location = new System.Drawing.Point(396, 89);
+            this.maskedTextBox2.Mask = "00000-999";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(73, 20);
+            this.maskedTextBox2.TabIndex = 87;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
             "  ",
             "AC",
             "AL",
@@ -275,10 +277,11 @@
             "SE",
             "SP",
             "TO"});
-            this.comboBox2.Location = new System.Drawing.Point(338, 88);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(82, 21);
-            this.comboBox2.TabIndex = 82;
+            this.comboBox1.Location = new System.Drawing.Point(337, 88);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(53, 21);
+            this.comboBox1.Sorted = true;
+            this.comboBox1.TabIndex = 86;
             // 
             // FrEstabCad
             // 
@@ -298,7 +301,6 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.TextBox txtQuantidade;
         private System.Windows.Forms.Label lblQuantidade;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label lblCep;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label lblEmail;
@@ -314,6 +316,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblRazãoSocial;
         private System.Windows.Forms.Label lblCnpj;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

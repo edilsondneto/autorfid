@@ -88,6 +88,13 @@ namespace AutoRFID_Desktop.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Login_Manager {
+            get {
+                object obj = ResourceManager.GetObject("Login Manager", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap mail_mark_not_junk {
             get {
                 object obj = ResourceManager.GetObject("mail-mark-not-junk", resourceCulture);

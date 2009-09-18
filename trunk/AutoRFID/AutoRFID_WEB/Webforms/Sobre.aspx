@@ -1,11 +1,10 @@
-﻿<%@ Page Language="C#" MasterPageFile="principal.Master" AutoEventWireup="true"
-    CodeBehind="Sobre.aspx.cs" Inherits="CamadaGUI.Webforms.Sobre" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="Master.Master" AutoEventWireup="true"
+    CodeBehind="Sobre.aspx.cs" Inherits="AutoRFID_WEB.Webforms.Sobre" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="principal">
-        <body>
             <br />
             <center>COMO FUNCIONA?</center>
             <p class="principal">
@@ -20,6 +19,5 @@
             </p>
             <center><asp:Image ID="Image1" runat="server" ImageUrl="~/Content/imageRfid.jpg" Width="350"
                 Height="150" /></center>
-        </body>
     </div>
 </asp:Content>

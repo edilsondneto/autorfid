@@ -1,5 +1,5 @@
-﻿<%@ Page Language="C#" MasterPageFile="principal.Master" AutoEventWireup="true"
-    CodeBehind="Contato.aspx.cs" Inherits="CamadaGUI.Webforms.Contato" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="Master.Master" AutoEventWireup="true"
+    CodeBehind="Contato.aspx.cs" Inherits="AutoRFID_WEB.Webforms.Contato" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

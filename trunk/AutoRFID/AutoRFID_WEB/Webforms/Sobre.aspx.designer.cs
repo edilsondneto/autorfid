@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CamadaGUI.Webforms {
+namespace AutoRFID_WEB.Webforms {
     
     
     public partial class Sobre {

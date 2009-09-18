@@ -220,6 +220,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\00000000191.bmp" />
+    <None Include="Resources\Login Manager.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Fachada\Fachada.csproj">

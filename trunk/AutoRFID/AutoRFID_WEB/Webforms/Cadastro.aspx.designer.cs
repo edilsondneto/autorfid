@@ -8,8 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AutoRFID_WEB.Webforms
-{
+namespace AutoRFID_WEB.Webforms {
     
     
     public partial class Cadastro {

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="principal.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="AutoRFID_WEB.Webforms.Login" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="Master.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="AutoRFID_WEB.Webforms.Login" Title="Untitled Page" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
