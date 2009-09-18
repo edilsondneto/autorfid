@@ -65,7 +65,7 @@
             // btSair
             // 
             this.btSair.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btSair.Image = global::CamadaGui.Properties.Resources.format_indent_less;
+            this.btSair.Image = global::AutoRFID_Desktop.Properties.Resources.format_indent_less;
             resources.ApplyResources(this.btSair, "btSair");
             this.btSair.Name = "btSair";
             this.btSair.UseVisualStyleBackColor = true;
@@ -75,7 +75,7 @@
             // 
             this.btConfirmar.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.btConfirmar, "btConfirmar");
-            this.btConfirmar.Image = global::CamadaGui.Properties.Resources.document_save;
+            this.btConfirmar.Image = global::AutoRFID_Desktop.Properties.Resources.document_save;
             this.btConfirmar.Name = "btConfirmar";
             this.btConfirmar.UseVisualStyleBackColor = true;
             this.btConfirmar.Click += new System.EventHandler(this.btConfirmar_Click);
@@ -83,7 +83,7 @@
             // btPesquisar
             // 
             this.btPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btPesquisar.Image = global::CamadaGui.Properties.Resources.system_search;
+            this.btPesquisar.Image = global::AutoRFID_Desktop.Properties.Resources.system_search;
             resources.ApplyResources(this.btPesquisar, "btPesquisar");
             this.btPesquisar.Name = "btPesquisar";
             this.btPesquisar.UseVisualStyleBackColor = true;
@@ -93,7 +93,7 @@
             // 
             this.btCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.btCancelar, "btCancelar");
-            this.btCancelar.Image = global::CamadaGui.Properties.Resources.view_refresh;
+            this.btCancelar.Image = global::AutoRFID_Desktop.Properties.Resources.view_refresh;
             this.btCancelar.Name = "btCancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
             this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
@@ -101,7 +101,7 @@
             // btExcluir
             // 
             this.btExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btExcluir.Image = global::CamadaGui.Properties.Resources.mail_mark_not_junk;
+            this.btExcluir.Image = global::AutoRFID_Desktop.Properties.Resources.mail_mark_not_junk;
             resources.ApplyResources(this.btExcluir, "btExcluir");
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.UseVisualStyleBackColor = true;
@@ -118,7 +118,7 @@
             // btAlterar
             // 
             this.btAlterar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btAlterar.Image = global::CamadaGui.Properties.Resources.format_justify_right;
+            this.btAlterar.Image = global::AutoRFID_Desktop.Properties.Resources.format_justify_right;
             resources.ApplyResources(this.btAlterar, "btAlterar");
             this.btAlterar.Name = "btAlterar";
             this.btAlterar.UseVisualStyleBackColor = true;
