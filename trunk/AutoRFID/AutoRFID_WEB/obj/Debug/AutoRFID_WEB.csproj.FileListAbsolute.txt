@@ -1,0 +1,7 @@
+C:\autorfid\trunk\AutoRFID\AutoRFID_WEB\bin\CamadaGUI.dll
+C:\autorfid\trunk\AutoRFID\AutoRFID_WEB\bin\CamadaGUI.pdb
+C:\autorfid\trunk\AutoRFID\AutoRFID_WEB\bin\Fachada.dll
+C:\autorfid\trunk\AutoRFID\AutoRFID_WEB\bin\Fachada.pdb
+C:\autorfid\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\ResolveAssemblyReference.cache
+C:\autorfid\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\CamadaGUI.dll
+C:\autorfid\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\CamadaGUI.pdb
