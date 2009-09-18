@@ -17,3 +17,4 @@ C:\autorfid\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.Propertie
 C:\autorfid\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.csproj.GenerateResource.Cache
 C:\autorfid\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.exe
 C:\autorfid\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.pdb
+C:\autorfid\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrSobreAutoRFID.resources

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{94B9034F-12D3-4036-B300-111CB2159FBB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -27,6 +27,7 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <StartupObject>AutoRFID_Desktop.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -99,6 +100,12 @@
     <Compile Include="frMenuPrincipal.Designer.cs">
       <DependentUpon>frMenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frSobreAutoRFID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frSobreAutoRFID.Designer.cs">
+      <DependentUpon>frSobreAutoRFID.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrTelaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +151,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frMenuPrincipal.resx">
       <DependentUpon>frMenuPrincipal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frSobreAutoRFID.resx">
+      <DependentUpon>frSobreAutoRFID.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrTelaLogin.resx">
@@ -220,6 +231,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\00000000191.bmp" />
+    <None Include="Resources\rfid-tag1.jpg" />
+    <None Include="Resources\logo.jpg" />
+    <None Include="Resources\rfid-tag.jpg" />
     <None Include="Resources\Login Manager.png" />
   </ItemGroup>
   <ItemGroup>
