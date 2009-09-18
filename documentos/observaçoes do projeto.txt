@@ -1,0 +1,17 @@
+Solicitação de Correções do Projeto pelo Product Owner
+=======================================================
+Data: 15-09-2009
+
+- Adcionar icone no dial de login.
+- Colocar o menu sobre
+- colocar o nome dos forms.
+- Diminuir o time de abertura das telas.
+- colocar ready only no combobox.
+- colocar máscara no cep.
+- colocar expressão regular no emial (regex)
+- colocar picturebox dentro de um groupbox na foto.
+- aumentar largura da tela web
+- Trocar o fundo da tela web 
+- centralizar o pré-cadastro da web
+- procurar mais templates para melhorar o visual da web
+- centralizar o botão do pré-cadastro da web.
