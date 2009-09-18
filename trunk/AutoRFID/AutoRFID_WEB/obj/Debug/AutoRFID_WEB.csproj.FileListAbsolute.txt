@@ -1,0 +1,7 @@
+C:\autorfid\trunk\AutoRFID\AutoRFID_WEB\bin\AutoRFID_WEB.dll
+C:\autorfid\trunk\AutoRFID\AutoRFID_WEB\bin\AutoRFID_WEB.pdb
+C:\autorfid\trunk\AutoRFID\AutoRFID_WEB\bin\Fachada.dll
+C:\autorfid\trunk\AutoRFID\AutoRFID_WEB\bin\Fachada.pdb
+C:\autorfid\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\ResolveAssemblyReference.cache
+C:\autorfid\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.dll
+C:\autorfid\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.pdb
