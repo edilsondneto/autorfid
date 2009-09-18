@@ -44,6 +44,8 @@
             this.MnRelatorios = new System.Windows.Forms.ToolStripMenuItem();
             this.MnRelOcupac = new System.Windows.Forms.ToolStripMenuItem();
             this.MnRelVendas = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreAutoRFIDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +55,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MnCadastro,
             this.MnMovimentacao,
-            this.MnRelatorios});
+            this.MnRelatorios,
+            this.ajudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(723, 24);
@@ -69,21 +72,21 @@
             this.MnEtiqCad,
             this.MnAssocCad});
             this.MnCadastro.Name = "MnCadastro";
-            this.MnCadastro.Size = new System.Drawing.Size(63, 20);
+            this.MnCadastro.Size = new System.Drawing.Size(66, 20);
             this.MnCadastro.Text = "Cadastro";
             this.MnCadastro.Click += new System.EventHandler(this.MnCadastro_Click);
             // 
             // MnEstabCad
             // 
             this.MnEstabCad.Name = "MnEstabCad";
-            this.MnEstabCad.Size = new System.Drawing.Size(157, 22);
+            this.MnEstabCad.Size = new System.Drawing.Size(166, 22);
             this.MnEstabCad.Text = "Estabelecimentos";
             this.MnEstabCad.Click += new System.EventHandler(this.MnEstabCad_Click);
             // 
             // MnFuncCad
             // 
             this.MnFuncCad.Name = "MnFuncCad";
-            this.MnFuncCad.Size = new System.Drawing.Size(157, 22);
+            this.MnFuncCad.Size = new System.Drawing.Size(166, 22);
             this.MnFuncCad.Text = "Funcionários";
             this.MnFuncCad.Click += new System.EventHandler(this.MnFuncCad_Click);
             // 
@@ -93,34 +96,34 @@
             this.MnTpFuncCad,
             this.MnTpPagCad});
             this.MnTipos.Name = "MnTipos";
-            this.MnTipos.Size = new System.Drawing.Size(157, 22);
+            this.MnTipos.Size = new System.Drawing.Size(166, 22);
             this.MnTipos.Text = "Tipos";
             // 
             // MnTpFuncCad
             // 
             this.MnTpFuncCad.Name = "MnTpFuncCad";
-            this.MnTpFuncCad.Size = new System.Drawing.Size(134, 22);
+            this.MnTpFuncCad.Size = new System.Drawing.Size(142, 22);
             this.MnTpFuncCad.Text = "Funcionários";
             this.MnTpFuncCad.Click += new System.EventHandler(this.MnTpFuncCad_Click);
             // 
             // MnTpPagCad
             // 
             this.MnTpPagCad.Name = "MnTpPagCad";
-            this.MnTpPagCad.Size = new System.Drawing.Size(134, 22);
+            this.MnTpPagCad.Size = new System.Drawing.Size(142, 22);
             this.MnTpPagCad.Text = "Pagamentos";
             this.MnTpPagCad.Click += new System.EventHandler(this.MnTpPagCad_Click);
             // 
             // MnEtiqCad
             // 
             this.MnEtiqCad.Name = "MnEtiqCad";
-            this.MnEtiqCad.Size = new System.Drawing.Size(157, 22);
+            this.MnEtiqCad.Size = new System.Drawing.Size(166, 22);
             this.MnEtiqCad.Text = "Etiquetas";
             this.MnEtiqCad.Click += new System.EventHandler(this.MnEtiqCad_Click);
             // 
             // MnAssocCad
             // 
             this.MnAssocCad.Name = "MnAssocCad";
-            this.MnAssocCad.Size = new System.Drawing.Size(157, 22);
+            this.MnAssocCad.Size = new System.Drawing.Size(166, 22);
             this.MnAssocCad.Text = "Associado";
             this.MnAssocCad.Click += new System.EventHandler(this.MnAssocCad_Click);
             // 
@@ -130,20 +133,20 @@
             this.MnMovVenda,
             this.MnMovBaixaTik});
             this.MnMovimentacao.Name = "MnMovimentacao";
-            this.MnMovimentacao.Size = new System.Drawing.Size(88, 20);
+            this.MnMovimentacao.Size = new System.Drawing.Size(99, 20);
             this.MnMovimentacao.Text = "Movimentação";
             // 
             // MnMovVenda
             // 
             this.MnMovVenda.Name = "MnMovVenda";
-            this.MnMovVenda.Size = new System.Drawing.Size(162, 22);
+            this.MnMovVenda.Size = new System.Drawing.Size(170, 22);
             this.MnMovVenda.Text = "Venda de Créditos";
             this.MnMovVenda.Click += new System.EventHandler(this.MnMovVenda_Click);
             // 
             // MnMovBaixaTik
             // 
             this.MnMovBaixaTik.Name = "MnMovBaixaTik";
-            this.MnMovBaixaTik.Size = new System.Drawing.Size(162, 22);
+            this.MnMovBaixaTik.Size = new System.Drawing.Size(170, 22);
             this.MnMovBaixaTik.Text = "Baixa de Tiket";
             // 
             // MnRelatorios
@@ -152,20 +155,35 @@
             this.MnRelOcupac,
             this.MnRelVendas});
             this.MnRelatorios.Name = "MnRelatorios";
-            this.MnRelatorios.Size = new System.Drawing.Size(67, 20);
+            this.MnRelatorios.Size = new System.Drawing.Size(71, 20);
             this.MnRelatorios.Text = "Relatórios";
             // 
             // MnRelOcupac
             // 
             this.MnRelOcupac.Name = "MnRelOcupac";
-            this.MnRelOcupac.Size = new System.Drawing.Size(122, 22);
+            this.MnRelOcupac.Size = new System.Drawing.Size(128, 22);
             this.MnRelOcupac.Text = "Ocupação";
             // 
             // MnRelVendas
             // 
             this.MnRelVendas.Name = "MnRelVendas";
-            this.MnRelVendas.Size = new System.Drawing.Size(122, 22);
+            this.MnRelVendas.Size = new System.Drawing.Size(128, 22);
             this.MnRelVendas.Text = "Vendas";
+            // 
+            // ajudaToolStripMenuItem
+            // 
+            this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sobreAutoRFIDToolStripMenuItem});
+            this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
+            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.ajudaToolStripMenuItem.Text = "Ajuda";
+            // 
+            // sobreAutoRFIDToolStripMenuItem
+            // 
+            this.sobreAutoRFIDToolStripMenuItem.Name = "sobreAutoRFIDToolStripMenuItem";
+            this.sobreAutoRFIDToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.sobreAutoRFIDToolStripMenuItem.Text = "Sobre AutoRFID";
+            this.sobreAutoRFIDToolStripMenuItem.Click += new System.EventHandler(this.sobreAutoRFIDToolStripMenuItem_Click);
             // 
             // timer1
             // 
@@ -212,6 +230,8 @@
         private System.Windows.Forms.ToolStripMenuItem MnRelOcupac;
         private System.Windows.Forms.ToolStripMenuItem MnRelVendas;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sobreAutoRFIDToolStripMenuItem;
 
 
 

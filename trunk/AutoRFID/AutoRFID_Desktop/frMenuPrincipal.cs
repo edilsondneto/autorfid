@@ -100,6 +100,12 @@ namespace AutoRFID_Desktop
             }
 
         }
+
+        private void sobreAutoRFIDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrSobreAutoRFID frSobre = new FrSobreAutoRFID();
+            frSobre.ShowDialog();
+        }
         
 
 
