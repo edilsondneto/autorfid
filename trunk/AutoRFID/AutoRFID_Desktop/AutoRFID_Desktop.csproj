@@ -8,12 +8,12 @@
     <ProjectGuid>{94B9034F-12D3-4036-B300-111CB2159FBB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CamadaGui</RootNamespace>
-    <AssemblyName>CamadaGui</AssemblyName>
+    <RootNamespace>AutoRFID_Desktop</RootNamespace>
+    <AssemblyName>AutoRFID_Desktop</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>http://localhost/CamadaGui/</PublishUrl>
+    <PublishUrl>http://localhost/AutoRFID_Desktop/</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
