@@ -6,9 +6,9 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CamadaGui1
+namespace AutoRFID_Desktop
 {
-    public partial class FrTpFuncCad : CamadaGui1.frCadPad
+    public partial class FrTpFuncCad : AutoRFID_Desktop.frCadPad
     {
         public FrTpFuncCad()
         {

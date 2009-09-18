@@ -1,4 +1,4 @@
-﻿namespace CamadaGui
+﻿namespace AutoRFID_Desktop
 {
     partial class FrAssocCad
     {

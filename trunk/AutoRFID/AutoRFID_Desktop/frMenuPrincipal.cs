@@ -6,9 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using CamadaGUI.Login;
 
-namespace CamadaGui1
+
+namespace AutoRFID_Desktop
 {
     public partial class frMenuPrincipal : Form
     {
@@ -55,7 +55,7 @@ namespace CamadaGui1
 
         private void MnAssocCad_Click(object sender, EventArgs e)
         {
-            CamadaGui.FrAssocCad frAssocCad = new CamadaGui.FrAssocCad();
+            FrAssocCad frAssocCad = new FrAssocCad();
             //frAssocCad.MdiParent = this;
             frAssocCad.ShowDialog();
         }

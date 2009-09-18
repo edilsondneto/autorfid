@@ -1,4 +1,4 @@
-﻿namespace CamadaGUI.Login
+﻿namespace AutoRFID_Desktop
 {
     partial class FrTelaLogin
     {

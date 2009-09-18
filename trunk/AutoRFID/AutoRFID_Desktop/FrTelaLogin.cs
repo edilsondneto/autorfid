@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using Fachada;
 
-namespace CamadaGUI.Login
+namespace AutoRFID_Desktop
 {
     public partial class FrTelaLogin : Form
     {

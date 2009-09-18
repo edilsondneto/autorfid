@@ -1,4 +1,4 @@
-﻿namespace CamadaGui1
+﻿namespace AutoRFID_Desktop
 {
     partial class FrFuncCad
     {
