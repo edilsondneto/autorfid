@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94B9034F-12D3-4036-B300-111CB2159FBB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoRFID_Desktop</RootNamespace>
+    <AssemblyName>AutoRFID_Desktop</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/AutoRFID_Desktop/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrAssocCad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrAssocCad.Designer.cs">
+      <DependentUpon>FrAssocCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frCadPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frCadPad.Designer.cs">
+      <DependentUpon>frCadPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrEstabCad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrEstabCad.Designer.cs">
+      <DependentUpon>FrEstabCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrEtiqCad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrEtiqCad.Designer.cs">
+      <DependentUpon>FrEtiqCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrFuncCad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrFuncCad.Designer.cs">
+      <DependentUpon>FrFuncCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frMenuPrincipal.Designer.cs">
+      <DependentUpon>frMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrTelaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrTelaLogin.designer.cs">
+      <DependentUpon>FrTelaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrTpFuncCad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrTpFuncCad.Designer.cs">
+      <DependentUpon>FrTpFuncCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrTpPagCad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrTpPagCad.Designer.cs">
+      <DependentUpon>FrTpPagCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrVenda.Designer.cs">
+      <DependentUpon>FrVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrAssocCad.resx">
+      <DependentUpon>FrAssocCad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frCadPad.resx">
+      <DependentUpon>frCadPad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrEstabCad.resx">
+      <DependentUpon>FrEstabCad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrEtiqCad.resx">
+      <DependentUpon>FrEtiqCad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrFuncCad.resx">
+      <DependentUpon>FrFuncCad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frMenuPrincipal.resx">
+      <DependentUpon>frMenuPrincipal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrTelaLogin.resx">
+      <DependentUpon>FrTelaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrTpFuncCad.resx">
+      <DependentUpon>FrTpFuncCad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrTpPagCad.resx">
+      <DependentUpon>FrTpPagCad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrVenda.resx">
+      <DependentUpon>FrVenda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RFID.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\00000000191.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fachada\Fachada.csproj">
+      <Project>{CF12D5AC-78D9-4244-8F40-EFF52F5A3246}</Project>
+      <Name>Fachada</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
