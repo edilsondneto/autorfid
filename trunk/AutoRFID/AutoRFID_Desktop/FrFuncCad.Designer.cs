@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.foto = new System.Windows.Forms.PictureBox();
             this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
@@ -55,8 +54,11 @@
             this.boxTipo = new System.Windows.Forms.ComboBox();
             this.textCodigo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.gpbFoto = new System.Windows.Forms.GroupBox();
+            this.foto = new System.Windows.Forms.PictureBox();
             this.pnlBotoes.SuspendLayout();
             this.panelManutencao.SuspendLayout();
+            this.gpbFoto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +73,7 @@
             // 
             // panelManutencao
             // 
-            this.panelManutencao.Controls.Add(this.foto);
+            this.panelManutencao.Controls.Add(this.gpbFoto);
             this.panelManutencao.Controls.Add(this.maskedTextBox5);
             this.panelManutencao.Controls.Add(this.maskedTextBox4);
             this.panelManutencao.Controls.Add(this.maskedTextBox3);
@@ -101,15 +103,6 @@
             this.panelManutencao.Location = new System.Drawing.Point(3, 6);
             this.panelManutencao.Size = new System.Drawing.Size(738, 240);
             this.panelManutencao.TabIndex = 1;
-            // 
-            // foto
-            // 
-            this.foto.Location = new System.Drawing.Point(633, 6);
-            this.foto.Name = "foto";
-            this.foto.Size = new System.Drawing.Size(105, 122);
-            this.foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.foto.TabIndex = 101;
-            this.foto.TabStop = false;
             // 
             // maskedTextBox5
             // 
@@ -368,6 +361,26 @@
             this.label2.TabIndex = 75;
             this.label2.Text = "Código *";
             // 
+            // gpbFoto
+            // 
+            this.gpbFoto.Controls.Add(this.foto);
+            this.gpbFoto.Location = new System.Drawing.Point(638, 19);
+            this.gpbFoto.Name = "gpbFoto";
+            this.gpbFoto.Size = new System.Drawing.Size(94, 132);
+            this.gpbFoto.TabIndex = 96;
+            this.gpbFoto.TabStop = false;
+            this.gpbFoto.Text = "Foto";
+            // 
+            // foto
+            // 
+            this.foto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.foto.Location = new System.Drawing.Point(3, 16);
+            this.foto.Name = "foto";
+            this.foto.Size = new System.Drawing.Size(88, 113);
+            this.foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.foto.TabIndex = 102;
+            this.foto.TabStop = false;
+            // 
             // FrFuncCad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -377,6 +390,7 @@
             this.pnlBotoes.ResumeLayout(false);
             this.panelManutencao.ResumeLayout(false);
             this.panelManutencao.PerformLayout();
+            this.gpbFoto.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.foto)).EndInit();
             this.ResumeLayout(false);
 
@@ -410,6 +424,7 @@
         private System.Windows.Forms.ComboBox boxTipo;
         private System.Windows.Forms.TextBox textCodigo;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox gpbFoto;
         public System.Windows.Forms.PictureBox foto;
     }
 }
