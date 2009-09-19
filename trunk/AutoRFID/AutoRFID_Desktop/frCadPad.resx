@@ -285,8 +285,8 @@
   <data name="btIncluir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0gAA
-        DdIBb5L+jgAAAoBJREFUOE+Nkd1PUmEcxw823brpj2m+1FXdtLC8YQVqJ+MKaa5x40Viy1bNzWqrTZNS
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0QAA
+        DdEBwivf4wAAAoBJREFUOE+Nkd1PUmEcxw823brpj2m+1FXdtLC8YQVqJ+MKaa5x40Viy1bNzWqrTZNS
         TEM5pyBGpCu05pQlc1yYxIsKgiKKvDmr1UJA+PY8j9PpVunZPjvPznl+n9+bhOd5bv+TL2S3JBLJMQDk
         JWG/SkpK2Lm0tDTw+9fWmbKysvReTGtr64BWq93YRVF3GZlMBtlsFrlcDvl8nrG9vY3BoUHwV+tWSNIT
         NDFL3tLS8t3lcmF6ehpTU1OQ115CMBiE1+tleDwezM7OYmZmBsViEV1dnUX+2hWfXC4/zgTNzc3fnE4n
@@ -447,14 +447,17 @@
   <data name="&gt;&gt;panelConsulta.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="panelManutencao.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="panelManutencao.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="panelManutencao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 5</value>
+    <value>0, 0</value>
   </data>
   <data name="panelManutencao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>732, 237</value>
+    <value>744, 278</value>
   </data>
   <data name="panelManutencao.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>

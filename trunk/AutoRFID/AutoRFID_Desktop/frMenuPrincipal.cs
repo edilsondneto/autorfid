@@ -77,7 +77,7 @@ namespace AutoRFID_Desktop
             timer1.Interval = 50;
             timer1.Tick += new EventHandler(this.timer1_Tick);
             timer1.Enabled = true;
-            this.Opacity = 0;
+            this.Opacity = 0.3;
 
         }
 
@@ -91,7 +91,7 @@ namespace AutoRFID_Desktop
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (increase)
-                this.Opacity += 0.02D;
+                this.Opacity += 0.05D;
 
             if (this.Opacity == 1)
             {
@@ -106,10 +106,5 @@ namespace AutoRFID_Desktop
             FrSobreAutoRFID frSobre = new FrSobreAutoRFID();
             frSobre.ShowDialog();
         }
-        
-
-
-
- 
     }
 }

@@ -46,9 +46,12 @@ namespace AutoRFID_Desktop
 
         private void btLogar_Click(object sender, EventArgs e)
         {
-            if (f_validaCampos()) 
+            if (f_validaCampos())
             {
-                this.Close();
+                timer1.Interval = 50;
+                timer1.Tick += new EventHandler(this.timer1_Tick);
+                timer1.Enabled = true;
+                this.Opacity = 100;
             }
         }
 
@@ -71,6 +74,18 @@ namespace AutoRFID_Desktop
         private void FrTelaLogin_Load(object sender, EventArgs e)
         {
 
+        }
+        private bool increase = true;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (increase)
+                this.Opacity -= 0.05D;
+
+            if (this.Opacity == 0)
+            {
+                increase = false;
+                this.Close();
+            }
         }    
     }
 

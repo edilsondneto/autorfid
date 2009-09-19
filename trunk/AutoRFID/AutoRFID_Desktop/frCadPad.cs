@@ -33,7 +33,7 @@ namespace AutoRFID_Desktop
             timer1.Interval = 50;
             timer1.Tick += new EventHandler(this.timer1_Tick);
             timer1.Enabled = true;
-            this.Opacity = 0;
+            this.Opacity = 0.3;
 
         }
 

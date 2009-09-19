@@ -289,6 +289,7 @@
             this.ClientSize = new System.Drawing.Size(745, 278);
             this.Name = "FrEstabCad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Manutenção de Estabelecimento ";
             this.pnlBotoes.ResumeLayout(false);
             this.panelManutencao.ResumeLayout(false);
             this.panelManutencao.PerformLayout();

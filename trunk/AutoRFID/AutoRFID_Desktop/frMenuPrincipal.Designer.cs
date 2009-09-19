@@ -201,6 +201,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frMenuPrincipal";
+            this.Opacity = 0;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu AutoRFID";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

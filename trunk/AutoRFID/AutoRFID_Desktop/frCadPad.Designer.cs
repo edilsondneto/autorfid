@@ -65,6 +65,7 @@
             // btSair
             // 
             this.btSair.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btSair.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btSair.Image = global::AutoRFID_Desktop.Properties.Resources.format_indent_less;
             resources.ApplyResources(this.btSair, "btSair");
             this.btSair.Name = "btSair";
@@ -165,6 +166,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btSair;
             this.Controls.Add(this.pnlBotoes);
             this.Controls.Add(this.panelManutencao);
             this.Controls.Add(this.panelConsulta);
