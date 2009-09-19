@@ -134,6 +134,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrAssocCad.resx">
       <DependentUpon>FrAssocCad.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frCadPad.resx">
       <DependentUpon>frCadPad.cs</DependentUpon>
@@ -145,9 +146,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrEtiqCad.resx">
       <DependentUpon>FrEtiqCad.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrFuncCad.resx">
       <DependentUpon>FrFuncCad.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frMenuPrincipal.resx">
       <DependentUpon>frMenuPrincipal.cs</DependentUpon>
@@ -159,9 +162,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrTelaLogin.resx">
       <DependentUpon>FrTelaLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrTpFuncCad.resx">
       <DependentUpon>FrTpFuncCad.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrTpPagCad.resx">
       <DependentUpon>FrTpPagCad.cs</DependentUpon>

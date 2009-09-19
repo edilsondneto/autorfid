@@ -4,3 +4,6 @@ C:\autorfid\trunk\AutoRFID\Fachada\bin\Debug\Fachada.pdb
 C:\autorfid\trunk\AutoRFID\Fachada\obj\Debug\ResolveAssemblyReference.cache
 C:\autorfid\trunk\AutoRFID\Fachada\obj\Debug\Fachada.dll
 C:\autorfid\trunk\AutoRFID\Fachada\obj\Debug\Fachada.pdb
+C:\Workspac\trunk\AutoRFID\Fachada\obj\Debug\ResolveAssemblyReference.cache
+C:\Workspac\trunk\AutoRFID\Fachada\obj\Debug\Fachada.dll
+C:\Workspac\trunk\AutoRFID\Fachada\obj\Debug\Fachada.pdb
