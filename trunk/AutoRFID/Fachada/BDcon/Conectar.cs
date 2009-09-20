@@ -10,8 +10,8 @@ namespace Fachada.BDcon
 {
     public class Conectar
     {
-        MySqlConnection conexao;// Será a conexão principal com o Banco de Dados.
-        MySqlCommand comando;  // Componente Command principal para execução de comando diretos (Não Select).
+        private MySqlConnection conexao;// Será a conexão principal com o Banco de Dados.
+        private MySqlCommand comando;  // Componente Command principal para execução de comando diretos (Não Select).
         private MySqlTransaction mt;
 
         String strConexao;
@@ -82,6 +82,16 @@ namespace Fachada.BDcon
         public void Rolback()
         {
             this.mt.Rollback();
+        }
+
+        public MySqlCommand Command()
+        {
+            return this.comando;
+        }
+
+        public MySqlConnection Connection()
+        {
+            return this.conexao;
         }
 
     }
