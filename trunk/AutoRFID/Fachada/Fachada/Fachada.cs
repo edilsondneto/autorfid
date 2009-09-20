@@ -40,7 +40,7 @@ namespace Fachada.Fachada
 
         public Funcionario ConsultarFuncionario(Funcionario f)
         {
-            this.funcionario.ConsultarFuncionario(f);
+            return this.funcionario.ConsultarFuncionario(f);
         }
 
         public List<Funcionario> ListarFuncionario()

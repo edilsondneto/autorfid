@@ -14,17 +14,17 @@ namespace Fachada.Controlador
 
         #region IEstabelecimento Members
 
-        public void IncluirEstabelecimento(Fachada.Basicas.Estabelecimento objEstabelecimento)
+        public void IncluirEstabelecimento(Estabelecimento objEstabelecimento)
         {
             throw new NotImplementedException();
         }
 
-        public void AlterarEstabelecimento(Fachada.Basicas.Estabelecimento objEstabelecimento)
+        public void AlterarEstabelecimento(Estabelecimento objEstabelecimento)
         {
             throw new NotImplementedException();
         }
 
-        public void ConsultarEstabelecimento(Fachada.Basicas.Estabelecimento objEstabelecimento)
+        public Estabelecimento ConsultarEstabelecimento(Estabelecimento objEstabelecimento)
         {
             throw new NotImplementedException();
         }

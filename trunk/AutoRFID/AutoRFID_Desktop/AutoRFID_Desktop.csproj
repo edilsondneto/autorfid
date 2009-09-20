@@ -236,9 +236,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\00000000191.bmp" />
-    <None Include="Resources\rfid-tag1.jpg" />
-    <None Include="Resources\logo.jpg" />
-    <None Include="Resources\rfid-tag.jpg" />
     <None Include="Resources\Login Manager.png" />
   </ItemGroup>
   <ItemGroup>

@@ -101,7 +101,7 @@
             // logoPictureBox
             // 
             this.logoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.logoPictureBox.Image = global::AutoRFID_Desktop.Properties.Resources.rfid_tag1;
+            this.logoPictureBox.Image = global::AutoRFID_Desktop.Properties.Resources.RFID;
             this.logoPictureBox.Location = new System.Drawing.Point(3, 3);
             this.logoPictureBox.Name = "logoPictureBox";
             this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 6);
