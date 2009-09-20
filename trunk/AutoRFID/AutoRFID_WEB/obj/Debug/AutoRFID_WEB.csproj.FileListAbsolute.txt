@@ -12,3 +12,10 @@ C:\Workspac\trunk\AutoRFID\AutoRFID_WEB\bin\Fachada.pdb
 C:\Workspac\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\ResolveAssemblyReference.cache
 C:\Workspac\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.dll
 C:\Workspac\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.pdb
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_WEB\bin\AutoRFID_WEB.dll
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_WEB\bin\AutoRFID_WEB.pdb
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_WEB\bin\Fachada.dll
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_WEB\bin\Fachada.pdb
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.dll
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.pdb

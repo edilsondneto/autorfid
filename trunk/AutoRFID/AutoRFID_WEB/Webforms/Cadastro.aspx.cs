@@ -31,8 +31,6 @@ namespace AutoRFID_WEB.Webforms
 
         public bool validaCampos()
         {
-            //if (string.IsNullOrEmpty(txtRazaoSocial.Text))
-              //  Alert.Show("teste");
 
             if (!Uteis.ValidaCNPJ(txtCnpj.Text) && rbtPesJur.Checked)
             {

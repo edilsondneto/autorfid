@@ -1,5 +1,5 @@
-﻿<%@ Page Language="C#" MasterPageFile="Master.Master" AutoEventWireup="true"
-    CodeBehind="Cadastro.aspx.cs" Inherits="AutoRFID_WEB.Webforms.Cadastro" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="Master.Master" AutoEventWireup="true" CodeBehind="Cadastro.aspx.cs"
+    Inherits="AutoRFID_WEB.Webforms.Cadastro" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -179,6 +179,7 @@
                     </td>
                 </tr>
             </table>
+            &nbsp;&nbsp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <asp:Button ID="btnCadastrar" runat="server" Text="Cadastrar" OnClick="btnCadastrar_Click" />
         </div>
     </div>

@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{5BC083B3-BE13-4545-9AE6-49FC84FB4696}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -118,7 +118,6 @@
     <Content Include="Content\menubar.jpg" />
     <Content Include="Content\menudegrade.jpg" />
     <Content Include="Content\niftycube.js" />
-    <Content Include="Content\teste.jpg" />
     <Content Include="Content\Mascaras.js" />
     <Content Include="Content\teste1.jpg" />
     <Content Include="Webforms\Cadastro.aspx" />
@@ -162,9 +161,6 @@
           <IISUrl>
           </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

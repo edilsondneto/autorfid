@@ -6,7 +6,7 @@ using MySql.Data.MySqlClient;
 using System.Data;
 using System.Configuration;
 
-namespace Fachada
+namespace Fachada.BDcon
 {
     public class Conectar
     {

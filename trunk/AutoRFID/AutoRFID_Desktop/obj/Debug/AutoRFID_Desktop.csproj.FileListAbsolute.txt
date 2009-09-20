@@ -33,3 +33,16 @@ C:\Workspac\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrTpFuncC
 C:\Workspac\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrTpPagCad.resources
 C:\Workspac\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrVenda.resources
 C:\Workspac\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.csproj.GenerateResource.Cache
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrAssocCad.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.frCadPad.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrEstabCad.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrEtiqCad.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrFuncCad.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.frMenuPrincipal.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrSobreAutoRFID.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrTelaLogin.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrTpFuncCad.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrTpPagCad.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrVenda.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.csproj.GenerateResource.Cache

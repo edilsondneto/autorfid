@@ -48,15 +48,20 @@
   <ItemGroup>
     <Compile Include="Basicas\Associado.cs" />
     <Compile Include="Basicas\Estabelecimento.cs" />
+    <Compile Include="Basicas\Funcionario.cs" />
     <Compile Include="BDcon\Conectar.cs" />
     <Compile Include="Controlador\ControladorEstabelecimento.cs" />
+    <Compile Include="Controlador\ControladorFuncionario.cs" />
+    <Compile Include="Fachada\Fachada.cs" />
     <Compile Include="Interface\IEstabelecimento.cs" />
+    <Compile Include="Interface\Ifuncionario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Repositorio\RepositorioFuncionario.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -64,10 +69,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Fachada\" />
-    <Folder Include="Repositorio\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
