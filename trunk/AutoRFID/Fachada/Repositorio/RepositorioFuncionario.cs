@@ -6,6 +6,7 @@ using Fachada.Basicas;
 using Fachada.Interface;
 using Fachada.BDcon;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace Fachada.Repositorio
 {
@@ -122,12 +123,93 @@ namespace Fachada.Repositorio
 
         public Funcionario ConsultarFuncionario(Funcionario f)
         {
-            throw new NotImplementedException();
+            Funcionario func = new Funcionario();
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            try
+            {
+                this.c.Connection().Open();
+                this.c.IniciarTransacao();
+                this.c.Command().CommandText = "delete from funcionario where idfuncionario = @idfuncionario";
+                this.c.Command().Parameters.Add("@idfuncionario", MySqlDbType.Int32).Value = f.Idfuncionario;
+                da.SelectCommand = this.c.Command();
+                this.c.Comitar();
+                DataSet ds = new DataSet();
+                da.Fill(ds, "lista");
+
+                foreach (DataRow item in ds.Tables["lista"].Rows)
+                {
+                    func.Idfuncionario = (int)item[0];
+                    func.Idestabelecimento = (int)item[1];
+                    func.Cpf = (String)item[2];
+                    func.Nome = (String)item[3];
+                    func.Numero = (int)item[4];
+                    func.Bairro = (String)item[5];
+                    func.Cidade = (String)item[6];
+                    func.Estado = (String)item[7];
+                    func.Cep = (String)item[8];
+                    func.Email = (String)item[9];
+                    func.Idtipofuncionario = (int)item[10];
+                    func.Fone = (String)item[11];
+                    func.Foto = (String)item[12];
+
+                }
+            }
+            catch (Exception e)
+            {
+                this.c.Rolback();
+                throw new Exception("Erro no Repositorio");
+            }
+            finally
+            {
+                this.c.Connection().Close();
+            }
+            return func;
         }
 
         public List<Funcionario> ListarFuncionario()
         {
-            throw new NotImplementedException();
+            List<Funcionario> lf = new List<Funcionario>();
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            try
+            {
+                this.c.Connection().Open();
+                this.c.IniciarTransacao();
+                this.c.Command().CommandText = "delete from funcionario where idfuncionario = @idfuncionario";
+                this.c.Command().Parameters.Add("@idfuncionario", MySqlDbType.Int32).Value = f.Idfuncionario;
+                da.SelectCommand = this.c.Command();
+                this.c.Comitar();
+                DataSet ds = new DataSet();
+                da.Fill(ds, "lista");
+                foreach (DataRow item in ds.Tables["lista"].Rows)
+                {
+                    Funcionario func = new Funcionario();
+                    func.Idfuncionario = (int)item[0];
+                    func.Idestabelecimento = (int)item[1];
+                    func.Cpf = (String)item[2];
+                    func.Nome = (String)item[3];
+                    func.Numero = (int)item[4];
+                    func.Bairro = (String)item[5];
+                    func.Cidade = (String)item[6];
+                    func.Estado = (String)item[7];
+                    func.Cep = (String)item[8];
+                    func.Email = (String)item[9];
+                    func.Idtipofuncionario = (int)item[10];
+                    func.Fone = (String)item[11];
+                    func.Foto = (String)item[12];
+                    lf.Add(func);
+
+                }
+            }
+            catch (Exception e)
+            {
+                this.c.Rolback();
+                throw new Exception("Erro no Repositorio");
+            }
+            finally
+            {
+                this.c.Connection().Close();
+            }
+            return lf;
         }
 
         #endregion
