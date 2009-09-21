@@ -73,3 +73,8 @@ C:\Auto\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.Properties.Re
 C:\Auto\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.csproj.GenerateResource.Cache
 C:\Auto\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.exe
 C:\Auto\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.pdb
+C:\Workspac\trunk\AutoRFID\AutoRFID_Desktop\bin\Debug\AutoRFID_Desktop.exe
+C:\Workspac\trunk\AutoRFID\AutoRFID_Desktop\bin\Debug\AutoRFID_Desktop.pdb
+C:\Workspac\trunk\AutoRFID\AutoRFID_Desktop\bin\Debug\Fachada.dll
+C:\Workspac\trunk\AutoRFID\AutoRFID_Desktop\bin\Debug\Fachada.pdb
+C:\Workspac\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.Properties.Resources.resources
