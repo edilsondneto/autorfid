@@ -28,6 +28,11 @@ namespace Fachada.Controlador
         {
             throw new NotImplementedException();
         }
+        
+        public void ExcluirFuncionario(int codigo)
+        {
+            throw new NotImplementedException();
+        }
 
         public Funcionario ConsultarFuncionario(Funcionario f)
         {
@@ -40,5 +45,6 @@ namespace Fachada.Controlador
         }
 
         #endregion
+
     }
 }

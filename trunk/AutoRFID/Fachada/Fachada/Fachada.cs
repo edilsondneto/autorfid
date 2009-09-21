@@ -38,6 +38,11 @@ namespace Fachada.Fachada
             this.funcionario.AlterarFuncionario(f);
         }
 
+        public void ExcluirFuncionario(int codigo)
+        {
+            this.funcionario.ExcluirFuncionario(codigo);
+        }
+
         public Funcionario ConsultarFuncionario(Funcionario f)
         {
             return this.funcionario.ConsultarFuncionario(f);

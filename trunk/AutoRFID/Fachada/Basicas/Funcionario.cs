@@ -101,7 +101,7 @@ namespace Fachada.Basicas
             set { idestabelecimento = value; }
         }
 
-        public int Idfuncionario
+        public int? Idfuncionario
         {
             get { return idfuncionario; }
             set { idfuncionario = value; }

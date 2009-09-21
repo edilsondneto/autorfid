@@ -10,6 +10,7 @@ namespace Fachada.Interface
     {
         void InserirFuncionario(Funcionario f);
         void AlterarFuncionario(Funcionario f);
+        void ExcluirFuncionario(int codigo);
         Funcionario ConsultarFuncionario(Funcionario f);
         List<Funcionario> ListarFuncionario();
     }
