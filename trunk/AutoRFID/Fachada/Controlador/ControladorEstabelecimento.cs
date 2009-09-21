@@ -40,5 +40,15 @@ namespace Fachada.Controlador
         }
 
         #endregion
+
+        #region IEstabelecimento Members
+
+
+        public List<Estabelecimento> ListarEstabelecimento()
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
     }
 }

@@ -63,12 +63,14 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-<<<<<<< .mine
+<<<<<<< .mine    <Compile Include="Repositorio\RepositorioAssociado.cs" />
+    <Compile Include="Repositorio\RepositorioEstabelecimento.cs" />
+=======<<<<<<< .mine
     <Compile Include="Repositorio\RepositorioAssociado.cs" />
 =======
     <Compile Include="Repositorio\RepositorioEstabelecimento.cs" />
 >>>>>>> .r151
-    <Compile Include="Repositorio\RepositorioFuncionario.cs" />
+>>>>>>> .theirs    <Compile Include="Repositorio\RepositorioFuncionario.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
