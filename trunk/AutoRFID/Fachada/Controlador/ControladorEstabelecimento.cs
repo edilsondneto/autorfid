@@ -10,7 +10,12 @@ namespace Fachada.Controlador
 {
     public class ControladorEstabelecimento : IEstabelecimento
     {
+        private RepositorioEstabelecimento re;
 
+        public ControladorEstabelecimento()
+        {
+            this.re =new RepositorioEstabelecimento();
+        }
 
         #region IEstabelecimento Members
 

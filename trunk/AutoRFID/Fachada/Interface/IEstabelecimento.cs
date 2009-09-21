@@ -12,6 +12,6 @@ namespace Fachada.Interface
         void AlterarEstabelecimento(Estabelecimento objEstabelecimento);
         Estabelecimento ConsultarEstabelecimento(Estabelecimento objEstabelecimento);
         void ExcluirEstabelecimento(int idEstabelecimento);
-        
+        List<Estabelecimento> ListarEstabelecimento();
     }
 }
