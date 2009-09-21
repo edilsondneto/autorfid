@@ -12,10 +12,12 @@ namespace Fachada.Fachada
     {
         private static Fachada f;
         private Ifuncionario funcionario;
+        private ITipoPag tipoPag;
 
         private Fachada()
         {
             this.funcionario = new ControladorFuncionario();
+            this.tipoPag = new ControladorTipoPag();
         }
 
         public Fachada ObterFachada()
