@@ -24,49 +24,7 @@ namespace Fachada.BDcon
             this.comando.Connection = this.conexao;
         }
 
-        // Método utilizado para a execução de comandos SQL não queries: Insert, Delete ou Update.
-        public void ExecutarComando(String cmd)
-        {
-            try
-            {
-                this.conexao.Open();
-            
-                this.IniciarTransacao();
-            
-                this.comando.CommandText = cmd;
-                this.comando.ExecuteNonQuery();
-                this.Comitar();
-            }
-            catch (Exception e)
-            {
-                this.Rolback();
-                throw new Exception("Erro na base de dados");
-
-            }
-            finally
-            {
-                this.conexao.Close();
-            }
-
-        }
-
-        // Método utilizado para execução de pesquisas no banco.
-        public DataSet ExecutarPerquisa(String query)
-        {
-            DataSet ds = new DataSet();
-            MySqlDataAdapter da = new MySqlDataAdapter(query, this.conexao);//Este método abre e depois fecha a conexão.
-            try
-            {
-                da.Fill(ds);// Manda o DataAdapter preencher o DataSet com o resultado da pesquisa.
-
-            }
-            catch (Exception e)
-            {
-
-            }
-
-            return ds;
-        }
+       
 
         //Controle de transações
         public void IniciarTransacao()

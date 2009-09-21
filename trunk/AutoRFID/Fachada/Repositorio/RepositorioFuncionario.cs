@@ -28,9 +28,7 @@ namespace Fachada.Repositorio
             {
                 this.c.Connection().Open();
                 this.c.IniciarTransacao();
-                this.c.Command().CommandText = "insert into funcionario (idestabelecimento, cpf, nome, numero) " +
-                                                "bairro, cidade, estado, cep,email,idtipofuncionario,fone,foto" +
-                                                "values(@idestabelecimento, @cpf, @nome, @numero,"
+                this.c.Command().CommandText = "insert into funcionario values(@idestabelecimento, @cpf, @nome, @numero,"
                                         + "@bairro, @cidade, @estado, @cep,@email,@idtipofuncionario,@fone,@foto)";
 
                 this.c.Command().Parameters.Add("@idestabelecimento", MySqlDbType.Int32).Value = f.Idestabelecimento;
@@ -48,6 +46,7 @@ namespace Fachada.Repositorio
                 this.c.Command().Parameters.Add("@foto", MySqlDbType.VarChar, 60).Value = f.Foto;
                 this.c.Command().ExecuteNonQuery();
                 this.c.Comitar();
+                                
             }
             catch (Exception e)
             {
@@ -174,8 +173,7 @@ namespace Fachada.Repositorio
             {
                 this.c.Connection().Open();
                 this.c.IniciarTransacao();
-                this.c.Command().CommandText = "delete from funcionario where idfuncionario = @idfuncionario";
-                this.c.Command().Parameters.Add("@idfuncionario", MySqlDbType.Int32).Value = f.Idfuncionario;
+                this.c.Command().CommandText = "select * from funcionario ";
                 da.SelectCommand = this.c.Command();
                 this.c.Comitar();
                 DataSet ds = new DataSet();

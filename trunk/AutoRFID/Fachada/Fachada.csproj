@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{CF12D5AC-78D9-4244-8F40-EFF52F5A3246}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -50,9 +50,11 @@
     <Compile Include="Basicas\Estabelecimento.cs" />
     <Compile Include="Basicas\Funcionario.cs" />
     <Compile Include="BDcon\Conectar.cs" />
+    <Compile Include="Controlador\ControladorAssociado.cs" />
     <Compile Include="Controlador\ControladorEstabelecimento.cs" />
     <Compile Include="Controlador\ControladorFuncionario.cs" />
     <Compile Include="Fachada\Fachada.cs" />
+    <Compile Include="Interface\IAssociado.cs" />
     <Compile Include="Interface\IEstabelecimento.cs" />
     <Compile Include="Interface\Ifuncionario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,7 +63,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+<<<<<<< .mine
+    <Compile Include="Repositorio\RepositorioAssociado.cs" />
+=======
     <Compile Include="Repositorio\RepositorioEstabelecimento.cs" />
+>>>>>>> .r151
     <Compile Include="Repositorio\RepositorioFuncionario.cs" />
   </ItemGroup>
   <ItemGroup>
