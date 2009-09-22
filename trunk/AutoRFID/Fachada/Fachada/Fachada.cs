@@ -13,11 +13,13 @@ namespace Fachada.Fachada
         private static Fachada f;
         private Ifuncionario funcionario;
         private ITipoPag tipoPag;
+        private IAssociado IntAssociado;
 
         private Fachada()
         {
             this.funcionario = new ControladorFuncionario();
             this.tipoPag = new ControladorTipoPag();
+            this.IntAssociado = new ControladorAssociado();
         }
 
         public Fachada ObterFachada()
@@ -55,6 +57,7 @@ namespace Fachada.Fachada
             return this.funcionario.ListarFuncionario();
         }
         #endregion
+
 
     }
 }

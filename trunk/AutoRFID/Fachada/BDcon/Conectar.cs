@@ -42,11 +42,13 @@ namespace Fachada.BDcon
             this.mt.Rollback();
         }
 
+        //executar comando sql
         public MySqlCommand Command()
         {
             return this.comando;
         }
 
+        
         public MySqlConnection Connection()
         {
             return this.conexao;

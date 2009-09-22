@@ -14,6 +14,7 @@ namespace Fachada.Basicas
         private String endereco;
         private int numero;
         private String bairro;
+        private String cidade;
         private String estado;
         private String cep;
         private String email;
@@ -39,13 +40,13 @@ namespace Fachada.Basicas
             set { cpf_cnpj = value; }
         }
 
-        public string Nome_razaosocial1
+        public string Nome_razaosocial
         {
             get { return nome_razaosocial; }
             set { nome_razaosocial = value; }
         }
 
-        public string Tipo_pf_pj1
+        public string Tipo_pf_pj
         {
             get { return tipo_pf_pj; }
             set { tipo_pf_pj = value; }
@@ -57,10 +58,24 @@ namespace Fachada.Basicas
             set { endereco = value; }
         }
 
+
+        public int Numero
+        {
+            get { return numero; }
+            set { numero = value; }
+        }
+
         public String Bairro
         {
             get { return bairro; }
             set { bairro = value; }
+        }
+
+
+        public String Cidade
+        {
+            get { return cidade; }
+            set { cidade = value; }
         }
 
         public String Estado
