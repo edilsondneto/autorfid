@@ -28,21 +28,27 @@ namespace Fachada.Repositorio
             {
                 this.c.Connection().Open();
                 this.c.IniciarTransacao();
-                this.c.Command().CommandText = "insert into funcionario values(@idestabelecimento, @cpf, @nome, @numero,"
-                                        + "@bairro, @cidade, @estado, @cep,@email,@idtipofuncionario,@fone,@foto)";
+                this.c.Command().CommandText = "insert into funcionario"+
+                +"(cpf, nome, endereco, numero, bairro, cidade, estado, cep, email, fone, fonecelular,"
+                +"idEstabelecimento, idTipoFuncionario, funcao) values(@cpf, @nome, @endereco, @numero, @bairro,"
+                +"@cidade, @estado, @cep, @email, @fone, @fonecelular, @idEstabelecimento, @idTipoFuncionario,"
+                +"@funcao)";
 
-                this.c.Command().Parameters.Add("@idestabelecimento", MySqlDbType.Int32).Value = f.Idestabelecimento;
+                
                 this.c.Command().Parameters.Add("@cpf", MySqlDbType.VarChar, 11).Value = f.Cpf;
                 this.c.Command().Parameters.Add("@nome", MySqlDbType.VarChar, 60).Value = f.Nome;
+                this.c.Command().Parameters.Add("@endereco", MySqlDbType.VarChar, 60).Value = f.Endereco;
                 this.c.Command().Parameters.Add("@numero", MySqlDbType.Int32).Value = f.Numero;
                 this.c.Command().Parameters.Add("@bairro", MySqlDbType.VarChar, 40).Value = f.Bairro;
                 this.c.Command().Parameters.Add("@cidade", MySqlDbType.VarChar, 40).Value = f.Cidade;
                 this.c.Command().Parameters.Add("@estado", MySqlDbType.VarChar, 2).Value = f.Estado;
                 this.c.Command().Parameters.Add("@cep", MySqlDbType.VarChar, 8).Value = f.Cep;
                 this.c.Command().Parameters.Add("@email", MySqlDbType.VarChar, 40).Value = f.Email;
-                this.c.Command().Parameters.Add("@cep", MySqlDbType.VarChar, 8).Value = f.Cep;
-                this.c.Command().Parameters.Add("@idtipofuncionario", MySqlDbType.Int32).Value = f.Idtipofuncionario;
                 this.c.Command().Parameters.Add("@fone", MySqlDbType.VarChar, 10).Value = f.Fone;
+                this.c.Command().Parameters.Add("@fonecelular", MySqlDbType.VarChar, 10).Value = f.Fonecelular;
+                this.c.Command().Parameters.Add("@idEstabelecimento", MySqlDbType.Int32).Value = f.Idestabelecimento;
+                this.c.Command().Parameters.Add("@idtipofuncionario", MySqlDbType.Int32).Value = f.Idtipofuncionario;
+                
                 this.c.Command().Parameters.Add("@foto", MySqlDbType.VarChar, 60).Value = f.Foto;
                 this.c.Command().ExecuteNonQuery();
                 this.c.Comitar();
