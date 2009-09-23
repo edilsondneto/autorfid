@@ -10,6 +10,7 @@
 /*!40103 SET SQL_NOTES='ON' */;
 
 
+DROP DATABASE IF EXISTS `autorfid`;
 CREATE DATABASE `autorfid` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `autorfid`;
 CREATE TABLE `associado` (
@@ -60,13 +61,6 @@ CREATE TABLE `etiquetaassociado` (
   KEY `XIF1EtiquetaAssociado` (`idAssociado`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-CREATE TABLE `formapagamento` (
-  `idFormaPagamento` int(11) NOT NULL auto_increment,
-  `especificacao` varchar(20) default NULL,
-  PRIMARY KEY  (`idFormaPagamento`),
-  UNIQUE KEY `XPKFormaPagamento` (`idFormaPagamento`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
 CREATE TABLE `funcionario` (
   `idFuncionario` int(11) NOT NULL auto_increment,
   `cpf` varchar(11) default NULL,
@@ -82,6 +76,7 @@ CREATE TABLE `funcionario` (
   `fonecelular` varchar(10) default NULL,
   `idEstabelecimento` int(11) default NULL,
   `idTipoFuncionario` int(11) default NULL,
+  `funcao` varchar(1) default NULL,
   PRIMARY KEY  (`idFuncionario`),
   UNIQUE KEY `XPKFuncionario` (`idFuncionario`),
   KEY `XIF3Funcionario` (`idTipoFuncionario`),
@@ -98,6 +93,7 @@ CREATE TABLE `movcreditos` (
   `dtCompra` date default NULL,
   `dtCredito` date default NULL,
   `valorcreditado` decimal(9,2) default NULL,
+  `tipoPagamento` varchar(1) default NULL,
   PRIMARY KEY  (`idmovcreditos`),
   UNIQUE KEY `XPKMovEstacionamento` (`idmovcreditos`),
   KEY `XIF2MovEstacionamento` (`idEstabelecimento`),
@@ -120,25 +116,16 @@ CREATE TABLE `movdebitos` (
   KEY `XIF2MovDebitos` (`idEstabelecimento`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-CREATE TABLE `tipofuncionario` (
-  `idTipoFuncionario` int(11) NOT NULL auto_increment,
-  `funcao` varchar(30) default NULL,
-  PRIMARY KEY  (`idTipoFuncionario`),
-  UNIQUE KEY `XPKTipoFuncionario` (`idTipoFuncionario`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
 
 ALTER TABLE `etiquetaassociado`
   ADD FOREIGN KEY (`idAssociado`) REFERENCES `associado` (`idAssociado`);
 
 ALTER TABLE `funcionario`
-  ADD FOREIGN KEY (`idTipoFuncionario`) REFERENCES `tipofuncionario` (`idTipoFuncionario`),
   ADD FOREIGN KEY (`idEstabelecimento`) REFERENCES `estabelecimento` (`idEstabelecimento`);
 
 ALTER TABLE `movcreditos`
   ADD FOREIGN KEY (`idEstabelecimento`) REFERENCES `estabelecimento` (`idEstabelecimento`),
   ADD FOREIGN KEY (`idFuncionario`) REFERENCES `funcionario` (`idFuncionario`),
-  ADD FOREIGN KEY (`idFormaPagamento`) REFERENCES `formapagamento` (`idFormaPagamento`),
   ADD FOREIGN KEY (`codigo_etiqueta`, `idAssociado`) REFERENCES `etiquetaassociado` (`codigo_etiqueta`, `idAssociado`);
 
 ALTER TABLE `movdebitos`

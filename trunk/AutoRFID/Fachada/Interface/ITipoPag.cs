@@ -8,10 +8,10 @@ namespace Fachada.Interface
 {
     public interface ITipoPag
     {
-        void IncluirTipoPag(TipoPag objTipoPag);
+  /*    void IncluirTipoPag(TipoPag objTipoPag);
         void AlterarTipoPag(TipoPag objTipoPag);
         void ExcluirTipoPag(int idTipoPag);
         TipoPag ConsultarTipoPag(TipoPag objTipoPag);
-
+        */
     }
 }

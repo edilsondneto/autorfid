@@ -64,9 +64,9 @@ namespace Fachada.Repositorio
             {
                 this.c.Connection().Open();
                 this.c.IniciarTransacao();
-                this.c.Command().CommandText = "update associado set cpf_cnpj = @cpf_cnpj, nome_razaosocial = @nome_razaosocial,tipo_pf_pj = @tipopfpj"+
+                this.c.Command().CommandText = "update associado set cpf_cnpj = @cpf_cnpj, nome_razaosocial = @nome_razaosocial,tipo_fisica_juridica = @tipopfpj"+
                  " numero = @numero, bairro = @bairro, cidade = @cidade, estado = @estado, " +
-                 "cep = @cep , email = @email, fone = @fone, fonecel = @fonecel" +
+                 "cep = @cep , email = @email, fone = @fone, fonecelular = @fonecel" +
                  "where idAssociado = @idAssociado";
 
                 this.c.Command().Parameters.Add("@idAssociado", MySqlDbType.Int32).Value = objAssociado.Idassociado;
@@ -103,7 +103,7 @@ namespace Fachada.Repositorio
             {
                 this.c.Connection().Open();
                 this.c.IniciarTransacao();
-                this.c.Command().CommandText = "delete from associado where idassociado = @idassociado";
+                this.c.Command().CommandText = "delete from associado where idAssociado = @idassociado";
                 this.c.Command().Parameters.Add("@idassociado", MySqlDbType.Int32).Value = idAss;
                 this.c.Command().ExecuteNonQuery();
                 this.c.Comitar();

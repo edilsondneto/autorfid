@@ -9,12 +9,12 @@ namespace Fachada.Repositorio
     class RepositorioTipoPag: ITipoPag
 
     {
-        private Conectar c;
+     /* private Conectar c;
 
         public RepositorioTipoPag()
         {
             this.c = new Conectar();
         }
-
+        */
     }
 }

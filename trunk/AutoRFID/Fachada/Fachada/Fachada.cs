@@ -58,6 +58,30 @@ namespace Fachada.Fachada
         }
         #endregion
 
+        #region Associado Metodos
 
-    }
+        public void InserirAssociado(Associado f)
+        {
+            this.IntAssociado.inserirAssociado(f);
+        }
+
+        public void AlterarAssociado(Associado f)
+        {
+            this.IntAssociado.alterarAssociado(f);
+        }
+
+        public void ExcluirAssociado(int codigo)
+        {
+            this.IntAssociado.excluirAssociado(codigo);
+        }
+
+        public Associado ConsultarAssociado(Associado f)
+        {
+            return this.IntAssociado.consultarAssociado(f);
+        }
+
+        #endregion
+
+
+          }
 }
