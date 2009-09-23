@@ -24,7 +24,13 @@ namespace Fachada.Controlador
 
         public void inserirAssociado(Associado objAssociado)
         {
-            this.objRepAss.inserirAssociado(objAssociado);
+            if (!objAssociado.Nome_razaosocial.Equals(null))
+            {
+                this.objRepAss.inserirAssociado(objAssociado);
+            }
+            else
+                throw new System.ArgumentNullException("Campo em branco não permitido");
+
         }
 
         public void alterarAssociado(Associado objAssociado)

@@ -54,7 +54,7 @@ namespace TestAssociado
         {
          
             objAss = new Associado();
-            //objAss.Cpf_cnpj = "1112";
+            objAss.Cpf_cnpj = "1112";
             objAss.Nome_razaosocial = "Leandro";
             objFachada.InserirAssociado(objAss); 
  
