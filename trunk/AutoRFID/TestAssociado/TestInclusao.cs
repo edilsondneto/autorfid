@@ -15,36 +15,17 @@ namespace TestAssociado
     public class TestInclusao
     {
         private Associado objAss;
-        private static Fachada f = Fachada.Fachada.Fachada.;
-        
+        private Fachada.Fachada.Fachada objFachada = null;
+
          
         public TestInclusao()
         {
-
-             
-            objAss = new Associado();
-            objAss.Nome_razaosocial = "Leandro";
-            f.InserirAssociado(objAss);
-                    
+            this.objFachada = Fachada.Fachada.Fachada.ObterFachada();
         }
 
         private TestContext testContextInstance;
 
-        /// <summary>
-        ///Gets or sets the test context which provides
-        ///information about and functionality for the current test run.
-        ///</summary>
-        public TestContext TestContext
-        {
-            get
-            {
-                return testContextInstance;
-            }
-            set
-            {
-                testContextInstance = value;
-            }
-        }
+     
 
         #region Additional test attributes
         //
@@ -71,6 +52,12 @@ namespace TestAssociado
         [TestMethod]
         public void TestMethod1()
         {
+         
+            objAss = new Associado();
+            //objAss.Cpf_cnpj = "1112";
+            objAss.Nome_razaosocial = "Leandro";
+            objFachada.InserirAssociado(objAss); 
+ 
             //
             // TODO: Add test logic	here
             //

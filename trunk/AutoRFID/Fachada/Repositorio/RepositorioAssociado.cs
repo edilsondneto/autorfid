@@ -28,9 +28,9 @@ namespace Fachada.Repositorio
             {
                 this.c.Connection().Open();
                 this.c.IniciarTransacao();
-                this.c.Command().CommandText = "insert into associado values(@cpf_cnpj, @nome_razaosocial, @tipo, @endereco, @numero,"
-                                        + "@bairro, @cidade, @estado, @cep, @email, @fone, @fonecel)";
-
+                this.c.Command().CommandText = "insert into associado (cpf_cnpj,nome_razaosocial,tipo_fisica_juridica,endereco,"+
+                "numero,bairro,cidade,estado,cep,email,fone,fonecelular) values(@cpf_cnpj,@nome_razaosocial,@tipo,@endereco,@numero,"+
+                "@bairro, @cidade, @estado, @cep, @email, @fone, @fonecel)";
                 this.c.Command().Parameters.Add("@cpf_cnpj", MySqlDbType.VarChar, 14).Value = objAssociado.Cpf_cnpj;
                 this.c.Command().Parameters.Add("@nome_razaosocial", MySqlDbType.VarChar, 90).Value = objAssociado.Nome_razaosocial;
                 this.c.Command().Parameters.Add("@tipo", MySqlDbType.VarChar, 2).Value = objAssociado.Tipo_pf_pj;

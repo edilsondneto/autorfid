@@ -24,7 +24,7 @@ namespace Fachada.Controlador
 
         public void inserirAssociado(Associado objAssociado)
         {
-            throw new NotImplementedException();
+            this.objRepAss.inserirAssociado(objAssociado);
         }
 
         public void alterarAssociado(Associado objAssociado)

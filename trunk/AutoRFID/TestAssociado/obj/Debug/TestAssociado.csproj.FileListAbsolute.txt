@@ -1,7 +1,7 @@
-C:\AutoRFID\trunk\AutoRFID\TestAssociado\obj\Debug\ResolveAssemblyReference.cache
 C:\AutoRFID\trunk\AutoRFID\TestAssociado\bin\Debug\TestAssociado.dll
 C:\AutoRFID\trunk\AutoRFID\TestAssociado\bin\Debug\TestAssociado.pdb
 C:\AutoRFID\trunk\AutoRFID\TestAssociado\bin\Debug\Fachada.dll
 C:\AutoRFID\trunk\AutoRFID\TestAssociado\bin\Debug\Fachada.pdb
+C:\AutoRFID\trunk\AutoRFID\TestAssociado\obj\Debug\ResolveAssemblyReference.cache
 C:\AutoRFID\trunk\AutoRFID\TestAssociado\obj\Debug\TestAssociado.dll
 C:\AutoRFID\trunk\AutoRFID\TestAssociado\obj\Debug\TestAssociado.pdb

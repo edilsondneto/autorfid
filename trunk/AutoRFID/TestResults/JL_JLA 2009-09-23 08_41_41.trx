@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="131f9a07-e78a-4a9b-9730-7d59e6b4fed0" name="JL@JLA 2009-09-23 08:41:41" runUser="JLA\JL" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="ddf0a898-0e29-4648-b4ed-936846171b10">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\AutoRFID\trunk\AutoRFID\TestResults\JL_JLA 2009-09-23 08_41_41">
+      <DeploymentItem filename="C:\AutoRFID\trunk\AutoRFID\Fachada\bin\Debug\Fachada.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2009-09-23T08:41:41.3437500-03:00" queuing="2009-09-23T08:41:42.7812500-03:00" start="2009-09-23T08:41:43.0937500-03:00" finish="2009-09-23T08:43:13.6875000-03:00" />
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\autorfid\trunk\autorfid\testassociado\bin\debug\testassociado.dll" id="a72f7e6f-4c24-d5d0-ab8a-25f7cc323559">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="b71052b0-fe84-449f-a877-a5ea7c2047e4" />
+      <TestMethod codeBase="C:\AutoRFID\trunk\AutoRFID\TestAssociado\bin\Debug\TestAssociado.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAssociado.TestInclusao, TestAssociado" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a72f7e6f-4c24-d5d0-ab8a-25f7cc323559" executionId="b71052b0-fe84-449f-a877-a5ea7c2047e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="b71052b0-fe84-449f-a877-a5ea7c2047e4" testId="a72f7e6f-4c24-d5d0-ab8a-25f7cc323559" testName="TestMethod1" computerName="JLA" duration="00:01:29.2802099" startTime="2009-09-23T08:41:43.2031250-03:00" endTime="2009-09-23T08:43:13.5625000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestAssociado.TestInclusao.TestMethod1 threw exception:  System.NotImplementedException: The method or operation is not implemented..</Message>
+          <StackTrace>    at Fachada.Controlador.ControladorAssociado.inserirAssociado(Associado objAssociado) in C:\AutoRFID\trunk\AutoRFID\Fachada\Controlador\ControladorAssociado.cs:line 27
+   at Fachada.Fachada.Fachada.InserirAssociado(Associado f) in C:\AutoRFID\trunk\AutoRFID\Fachada\Fachada\Fachada.cs:line 65
+   at TestAssociado.TestInclusao.TestMethod1() in C:\AutoRFID\trunk\AutoRFID\TestAssociado\TestInclusao.cs:line 58
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

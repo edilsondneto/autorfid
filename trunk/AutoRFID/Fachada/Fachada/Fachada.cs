@@ -17,12 +17,12 @@ namespace Fachada.Fachada
 
         private Fachada()
         {
-            this.funcionario = new ControladorFuncionario();
-            this.tipoPag = new ControladorTipoPag();
+           // this.funcionario = new ControladorFuncionario();
+           // this.tipoPag = new ControladorTipoPag();
             this.IntAssociado = new ControladorAssociado();
         }
 
-        public Fachada ObterFachada()
+        public static Fachada ObterFachada()
         {
             if (f == null)
             {
@@ -83,5 +83,7 @@ namespace Fachada.Fachada
         #endregion
 
 
-          }
+
+      
+    }
 }
