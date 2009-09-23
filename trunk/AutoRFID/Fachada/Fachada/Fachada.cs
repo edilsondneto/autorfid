@@ -39,7 +39,9 @@ namespace Fachada.Fachada
 
         public void AlterarFuncionario(Funcionario f)
         {
+
             this.funcionario.AlterarFuncionario(f);
+
         }
 
         public void ExcluirFuncionario(int codigo)
@@ -47,9 +49,15 @@ namespace Fachada.Fachada
             this.funcionario.ExcluirFuncionario(codigo);
         }
 
-        public Funcionario ConsultarFuncionario(Funcionario f)
+        public Funcionario ConsultarFuncionario(int codigo)
         {
-            return this.funcionario.ConsultarFuncionario(f);
+            return this.funcionario.ConsultarFuncionario(codigo);
+        }
+
+        public Funcionario ConsultarFuncionario(String cpf)
+        {
+            return this.funcionario.ConsultarFuncionario(cpf);
+
         }
 
         public List<Funcionario> ListarFuncionario()
@@ -83,7 +91,11 @@ namespace Fachada.Fachada
         #endregion
 
 
+<<<<<<< .mine
+    }
+=======
 
       
     }
+>>>>>>> .r164
 }
