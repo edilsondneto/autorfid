@@ -46,7 +46,7 @@ namespace Fachada.Repositorio
                 this.c.Command().Parameters.Add("@foto", MySqlDbType.VarChar, 60).Value = f.Foto;
                 this.c.Command().ExecuteNonQuery();
                 this.c.Comitar();
-                                
+
             }
             catch (Exception e)
             {
@@ -120,7 +120,7 @@ namespace Fachada.Repositorio
             }
         }
 
-        public Funcionario ConsultarFuncionario(Funcionario f)
+        public Funcionario ConsultarFuncionario(int codigo)
         {
             Funcionario func = new Funcionario();
             MySqlDataAdapter da = new MySqlDataAdapter();
@@ -128,10 +128,9 @@ namespace Fachada.Repositorio
             {
                 this.c.Connection().Open();
                 this.c.IniciarTransacao();
-                this.c.Command().CommandText = "delete from funcionario where idfuncionario = @idfuncionario";
-                this.c.Command().Parameters.Add("@idfuncionario", MySqlDbType.Int32).Value = f.Idfuncionario;
+                this.c.Command().CommandText = "select * funcionario where idfuncionario = @idfuncionario";
+                this.c.Command().Parameters.Add("@idfuncionario", MySqlDbType.Int32).Value = codigo;
                 da.SelectCommand = this.c.Command();
-                this.c.Comitar();
                 DataSet ds = new DataSet();
                 da.Fill(ds, "lista");
 
@@ -155,7 +154,49 @@ namespace Fachada.Repositorio
             }
             catch (Exception e)
             {
-                this.c.Rolback();
+                throw new Exception("Erro no Repositorio");
+            }
+            finally
+            {
+                this.c.Connection().Close();
+            }
+            return func;
+        }
+
+        public Funcionario ConsultarFuncionario(String cpf)
+        {
+            Funcionario func = new Funcionario();
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            try
+            {
+                this.c.Connection().Open();
+                this.c.IniciarTransacao();
+                this.c.Command().CommandText = "select * funcionario where cpf = @cpf";
+                this.c.Command().Parameters.Add("@cpf", MySqlDbType.VarChar, 11).Value = cpf;
+                da.SelectCommand = this.c.Command();
+                DataSet ds = new DataSet();
+                da.Fill(ds, "lista");
+
+                foreach (DataRow item in ds.Tables["lista"].Rows)
+                {
+                    func.Idfuncionario = (int)item[0];
+                    func.Idestabelecimento = (int)item[1];
+                    func.Cpf = (String)item[2];
+                    func.Nome = (String)item[3];
+                    func.Numero = (int)item[4];
+                    func.Bairro = (String)item[5];
+                    func.Cidade = (String)item[6];
+                    func.Estado = (String)item[7];
+                    func.Cep = (String)item[8];
+                    func.Email = (String)item[9];
+                    func.Idtipofuncionario = (int)item[10];
+                    func.Fone = (String)item[11];
+                    func.Foto = (String)item[12];
+
+                }
+            }
+            catch (Exception e)
+            {
                 throw new Exception("Erro no Repositorio");
             }
             finally
@@ -175,7 +216,6 @@ namespace Fachada.Repositorio
                 this.c.IniciarTransacao();
                 this.c.Command().CommandText = "select * from funcionario ";
                 da.SelectCommand = this.c.Command();
-                this.c.Comitar();
                 DataSet ds = new DataSet();
                 da.Fill(ds, "lista");
                 foreach (DataRow item in ds.Tables["lista"].Rows)
@@ -200,7 +240,6 @@ namespace Fachada.Repositorio
             }
             catch (Exception e)
             {
-                this.c.Rolback();
                 throw new Exception("Erro no Repositorio");
             }
             finally

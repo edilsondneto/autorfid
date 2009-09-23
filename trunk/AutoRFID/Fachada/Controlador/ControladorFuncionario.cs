@@ -21,27 +21,77 @@ namespace Fachada.Controlador
 
         public void InserirFuncionario(Funcionario f)
         {
-            throw new NotImplementedException();
+            if (f.Nome.Equals(null) && f.Idtipofuncionario.Equals(null) && f.Numero.Equals(null) &&
+            f.Idestabelecimento.Equals(null) && f.Fone.Equals(null) && f.Email.Equals(null) && f.Foto.Equals(null)
+            && f.Estado.Equals(null) && f.Cpf.Equals(null) && f.Cidade.Equals(null) && f.Cep.Equals(null))
+            {
+                throw new Exception("Campos nulos");
+            }
+            else if (this.rf.ConsultarFuncionario(f.Cpf).Cpf != null)
+            {
+
+                throw new Exception("Funcionário Existente");
+
+            }
+            else
+            {
+                this.rf.InserirFuncionario(f);
+            }
         }
 
         public void AlterarFuncionario(Funcionario f)
         {
-            throw new NotImplementedException();
-        }
-        
-        public void ExcluirFuncionario(int codigo)
-        {
-            throw new NotImplementedException();
+            if (f.Nome.Equals(null) && f.Idtipofuncionario.Equals(null) && f.Numero.Equals(null) &&
+               f.Idestabelecimento.Equals(null) && f.Fone.Equals(null) && f.Email.Equals(null) && f.Foto.Equals(null)
+                && f.Estado.Equals(null) && f.Cpf.Equals(null) && f.Cidade.Equals(null) && f.Cep.Equals(null))
+            {
+                throw new Exception("Campos nulos");
+            }
+            else if (this.rf.ConsultarFuncionario(f.Cpf).Cpf.Equals(null))
+            {
+                throw new Exception("Funcionário Inexistente");
+            }
+            else
+            {
+                this.rf.AlterarFuncionario(f);
+            }
         }
 
-        public Funcionario ConsultarFuncionario(Funcionario f)
+        public void ExcluirFuncionario(int codigo)
         {
-            throw new NotImplementedException();
+            if (this.rf.ConsultarFuncionario(codigo).Idfuncionario.Equals(null))
+            {
+                throw new Exception("Funcionário Inexistente");
+            }
+            else
+            {
+                this.rf.ExcluirFuncionario(codigo);
+            }
+        }
+
+        public Funcionario ConsultarFuncionario(int codigo)
+        {
+            Funcionario f = this.rf.ConsultarFuncionario(codigo);
+            if (f.Equals(null))
+            {
+                throw new Exception("Funcionário Inexistente");
+            }
+            return f;
+        }
+
+        public Funcionario ConsultarFuncionario(String cpf)
+        {
+            Funcionario f = this.rf.ConsultarFuncionario(cpf);
+            if (f.Equals(null))
+            {
+                throw new Exception("Funcionário Inexistente");
+            }
+            return f;
         }
 
         public List<Funcionario> ListarFuncionario()
         {
-            throw new NotImplementedException();
+            return this.rf.ListarFuncionario();
         }
 
         #endregion
