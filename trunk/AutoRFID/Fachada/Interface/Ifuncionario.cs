@@ -11,7 +11,8 @@ namespace Fachada.Interface
         void InserirFuncionario(Funcionario f);
         void AlterarFuncionario(Funcionario f);
         void ExcluirFuncionario(int codigo);
-        Funcionario ConsultarFuncionario(Funcionario f);
+        Funcionario ConsultarFuncionario(String cpf);
+        Funcionario ConsultarFuncionario(int idfuncionario);
         List<Funcionario> ListarFuncionario();
     }
 }
