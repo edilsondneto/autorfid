@@ -17,8 +17,8 @@ namespace Fachada.Fachada
 
         private Fachada()
         {
-           // this.funcionario = new ControladorFuncionario();
-           // this.tipoPag = new ControladorTipoPag();
+            // this.funcionario = new ControladorFuncionario();
+            // this.tipoPag = new ControladorTipoPag();
             this.IntAssociado = new ControladorAssociado();
         }
 
@@ -91,11 +91,5 @@ namespace Fachada.Fachada
         #endregion
 
 
-<<<<<<< .mine
     }
-=======
-
-      
     }
->>>>>>> .r164
-}

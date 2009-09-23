@@ -54,7 +54,7 @@ namespace Testes
         [TestInitialize()]
         public void MyTestInitialize()
         {
-             this.x = new Funcionario();
+            this.x = new Funcionario();
             x.Nome = "teste";
             x.Fone = "teste";
             x.Estado = "te";

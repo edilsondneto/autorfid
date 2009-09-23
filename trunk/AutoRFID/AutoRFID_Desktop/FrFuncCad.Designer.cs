@@ -62,6 +62,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
             this.SuspendLayout();
             // 
+            // btConfirmar
+            // 
+            this.btConfirmar.Click += new System.EventHandler(this.btConfirmar_Click);
+            // 
+            // btIncluir
+            // 
+            this.btIncluir.Click += new System.EventHandler(this.btIncluir_Click);
+            // 
             // pnlBotoes
             // 
             this.pnlBotoes.Size = new System.Drawing.Size(750, 30);
@@ -100,8 +108,7 @@
             this.panelManutencao.Controls.Add(this.boxTipo);
             this.panelManutencao.Controls.Add(this.textCodigo);
             this.panelManutencao.Controls.Add(this.label2);
-            this.panelManutencao.Location = new System.Drawing.Point(3, 6);
-            this.panelManutencao.Size = new System.Drawing.Size(738, 240);
+            this.panelManutencao.Size = new System.Drawing.Size(750, 278);
             this.panelManutencao.TabIndex = 1;
             // 
             // maskedTextBox5

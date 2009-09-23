@@ -29,7 +29,7 @@ namespace Fachada.Controlador
                 this.objRepAss.inserirAssociado(objAssociado);
             }
             else
-                throw new System.ArgumentNullException("Campo em branco não permitido");
+                throw new System.Exception("Campo em branco não permitido");
 
         }
 

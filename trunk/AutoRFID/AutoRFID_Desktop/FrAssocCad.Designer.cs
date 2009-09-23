@@ -58,6 +58,10 @@
             this.panelManutencao.SuspendLayout();
             this.SuspendLayout();
             // 
+            // btConfirmar
+            // 
+            this.btConfirmar.Click += new System.EventHandler(this.btConfirmar_Click);
+            // 
             // btIncluir
             // 
             this.btIncluir.Click += new System.EventHandler(this.btIncluir_Click);
