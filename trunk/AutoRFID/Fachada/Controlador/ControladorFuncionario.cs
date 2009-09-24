@@ -21,9 +21,8 @@ namespace Fachada.Controlador
 
         public void InserirFuncionario(Funcionario f)
         {
-            if (f.Nome.Equals(null) && f.Idtipofuncionario.Equals(null) && f.Numero.Equals(null) &&
-            f.Idestabelecimento.Equals(null) && f.Fone.Equals(null) && f.Email.Equals(null) && f.Foto.Equals(null)
-            && f.Estado.Equals(null) && f.Cpf.Equals(null) && f.Cidade.Equals(null) && f.Cep.Equals(null))
+            if (f.Nome.Equals(null) && f.Funcao.Equals(null) && f.Numero.Equals(null) &&
+            f.Idestabelecimento.Equals(null) && f.Fone.Equals(null) && f.Email.Equals(null) && f.Estado.Equals(null) && f.Cpf.Equals(null) && f.Cidade.Equals(null) && f.Cep.Equals(null))
             {
                 throw new Exception("Campos nulos");
             }
@@ -41,13 +40,13 @@ namespace Fachada.Controlador
 
         public void AlterarFuncionario(Funcionario f)
         {
-            if (f.Nome.Equals(null) && f.Idtipofuncionario.Equals(null) && f.Numero.Equals(null) &&
-               f.Idestabelecimento.Equals(null) && f.Fone.Equals(null) && f.Email.Equals(null) && f.Foto.Equals(null)
+            if (f.Nome.Equals(null) && f.Funcao.Equals(null) && f.Numero.Equals(null) &&
+               f.Idestabelecimento.Equals(null) && f.Fone.Equals(null) && f.Email.Equals(null)
                 && f.Estado.Equals(null) && f.Cpf.Equals(null) && f.Cidade.Equals(null) && f.Cep.Equals(null))
             {
                 throw new Exception("Campos nulos");
             }
-            else if (this.rf.ConsultarFuncionario(f.Cpf).Cpf.Equals(null))
+            else if (this.rf.ConsultarFuncionario(f.Idfuncionario).Idfuncionario.Equals(null))
             {
                 throw new Exception("Funcionário Inexistente");
             }
@@ -57,19 +56,19 @@ namespace Fachada.Controlador
             }
         }
 
-        public void ExcluirFuncionario(int codigo)
+        public void ExcluirFuncionario(String cpf)
         {
-            if (this.rf.ConsultarFuncionario(codigo).Idfuncionario.Equals(null))
+            if (this.rf.ConsultarFuncionario(cpf).Cpf.Equals(null))
             {
                 throw new Exception("Funcionário Inexistente");
             }
             else
             {
-                this.rf.ExcluirFuncionario(codigo);
+                this.rf.ExcluirFuncionario(cpf);
             }
         }
 
-        public Funcionario ConsultarFuncionario(int codigo)
+        public Funcionario ConsultarFuncionario(int? codigo)
         {
             Funcionario f = this.rf.ConsultarFuncionario(codigo);
             if (f.Equals(null))

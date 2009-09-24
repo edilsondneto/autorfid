@@ -17,7 +17,7 @@ namespace Fachada.Fachada
 
         private Fachada()
         {
-            // this.funcionario = new ControladorFuncionario();
+            this.funcionario = new ControladorFuncionario();
             // this.tipoPag = new ControladorTipoPag();
             this.IntAssociado = new ControladorAssociado();
         }
@@ -44,9 +44,9 @@ namespace Fachada.Fachada
 
         }
 
-        public void ExcluirFuncionario(int codigo)
+        public void ExcluirFuncionario(String cpf)
         {
-            this.funcionario.ExcluirFuncionario(codigo);
+            this.funcionario.ExcluirFuncionario(cpf);
         }
 
         public Funcionario ConsultarFuncionario(int codigo)
@@ -66,7 +66,6 @@ namespace Fachada.Fachada
         }
         #endregion
 
-        
         #region Associado Metodos
 
         public void InserirAssociado(Associado f)

@@ -18,9 +18,10 @@ namespace Fachada.Basicas
         private String estado;
         private String cep;
         private String email;
-        private int idtipofuncionario;
+        private String funcao;
         private String fone;
-        private String foto;
+        private String endereco;
+        private String fonecelular;
         #endregion
 
         public Funcionario()
@@ -29,10 +30,17 @@ namespace Fachada.Basicas
         }
 
         #region properties
-        public String Foto
+
+        public String Fonecelular
         {
-            get { return foto; }
-            set { foto = value; }
+            get { return fonecelular; }
+            set { fonecelular = value; }
+        }
+
+        public String Endereco
+        {
+            get { return endereco; }
+            set { endereco = value; }
         }
 
         public String Fone
@@ -41,10 +49,10 @@ namespace Fachada.Basicas
             set { fone = value; }
         }
 
-        public int Idtipofuncionario
+        public String Funcao
         {
-            get { return idtipofuncionario; }
-            set { idtipofuncionario = value; }
+            get { return funcao; }
+            set { funcao = value; }
         }
 
         public String Email

@@ -13,158 +13,168 @@ namespace Fachada.Repositorio
     public class RepositorioFuncionario : Ifuncionario
     {
 
-        private Conectar c;
-
         public RepositorioFuncionario()
         {
-            this.c = new Conectar();
+
         }
 
         #region Ifuncionario Members
 
         public void InserirFuncionario(Funcionario f)
         {
+            Conectar c = new Conectar();
             try
             {
-             /*   this.c.Connection().Open();
-                this.c.IniciarTransacao();
-                this.c.Command().CommandText = "insert into funcionario"
-                +"(cpf, nome, endereco, numero, bairro, cidade, estado, cep, email, fone, fonecelular,"
-                +"idEstabelecimento, idTipoFuncionario, funcao) values(@cpf, @nome, @endereco, @numero, @bairro,"
-                +"@cidade, @estado, @cep, @email, @fone, @fonecelular, @idEstabelecimento, @idTipoFuncionario,"
-                +"@funcao)";
+                String sql = "insert into funcionario"
+                + "(cpf, nome, endereco, numero, bairro, cidade, estado, cep, email, fone, fonecelular,"
+                + "idEstabelecimento, funcao) values(@cpf, @nome, @endereco, @numero, @bairro,"
+                + "@cidade, @estado, @cep, @email, @fone, @fonecelular, @idEstabelecimento, @funcao)";
 
-                
-                this.c.Command().Parameters.Add("@cpf", MySqlDbType.VarChar, 11).Value = f.Cpf;
-                this.c.Command().Parameters.Add("@nome", MySqlDbType.VarChar, 60).Value = f.Nome;
-                this.c.Command().Parameters.Add("@endereco", MySqlDbType.VarChar, 60).Value = f.
-                this.c.Command().Parameters.Add("@numero", MySqlDbType.Int32).Value = f.Numero;
-                this.c.Command().Parameters.Add("@bairro", MySqlDbType.VarChar, 40).Value = f.Bairro;
-                this.c.Command().Parameters.Add("@cidade", MySqlDbType.VarChar, 40).Value = f.Cidade;
-                this.c.Command().Parameters.Add("@estado", MySqlDbType.VarChar, 2).Value = f.Estado;
-                this.c.Command().Parameters.Add("@cep", MySqlDbType.VarChar, 8).Value = f.Cep;
-                this.c.Command().Parameters.Add("@email", MySqlDbType.VarChar, 40).Value = f.Email;
-                this.c.Command().Parameters.Add("@fone", MySqlDbType.VarChar, 10).Value = f.Fone;
-                this.c.Command().Parameters.Add("@fonecelular", MySqlDbType.VarChar, 10).Value = f.Fonecelular;
-                this.c.Command().Parameters.Add("@idEstabelecimento", MySqlDbType.Int32).Value = f.Idestabelecimento;
-                this.c.Command().Parameters.Add("@idtipofuncionario", MySqlDbType.Int32).Value = f.Idtipofuncionario;
-                
-                this.c.Command().Parameters.Add("@foto", MySqlDbType.VarChar, 60).Value = f.Foto;
-                this.c.Command().ExecuteNonQuery();
-                this.c.Comitar();
-                */
+                c.Connection().Open();
+                c.IniciarTransacao();
+                c.Command().CommandText = sql;
+
+                c.Command().Parameters.Add("@cpf", MySqlDbType.VarChar, 11).Value = f.Cpf;
+                c.Command().Parameters.Add("@nome", MySqlDbType.VarChar, 60).Value = f.Nome;
+                c.Command().Parameters.Add("@endereco", MySqlDbType.VarChar, 60).Value = f.Endereco;
+                c.Command().Parameters.Add("@numero", MySqlDbType.Int32).Value = f.Numero;
+                c.Command().Parameters.Add("@bairro", MySqlDbType.VarChar, 40).Value = f.Bairro;
+                c.Command().Parameters.Add("@cidade", MySqlDbType.VarChar, 40).Value = f.Cidade;
+                c.Command().Parameters.Add("@estado", MySqlDbType.VarChar, 2).Value = f.Estado;
+                c.Command().Parameters.Add("@cep", MySqlDbType.VarChar, 8).Value = f.Cep;
+                c.Command().Parameters.Add("@email", MySqlDbType.VarChar, 40).Value = f.Email;
+                c.Command().Parameters.Add("@fone", MySqlDbType.VarChar, 10).Value = f.Fone;
+                c.Command().Parameters.Add("@fonecelular", MySqlDbType.VarChar, 10).Value = f.Fonecelular;
+                c.Command().Parameters.Add("@idEstabelecimento", MySqlDbType.Int32).Value = f.Idestabelecimento;
+                c.Command().Parameters.Add("@funcao", MySqlDbType.VarChar, 1).Value = f.Funcao;
+                c.Command().ExecuteNonQuery();
+                c.Comitar();
+
             }
-            catch (Exception e)
+            catch (MySqlException e)
             {
-                this.c.Rolback();
-                throw new Exception("Erro no Repositorio");
+                c.Rolback();
+                throw new Exception("Erro no Repositorio --> " + e.Message);
             }
             finally
             {
-                this.c.Connection().Close();
+                c.Connection().Close();
             }
         }
 
         public void AlterarFuncionario(Funcionario f)
         {
+            Conectar c = new Conectar();
             try
             {
-                this.c.Connection().Open();
-                this.c.IniciarTransacao();
-                this.c.Command().CommandText = "update funcionario set idestabelecimento = @idestabelecimento," +
-                "cpf = @cpf, nome = @nome, numero = @numero, bairro = @bairro, cidade = @cidade, estado = @estado, " +
-                 "cep = @cep , email = @email, idtipofuncionario = @idtipofuncionario, fone = @fone, foto = @foto" +
-                 "where idfuncionario = @idfuncionario";
 
-                this.c.Command().Parameters.Add("@idfuncionario", MySqlDbType.Int32).Value = f.Idfuncionario;
-                this.c.Command().Parameters.Add("@idestabelecimento", MySqlDbType.Int32).Value = f.Idestabelecimento;
-                this.c.Command().Parameters.Add("@cpf", MySqlDbType.VarChar, 11).Value = f.Cpf;
-                this.c.Command().Parameters.Add("@nome", MySqlDbType.VarChar, 60).Value = f.Nome;
-                this.c.Command().Parameters.Add("@numero", MySqlDbType.Int32).Value = f.Numero;
-                this.c.Command().Parameters.Add("@bairro", MySqlDbType.VarChar, 40).Value = f.Bairro;
-                this.c.Command().Parameters.Add("@cidade", MySqlDbType.VarChar, 40).Value = f.Cidade;
-                this.c.Command().Parameters.Add("@estado", MySqlDbType.VarChar, 2).Value = f.Estado;
-                this.c.Command().Parameters.Add("@cep", MySqlDbType.VarChar, 8).Value = f.Cep;
-                this.c.Command().Parameters.Add("@email", MySqlDbType.VarChar, 40).Value = f.Email;
-                this.c.Command().Parameters.Add("@cep", MySqlDbType.VarChar, 8).Value = f.Cep;
-                this.c.Command().Parameters.Add("@idtipofuncionario", MySqlDbType.Int32).Value = f.Idtipofuncionario;
-                this.c.Command().Parameters.Add("@fone", MySqlDbType.VarChar, 10).Value = f.Fone;
-                this.c.Command().Parameters.Add("@foto", MySqlDbType.VarChar, 60).Value = f.Foto;
-                this.c.Command().ExecuteNonQuery();
-                this.c.Comitar();
+                String sql = "update funcionario set cpf = @cpf,"+
+                "nome = @nome, endereco = @endereco, numero = @numero, bairro = @bairro, cidade = @cidade, estado = @estado, "+
+                "cep = @cep , email = @email, fone = @fone, fonecelular = @fonecelular, idestabelecimento = @idestabelecimento, funcao = @funcao "+
+                "where idfuncionario = @idfuncionario";
+
+                c.Connection().Open();
+                c.IniciarTransacao();
+                c.Command().CommandText = sql;
+
+                c.Command().Parameters.Add("@idfuncionario", MySqlDbType.Int32, 11).Value = f.Idfuncionario;
+                c.Command().Parameters.Add("@cpf", MySqlDbType.VarChar, 11).Value = f.Cpf;
+                c.Command().Parameters.Add("@nome", MySqlDbType.VarChar, 60).Value = f.Nome;
+                c.Command().Parameters.Add("@endereco", MySqlDbType.VarChar, 60).Value = f.Endereco;
+                c.Command().Parameters.Add("@numero", MySqlDbType.Int32).Value = f.Numero;
+                c.Command().Parameters.Add("@bairro", MySqlDbType.VarChar, 40).Value = f.Bairro;
+                c.Command().Parameters.Add("@cidade", MySqlDbType.VarChar, 40).Value = f.Cidade;
+                c.Command().Parameters.Add("@estado", MySqlDbType.VarChar, 2).Value = f.Estado;
+                c.Command().Parameters.Add("@cep", MySqlDbType.VarChar, 8).Value = f.Cep;
+                c.Command().Parameters.Add("@email", MySqlDbType.VarChar, 60).Value = f.Email;
+                c.Command().Parameters.Add("@fone", MySqlDbType.VarChar, 10).Value = f.Fone;
+                c.Command().Parameters.Add("@fonecelular", MySqlDbType.VarChar, 10).Value = f.Fonecelular;
+                c.Command().Parameters.Add("@idEstabelecimento", MySqlDbType.Int32).Value = f.Idestabelecimento;
+                c.Command().Parameters.Add("@funcao", MySqlDbType.VarChar, 1).Value = f.Funcao;
+                c.Command().ExecuteNonQuery();
+                c.Comitar();
             }
-            catch (Exception e)
+            catch (MySqlException e)
             {
-                this.c.Rolback();
-                throw new Exception("Erro no Repositorio");
+                c.Rolback();
+                throw new Exception("Erro no Repositorio" + e.Message);
             }
             finally
             {
-                this.c.Connection().Close();
+                c.Connection().Close();
             }
         }
 
-        public void ExcluirFuncionario(int codigo)
+        public void ExcluirFuncionario(String cpf)
         {
+            Conectar c = new Conectar();
             try
             {
-                this.c.Connection().Open();
-                this.c.IniciarTransacao();
-                this.c.Command().CommandText = "delete from funcionario where idfuncionario = @idfuncionario";
-                this.c.Command().Parameters.Add("@idfuncionario", MySqlDbType.Int32).Value = codigo;
-                this.c.Command().ExecuteNonQuery();
-                this.c.Comitar();
+                String sql = "delete from funcionario where cpf = @cpf";
+
+                c.Connection().Open();
+                c.IniciarTransacao();
+                c.Command().CommandText = sql;
+
+                c.Command().Parameters.Add("@cpf", MySqlDbType.VarChar, 11).Value = cpf;
+                c.Command().ExecuteNonQuery();
+                c.Comitar();
+
             }
-            catch (Exception e)
+            catch (MySqlException e)
             {
-                this.c.Rolback();
-                throw new Exception("Erro no Repositorio");
+                c.Rolback();
+                throw new Exception("Erro no Repositorio" + e.Message);
             }
             finally
             {
-                this.c.Connection().Close();
+                c.Connection().Close();
             }
         }
 
-        public Funcionario ConsultarFuncionario(int codigo)
+        public Funcionario ConsultarFuncionario(int? codigo)
         {
             Funcionario func = new Funcionario();
             MySqlDataAdapter da = new MySqlDataAdapter();
+            Conectar c = new Conectar();
             try
             {
-                this.c.Connection().Open();
-                this.c.IniciarTransacao();
-                this.c.Command().CommandText = "select * funcionario where idfuncionario = @idfuncionario";
-                this.c.Command().Parameters.Add("@idfuncionario", MySqlDbType.Int32).Value = codigo;
-                da.SelectCommand = this.c.Command();
+                String sql = "select * from funcionario where idfuncionario = @idfuncionario";
+
+                c.Connection().Open();
+                c.IniciarTransacao();
+                c.Command().CommandText = sql;
+
+                c.Command().Parameters.Add("@idfuncionario", MySqlDbType.Int32).Value = codigo;
+                da.SelectCommand = c.Command();
                 DataSet ds = new DataSet();
                 da.Fill(ds, "lista");
 
                 foreach (DataRow item in ds.Tables["lista"].Rows)
                 {
                     func.Idfuncionario = (int)item[0];
-                    func.Idestabelecimento = (int)item[1];
-                    func.Cpf = (String)item[2];
-                    func.Nome = (String)item[3];
+                    func.Cpf = (String)item[1];
+                    func.Nome = (String)item[2];
+                    func.Endereco = (String)item[3];
                     func.Numero = (int)item[4];
                     func.Bairro = (String)item[5];
                     func.Cidade = (String)item[6];
                     func.Estado = (String)item[7];
                     func.Cep = (String)item[8];
                     func.Email = (String)item[9];
-                    func.Idtipofuncionario = (int)item[10];
-                    func.Fone = (String)item[11];
-                    func.Foto = (String)item[12];
-
+                    func.Fone = (String)item[10];
+                    func.Fonecelular = (String)item[11];
+                    func.Idestabelecimento = (int)item[12];
+                    func.Funcao = (String)item[13];
                 }
             }
-            catch (Exception e)
+            catch (MySqlException e)
             {
-                throw new Exception("Erro no Repositorio");
+                throw new Exception("Erro no Repositorio" + e.Message);
             }
             finally
             {
-                this.c.Connection().Close();
+                c.Connection().Close();
             }
             return func;
         }
@@ -173,41 +183,45 @@ namespace Fachada.Repositorio
         {
             Funcionario func = new Funcionario();
             MySqlDataAdapter da = new MySqlDataAdapter();
+            Conectar c = new Conectar();
             try
             {
-                this.c.Connection().Open();
-                this.c.IniciarTransacao();
-                this.c.Command().CommandText = "select * funcionario where cpf = @cpf";
-                this.c.Command().Parameters.Add("@cpf", MySqlDbType.VarChar, 11).Value = cpf;
-                da.SelectCommand = this.c.Command();
+                String sql = "select * from funcionario where cpf = @cpf";
+
+                c.Connection().Open();
+                c.IniciarTransacao();
+                c.Command().CommandText = sql;
+
+                c.Command().Parameters.Add("@cpf", MySqlDbType.VarChar, 11).Value = cpf;
+                da.SelectCommand = c.Command();
                 DataSet ds = new DataSet();
                 da.Fill(ds, "lista");
 
                 foreach (DataRow item in ds.Tables["lista"].Rows)
                 {
                     func.Idfuncionario = (int)item[0];
-                    func.Idestabelecimento = (int)item[1];
-                    func.Cpf = (String)item[2];
-                    func.Nome = (String)item[3];
+                    func.Cpf = (String)item[1];
+                    func.Nome = (String)item[2];
+                    func.Endereco = (String)item[3];
                     func.Numero = (int)item[4];
                     func.Bairro = (String)item[5];
                     func.Cidade = (String)item[6];
                     func.Estado = (String)item[7];
                     func.Cep = (String)item[8];
                     func.Email = (String)item[9];
-                    func.Idtipofuncionario = (int)item[10];
-                    func.Fone = (String)item[11];
-                    func.Foto = (String)item[12];
-
+                    func.Fone = (String)item[10];
+                    func.Fonecelular = (String)item[11];
+                    func.Idestabelecimento = (int)item[12];
+                    func.Funcao = (String)item[13];
                 }
             }
-            catch (Exception e)
+            catch (MySqlException e)
             {
-                throw new Exception("Erro no Repositorio");
+                throw new Exception("Erro no Repositorio" + e);
             }
             finally
             {
-                this.c.Connection().Close();
+                c.Connection().Close();
             }
             return func;
         }
@@ -216,41 +230,45 @@ namespace Fachada.Repositorio
         {
             List<Funcionario> lf = new List<Funcionario>();
             MySqlDataAdapter da = new MySqlDataAdapter();
+            Conectar c = new Conectar();
             try
             {
-                this.c.Connection().Open();
-                this.c.IniciarTransacao();
-                this.c.Command().CommandText = "select * from funcionario ";
-                da.SelectCommand = this.c.Command();
+                String sql = "select * from funcionario";
+
+                c.Connection().Open();
+                c.IniciarTransacao();
+                c.Command().CommandText = sql;
+
+                da.SelectCommand = c.Command();
                 DataSet ds = new DataSet();
                 da.Fill(ds, "lista");
                 foreach (DataRow item in ds.Tables["lista"].Rows)
                 {
                     Funcionario func = new Funcionario();
                     func.Idfuncionario = (int)item[0];
-                    func.Idestabelecimento = (int)item[1];
-                    func.Cpf = (String)item[2];
-                    func.Nome = (String)item[3];
+                    func.Cpf = (String)item[1];
+                    func.Nome = (String)item[2];
+                    func.Endereco = (String)item[3];
                     func.Numero = (int)item[4];
                     func.Bairro = (String)item[5];
                     func.Cidade = (String)item[6];
                     func.Estado = (String)item[7];
                     func.Cep = (String)item[8];
                     func.Email = (String)item[9];
-                    func.Idtipofuncionario = (int)item[10];
-                    func.Fone = (String)item[11];
-                    func.Foto = (String)item[12];
+                    func.Fone = (String)item[10];
+                    func.Fonecelular = (String)item[11];
+                    func.Idestabelecimento = (int)item[12];
+                    func.Funcao = (String)item[13];
                     lf.Add(func);
-
                 }
             }
-            catch (Exception e)
+            catch (MySqlException e)
             {
-                throw new Exception("Erro no Repositorio");
+                throw new Exception("Erro no Repositorio" + e.Message);
             }
             finally
             {
-                this.c.Connection().Close();
+                c.Connection().Close();
             }
             return lf;
         }
