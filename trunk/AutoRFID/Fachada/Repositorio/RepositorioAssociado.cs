@@ -17,7 +17,7 @@ namespace Fachada.Repositorio
 
         public RepositorioAssociado()
         {
-            this.c = new Conectar();
+            //this.c = new Conectar();
         }
 
         # region Iassociado Members
@@ -26,11 +26,13 @@ namespace Fachada.Repositorio
         {
             try
             {
+                this.c = new Conectar();
                 this.c.Connection().Open();
                 this.c.IniciarTransacao();
                 this.c.Command().CommandText = "insert into associado (cpf_cnpj,nome_razaosocial,tipo_fisica_juridica,endereco,"+
                 "numero,bairro,cidade,estado,cep,email,fone,fonecelular) values(@cpf_cnpj,@nome_razaosocial,@tipo,@endereco,@numero,"+
                 "@bairro, @cidade, @estado, @cep, @email, @fone, @fonecel)";
+
                 this.c.Command().Parameters.Add("@cpf_cnpj", MySqlDbType.VarChar, 14).Value = objAssociado.Cpf_cnpj;
                 this.c.Command().Parameters.Add("@nome_razaosocial", MySqlDbType.VarChar, 90).Value = objAssociado.Nome_razaosocial;
                 this.c.Command().Parameters.Add("@tipo", MySqlDbType.VarChar, 2).Value = objAssociado.Tipo_pf_pj;
@@ -62,17 +64,19 @@ namespace Fachada.Repositorio
         {
             try
             {
+                this.c = new Conectar();
                 this.c.Connection().Open();
                 this.c.IniciarTransacao();
-                this.c.Command().CommandText = "update associado set cpf_cnpj = @cpf_cnpj, nome_razaosocial = @nome_razaosocial,tipo_fisica_juridica = @tipopfpj"+
-                 " numero = @numero, bairro = @bairro, cidade = @cidade, estado = @estado, " +
-                 "cep = @cep , email = @email, fone = @fone, fonecelular = @fonecel" +
-                 "where idAssociado = @idAssociado";
+                this.c.Command().CommandText = "update associado set cpf_cnpj = @cpf_cnpj, nome_razaosocial = @nome_razaosocial,tipo_fisica_juridica = @tipo"+
+                " numero = @numero, bairro = @bairro, cidade = @cidade, estado = @estado, " +
+                "cep = @cep , email = @email, fone = @fone, fonecelular = @fonecel" +
+                "where idAssociado = @idAssociado";
 
                 this.c.Command().Parameters.Add("@idAssociado", MySqlDbType.Int32).Value = objAssociado.Idassociado;
-                this.c.Command().Parameters.Add("@cpf_cnpj", MySqlDbType.VarChar, 11).Value = objAssociado.Cpf_cnpj;
+                this.c.Command().Parameters.Add("@cpf_cnpj", MySqlDbType.VarChar, 14).Value = objAssociado.Cpf_cnpj;
                 this.c.Command().Parameters.Add("@nome_razaosocial", MySqlDbType.VarChar, 60).Value = objAssociado.Nome_razaosocial;
-                this.c.Command().Parameters.Add("@tipopfpj", MySqlDbType.VarChar, 1).Value = objAssociado.Tipo_pf_pj;
+                this.c.Command().Parameters.Add("@tipo", MySqlDbType.VarChar, 1).Value = objAssociado.Tipo_pf_pj;
+                this.c.Command().Parameters.Add("@endereco", MySqlDbType.VarChar, 60).Value = objAssociado.Endereco;
                 this.c.Command().Parameters.Add("@numero", MySqlDbType.Int32).Value = objAssociado.Numero;
                 this.c.Command().Parameters.Add("@bairro", MySqlDbType.VarChar, 40).Value = objAssociado.Bairro;
                 this.c.Command().Parameters.Add("@cidade", MySqlDbType.VarChar, 40).Value = objAssociado.Cidade;
@@ -101,6 +105,7 @@ namespace Fachada.Repositorio
         {
             try
             {
+                this.c = new Conectar();
                 this.c.Connection().Open();
                 this.c.IniciarTransacao();
                 this.c.Command().CommandText = "delete from associado where idAssociado = @idassociado";

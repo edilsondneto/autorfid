@@ -55,6 +55,7 @@
     <Compile Include="Controlador\ControladorEstabelecimento.cs" />
     <Compile Include="Controlador\ControladorFuncionario.cs" />
     <Compile Include="Controlador\ControladorTipoPag.cs" />
+    <Compile Include="Controlador\Validacao.cs" />
     <Compile Include="Fachada\Fachada.cs" />
     <Compile Include="Interface\IAssociado.cs" />
     <Compile Include="Interface\IEstabelecimento.cs" />

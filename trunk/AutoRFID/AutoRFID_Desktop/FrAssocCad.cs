@@ -22,7 +22,7 @@ namespace AutoRFID_Desktop
 
         private void btIncluir_Click(object sender, EventArgs e)
         {
-          
+            boxTipo.Focus();
         }
 
         private void boxTipo_TextChanged(object sender, EventArgs e)
@@ -37,10 +37,6 @@ namespace AutoRFID_Desktop
                 cpfcnpj.Mask = @"99,9999,999/9999-99";
 
             }
-
-
-                
-            
         }
 
         private void btConfirmar_Click(object sender, EventArgs e)
@@ -48,21 +44,48 @@ namespace AutoRFID_Desktop
             this.objFachada = Fachada.Fachada.Fachada.ObterFachada();
             this.objAssociado = new Associado();
 
+            //tirar mascara do campo
             cpfcnpj.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
 
             this.objAssociado.Cpf_cnpj = cpfcnpj.Text;
             this.objAssociado.Nome_razaosocial = textNome.Text;
+            this.objAssociado.Tipo_pf_pj = boxTipo.SelectedIndex.ToString();
+            this.objAssociado.Endereco = endereco.Text;
+            this.objAssociado.Numero = int.Parse(numero.Text);
+            this.objAssociado.Bairro = bairro.Text;
+            this.objAssociado.Cidade = cidade.Text;
+            this.objAssociado.Estado = estado.Text;
+            //tirar mascara do campo
+            cep.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
+            this.objAssociado.Cep = cep.Text;
+            this.objAssociado.Email = email.Text;
+            //tirar mascara do campo
+            fone.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
+            this.objAssociado.Fone = fone.Text;
+            //tirar mascara do campo
+            fonecelular.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
+            this.objAssociado.Fonecel = fonecelular.Text;
+
             try
             {
                 objFachada.InserirAssociado(this.objAssociado);
             }
             catch (System.Exception ex)
             {
-                MessageBox.Show("Campo inválido", ex.Message);
+                MessageBox.Show(ex.Message,"Atenção!");
             }
-           
-            //MessageBox.Show("Inclusão efetuada com sucesso!");
+
+            //AutoRFID_Desktop.frCadPad.
+            //habilita();
+            
+
+          
+        }
+
+        private void btCancelar_Click(object sender, EventArgs e)
+        {
 
         }
-    }
+
+     }
 }

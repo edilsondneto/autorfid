@@ -66,6 +66,7 @@ namespace Fachada.Fachada
         }
         #endregion
 
+        
         #region Associado Metodos
 
         public void InserirAssociado(Associado f)

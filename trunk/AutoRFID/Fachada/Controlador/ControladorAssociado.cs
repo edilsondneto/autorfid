@@ -5,32 +5,62 @@ using System.Text;
 using Fachada.Repositorio;
 using Fachada.Interface;
 using Fachada.Basicas;
+using Fachada.Controlador;
 
 namespace Fachada.Controlador
 {
     public class ControladorAssociado : IAssociado
     {
         private RepositorioAssociado objRepAss;
-
-
+       
         public ControladorAssociado()
         {
             this.objRepAss = new RepositorioAssociado();
         }
 
 
-
         #region Iassociado Members
 
         public void inserirAssociado(Associado objAssociado)
         {
-            if (!objAssociado.Nome_razaosocial.Equals(null))
+            if (!Validacao.ValidarNulo(objAssociado.Nome_razaosocial))
             {
-                this.objRepAss.inserirAssociado(objAssociado);
+                throw new Exception("Nome ou Razão Social, obrigatório!");
             }
-            else
-                throw new System.Exception("Campo em branco não permitido");
 
+            if (objAssociado.Tipo_pf_pj.Equals("0"))
+            {
+                if (!Validacao.ValidaCPF(objAssociado.Cpf_cnpj))
+                {
+                    throw new Exception("CPF inválido!");
+                }
+            }
+
+            if (objAssociado.Tipo_pf_pj.Equals("1"))
+            {
+                if (!Validacao.ValidaCNPJ(objAssociado.Cpf_cnpj))
+                {
+                    throw new Exception("CNPJ inválido!");
+                }
+            }
+
+            if (!Validacao.validaFone(objAssociado.Fone))
+            {
+                throw new Exception("Número do telefone inválido");
+            }
+
+            if (!Validacao.validaFone(objAssociado.Fonecel))
+            {
+                throw new Exception("Número do celular inválido");
+            }
+
+            if (!Validacao.validaEmail(objAssociado.Email))
+            {
+                throw new Exception("E-mail inválido");
+            }
+
+
+            this.objRepAss.inserirAssociado(objAssociado);
         }
 
         public void alterarAssociado(Associado objAssociado)

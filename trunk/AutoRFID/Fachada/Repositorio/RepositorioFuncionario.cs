@@ -26,9 +26,9 @@ namespace Fachada.Repositorio
         {
             try
             {
-                this.c.Connection().Open();
+             /*   this.c.Connection().Open();
                 this.c.IniciarTransacao();
-                this.c.Command().CommandText = "insert into funcionario"+
+                this.c.Command().CommandText = "insert into funcionario"
                 +"(cpf, nome, endereco, numero, bairro, cidade, estado, cep, email, fone, fonecelular,"
                 +"idEstabelecimento, idTipoFuncionario, funcao) values(@cpf, @nome, @endereco, @numero, @bairro,"
                 +"@cidade, @estado, @cep, @email, @fone, @fonecelular, @idEstabelecimento, @idTipoFuncionario,"
@@ -37,7 +37,7 @@ namespace Fachada.Repositorio
                 
                 this.c.Command().Parameters.Add("@cpf", MySqlDbType.VarChar, 11).Value = f.Cpf;
                 this.c.Command().Parameters.Add("@nome", MySqlDbType.VarChar, 60).Value = f.Nome;
-                this.c.Command().Parameters.Add("@endereco", MySqlDbType.VarChar, 60).Value = f.Endereco;
+                this.c.Command().Parameters.Add("@endereco", MySqlDbType.VarChar, 60).Value = f.
                 this.c.Command().Parameters.Add("@numero", MySqlDbType.Int32).Value = f.Numero;
                 this.c.Command().Parameters.Add("@bairro", MySqlDbType.VarChar, 40).Value = f.Bairro;
                 this.c.Command().Parameters.Add("@cidade", MySqlDbType.VarChar, 40).Value = f.Cidade;
@@ -52,7 +52,7 @@ namespace Fachada.Repositorio
                 this.c.Command().Parameters.Add("@foto", MySqlDbType.VarChar, 60).Value = f.Foto;
                 this.c.Command().ExecuteNonQuery();
                 this.c.Comitar();
-
+                */
             }
             catch (Exception e)
             {
