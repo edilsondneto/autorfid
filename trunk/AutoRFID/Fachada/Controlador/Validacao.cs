@@ -161,10 +161,11 @@ namespace Fachada.Controlador
         public static bool ValidarNulo(Object vrCampo)
         {
             bool retorno = false;
-            if (vrCampo != null)
+            if (!((vrCampo == null) || (vrCampo.Equals(0))))
             {
                 retorno = true;
             }
+
             return retorno;
         }
 

@@ -16,3 +16,12 @@ C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Fachada.dll
 C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Fachada.pdb
 C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Fachada_Accessor.dll
 C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Fachada_Accessor.pdb
+C:\Auto\trunk\AutoRFID\Testes\bin\Debug\Testes.dll
+C:\Auto\trunk\AutoRFID\Testes\bin\Debug\Testes.pdb
+C:\Auto\trunk\AutoRFID\Testes\bin\Debug\Fachada.dll
+C:\Auto\trunk\AutoRFID\Testes\bin\Debug\Fachada.pdb
+C:\Auto\trunk\AutoRFID\Testes\bin\Debug\Fachada_Accessor.dll
+C:\Auto\trunk\AutoRFID\Testes\bin\Debug\Fachada_Accessor.pdb
+C:\Auto\trunk\AutoRFID\Testes\obj\Debug\ResolveAssemblyReference.cache
+C:\Auto\trunk\AutoRFID\Testes\obj\Debug\Testes.dll
+C:\Auto\trunk\AutoRFID\Testes\obj\Debug\Testes.pdb

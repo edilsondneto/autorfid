@@ -18,8 +18,7 @@ namespace Fachada.BDcon
 
         public Conectar()
         {   /* String de conexão gerada para acessar o banco localmente, na mesma pasta que o executável. */
-            //this.strConexao = Properties.Settings.Default.Constring;
-            this.strConexao = "Database=autorfid;Data Source=localhost;User Id=root;Password=123456";
+            this.strConexao = Properties.Settings.Default.Constring;
             this.conexao = new MySqlConnection(this.strConexao);
             this.comando = new MySqlCommand();
             this.comando.Connection = this.conexao;

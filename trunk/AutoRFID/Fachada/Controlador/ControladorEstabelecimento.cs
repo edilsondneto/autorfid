@@ -21,32 +21,73 @@ namespace Fachada.Controlador
 
         public void IncluirEstabelecimento(Estabelecimento objEstabelecimento)
         {
-            throw new NotImplementedException();
+
+            if (!Validacao.ValidarNulo(objEstabelecimento.Razaosocial))
+            {
+                throw new Exception("Razão Social é obrigatório!");
+            }
+            if (!Validacao.ValidaCNPJ(objEstabelecimento.Cnpj))
+            {
+                throw new Exception("CNPJ Inválido!");
+            }
+            if (!Validacao.ValidarNulo(objEstabelecimento.Endereco))
+            {
+                throw new Exception("Endereço é obrigatório!");
+            }
+            if (!Validacao.ValidarNulo(objEstabelecimento.Cidade))
+            {
+                throw new Exception("Cidade é obrigatório!");
+            }
+            if (!Validacao.ValidarNulo(objEstabelecimento.Estado))
+            {
+                throw new Exception("Estado é obrigatório!");
+            }
+            if (!Validacao.ValidarNulo(objEstabelecimento.Cep))
+            {
+                throw new Exception("Cep é obrigatório!");
+            }
+
+            this.re.IncluirEstabelecimento(objEstabelecimento);
+            
         }
 
         public void AlterarEstabelecimento(Estabelecimento objEstabelecimento)
         {
-            throw new NotImplementedException();
+    
+            this.re.AlterarEstabelecimento(objEstabelecimento);
+            
         }
 
-        public Estabelecimento ConsultarEstabelecimento(Estabelecimento objEstabelecimento)
+        public Estabelecimento ConsultarEstabelecimento(Estabelecimento objEst)
         {
-            throw new NotImplementedException();
+            return this.re.ConsultarEstabelecimento(objEst);
         }
 
-        public void ExcluirEstabelecimento(int idEstabelecimento)
+        public void ExcluirEstabelecimento(Estabelecimento objEst)
         {
-            throw new NotImplementedException();
+            /*Estabelecimento objEst = new Estabelecimento();
+            objEst.IdEstabelecimento = idEst;
+            Estabelecimento objExiste;
+            objExiste = this.re.ConsultarEstabelecimento(objEst);
+            if (objExiste.Equals(null))
+            {
+                throw new Exception("Estabelecimento Inexistente");
+            }
+            else 
+            {
+                this.re.ExcluirEstabelecimento(idEst);
+            }*/
+            this.re.ExcluirEstabelecimento(objEst);
         }
 
-        #endregion
+        //#endregion
 
-        #region IEstabelecimento Members
+        //#region IEstabelecimento Members
 
 
         public List<Estabelecimento> ListarEstabelecimento()
         {
-            throw new NotImplementedException();
+            return this.re.ListarEstabelecimento();
         }
 
         #endregion

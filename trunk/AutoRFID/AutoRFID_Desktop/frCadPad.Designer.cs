@@ -40,8 +40,6 @@
             this.btAlterar = new System.Windows.Forms.Button();
             this.panelConsulta = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelManutencao = new System.Windows.Forms.GroupBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnlBotoes.SuspendLayout();
@@ -135,22 +133,10 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.codigo,
-            this.descricao});
             resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // codigo
-            // 
-            resources.ApplyResources(this.codigo, "codigo");
-            this.codigo.Name = "codigo";
-            // 
-            // descricao
-            // 
-            resources.ApplyResources(this.descricao, "descricao");
-            this.descricao.Name = "descricao";
             // 
             // panelManutencao
             // 
@@ -168,8 +154,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btSair;
             this.Controls.Add(this.pnlBotoes);
-            this.Controls.Add(this.panelManutencao);
             this.Controls.Add(this.panelConsulta);
+            this.Controls.Add(this.panelManutencao);
             this.KeyPreview = true;
             this.MinimizeBox = false;
             this.Name = "frCadPad";
@@ -194,8 +180,6 @@
         protected System.Windows.Forms.Button btSair;
         protected System.Windows.Forms.GroupBox panelConsulta;
         protected System.Windows.Forms.GroupBox panelManutencao;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descricao;
         protected System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Timer timer1;
     }

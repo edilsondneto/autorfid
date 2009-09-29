@@ -11,6 +11,7 @@ namespace AutoRFID_Desktop
 {
     public partial class frCadPad : Form
     {
+        public String validacaoMSG;
         public frCadPad()
         {
 
@@ -73,19 +74,22 @@ namespace AutoRFID_Desktop
         {
             this.habilita();
             //limpar campos
-            this.limparCampos();
+            //this.limparCampos();
         }
 
         private void btConfirmar_Click(object sender, EventArgs e)
         {
             //Validar campos
+            validacaoMSG = "ok"; 
             foreach (Control campo in this.panelManutencao.Controls)
             {
                 if (campo is TextBox){
                  if (((TextBox)campo).Tag != null)
                  { if (((TextBox)campo).Tag.Equals("1") & ((TextBox)campo).Text.Length.Equals(0)){
-                    MessageBox.Show("Campo não pode ser branco!");
-                    return;
+
+                     validacaoMSG = "Campo não pode ser branco!";
+                     return;
+                    
                  }
                 }
                 }
@@ -98,16 +102,19 @@ namespace AutoRFID_Desktop
                         {
                             if(!Validacao.ValidaCPF(campo.Text))
                             {
-                                MessageBox.Show("Cpf inválido!");
+                                validacaoMSG = "CPF inválido";
+                                
                                 return;
+
                             }
                         }
                         else if (((MaskedTextBox)campo).Tag.Equals("3"))
                         {
                             if (!Validacao.ValidaCNPJ(campo.Text))
                             {
-                                MessageBox.Show("CNPJ inválido!");
+                                this.validacaoMSG = "CNPJ inválido!";
                                 return;
+                                
                             }
                         }
                                                    
@@ -115,7 +122,8 @@ namespace AutoRFID_Desktop
                 }
             }
             
-            this.habilita();
+            //por conta das validações no controlador a habilitação dos botões fica na classe filha.
+            //this.habilita();
         }
 
    
@@ -129,7 +137,7 @@ namespace AutoRFID_Desktop
         private void btExcluir_Click(object sender, EventArgs e)
         {
             //limpar campos
-            this.limparCampos();
+            //this.limparCampos();
             
         }
 
@@ -140,7 +148,7 @@ namespace AutoRFID_Desktop
             this.habilita();
             this.btCancelar.Enabled  = false;
             this.btConfirmar.Enabled = false;
-
+            
         }
 
         private void frCadPad_KeyPress(object sender, KeyPressEventArgs e)
@@ -177,6 +185,14 @@ namespace AutoRFID_Desktop
                 //this.Close();
             }
         }
+
+        protected virtual void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+      
+        }
+
+      
+   
         
     }
 }

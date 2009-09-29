@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Fachada.Basicas;
+using System.Data;
 
 namespace Fachada.Interface
 {
@@ -15,6 +16,8 @@ namespace Fachada.Interface
         void excluirAssociado(int idAss);
 
         Associado consultarAssociado(Associado objAssociado);
+
+        DataSet ListarAssociado();
 
     }
 }

@@ -6,6 +6,9 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Fachada.Basicas;
+using Fachada.Fachada;
+using System.Data;
+
 
 namespace AutoRFID_Desktop
 {
@@ -13,11 +16,12 @@ namespace AutoRFID_Desktop
     {
         private Fachada.Fachada.Fachada objFachada;
         private Associado objAssociado;
-
+        private Associado objConsulta;
+        
         public FrAssocCad()
         {
             InitializeComponent();
-           
+                      
         }
 
         private void btIncluir_Click(object sender, EventArgs e)
@@ -34,15 +38,38 @@ namespace AutoRFID_Desktop
             else 
             {
                 cpfcnpj.Tag = "3";
-                cpfcnpj.Mask = @"99,9999,999/9999-99";
+                cpfcnpj.Mask = @"99,999,999/9999-99";
 
             }
         }
 
         private void btConfirmar_Click(object sender, EventArgs e)
-        {
+        {   
+           
+            
+            //verificar se a pré-validação no form cadastro foi efetuada com sucesso
+            if (!base.validacaoMSG.Equals("ok"))
+            {
+                MessageBox.Show(base.validacaoMSG, "Atenção!");
+                return;
+            }
+
+            try
+            {
             this.objFachada = Fachada.Fachada.Fachada.ObterFachada();
             this.objAssociado = new Associado();
+
+
+            try//se for alteração
+            {
+              int idAssoc = int.Parse(this.textCodigo.Text);
+              if (idAssoc > 0)
+              {
+                  this.objAssociado.Idassociado = idAssoc;
+              }
+            }
+            catch
+            { }
 
             //tirar mascara do campo
             cpfcnpj.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
@@ -51,41 +78,153 @@ namespace AutoRFID_Desktop
             this.objAssociado.Nome_razaosocial = textNome.Text;
             this.objAssociado.Tipo_pf_pj = boxTipo.SelectedIndex.ToString();
             this.objAssociado.Endereco = endereco.Text;
-            this.objAssociado.Numero = int.Parse(numero.Text);
+            try
+            {
+                this.objAssociado.Numero = int.Parse(numero.Text);
+            }
+            catch (Exception ex) { }
             this.objAssociado.Bairro = bairro.Text;
             this.objAssociado.Cidade = cidade.Text;
             this.objAssociado.Estado = estado.Text;
-            //tirar mascara do campo
-            cep.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
-            this.objAssociado.Cep = cep.Text;
-            this.objAssociado.Email = email.Text;
-            //tirar mascara do campo
-            fone.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
-            this.objAssociado.Fone = fone.Text;
-            //tirar mascara do campo
-            fonecelular.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
-            this.objAssociado.Fonecel = fonecelular.Text;
 
             try
             {
-                objFachada.InserirAssociado(this.objAssociado);
+                //tirar mascara do campo
+                cep.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
+                this.objAssociado.Cep = cep.Text;
             }
-            catch (System.Exception ex)
+            catch (Exception ex) { }
+            this.objAssociado.Email = email.Text;
+
+            try
             {
-                MessageBox.Show(ex.Message,"Atenção!");
+                //tirar mascara do campo
+                fone.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
+                this.objAssociado.Fone = fone.Text;
+            }
+            catch (Exception ex) { }
+
+            try
+            {
+                //tirar mascara do campo
+                fonecelular.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
+                this.objAssociado.Fonecel = fonecelular.Text;
+            }
+            catch (Exception ex) { }
+
+
+            //this.objConsulta = this.objFachada.ConsultarAssociado(this.objAssociado);
+
+            if (this.objAssociado.Idassociado.Equals(0))
+            {
+                this.objFachada.InserirAssociado(this.objAssociado);
+                this.CarregarCampos(null, null);
+            }
+            else
+            {
+                this.objFachada.AlterarAssociado(this.objAssociado);
             }
 
-            //AutoRFID_Desktop.frCadPad.
-            //habilita();
-            
+              base.habilita();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,"Atenção! Registro não foi gravado.");
+            }
 
+            
           
         }
+    
 
         private void btCancelar_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void CarregarCampos(String idAssoc, String cpf_cnpj)
+        {
+            this.objFachada = Fachada.Fachada.Fachada.ObterFachada();
+            this.objAssociado = new Associado();
+
+            try
+            {
+                this.objAssociado.Idassociado = int.Parse(idAssoc);
+            }
+            catch (Exception ex) { }
+            this.objAssociado.Cpf_cnpj    = cpf_cnpj;
+
+            this.objAssociado = this.objFachada.ConsultarAssociado(this.objAssociado);
+
+            //Preencher campos do form
+            this.textCodigo.Text = this.objAssociado.Idassociado.ToString();
+            try
+            {
+                this.boxTipo.SelectedIndex = int.Parse(this.objAssociado.Tipo_pf_pj);
+            }
+            catch (Exception ex) { }
+            this.cpfcnpj.Text = this.objAssociado.Cpf_cnpj;
+            this.textNome.Text = this.objAssociado.Nome_razaosocial;
+            this.endereco.Text = this.objAssociado.Endereco;
+            this.numero.Text = this.objAssociado.Numero.ToString();
+            this.bairro.Text = this.objAssociado.Bairro;
+            this.cidade.Text = this.objAssociado.Cidade;
+            this.estado.Text = this.objAssociado.Estado;
+            this.cep.Text = this.objAssociado.Cep;
+            this.email.Text = this.objAssociado.Email;
+            this.fone.Text = this.objAssociado.Fone;
+            this.fonecelular.Text = this.objAssociado.Fonecel;
+        }
+
+        private void FrAssocCad_Load(object sender, EventArgs e)
+        {
+            this.CarregarCampos(null,null);
+        }
+
+        private void btExcluir_Click(object sender, EventArgs e)
+        {
+            this.objFachada = Fachada.Fachada.Fachada.ObterFachada();
+            try
+            {
+                int idAssoc = int.Parse(this.textCodigo.Text);
+                this.objFachada.ExcluirAssociado(idAssoc);
+                this.CarregarCampos(null, null);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao deletar registro. "+ex.Message,"Atenção!");
+            }
+
+        }
+
+        private void btAlterar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btPesquisar_Click(object sender, EventArgs e)
+        {
+
+            DataSet dsAssociado = new DataSet();
+            dsAssociado = this.objFachada.ListarAssociado();
+
+
+            DataTableReader dtr = new DataTableReader(dsAssociado.Tables[0]);
+
+            DataTable dtAssoc = new DataTable(); 
+
+            dtAssoc.Load(dtr, LoadOption.OverwriteChanges);
+
+            this.dataGridView1.DataSource = dtAssoc;
+
+        }
+
+        protected override void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+           String idConsulta = this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+           this.CarregarCampos(idConsulta, null);
+        }
+
 
      }
 }

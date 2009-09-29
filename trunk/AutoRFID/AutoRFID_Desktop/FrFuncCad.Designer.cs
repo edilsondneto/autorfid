@@ -51,12 +51,13 @@
             this.textNome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.boxTipo = new System.Windows.Forms.ComboBox();
             this.textCodigo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.gpbFoto = new System.Windows.Forms.GroupBox();
             this.foto = new System.Windows.Forms.PictureBox();
+            this.boxTipo = new System.Windows.Forms.ComboBox();
             this.pnlBotoes.SuspendLayout();
+            this.panelConsulta.SuspendLayout();
             this.panelManutencao.SuspendLayout();
             this.gpbFoto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
@@ -66,9 +67,21 @@
             // 
             this.btConfirmar.Click += new System.EventHandler(this.btConfirmar_Click);
             // 
+            // btCancelar
+            // 
+            this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
+            // 
+            // btExcluir
+            // 
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
+            // 
             // btIncluir
             // 
             this.btIncluir.Click += new System.EventHandler(this.btIncluir_Click);
+            // 
+            // btAlterar
+            // 
+            this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
             // 
             // pnlBotoes
             // 
@@ -199,6 +212,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "  ",
@@ -338,21 +352,9 @@
             this.label1.TabIndex = 78;
             this.label1.Text = "Função Ocupada *";
             // 
-            // boxTipo
-            // 
-            this.boxTipo.FormattingEnabled = true;
-            this.boxTipo.Items.AddRange(new object[] {
-            "Administrador",
-            "Gerente",
-            "Operador"});
-            this.boxTipo.Location = new System.Drawing.Point(115, 35);
-            this.boxTipo.Name = "boxTipo";
-            this.boxTipo.Size = new System.Drawing.Size(121, 21);
-            this.boxTipo.TabIndex = 77;
-            this.boxTipo.Tag = "1";
-            // 
             // textCodigo
             // 
+            this.textCodigo.Enabled = false;
             this.textCodigo.Location = new System.Drawing.Point(9, 35);
             this.textCodigo.Name = "textCodigo";
             this.textCodigo.Size = new System.Drawing.Size(100, 20);
@@ -388,13 +390,30 @@
             this.foto.TabIndex = 102;
             this.foto.TabStop = false;
             // 
+            // boxTipo
+            // 
+            this.boxTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.boxTipo.FormattingEnabled = true;
+            this.boxTipo.ItemHeight = 13;
+            this.boxTipo.Items.AddRange(new object[] {
+            "Administrador",
+            "Gerente",
+            "Operador"});
+            this.boxTipo.Location = new System.Drawing.Point(115, 35);
+            this.boxTipo.Name = "boxTipo";
+            this.boxTipo.Size = new System.Drawing.Size(121, 21);
+            this.boxTipo.TabIndex = 77;
+            this.boxTipo.Tag = "1";
+            // 
             // FrFuncCad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(750, 278);
             this.Name = "FrFuncCad";
             this.Text = "Manutenção de Funcionário";
+            this.Load += new System.EventHandler(this.FrFuncCad_Load);
             this.pnlBotoes.ResumeLayout(false);
+            this.panelConsulta.ResumeLayout(false);
             this.panelManutencao.ResumeLayout(false);
             this.panelManutencao.PerformLayout();
             this.gpbFoto.ResumeLayout(false);
@@ -428,10 +447,10 @@
         private System.Windows.Forms.TextBox textNome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox boxTipo;
         private System.Windows.Forms.TextBox textCodigo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox gpbFoto;
         public System.Windows.Forms.PictureBox foto;
+        private System.Windows.Forms.ComboBox boxTipo;
     }
 }

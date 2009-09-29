@@ -5,6 +5,7 @@ using System.Text;
 using Fachada.Interface;
 using Fachada.Controlador;
 using Fachada.Basicas;
+using System.Data;
 
 namespace Fachada.Fachada
 {
@@ -12,14 +13,14 @@ namespace Fachada.Fachada
     {
         private static Fachada f;
         private Ifuncionario funcionario;
-        private ITipoPag tipoPag;
         private IAssociado IntAssociado;
+        private IEstabelecimento IntEstabelecimento;
 
         private Fachada()
         {
             this.funcionario = new ControladorFuncionario();
-            // this.tipoPag = new ControladorTipoPag();
             this.IntAssociado = new ControladorAssociado();
+            this.IntEstabelecimento = new ControladorEstabelecimento();
         }
 
         public static Fachada ObterFachada()
@@ -68,14 +69,14 @@ namespace Fachada.Fachada
 
         #region Associado Metodos
 
-        public void InserirAssociado(Associado f)
+        public void InserirAssociado(Associado Asso)
         {
-            this.IntAssociado.inserirAssociado(f);
+            this.IntAssociado.inserirAssociado(Asso);
         }
 
-        public void AlterarAssociado(Associado f)
+        public void AlterarAssociado(Associado Asso)
         {
-            this.IntAssociado.alterarAssociado(f);
+            this.IntAssociado.alterarAssociado(Asso);
         }
 
         public void ExcluirAssociado(int codigo)
@@ -83,11 +84,39 @@ namespace Fachada.Fachada
             this.IntAssociado.excluirAssociado(codigo);
         }
 
-        public Associado ConsultarAssociado(Associado f)
+        public Associado ConsultarAssociado(Associado Asso)
         {
-            return this.IntAssociado.consultarAssociado(f);
+            return this.IntAssociado.consultarAssociado(Asso);
         }
 
+        public DataSet ListarAssociado()
+        {
+            return this.IntAssociado.ListarAssociado();
+        }
+
+        #endregion
+
+        #region Estabelecimento Metodos
+        public void IncluirEstabelecimento(Estabelecimento f)
+        {
+            this.IntEstabelecimento.IncluirEstabelecimento(f);
+        }
+        public void AlterarEstabelecimento(Estabelecimento f)
+        {
+            this.IntEstabelecimento.AlterarEstabelecimento(f);
+        }
+        public void ExcluirEstabelecimento(Estabelecimento objEst)
+        {
+            this.IntEstabelecimento.ExcluirEstabelecimento(objEst);
+        }
+        public Estabelecimento ConsultarEstabelecimento(Estabelecimento objEst)
+        {
+            return this.IntEstabelecimento.ConsultarEstabelecimento(objEst);
+        }
+        public List<Estabelecimento> ListarEstabelecimento()
+        {
+            return this.IntEstabelecimento.ListarEstabelecimento();
+        }
         #endregion
 
 

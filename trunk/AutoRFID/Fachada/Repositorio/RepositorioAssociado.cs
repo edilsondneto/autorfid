@@ -5,6 +5,7 @@ using System.Text;
 using Fachada.Interface;
 using Fachada.Basicas;
 using Fachada.BDcon;
+using Fachada.Controlador;
 using MySql.Data.MySqlClient;
 using System.Data;
 
@@ -67,9 +68,9 @@ namespace Fachada.Repositorio
                 this.c = new Conectar();
                 this.c.Connection().Open();
                 this.c.IniciarTransacao();
-                this.c.Command().CommandText = "update associado set cpf_cnpj = @cpf_cnpj, nome_razaosocial = @nome_razaosocial,tipo_fisica_juridica = @tipo"+
-                " numero = @numero, bairro = @bairro, cidade = @cidade, estado = @estado, " +
-                "cep = @cep , email = @email, fone = @fone, fonecelular = @fonecel" +
+                this.c.Command().CommandText = "update associado set cpf_cnpj = @cpf_cnpj, nome_razaosocial = @nome_razaosocial,tipo_fisica_juridica = @tipo,"+
+                "endereco = @endereco, numero = @numero, bairro = @bairro, cidade = @cidade, estado = @estado, " +
+                "cep = @cep , email = @email, fone = @fone, fonecelular = @fonecel " +
                 "where idAssociado = @idAssociado";
 
                 this.c.Command().Parameters.Add("@idAssociado", MySqlDbType.Int32).Value = objAssociado.Idassociado;
@@ -126,10 +127,92 @@ namespace Fachada.Repositorio
             
         }
 
-        public Associado consultarAssociado(Associado objAssociado)
+        public Associado consultarAssociado(Associado objAssociadoPass)
         {
-            return objAssociado;//temporário
+            Associado objAssoc = new Associado();
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            try
+            {
+                this.c = new Conectar();
+                this.c.Connection().Open();
+
+                //verificar se o campo não é nulo para efetuar consulta
+                if (Validacao.ValidarNulo(objAssociadoPass.Idassociado))
+                {
+                    this.c.Command().CommandText = "select * from associado where idAssociado = @idAssociado";
+                    this.c.Command().Parameters.Add("@idAssociado", MySqlDbType.Int32).Value = objAssociadoPass.Idassociado;
+                }
+                else if (Validacao.ValidarNulo(objAssociadoPass.Cpf_cnpj))
+                    {
+                        this.c.Command().CommandText = "select * from associado where cpf_cnpj = @cpf_cnpj";
+                        this.c.Command().Parameters.Add("@cpf_cnpj", MySqlDbType.String).Value = objAssociadoPass.Cpf_cnpj;
+                    }
+                else //se todos os campos for nulo carregar o último registro
+                {
+                    this.c.Command().CommandText = "select * from associado where idAssociado = (SELECT MAX(idAssociado) FROM associado)";
+                }
+
+                da.SelectCommand = this.c.Command();
+                DataSet ds = new DataSet();
+                da.Fill(ds, "lista");
+
+                foreach (DataRow item in ds.Tables["lista"].Rows)
+                {
+                    objAssoc.Idassociado = (int)item[0];
+                    objAssoc.Cpf_cnpj = (String)item[1];
+                    objAssoc.Nome_razaosocial = (String)item[2];
+                    objAssoc.Tipo_pf_pj = (String)item[3];
+                    objAssoc.Endereco = (String)item[4];
+                    objAssoc.Numero = (int)item[5];
+                    objAssoc.Bairro = (String)item[6];
+                    objAssoc.Cidade = (String)item[7];
+                    objAssoc.Estado = (String)item[8];
+                    objAssoc.Cep    = (String)item[9];
+                    objAssoc.Email  = (String)item[10];
+                    objAssoc.Fone   = (String)item[11];
+                    objAssoc.Fonecel= (String)item[12];
+
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Erro no Repositorio");
+            }
+            finally
+            {
+                this.c.Connection().Close();
+            }
+            return objAssoc;
         }
+
+        public DataSet ListarAssociado()
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            Conectar c = new Conectar();
+            DataSet ds = new DataSet();
+            DataTable dtAssociados = new DataTable();
+
+            try
+            {
+                String sql = "select * from Associado";
+                c.Connection().Open();
+                c.Command().CommandText = sql;
+                da.SelectCommand = c.Command();
+
+                da.Fill(dtAssociados);
+                ds.Tables.Add(dtAssociados);	
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Erro no Repositorio" + e.Message);
+            }
+            finally
+            {
+                c.Connection().Close();
+            }
+            return ds;
+        }
+
 
         #endregion
     }

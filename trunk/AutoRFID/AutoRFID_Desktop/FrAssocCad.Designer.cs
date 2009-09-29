@@ -62,13 +62,25 @@
             // 
             this.btConfirmar.Click += new System.EventHandler(this.btConfirmar_Click);
             // 
+            // btPesquisar
+            // 
+            this.btPesquisar.Click += new System.EventHandler(this.btPesquisar_Click);
+            // 
             // btCancelar
             // 
             this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
+            // btExcluir
+            // 
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
+            // 
             // btIncluir
             // 
             this.btIncluir.Click += new System.EventHandler(this.btIncluir_Click);
+            // 
+            // btAlterar
+            // 
+            this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
             // 
             // panelManutencao
             // 
@@ -348,7 +360,7 @@
             this.textCodigo.Name = "textCodigo";
             this.textCodigo.Size = new System.Drawing.Size(100, 20);
             this.textCodigo.TabIndex = 10;
-            this.textCodigo.Tag = "1";
+            this.textCodigo.Tag = "";
             // 
             // label2
             // 
@@ -365,6 +377,7 @@
             this.ClientSize = new System.Drawing.Size(744, 278);
             this.Name = "FrAssocCad";
             this.Text = "Manutenção de Associado";
+            this.Load += new System.EventHandler(this.FrAssocCad_Load);
             this.pnlBotoes.ResumeLayout(false);
             this.panelManutencao.ResumeLayout(false);
             this.panelManutencao.PerformLayout();

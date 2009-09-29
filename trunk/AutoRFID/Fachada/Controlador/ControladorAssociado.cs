@@ -6,6 +6,7 @@ using Fachada.Repositorio;
 using Fachada.Interface;
 using Fachada.Basicas;
 using Fachada.Controlador;
+using System.Data;
 
 namespace Fachada.Controlador
 {
@@ -65,19 +66,25 @@ namespace Fachada.Controlador
 
         public void alterarAssociado(Associado objAssociado)
         {
-            throw new NotImplementedException();
+            //ver validações
+            this.objRepAss.alterarAssociado(objAssociado);
         }
 
         public void excluirAssociado(int idAss)
         {
-            throw new NotImplementedException();
+            this.objRepAss.excluirAssociado(idAss);
         }
 
         public Associado consultarAssociado(Associado objAssociado)
         {
-            throw new NotImplementedException();
+            return this.objRepAss.consultarAssociado(objAssociado);
         }
 
+        public DataSet ListarAssociado()
+        {
+
+            return this.objRepAss.ListarAssociado();
+        }
         #endregion
     }
 }

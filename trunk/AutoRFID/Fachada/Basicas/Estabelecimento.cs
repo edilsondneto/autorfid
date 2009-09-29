@@ -8,6 +8,7 @@ namespace Fachada.Basicas
     public class Estabelecimento
     {
         private int idestabelecimento;
+        private String cnpj;           
         private String razaosocial;
         private String endereco;
         private int numero;
@@ -17,21 +18,31 @@ namespace Fachada.Basicas
         private String cep;
         private String email;
         private String fone;
+        private String fonecelular;
         private int qtdvagas;
-        private int qtdvagasdisponiveis;
+        private int qtdvagasocupadas;
 
         public Estabelecimento()
         {
-
+            //idestabelecimento = 0;
         }
-
-        public int Qtdvagasdisponiveis
+        public String Cnpj
         {
-            get { return qtdvagasdisponiveis; }
-            set { qtdvagasdisponiveis = value; }
+            get { return cnpj; }
+            set { cnpj = value; }
+        }
+        public String Fonecelular
+        {
+            get { return fonecelular; }
+            set { fonecelular = value; }
+        }
+        public int QtdVagasOcupadas
+        {
+            get { return qtdvagasocupadas; }
+            set { qtdvagasocupadas = value; }
         }
 
-        public int Qtdvagas
+        public int QtdVagas
         {
             get { return qtdvagas; }
             set { qtdvagas = value; }
@@ -95,8 +106,8 @@ namespace Fachada.Basicas
 
         public int IdEstabelecimento
         {
-            get { return IdEstabelecimento; }
-            set { IdEstabelecimento = value; }
+            get { return idestabelecimento; }
+            set { idestabelecimento = value; }
         }
 
         

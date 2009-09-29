@@ -8,7 +8,7 @@ namespace Fachada.Basicas
     public class Funcionario
     {
         #region atributos
-        private int? idfuncionario;
+        private int idfuncionario;
         private int idestabelecimento;
         private String cpf;
         private String nome;
@@ -109,7 +109,7 @@ namespace Fachada.Basicas
             set { idestabelecimento = value; }
         }
 
-        public int? Idfuncionario
+        public int Idfuncionario
         {
             get { return idfuncionario; }
             set { idfuncionario = value; }
