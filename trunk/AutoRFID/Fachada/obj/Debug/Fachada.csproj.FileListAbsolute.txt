@@ -17,3 +17,9 @@ C:\AutoRFID\trunk\AutoRFID\Fachada\bin\Debug\Fachada.dll
 C:\AutoRFID\trunk\AutoRFID\Fachada\bin\Debug\Fachada.pdb
 C:\AutoRFID\trunk\AutoRFID\Fachada\obj\Debug\Fachada.dll
 C:\AutoRFID\trunk\AutoRFID\Fachada\obj\Debug\Fachada.pdb
+C:\Documents and Settings\RFM\Meus documentos\worspace\trunk\AutoRFID\Fachada\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\RFM\Meus documentos\worspace\trunk\AutoRFID\Fachada\obj\Debug\Fachada.dll
+C:\Documents and Settings\RFM\Meus documentos\worspace\trunk\AutoRFID\Fachada\obj\Debug\Fachada.pdb
+C:\Documents and Settings\RFM\Meus documentos\worspace\trunk\AutoRFID\Fachada\bin\Debug\Fachada.dll.config
+C:\Documents and Settings\RFM\Meus documentos\worspace\trunk\AutoRFID\Fachada\bin\Debug\Fachada.dll
+C:\Documents and Settings\RFM\Meus documentos\worspace\trunk\AutoRFID\Fachada\bin\Debug\Fachada.pdb

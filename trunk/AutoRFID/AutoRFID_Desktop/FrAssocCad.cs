@@ -7,7 +7,6 @@ using System.Text;
 using System.Windows.Forms;
 using Fachada.Basicas;
 using Fachada.Fachada;
-using System.Data;
 
 
 namespace AutoRFID_Desktop

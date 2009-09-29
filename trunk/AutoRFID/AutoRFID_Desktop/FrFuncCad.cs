@@ -93,16 +93,22 @@ namespace AutoRFID_Desktop
         {
             this.objFachada = Fachada.Fachada.Fachada.ObterFachada();
             this.objFuncionario = new Funcionario();
-
             try
             {
                 List<Funcionario> l = this.objFachada.ListarFuncionario();
-                this.objFuncionario = l[l.Count - 1];
+                if (idFunc == null)
+                {
+                    this.objFuncionario = l[l.Count - 1];
+                }
+                else
+                {
+                    this.objFuncionario = this.objFachada.ConsultarFuncionario(int.Parse(idFunc));
+                }
             }
             catch (Exception ex) { }
-            this.objFuncionario.Cpf = cpfFunc;
+            /*this.objFuncionario.Cpf = cpfFunc;
 
-            this.objFuncionario = this.objFachada.ConsultarFuncionario(this.objFuncionario.Idfuncionario);
+            this.objFuncionario = this.objFachada.ConsultarFuncionario(this.objFuncionario.Idfuncionario);*/
 
             //Preencher campos do form
             this.textCodigo.Text = this.objFuncionario.Idfuncionario.ToString();
@@ -142,6 +148,25 @@ namespace AutoRFID_Desktop
         private void btCancelar_Click(object sender, EventArgs e)
         {
             this.sAcao ="";
+        }
+
+        private void btPesquisar_Click(object sender, EventArgs e)
+        {
+            DataSet ds = this.objFachada.ListarFuncionarioDataset();
+            
+            DataTableReader dtr = new DataTableReader(ds.Tables[0]);
+
+            DataTable dt = new DataTable(); 
+
+            dt.Load(dtr, LoadOption.OverwriteChanges);
+
+            this.dataGridView1.DataSource = dt;
+        }
+
+        protected override void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            String idConsulta = this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            this.CarregarCampos(idConsulta, null);
         }
 
              

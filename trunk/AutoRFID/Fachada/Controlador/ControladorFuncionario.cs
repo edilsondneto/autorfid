@@ -5,6 +5,7 @@ using System.Text;
 using Fachada.Interface;
 using Fachada.Repositorio;
 using Fachada.Basicas;
+using System.Data;
 
 namespace Fachada.Controlador
 {
@@ -68,7 +69,7 @@ namespace Fachada.Controlador
             }
         }
 
-        public Funcionario ConsultarFuncionario(int? codigo)
+        public Funcionario ConsultarFuncionario(int codigo)
         {
             Funcionario f = this.rf.ConsultarFuncionario(codigo);
             if (f.Equals(null))
@@ -93,7 +94,13 @@ namespace Fachada.Controlador
             return this.rf.ListarFuncionario();
         }
 
+        public DataSet ListarFuncionarioDataset()
+        {
+            return this.rf.ListarFuncionarioDataset();
+        }
+
         #endregion
+
 
     }
 }

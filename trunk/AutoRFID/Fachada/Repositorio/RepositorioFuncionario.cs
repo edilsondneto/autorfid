@@ -132,7 +132,7 @@ namespace Fachada.Repositorio
             }
         }
 
-        public Funcionario ConsultarFuncionario(int? codigo)
+        public Funcionario ConsultarFuncionario(int codigo)
         {
             Funcionario func = new Funcionario();
             MySqlDataAdapter da = new MySqlDataAdapter();
@@ -271,6 +271,32 @@ namespace Fachada.Repositorio
                 c.Connection().Close();
             }
             return lf;
+        }
+
+        public DataSet ListarFuncionarioDataset()
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            DataSet ds = new DataSet();
+            Conectar c = new Conectar();
+            try
+            {
+                String sql = "select * from funcionario";
+
+                c.Connection().Open();
+                c.IniciarTransacao();
+                c.Command().CommandText = sql;
+                da.SelectCommand = c.Command();
+                da.Fill(ds, "lista");
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Erro no Repositorio" + e.Message);
+            }
+            finally
+            {
+                c.Connection().Close();
+            }
+            return ds;
         }
 
         #endregion

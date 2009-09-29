@@ -65,6 +65,11 @@ namespace Fachada.Fachada
         {
             return this.funcionario.ListarFuncionario();
         }
+
+        public DataSet ListarFuncionarioDataset()
+        {
+            return this.funcionario.ListarFuncionarioDataset();
+        }
         #endregion
 
         #region Associado Metodos
