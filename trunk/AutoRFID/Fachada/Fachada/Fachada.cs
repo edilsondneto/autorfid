@@ -118,7 +118,7 @@ namespace Fachada.Fachada
         {
             return this.IntEstabelecimento.ConsultarEstabelecimento(objEst);
         }
-        public List<Estabelecimento> ListarEstabelecimento()
+        public DataSet ListarEstabelecimento()
         {
             return this.IntEstabelecimento.ListarEstabelecimento();
         }

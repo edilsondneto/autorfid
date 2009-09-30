@@ -19,13 +19,6 @@ C:\Auto\trunk\AutoRFID\AutoRFID_WEB\bin\Fachada.pdb
 C:\Auto\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\ResolveAssemblyReference.cache
 C:\Auto\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.dll
 C:\Auto\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.pdb
-C:\AutoRFID\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\ResolveAssemblyReference.cache
-C:\AutoRFID\trunk\AutoRFID\AutoRFID_WEB\bin\AutoRFID_WEB.dll
-C:\AutoRFID\trunk\AutoRFID\AutoRFID_WEB\bin\AutoRFID_WEB.pdb
-C:\AutoRFID\trunk\AutoRFID\AutoRFID_WEB\bin\Fachada.dll
-C:\AutoRFID\trunk\AutoRFID\AutoRFID_WEB\bin\Fachada.pdb
-C:\AutoRFID\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.dll
-C:\AutoRFID\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.pdb
 C:\Documents and Settings\RFM\Meus documentos\worspace\trunk\AutoRFID\AutoRFID_WEB\bin\AutoRFID_WEB.dll
 C:\Documents and Settings\RFM\Meus documentos\worspace\trunk\AutoRFID\AutoRFID_WEB\bin\AutoRFID_WEB.pdb
 C:\Documents and Settings\RFM\Meus documentos\worspace\trunk\AutoRFID\AutoRFID_WEB\bin\Fachada.dll
@@ -33,3 +26,10 @@ C:\Documents and Settings\RFM\Meus documentos\worspace\trunk\AutoRFID\AutoRFID_W
 C:\Documents and Settings\RFM\Meus documentos\worspace\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\RFM\Meus documentos\worspace\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.dll
 C:\Documents and Settings\RFM\Meus documentos\worspace\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.pdb
+C:\AutoRFID\trunk\AutoRFID\AutoRFID_WEB\bin\AutoRFID_WEB.dll
+C:\AutoRFID\trunk\AutoRFID\AutoRFID_WEB\bin\AutoRFID_WEB.pdb
+C:\AutoRFID\trunk\AutoRFID\AutoRFID_WEB\bin\Fachada.dll
+C:\AutoRFID\trunk\AutoRFID\AutoRFID_WEB\bin\Fachada.pdb
+C:\AutoRFID\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\ResolveAssemblyReference.cache
+C:\AutoRFID\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.dll
+C:\AutoRFID\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.pdb

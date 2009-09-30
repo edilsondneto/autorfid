@@ -7,15 +7,6 @@ C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Testes\bi
 C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Testes\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Testes\obj\Debug\Testes.dll
 C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Testes\obj\Debug\Testes.pdb
-C:\AutoRFID\trunk\AutoRFID\Testes\obj\Debug\ResolveAssemblyReference.cache
-C:\AutoRFID\trunk\AutoRFID\Testes\obj\Debug\Testes.dll
-C:\AutoRFID\trunk\AutoRFID\Testes\obj\Debug\Testes.pdb
-C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll
-C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.pdb
-C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Fachada.dll
-C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Fachada.pdb
-C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Fachada_Accessor.dll
-C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Fachada_Accessor.pdb
 C:\Auto\trunk\AutoRFID\Testes\bin\Debug\Testes.dll
 C:\Auto\trunk\AutoRFID\Testes\bin\Debug\Testes.pdb
 C:\Auto\trunk\AutoRFID\Testes\bin\Debug\Fachada.dll
@@ -28,3 +19,12 @@ C:\Auto\trunk\AutoRFID\Testes\obj\Debug\Testes.pdb
 C:\Documents and Settings\RFM\Meus documentos\worspace\trunk\AutoRFID\Testes\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\RFM\Meus documentos\worspace\trunk\AutoRFID\Testes\obj\Debug\Testes.dll
 C:\Documents and Settings\RFM\Meus documentos\worspace\trunk\AutoRFID\Testes\obj\Debug\Testes.pdb
+C:\AutoRFID\trunk\AutoRFID\Testes\obj\Debug\ResolveAssemblyReference.cache
+C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll
+C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.pdb
+C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Fachada.dll
+C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Fachada.pdb
+C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Fachada_Accessor.dll
+C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Fachada_Accessor.pdb
+C:\AutoRFID\trunk\AutoRFID\Testes\obj\Debug\Testes.dll
+C:\AutoRFID\trunk\AutoRFID\Testes\obj\Debug\Testes.pdb

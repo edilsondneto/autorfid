@@ -188,58 +188,36 @@ namespace Fachada.Repositorio
             }
         }
            
-            
-
-        public List<Estabelecimento> ListarEstabelecimento()
+        public DataSet ListarEstabelecimento()
         {
-            List<Estabelecimento> Le = new List<Estabelecimento>();
             MySqlDataAdapter da = new MySqlDataAdapter();
+            Conectar c = new Conectar();
+            DataSet ds = new DataSet();
+            DataTable dtEstabelecimento = new DataTable();
+
             try
             {
-                this.c = new Conectar();
-                this.c.Connection().Open();
-                this.c.IniciarTransacao();
-                this.c.Command().CommandText = "select * from estabelecimento";
-                da.SelectCommand = this.c.Command();
-                this.c.Comitar();
-                DataSet ds = new DataSet();
-                da.Fill(ds, "lista");
-                foreach (DataRow item in ds.Tables["lista"].Rows)
-                {
-                    Estabelecimento est = new Estabelecimento();
-                    est.Cnpj = (String)item[0];
-                    est.IdEstabelecimento = (int)item[1];
-                    est.Razaosocial = (String)item[2];
-                    est.Endereco = (String)item[3];
-                    est.Numero = (int)item[4];
-                    est.Bairro = (String)item[5];
-                    est.Cidade = (String)item[6];
-                    est.Cep = (string)item[7];
-                    est.Email = (String)item[8];
-                    est.Fone = (String)item[9];
-                    est.Fonecelular = (String)item[10];
-                    est.QtdVagas = (int)item[11];
-                    est.QtdVagasOcupadas = (int)item[12];
-                    Le.Add(est);
-                }
-                return Le;
+                String sql = "select * from Estabelecimento";
+                c.Connection().Open();
+                c.Command().CommandText = sql;
+                da.SelectCommand = c.Command();
+
+                da.Fill(dtEstabelecimento);
+                ds.Tables.Add(dtEstabelecimento);
             }
-            catch (Exception e)
+            catch (MySqlException e)
             {
-                this.c.Rolback();
-                throw new Exception("Erro no Repositório Estabelecimento");
+                throw new Exception("Erro no Repositorio" + e.Message);
             }
             finally
             {
-                this.c.Connection().Close();
+                c.Connection().Close();
             }
+            return ds;
         }
 
+
         #endregion
-        /*
-        internal Estabelecimento ConsultarEstabelecimento(int idEst)
-        {
-            throw new NotImplementedException();
-        }*/
+        
     }
 }

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Fachada.Basicas;
+using System.Data;
 
 namespace AutoRFID_Desktop
 {
@@ -35,7 +36,7 @@ namespace AutoRFID_Desktop
                 
                 try//se for alteração
                 {
-                    int idEstab = this.objEstabConsulta.IdEstabelecimento;
+                    int idEstab = this.objEstabConsulta.IdEstabelecimento;                  
                     if (idEstab > 0)
                     {
                         this.objEstabelecimento.IdEstabelecimento=idEstab;
@@ -86,7 +87,7 @@ namespace AutoRFID_Desktop
 
         private void btIncluir_Click(object sender, EventArgs e)
         {
-
+            this.objEstabConsulta = new Estabelecimento();
             cnpj.Focus();
         }
 
@@ -136,15 +137,11 @@ namespace AutoRFID_Desktop
 
         private void btExcluir_Click(object sender, EventArgs e)
         {
+            //MessageBox.Show("texto","capition",MessageBoxOptions,Button);
             this.objFachada = Fachada.Fachada.Fachada.ObterFachada();
-
-
+            
             try
             {
-                //int idAssoc = int.Parse(this.textCodigo.Text);
-                //this.objFachada.ExcluirAssociado(idAssoc);
-
-                //this.objEstabConsulta = 
                 this.objFachada.ExcluirEstabelecimento(this.objEstabConsulta);
                 this.CarregarCampos(null, null);
             }
@@ -153,6 +150,27 @@ namespace AutoRFID_Desktop
                 MessageBox.Show("Erro ao deletar registro. " + ex.Message, "Atenção!");
             }
 
+        }
+
+        private void btPesquisar_Click(object sender, EventArgs e)
+        {
+            DataSet dsEstabelecimento = new DataSet();
+            dsEstabelecimento = this.objFachada.ListarEstabelecimento();
+
+
+            DataTableReader dtr = new DataTableReader(dsEstabelecimento.Tables[0]);
+
+            DataTable dtEstab = new DataTable();
+
+            dtEstab.Load(dtr, LoadOption.OverwriteChanges);
+
+            this.dataGridView1.DataSource = dtEstab;
+
+        }
+        protected override void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            String idConsulta = this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            this.CarregarCampos(idConsulta, null);
         }
     }
 }

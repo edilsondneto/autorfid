@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Fachada.Basicas;
+using System.Data;
 
 namespace Fachada.Interface
 {
@@ -11,7 +12,7 @@ namespace Fachada.Interface
         void IncluirEstabelecimento(Estabelecimento objEstabelecimento);
         void AlterarEstabelecimento(Estabelecimento objEstabelecimento);
         Estabelecimento ConsultarEstabelecimento(Estabelecimento objEst);
-        void ExcluirEstabelecimento(Estabelecimento objEst);
-        List<Estabelecimento> ListarEstabelecimento();
+        void ExcluirEstabelecimento(Estabelecimento objEst);     
+        DataSet ListarEstabelecimento();
     }
 }

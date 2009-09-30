@@ -53,13 +53,16 @@
             this.fone = new System.Windows.Forms.MaskedTextBox();
             this.fonecelular = new System.Windows.Forms.MaskedTextBox();
             this.pnlBotoes.SuspendLayout();
-            this.panelConsulta.SuspendLayout();
             this.panelManutencao.SuspendLayout();
             this.SuspendLayout();
             // 
             // btConfirmar
             // 
             this.btConfirmar.Click += new System.EventHandler(this.btConfirmar_Click);
+            // 
+            // btPesquisar
+            // 
+            this.btPesquisar.Click += new System.EventHandler(this.btPesquisar_Click);
             // 
             // btExcluir
             // 
@@ -75,6 +78,7 @@
             // 
             // panelManutencao
             // 
+            this.panelManutencao.Controls.Add(this.textRazaoSocial);
             this.panelManutencao.Controls.Add(this.fonecelular);
             this.panelManutencao.Controls.Add(this.fone);
             this.panelManutencao.Controls.Add(this.label2);
@@ -96,7 +100,6 @@
             this.panelManutencao.Controls.Add(this.lblBairro);
             this.panelManutencao.Controls.Add(this.textEndereco);
             this.panelManutencao.Controls.Add(this.lblEndereco);
-            this.panelManutencao.Controls.Add(this.textRazaoSocial);
             this.panelManutencao.Controls.Add(this.lblRazãoSocial);
             this.panelManutencao.Controls.Add(this.lblCnpj);
             this.panelManutencao.Size = new System.Drawing.Size(745, 278);
@@ -112,24 +115,24 @@
             // 
             // textQuantidade
             // 
-            this.textQuantidade.Location = new System.Drawing.Point(655, 88);
+            this.textQuantidade.Location = new System.Drawing.Point(631, 142);
             this.textQuantidade.Name = "textQuantidade";
-            this.textQuantidade.Size = new System.Drawing.Size(68, 20);
-            this.textQuantidade.TabIndex = 85;
+            this.textQuantidade.Size = new System.Drawing.Size(88, 20);
+            this.textQuantidade.TabIndex = 87;
             // 
             // lblQuantidade
             // 
             this.lblQuantidade.AutoSize = true;
-            this.lblQuantidade.Location = new System.Drawing.Point(652, 71);
+            this.lblQuantidade.Location = new System.Drawing.Point(637, 126);
             this.lblQuantidade.Name = "lblQuantidade";
-            this.lblQuantidade.Size = new System.Drawing.Size(65, 13);
+            this.lblQuantidade.Size = new System.Drawing.Size(66, 13);
             this.lblQuantidade.TabIndex = 72;
-            this.lblQuantidade.Text = "Quantidade:";
+            this.lblQuantidade.Text = "Qtde.Vagas:";
             // 
             // lblCep
             // 
             this.lblCep.AutoSize = true;
-            this.lblCep.Location = new System.Drawing.Point(393, 70);
+            this.lblCep.Location = new System.Drawing.Point(340, 126);
             this.lblCep.Name = "lblCep";
             this.lblCep.Size = new System.Drawing.Size(29, 13);
             this.lblCep.TabIndex = 70;
@@ -137,15 +140,15 @@
             // 
             // textEmail
             // 
-            this.textEmail.Location = new System.Drawing.Point(475, 89);
+            this.textEmail.Location = new System.Drawing.Point(423, 142);
             this.textEmail.Name = "textEmail";
-            this.textEmail.Size = new System.Drawing.Size(174, 20);
-            this.textEmail.TabIndex = 84;
+            this.textEmail.Size = new System.Drawing.Size(196, 20);
+            this.textEmail.TabIndex = 86;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(472, 72);
+            this.lblEmail.Location = new System.Drawing.Point(420, 126);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(35, 13);
             this.lblEmail.TabIndex = 68;
@@ -154,7 +157,7 @@
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(335, 70);
+            this.lblEstado.Location = new System.Drawing.Point(666, 73);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(43, 13);
             this.lblEstado.TabIndex = 67;
@@ -162,15 +165,15 @@
             // 
             // textNumero
             // 
-            this.textNumero.Location = new System.Drawing.Point(247, 88);
+            this.textNumero.Location = new System.Drawing.Point(640, 35);
             this.textNumero.Name = "textNumero";
             this.textNumero.Size = new System.Drawing.Size(84, 20);
-            this.textNumero.TabIndex = 81;
+            this.textNumero.TabIndex = 79;
             // 
             // lblNUmero
             // 
             this.lblNUmero.AutoSize = true;
-            this.lblNUmero.Location = new System.Drawing.Point(244, 72);
+            this.lblNUmero.Location = new System.Drawing.Point(637, 19);
             this.lblNUmero.Name = "lblNUmero";
             this.lblNUmero.Size = new System.Drawing.Size(47, 13);
             this.lblNUmero.TabIndex = 64;
@@ -178,15 +181,16 @@
             // 
             // textCidade
             // 
-            this.textCidade.Location = new System.Drawing.Point(11, 87);
+            this.textCidade.Location = new System.Drawing.Point(343, 89);
             this.textCidade.Name = "textCidade";
-            this.textCidade.Size = new System.Drawing.Size(230, 20);
-            this.textCidade.TabIndex = 80;
+            this.textCidade.Size = new System.Drawing.Size(307, 20);
+            this.textCidade.TabIndex = 81;
+            this.textCidade.Tag = "1";
             // 
             // lblCidade
             // 
             this.lblCidade.AutoSize = true;
-            this.lblCidade.Location = new System.Drawing.Point(8, 71);
+            this.lblCidade.Location = new System.Drawing.Point(340, 73);
             this.lblCidade.Name = "lblCidade";
             this.lblCidade.Size = new System.Drawing.Size(43, 13);
             this.lblCidade.TabIndex = 62;
@@ -194,15 +198,16 @@
             // 
             // textBairro
             // 
-            this.textBairro.Location = new System.Drawing.Point(546, 35);
+            this.textBairro.Location = new System.Drawing.Point(11, 89);
             this.textBairro.Name = "textBairro";
-            this.textBairro.Size = new System.Drawing.Size(177, 20);
-            this.textBairro.TabIndex = 79;
+            this.textBairro.Size = new System.Drawing.Size(320, 20);
+            this.textBairro.TabIndex = 80;
+            this.textBairro.Tag = "1";
             // 
             // lblBairro
             // 
             this.lblBairro.AutoSize = true;
-            this.lblBairro.Location = new System.Drawing.Point(543, 19);
+            this.lblBairro.Location = new System.Drawing.Point(12, 73);
             this.lblBairro.Name = "lblBairro";
             this.lblBairro.Size = new System.Drawing.Size(37, 13);
             this.lblBairro.TabIndex = 60;
@@ -212,8 +217,9 @@
             // 
             this.textEndereco.Location = new System.Drawing.Point(337, 35);
             this.textEndereco.Name = "textEndereco";
-            this.textEndereco.Size = new System.Drawing.Size(200, 20);
+            this.textEndereco.Size = new System.Drawing.Size(297, 20);
             this.textEndereco.TabIndex = 78;
+            this.textEndereco.Tag = "1";
             // 
             // lblEndereco
             // 
@@ -230,6 +236,7 @@
             this.textRazaoSocial.Name = "textRazaoSocial";
             this.textRazaoSocial.Size = new System.Drawing.Size(200, 20);
             this.textRazaoSocial.TabIndex = 77;
+            this.textRazaoSocial.Tag = "1";
             // 
             // lblRazãoSocial
             // 
@@ -252,11 +259,11 @@
             // 
             // maskedTextCep
             // 
-            this.maskedTextCep.Location = new System.Drawing.Point(396, 89);
+            this.maskedTextCep.Location = new System.Drawing.Point(338, 142);
             this.maskedTextCep.Mask = "00000-999";
             this.maskedTextCep.Name = "maskedTextCep";
             this.maskedTextCep.Size = new System.Drawing.Size(73, 20);
-            this.maskedTextCep.TabIndex = 83;
+            this.maskedTextCep.TabIndex = 85;
             // 
             // comboEstado
             // 
@@ -293,7 +300,7 @@
             "SE",
             "SP",
             "TO"});
-            this.comboEstado.Location = new System.Drawing.Point(337, 88);
+            this.comboEstado.Location = new System.Drawing.Point(669, 88);
             this.comboEstado.Name = "comboEstado";
             this.comboEstado.Size = new System.Drawing.Size(53, 21);
             this.comboEstado.Sorted = true;
@@ -302,7 +309,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 120);
+            this.label1.Location = new System.Drawing.Point(12, 126);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 13);
             this.label1.TabIndex = 88;
@@ -311,7 +318,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(162, 120);
+            this.label2.Location = new System.Drawing.Point(153, 126);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 13);
             this.label2.TabIndex = 89;
@@ -319,19 +326,19 @@
             // 
             // fone
             // 
-            this.fone.Location = new System.Drawing.Point(10, 136);
+            this.fone.Location = new System.Drawing.Point(10, 142);
             this.fone.Mask = "(99) 0000-0000";
             this.fone.Name = "fone";
             this.fone.Size = new System.Drawing.Size(140, 20);
-            this.fone.TabIndex = 86;
+            this.fone.TabIndex = 83;
             // 
             // fonecelular
             // 
-            this.fonecelular.Location = new System.Drawing.Point(156, 136);
+            this.fonecelular.Location = new System.Drawing.Point(156, 142);
             this.fonecelular.Mask = "(99) 0000-0000";
             this.fonecelular.Name = "fonecelular";
             this.fonecelular.Size = new System.Drawing.Size(175, 20);
-            this.fonecelular.TabIndex = 87;
+            this.fonecelular.TabIndex = 84;
             // 
             // FrEstabCad
             // 
@@ -342,7 +349,6 @@
             this.Text = "Manutenção de Estabelecimento ";
             this.Load += new System.EventHandler(this.FrEstabCad_Load);
             this.pnlBotoes.ResumeLayout(false);
-            this.panelConsulta.ResumeLayout(false);
             this.panelManutencao.ResumeLayout(false);
             this.panelManutencao.PerformLayout();
             this.ResumeLayout(false);

@@ -5,6 +5,7 @@ using System.Text;
 using Fachada.Interface;
 using Fachada.Repositorio;
 using Fachada.Basicas;
+using System.Data;
 
 namespace Fachada.Controlador
 {
@@ -46,7 +47,13 @@ namespace Fachada.Controlador
             {
                 throw new Exception("Cep é obrigatório!");
             }
-
+            if (!(objEstabelecimento.Email == ""))
+            {
+                if (!Validacao.validaEmail(objEstabelecimento.Email))
+                {
+                    throw new Exception("E-mail inválido");
+                }
+            }
             this.re.IncluirEstabelecimento(objEstabelecimento);
             
         }
@@ -64,32 +71,14 @@ namespace Fachada.Controlador
         }
 
         public void ExcluirEstabelecimento(Estabelecimento objEst)
-        {
-            /*Estabelecimento objEst = new Estabelecimento();
-            objEst.IdEstabelecimento = idEst;
-            Estabelecimento objExiste;
-            objExiste = this.re.ConsultarEstabelecimento(objEst);
-            if (objExiste.Equals(null))
-            {
-                throw new Exception("Estabelecimento Inexistente");
-            }
-            else 
-            {
-                this.re.ExcluirEstabelecimento(idEst);
-            }*/
+        {         
             this.re.ExcluirEstabelecimento(objEst);
         }
 
-        //#endregion
-
-        //#region IEstabelecimento Members
-
-
-        public List<Estabelecimento> ListarEstabelecimento()
+        public DataSet ListarEstabelecimento()
         {
-            return this.re.ListarEstabelecimento();
+            return this.re.ListarEstabelecimento();        
         }
-
         #endregion
     }
 }

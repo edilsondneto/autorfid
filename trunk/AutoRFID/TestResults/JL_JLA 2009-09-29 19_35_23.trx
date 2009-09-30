@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0ca8361e-bc22-4142-969d-bfc7cf95709e" name="JL@JLA 2009-09-29 19:35:23" runUser="JLA\JL" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="ddf0a898-0e29-4648-b4ed-936846171b10">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\AutoRFID\trunk\AutoRFID\TestResults\JL_JLA 2009-09-29 19_35_23">
+      <DeploymentItem filename="C:\AutoRFID\trunk\AutoRFID\Fachada\bin\Debug\Fachada.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="15" executed="15" passed="11" error="0" failed="4" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2009-09-29T19:35:23.7968750-03:00" queuing="2009-09-29T19:35:24.3281250-03:00" start="2009-09-29T19:35:24.3437500-03:00" finish="2009-09-29T19:35:25.6093750-03:00" />
+  <TestDefinitions>
+    <UnitTest name="AlterarAssociadoTest" storage="c:\autorfid\trunk\autorfid\testes\bin\debug\testes.dll" id="1fe22fba-27ee-5b6e-fef9-18f711cfc2d9">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="99ee56e6-95ec-4b66-9b25-ad8b98bdec7b" />
+      <TestMethod codeBase="C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.RepositorioEstabelecimentoTest, Testes" name="AlterarAssociadoTest" />
+    </UnitTest>
+    <UnitTest name="AlterarAssociadoTest" storage="c:\autorfid\trunk\autorfid\testes\bin\debug\testes.dll" id="f1d70b09-4f3e-b6f6-98d9-56fc1ac3f619">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="44aaf6e0-54e5-48cc-b191-dc68193d2c9d" />
+      <TestMethod codeBase="C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaAssociadoTest, Testes" name="AlterarAssociadoTest" />
+    </UnitTest>
+    <UnitTest name="InserirAssociadoTest" storage="c:\autorfid\trunk\autorfid\testes\bin\debug\testes.dll" id="79eb4cb2-d216-bab4-86f5-34dad42ddb7a">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="700478de-2aa1-43fd-a174-2194f35c77d4" />
+      <TestMethod codeBase="C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaAssociadoTest, Testes" name="InserirAssociadoTest" />
+    </UnitTest>
+    <UnitTest name="InserirEstabelecimentoTest" storage="c:\autorfid\trunk\autorfid\testes\bin\debug\testes.dll" id="ce8744ca-6ff9-56df-8975-f64d38916f3a">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="4905fc03-3675-4b36-b9be-a343fa90fdb6" />
+      <TestMethod codeBase="C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.RepositorioEstabelecimentoTest, Testes" name="InserirEstabelecimentoTest" />
+    </UnitTest>
+    <UnitTest name="ConsultarAssociadoTest1" storage="c:\autorfid\trunk\autorfid\testes\bin\debug\testes.dll" id="86f9318d-36c5-1530-1f43-d38616b6be00">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="1de6f593-1fcc-47d2-aea8-588f1c886600" />
+      <TestMethod codeBase="C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaAssociadoTest, Testes" name="ConsultarAssociadoTest1" />
+    </UnitTest>
+    <UnitTest name="AlterarFuncionarioTest" storage="c:\autorfid\trunk\autorfid\testes\bin\debug\testes.dll" id="405addab-7262-0a5a-cd4d-2ab022f9b0be">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="6bbeb91e-b5d1-49cf-bba5-69ec062e6afc" />
+      <TestMethod codeBase="C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaFuncionarioTest, Testes" name="AlterarFuncionarioTest" />
+    </UnitTest>
+    <UnitTest name="ListarEstabelecimento" storage="c:\autorfid\trunk\autorfid\testes\bin\debug\testes.dll" id="e65ca46c-b468-c509-97fd-e4dedb85ec84">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="ac50e253-0b53-4424-9d8d-592ffd94da99" />
+      <TestMethod codeBase="C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.RepositorioEstabelecimentoTest, Testes" name="ListarEstabelecimento" />
+    </UnitTest>
+    <UnitTest name="ListarAssociadoTest" storage="c:\autorfid\trunk\autorfid\testes\bin\debug\testes.dll" id="8e2e0b8c-24e1-1157-41fd-8a0d2ef38856">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="6d867c10-f00a-4c2c-b2e7-5cc5b659952c" />
+      <TestMethod codeBase="C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaAssociadoTest, Testes" name="ListarAssociadoTest" />
+    </UnitTest>
+    <UnitTest name="ExcluirAssociadoTest" storage="c:\autorfid\trunk\autorfid\testes\bin\debug\testes.dll" id="d2370c58-d793-e03f-1b8b-f87543f174ff">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="e0f00671-e143-4831-911b-95ba80d2f5f3" />
+      <TestMethod codeBase="C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaAssociadoTest, Testes" name="ExcluirAssociadoTest" />
+    </UnitTest>
+    <UnitTest name="InserirFuncionarioTest" storage="c:\autorfid\trunk\autorfid\testes\bin\debug\testes.dll" id="dfad1513-8f2d-ec2d-3033-169b501e8432">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="dc26bc0f-53c2-4f08-9899-97bbfcf57921" />
+      <TestMethod codeBase="C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaFuncionarioTest, Testes" name="InserirFuncionarioTest" />
+    </UnitTest>
+    <UnitTest name="ExcluirFuncionarioTest" storage="c:\autorfid\trunk\autorfid\testes\bin\debug\testes.dll" id="b3b638f9-0653-8a45-8c3b-f0f277fbcf8b">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="ef15b526-9dfc-472c-93e8-d59584e3f33e" />
+      <TestMethod codeBase="C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaFuncionarioTest, Testes" name="ExcluirFuncionarioTest" />
+    </UnitTest>
+    <UnitTest name="ConsultarFuncionarioTest1" storage="c:\autorfid\trunk\autorfid\testes\bin\debug\testes.dll" id="41519cc5-c300-645b-3399-81e4cd93d8f4">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="7c5e0763-1b2f-4ff1-ba57-020e09ba2499" />
+      <TestMethod codeBase="C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaFuncionarioTest, Testes" name="ConsultarFuncionarioTest1" />
+    </UnitTest>
+    <UnitTest name="ConsultarEstabelecimentoTest1" storage="c:\autorfid\trunk\autorfid\testes\bin\debug\testes.dll" id="411c5840-badd-0c94-4f67-0ebdfda267ca">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="ae343bea-a167-4d9c-b670-51fef9ff0aa7" />
+      <TestMethod codeBase="C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.RepositorioEstabelecimentoTest, Testes" name="ConsultarEstabelecimentoTest1" />
+    </UnitTest>
+    <UnitTest name="ExcluirEstabelecimentoTest" storage="c:\autorfid\trunk\autorfid\testes\bin\debug\testes.dll" id="10f2db0d-0924-6d8d-ff2e-6ce53ef7029d">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="d10592c2-ca85-4fc8-96c8-cd34e1708d4b" />
+      <TestMethod codeBase="C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.RepositorioEstabelecimentoTest, Testes" name="ExcluirEstabelecimentoTest" />
+    </UnitTest>
+    <UnitTest name="ListarFuncionarioTest" storage="c:\autorfid\trunk\autorfid\testes\bin\debug\testes.dll" id="b1e2b982-79fa-53c4-daa2-de2d38a329e1">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="357ac82c-623c-40bf-b97b-bf04483f4c54" />
+      <TestMethod codeBase="C:\AutoRFID\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaFuncionarioTest, Testes" name="ListarFuncionarioTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="10f2db0d-0924-6d8d-ff2e-6ce53ef7029d" executionId="d10592c2-ca85-4fc8-96c8-cd34e1708d4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1fe22fba-27ee-5b6e-fef9-18f711cfc2d9" executionId="99ee56e6-95ec-4b66-9b25-ad8b98bdec7b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="405addab-7262-0a5a-cd4d-2ab022f9b0be" executionId="6bbeb91e-b5d1-49cf-bba5-69ec062e6afc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="411c5840-badd-0c94-4f67-0ebdfda267ca" executionId="ae343bea-a167-4d9c-b670-51fef9ff0aa7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="41519cc5-c300-645b-3399-81e4cd93d8f4" executionId="7c5e0763-1b2f-4ff1-ba57-020e09ba2499" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="79eb4cb2-d216-bab4-86f5-34dad42ddb7a" executionId="700478de-2aa1-43fd-a174-2194f35c77d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="86f9318d-36c5-1530-1f43-d38616b6be00" executionId="1de6f593-1fcc-47d2-aea8-588f1c886600" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8e2e0b8c-24e1-1157-41fd-8a0d2ef38856" executionId="6d867c10-f00a-4c2c-b2e7-5cc5b659952c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b1e2b982-79fa-53c4-daa2-de2d38a329e1" executionId="357ac82c-623c-40bf-b97b-bf04483f4c54" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b3b638f9-0653-8a45-8c3b-f0f277fbcf8b" executionId="ef15b526-9dfc-472c-93e8-d59584e3f33e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ce8744ca-6ff9-56df-8975-f64d38916f3a" executionId="4905fc03-3675-4b36-b9be-a343fa90fdb6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d2370c58-d793-e03f-1b8b-f87543f174ff" executionId="e0f00671-e143-4831-911b-95ba80d2f5f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dfad1513-8f2d-ec2d-3033-169b501e8432" executionId="dc26bc0f-53c2-4f08-9899-97bbfcf57921" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e65ca46c-b468-c509-97fd-e4dedb85ec84" executionId="ac50e253-0b53-4424-9d8d-592ffd94da99" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f1d70b09-4f3e-b6f6-98d9-56fc1ac3f619" executionId="44aaf6e0-54e5-48cc-b191-dc68193d2c9d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d10592c2-ca85-4fc8-96c8-cd34e1708d4b" testId="10f2db0d-0924-6d8d-ff2e-6ce53ef7029d" testName="ExcluirEstabelecimentoTest" computerName="JLA" duration="00:00:00.1684644" startTime="2009-09-29T19:35:24.3437500-03:00" endTime="2009-09-29T19:35:25.1718750-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="99ee56e6-95ec-4b66-9b25-ad8b98bdec7b" testId="1fe22fba-27ee-5b6e-fef9-18f711cfc2d9" testName="AlterarAssociadoTest" computerName="JLA" duration="00:00:00.0142632" startTime="2009-09-29T19:35:25.1875000-03:00" endTime="2009-09-29T19:35:25.2031250-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Testes.RepositorioEstabelecimentoTest.AlterarAssociadoTest threw exception:  System.Exception: CNPJ Inválido!.</Message>
+          <StackTrace>    at Fachada.Controlador.ControladorEstabelecimento.IncluirEstabelecimento(Estabelecimento objEstabelecimento) in c:\autorfid\trunk\autorfid\fachada\controlador\controladorestabelecimento.cs:line 32
+   at Fachada.Fachada.Fachada.IncluirEstabelecimento(Estabelecimento f) in C:\AutoRFID\trunk\AutoRFID\Fachada\Fachada\Fachada.cs:line 107
+   at Testes.RepositorioEstabelecimentoTest.AlterarAssociadoTest() in C:\AutoRFID\trunk\AutoRFID\Testes\RepositorioEstabelecimentoTest.cs:line 141
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6bbeb91e-b5d1-49cf-bba5-69ec062e6afc" testId="405addab-7262-0a5a-cd4d-2ab022f9b0be" testName="AlterarFuncionarioTest" computerName="JLA" duration="00:00:00.0088818" startTime="2009-09-29T19:35:25.2031250-03:00" endTime="2009-09-29T19:35:25.2187500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Testes.FachadaFuncionarioTest.AlterarFuncionarioTest threw exception:  System.Exception: Funcionário Existente.</Message>
+          <StackTrace>    at Fachada.Controlador.ControladorFuncionario.InserirFuncionario(Funcionario f) in C:\AutoRFID\trunk\AutoRFID\Fachada\Controlador\ControladorFuncionario.cs:line 33
+   at Fachada.Fachada.Fachada.InserirFuncionario(Funcionario f) in C:\AutoRFID\trunk\AutoRFID\Fachada\Fachada\Fachada.cs:line 38
+   at Testes.FachadaFuncionarioTest.AlterarFuncionarioTest() in C:\AutoRFID\trunk\AutoRFID\Testes\FachadaFuncionarioTest.cs:line 142
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ae343bea-a167-4d9c-b670-51fef9ff0aa7" testId="411c5840-badd-0c94-4f67-0ebdfda267ca" testName="ConsultarEstabelecimentoTest1" computerName="JLA" duration="00:00:00.1089074" startTime="2009-09-29T19:35:25.2187500-03:00" endTime="2009-09-29T19:35:25.3281250-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;234232232&gt;. Actual:&lt;(null)&gt;. </Message>
+          <StackTrace>   at Testes.RepositorioEstabelecimentoTest.ConsultarEstabelecimentoTest1() in C:\AutoRFID\trunk\AutoRFID\Testes\RepositorioEstabelecimentoTest.cs:line 118
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7c5e0763-1b2f-4ff1-ba57-020e09ba2499" testId="41519cc5-c300-645b-3399-81e4cd93d8f4" testName="ConsultarFuncionarioTest1" computerName="JLA" duration="00:00:00.0028763" startTime="2009-09-29T19:35:25.3281250-03:00" endTime="2009-09-29T19:35:25.3281250-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="700478de-2aa1-43fd-a174-2194f35c77d4" testId="79eb4cb2-d216-bab4-86f5-34dad42ddb7a" testName="InserirAssociadoTest" computerName="JLA" duration="00:00:00.0437991" startTime="2009-09-29T19:35:25.3281250-03:00" endTime="2009-09-29T19:35:25.3750000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1de6f593-1fcc-47d2-aea8-588f1c886600" testId="86f9318d-36c5-1530-1f43-d38616b6be00" testName="ConsultarAssociadoTest1" computerName="JLA" duration="00:00:00.0024505" startTime="2009-09-29T19:35:25.3906250-03:00" endTime="2009-09-29T19:35:25.3906250-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6d867c10-f00a-4c2c-b2e7-5cc5b659952c" testId="8e2e0b8c-24e1-1157-41fd-8a0d2ef38856" testName="ListarAssociadoTest" computerName="JLA" duration="00:00:00.0035901" startTime="2009-09-29T19:35:25.3906250-03:00" endTime="2009-09-29T19:35:25.4062500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="357ac82c-623c-40bf-b97b-bf04483f4c54" testId="b1e2b982-79fa-53c4-daa2-de2d38a329e1" testName="ListarFuncionarioTest" computerName="JLA" duration="00:00:00.0049288" startTime="2009-09-29T19:35:25.4062500-03:00" endTime="2009-09-29T19:35:25.4062500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ef15b526-9dfc-472c-93e8-d59584e3f33e" testId="b3b638f9-0653-8a45-8c3b-f0f277fbcf8b" testName="ExcluirFuncionarioTest" computerName="JLA" duration="00:00:00.0399651" startTime="2009-09-29T19:35:25.4062500-03:00" endTime="2009-09-29T19:35:25.4531250-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4905fc03-3675-4b36-b9be-a343fa90fdb6" testId="ce8744ca-6ff9-56df-8975-f64d38916f3a" testName="InserirEstabelecimentoTest" computerName="JLA" duration="00:00:00.0014814" startTime="2009-09-29T19:35:25.4531250-03:00" endTime="2009-09-29T19:35:25.4687500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Testes.RepositorioEstabelecimentoTest.InserirEstabelecimentoTest threw exception:  System.Exception: CNPJ Inválido!.</Message>
+          <StackTrace>    at Fachada.Controlador.ControladorEstabelecimento.IncluirEstabelecimento(Estabelecimento objEstabelecimento) in c:\autorfid\trunk\autorfid\fachada\controlador\controladorestabelecimento.cs:line 32
+   at Fachada.Fachada.Fachada.IncluirEstabelecimento(Estabelecimento f) in C:\AutoRFID\trunk\AutoRFID\Fachada\Fachada\Fachada.cs:line 107
+   at Testes.RepositorioEstabelecimentoTest.InserirEstabelecimentoTest() in C:\AutoRFID\trunk\AutoRFID\Testes\RepositorioEstabelecimentoTest.cs:line 105
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e0f00671-e143-4831-911b-95ba80d2f5f3" testId="d2370c58-d793-e03f-1b8b-f87543f174ff" testName="ExcluirAssociadoTest" computerName="JLA" duration="00:00:00.0037312" startTime="2009-09-29T19:35:25.4687500-03:00" endTime="2009-09-29T19:35:25.4687500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="dc26bc0f-53c2-4f08-9899-97bbfcf57921" testId="dfad1513-8f2d-ec2d-3033-169b501e8432" testName="InserirFuncionarioTest" computerName="JLA" duration="00:00:00.0390613" startTime="2009-09-29T19:35:25.4687500-03:00" endTime="2009-09-29T19:35:25.5156250-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ac50e253-0b53-4424-9d8d-592ffd94da99" testId="e65ca46c-b468-c509-97fd-e4dedb85ec84" testName="ListarEstabelecimento" computerName="JLA" duration="00:00:00.0001628" startTime="2009-09-29T19:35:25.5156250-03:00" endTime="2009-09-29T19:35:25.5156250-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="44aaf6e0-54e5-48cc-b191-dc68193d2c9d" testId="f1d70b09-4f3e-b6f6-98d9-56fc1ac3f619" testName="AlterarAssociadoTest" computerName="JLA" duration="00:00:00.0719557" startTime="2009-09-29T19:35:25.5156250-03:00" endTime="2009-09-29T19:35:25.5937500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
