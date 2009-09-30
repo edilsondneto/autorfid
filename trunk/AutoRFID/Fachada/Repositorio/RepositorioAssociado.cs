@@ -174,7 +174,7 @@ namespace Fachada.Repositorio
 
                 }
             }
-            catch (Exception e)
+            catch (MySqlException e)
             {
                 throw new Exception("Erro no Repositorio");
             }

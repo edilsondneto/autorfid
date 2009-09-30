@@ -66,18 +66,62 @@ namespace Fachada.Controlador
 
         public void alterarAssociado(Associado objAssociado)
         {
-            //ver validações
+            if (!Validacao.ValidarNulo(objAssociado.Nome_razaosocial))
+            {
+                throw new Exception("Nome ou Razão Social, obrigatório!");
+            }
+
+            if (objAssociado.Tipo_pf_pj.Equals("0"))
+            {
+                if (!Validacao.ValidaCPF(objAssociado.Cpf_cnpj))
+                {
+                    throw new Exception("CPF inválido!");
+                }
+            }
+
+            if (objAssociado.Tipo_pf_pj.Equals("1"))
+            {
+                if (!Validacao.ValidaCNPJ(objAssociado.Cpf_cnpj))
+                {
+                    throw new Exception("CNPJ inválido!");
+                }
+            }
+
+            if (!Validacao.validaFone(objAssociado.Fone))
+            {
+                throw new Exception("Número do telefone inválido");
+            }
+
+            if (!Validacao.validaFone(objAssociado.Fonecel))
+            {
+                throw new Exception("Número do celular inválido");
+            }
+
+            if (!Validacao.validaEmail(objAssociado.Email))
+            {
+                throw new Exception("E-mail inválido");
+            }
+
             this.objRepAss.alterarAssociado(objAssociado);
         }
 
         public void excluirAssociado(int idAss)
         {
-            this.objRepAss.excluirAssociado(idAss);
+            if (idAss.Equals(0))
+            {
+                throw new Exception("Código do usuário não existe");
+            }
+            else
+            {
+                this.objRepAss.excluirAssociado(idAss);
+            }
         }
 
         public Associado consultarAssociado(Associado objAssociado)
         {
-            return this.objRepAss.consultarAssociado(objAssociado);
+         
+                return this.objRepAss.consultarAssociado(objAssociado);
+         
         }
 
         public DataSet ListarAssociado()
