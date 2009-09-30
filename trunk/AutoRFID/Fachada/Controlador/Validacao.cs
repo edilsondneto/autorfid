@@ -19,7 +19,7 @@ namespace Fachada.Controlador
         public static bool validaFone(string celular)
         {
             bool retorno = false;
-            if (!(celular.Length < 10))
+            if (celular.Equals(null) || celular.Length.Equals(0) || celular.Length.Equals(10))
             {
                 retorno = true;
             }
@@ -33,8 +33,20 @@ namespace Fachada.Controlador
                     + @"((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}"
                     + @"\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+"
                     + @"[a-zA-Z]{2,}))$";
-            Regex reStrict = new Regex(patternStrict);
-            bool isStrictMatch = reStrict.IsMatch(email);
+            
+            bool isStrictMatch;
+
+            if (email.Equals(null) || email.Length.Equals(0))
+            {
+                isStrictMatch = true;
+            }
+            else
+            {
+                Regex reStrict = new Regex(patternStrict);
+                isStrictMatch = reStrict.IsMatch(email);
+            }
+            
+            
             return isStrictMatch;
         }
 
@@ -161,7 +173,7 @@ namespace Fachada.Controlador
         public static bool ValidarNulo(Object vrCampo)
         {
             bool retorno = false;
-            if (!((vrCampo == null) || (vrCampo.Equals(0))))
+            if (!((vrCampo.Equals(null)) || (vrCampo.Equals(0))))
             {
                 retorno = true;
             }
