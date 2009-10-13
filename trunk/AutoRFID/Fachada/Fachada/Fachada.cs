@@ -6,6 +6,7 @@ using Fachada.Interface;
 using Fachada.Controlador;
 using Fachada.Basicas;
 using System.Data;
+using PCampoBD;
 
 namespace Fachada.Fachada
 {
@@ -66,9 +67,9 @@ namespace Fachada.Fachada
             return this.funcionario.ListarFuncionario();
         }
 
-        public DataSet ListarFuncionarioDataset()
+        public DataSet ListarFuncionarioDataset(String sFiltro, List<CampoBD> lsCampos)
         {
-            return this.funcionario.ListarFuncionarioDataset();
+            return this.funcionario.ListarFuncionarioDataset(sFiltro, lsCampos);
         }
         #endregion
 
@@ -118,7 +119,7 @@ namespace Fachada.Fachada
         {
             return this.IntEstabelecimento.ConsultarEstabelecimento(objEst);
         }
-        public DataSet ListarEstabelecimento()
+        public List<Estabelecimento> ListarEstabelecimento()
         {
             return this.IntEstabelecimento.ListarEstabelecimento();
         }

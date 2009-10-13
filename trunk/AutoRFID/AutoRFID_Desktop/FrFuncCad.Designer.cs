@@ -57,6 +57,7 @@
             this.foto = new System.Windows.Forms.PictureBox();
             this.boxTipo = new System.Windows.Forms.ComboBox();
             this.pnlBotoes.SuspendLayout();
+            this.panelConsulta.SuspendLayout();
             this.panelManutencao.SuspendLayout();
             this.gpbFoto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
@@ -126,6 +127,10 @@
             this.panelManutencao.Controls.Add(this.label2);
             this.panelManutencao.Size = new System.Drawing.Size(750, 278);
             this.panelManutencao.TabIndex = 1;
+            // 
+            // btnPesquisarTexto
+            // 
+            this.btnPesquisarTexto.Click += new System.EventHandler(this.btnPesquisarTexto_Click);
             // 
             // maskedTextBox5
             // 
@@ -416,6 +421,8 @@
             this.Text = "Manutenção de Funcionário";
             this.Load += new System.EventHandler(this.FrFuncCad_Load);
             this.pnlBotoes.ResumeLayout(false);
+            this.panelConsulta.ResumeLayout(false);
+            this.panelConsulta.PerformLayout();
             this.panelManutencao.ResumeLayout(false);
             this.panelManutencao.PerformLayout();
             this.gpbFoto.ResumeLayout(false);

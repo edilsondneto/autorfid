@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using Fachada.Basicas;
 using System.Data;
+using PCampoBD;
 
 namespace Fachada.Interface
 {
-    public interface Ifuncionario
-    {
+    public interface Ifuncionario{
         void InserirFuncionario(Funcionario f);
         void AlterarFuncionario(Funcionario f);
         void ExcluirFuncionario(String cpf);
         Funcionario ConsultarFuncionario(String cpf);
         Funcionario ConsultarFuncionario(int idfuncionario);
         List<Funcionario> ListarFuncionario();
-        DataSet ListarFuncionarioDataset();
+        DataSet ListarFuncionarioDataset(String sFiltro, List<CampoBD> lsCampos);
     }
 }

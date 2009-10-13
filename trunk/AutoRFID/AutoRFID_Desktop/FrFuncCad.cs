@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using Fachada.Fachada;
 using Fachada.Basicas;
+using PCampoBD;
 
 namespace AutoRFID_Desktop
 {
@@ -152,21 +153,45 @@ namespace AutoRFID_Desktop
 
         private void btPesquisar_Click(object sender, EventArgs e)
         {
-            DataSet ds = this.objFachada.ListarFuncionarioDataset();
-            
-            DataTableReader dtr = new DataTableReader(ds.Tables[0]);
-
-            DataTable dt = new DataTable(); 
-
-            dt.Load(dtr, LoadOption.OverwriteChanges);
-
-            this.dataGridView1.DataSource = dt;
+            this.pesquisar();    
         }
 
         protected override void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
             String idConsulta = this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
             this.CarregarCampos(idConsulta, null);
+        }
+
+        protected override void preencheListaCamposFiltro()
+        {
+            
+            this.lCamposFiltros = new List<CampoBD>();
+
+            CampoBD campoNome   = new CampoBD("NOME"  ,"Nome do Funcionário",true,200);
+            CampoBD campoCidade = new CampoBD("CIDADE", "Cidade"            ,true,80);
+            CampoBD campoCPF    = new CampoBD("CPF"   ,"CPF"                ,false,100);
+
+            this.lCamposFiltros.Add(campoNome);
+            this.lCamposFiltros.Add(campoCidade);
+            this.lCamposFiltros.Add(campoCPF);
+        }
+                
+        private void pesquisar()
+        {
+            DataSet ds = this.objFachada.ListarFuncionarioDataset(this.sFiltro,this.lCamposFiltros);
+
+            DataTableReader dtr = new DataTableReader(ds.Tables[0]);
+
+            DataTable dt = new DataTable();
+
+            dt.Load(dtr, LoadOption.OverwriteChanges);
+
+            this.dataGridView1.DataSource = dt;                         
+        }
+
+        private void btnPesquisarTexto_Click(object sender, EventArgs e)
+        {
+            this.pesquisar();
         }
 
              

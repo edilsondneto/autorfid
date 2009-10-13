@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Fachada.Controlador;
+using PCampoBD;
+
 namespace AutoRFID_Desktop
 {
     public partial class frCadPad : Form
     {
         public String validacaoMSG;
+
+        public List<CampoBD> lCamposFiltros;
+        public String sFiltro;
+
         public frCadPad()
         {
 
@@ -26,7 +32,7 @@ namespace AutoRFID_Desktop
             this.habilita();
             this.btCancelar.Enabled = false;
             this.btConfirmar.Enabled = false;
-
+            this.pesquisar();
         }
 
         private void frCadPad_Load(object sender, EventArgs e)
@@ -60,8 +66,6 @@ namespace AutoRFID_Desktop
 
             //Estado dos campos
             this.panelManutencao.Enabled = !(this.btIncluir.Enabled);
-
-
         }
 
 
@@ -73,8 +77,6 @@ namespace AutoRFID_Desktop
         private void btCancelar_Click(object sender, EventArgs e)
         {
             this.habilita();
-            //limpar campos
-            //this.limparCampos();
         }
 
         private void btConfirmar_Click(object sender, EventArgs e)
@@ -191,8 +193,55 @@ namespace AutoRFID_Desktop
       
         }
 
-      
-   
-        
+        protected virtual void preencheListaCamposFiltro() { 
+            //Método a ser implementado por cada cadastro para indicar quais campos serão filtrados na pesquisa.
+        }
+
+        protected void pesquisar()
+        {
+            if (this.lCamposFiltros == null)
+            {
+                preencheListaCamposFiltro();
+            }
+            //Método a ser implementado por cada cadastro para indicar quais campos serão filtrados na pesquisa.
+        }
+
+        private void btnPesquisarTexto_Click(object sender, EventArgs e)
+        {
+            this.sFiltro = "";
+            if (this.txtPesquisa.Text.Trim() != "")
+            {
+                this.sFiltro = this.txtPesquisa.Text.Trim();
+            }
+            this.pesquisar();            
+        }
+
+        private void dataGridView1_ColumnAdded(object sender, DataGridViewColumnEventArgs e)
+        {
+            CampoBD cbd    = f_FiltraCampo(e.Column.Name.ToString());
+            e.Column.Width = cbd.iTamColuna;
+
+            if (cbd.bFiltro)
+            {
+                e.Column.HeaderText = cbd.sDescricaoCampo + " *";
+            }
+            else {
+                e.Column.HeaderText = cbd.sDescricaoCampo;
+            }
+        }
+
+        private CampoBD f_FiltraCampo(String sNomeCampo)
+        {
+            CampoBD cbd = null;
+
+            foreach (CampoBD campo in this.lCamposFiltros) {
+                if (campo.sNomeCampo == sNomeCampo) {
+                    cbd = campo;
+                    break;
+                }                
+            }
+
+            return cbd;            
+        }
     }
 }

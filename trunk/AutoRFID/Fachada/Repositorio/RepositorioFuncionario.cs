@@ -7,6 +7,7 @@ using Fachada.Interface;
 using Fachada.BDcon;
 using MySql.Data.MySqlClient;
 using System.Data;
+using PCampoBD;
 
 namespace Fachada.Repositorio
 {
@@ -45,7 +46,7 @@ namespace Fachada.Repositorio
                 c.Command().Parameters.Add("@email", MySqlDbType.VarChar, 40).Value = f.Email;
                 c.Command().Parameters.Add("@fone", MySqlDbType.VarChar, 10).Value = f.Fone;
                 c.Command().Parameters.Add("@fonecelular", MySqlDbType.VarChar, 10).Value = f.Fonecelular;
-                c.Command().Parameters.Add("@idEstabelecimento", MySqlDbType.Int32).Value = f.Idestabelecimento;
+                c.Command().Parameters.Add("@idEstabelecimento", MySqlDbType.Int32).Value = 1;
                 c.Command().Parameters.Add("@funcao", MySqlDbType.VarChar, 1).Value = f.Funcao;
                 c.Command().ExecuteNonQuery();
                 c.Comitar();
@@ -242,23 +243,26 @@ namespace Fachada.Repositorio
                 da.SelectCommand = c.Command();
                 DataSet ds = new DataSet();
                 da.Fill(ds, "lista");
+                
                 foreach (DataRow item in ds.Tables["lista"].Rows)
                 {
                     Funcionario func = new Funcionario();
-                    func.Idfuncionario = (int)item[0];
-                    func.Cpf = (String)item[1];
-                    func.Nome = (String)item[2];
-                    func.Endereco = (String)item[3];
-                    func.Numero = (int)item[4];
-                    func.Bairro = (String)item[5];
-                    func.Cidade = (String)item[6];
-                    func.Estado = (String)item[7];
-                    func.Cep = (String)item[8];
-                    func.Email = (String)item[9];
-                    func.Fone = (String)item[10];
-                    func.Fonecelular = (String)item[11];
+
+                    func.Idfuncionario     = (int)item[0];
+                    func.Cpf               = (String)item[1];
+                    func.Nome              = (String)item[2];
+                    func.Endereco          = (String)item[3];
+                    func.Numero            = (int)item[4];
+                    func.Bairro            = (String)item[5];
+                    func.Cidade            = (String)item[6];
+                    func.Estado            = (String)item[7];
+                    func.Cep               = (String)item[8];
+                    func.Email             = (String)item[9];
+                    func.Fone              = (String)item[10];
+                    func.Fonecelular       = (String)item[11];
                     func.Idestabelecimento = (int)item[12];
-                    func.Funcao = (String)item[13];
+                    func.Funcao            = (String)item[13];
+
                     lf.Add(func);
                 }
             }
@@ -273,14 +277,16 @@ namespace Fachada.Repositorio
             return lf;
         }
 
-        public DataSet ListarFuncionarioDataset()
+        public DataSet ListarFuncionarioDataset(String sFiltro, List<CampoBD> lsCampos)
         {
             MySqlDataAdapter da = new MySqlDataAdapter();
             DataSet ds = new DataSet();
-            Conectar c = new Conectar();
+            Conectar c = new Conectar();            
             try
             {
-                String sql = "select * from funcionario";
+                sFiltro        = Util.f_RetornaFiltroCad(sFiltro, lsCampos);
+                String sCampos = Util.f_RetornaSqlCampos(lsCampos); 
+                String sql     = " SELECT " + sCampos + " FROM FUNCIONARIO " + sFiltro;
 
                 c.Connection().Open();
                 c.IniciarTransacao();

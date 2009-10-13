@@ -6,6 +6,7 @@ using Fachada.Interface;
 using Fachada.Repositorio;
 using Fachada.Basicas;
 using System.Data;
+using PCampoBD;
 
 namespace Fachada.Controlador
 {
@@ -94,9 +95,9 @@ namespace Fachada.Controlador
             return this.rf.ListarFuncionario();
         }
 
-        public DataSet ListarFuncionarioDataset()
+        public DataSet ListarFuncionarioDataset(String sFiltro, List <CampoBD> lsCampos)
         {
-            return this.rf.ListarFuncionarioDataset();
+            return this.rf.ListarFuncionarioDataset(sFiltro, lsCampos);
         }
 
         #endregion
