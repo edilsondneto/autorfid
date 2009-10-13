@@ -1,0 +1,5 @@
+D:\UNIBRATEC\6 PER\PROJETO PROGRAMACAO\autorfid\trunk\AutoRFID\CampoBD\bin\Release\CampoBD.dll
+D:\UNIBRATEC\6 PER\PROJETO PROGRAMACAO\autorfid\trunk\AutoRFID\CampoBD\bin\Release\CampoBD.pdb
+D:\UNIBRATEC\6 PER\PROJETO PROGRAMACAO\autorfid\trunk\AutoRFID\CampoBD\obj\Release\ResolveAssemblyReference.cache
+D:\UNIBRATEC\6 PER\PROJETO PROGRAMACAO\autorfid\trunk\AutoRFID\CampoBD\obj\Release\CampoBD.dll
+D:\UNIBRATEC\6 PER\PROJETO PROGRAMACAO\autorfid\trunk\AutoRFID\CampoBD\obj\Release\CampoBD.pdb
