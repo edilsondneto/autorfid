@@ -228,6 +228,7 @@ namespace AutoRFID_Desktop
             else {
                 e.Column.HeaderText = cbd.sDescricaoCampo;
             }
+            //Mostrando controle de versao p/ Walmir.
         }
 
         private CampoBD f_FiltraCampo(String sNomeCampo)
