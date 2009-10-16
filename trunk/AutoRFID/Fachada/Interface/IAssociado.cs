@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Fachada.Basicas;
 using System.Data;
+using PCampoBD;
 
 namespace Fachada.Interface
 {
@@ -17,7 +18,7 @@ namespace Fachada.Interface
 
         Associado consultarAssociado(Associado objAssociado);
 
-        DataSet ListarAssociado();
+        DataSet ListarAssociado(String sFiltro, List<CampoBD> lsCampos);
 
     }
 }

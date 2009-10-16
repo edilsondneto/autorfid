@@ -8,7 +8,7 @@ using Fachada.BDcon;
 using Fachada.Controlador;
 using MySql.Data.MySqlClient;
 using System.Data;
-
+using PCampoBD;
 
 namespace Fachada.Repositorio
 {
@@ -185,7 +185,7 @@ namespace Fachada.Repositorio
             return objAssoc;
         }
 
-        public DataSet ListarAssociado()
+        public DataSet ListarAssociado(String sFiltro, List<CampoBD> lsCampos)
         {
             MySqlDataAdapter da = new MySqlDataAdapter();
             Conectar c = new Conectar();
@@ -194,7 +194,10 @@ namespace Fachada.Repositorio
 
             try
             {
-                String sql = "select * from Associado";
+                sFiltro = Util.f_RetornaFiltroCad(sFiltro, lsCampos);
+                String sCampos = Util.f_RetornaSqlCampos(lsCampos);
+                String sql = " SELECT " + sCampos + " FROM ASSOCIADO " + sFiltro;
+
                 c.Connection().Open();
                 c.Command().CommandText = sql;
                 da.SelectCommand = c.Command();

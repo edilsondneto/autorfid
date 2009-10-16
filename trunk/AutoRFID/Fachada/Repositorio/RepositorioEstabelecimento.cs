@@ -9,6 +9,7 @@ using MySql.Data;
 using MySql.Data.MySqlClient;
 using System.Data;
 using Fachada.Controlador;
+using PCampoBD;
 
 namespace Fachada.Repositorio
 {
@@ -187,8 +188,8 @@ namespace Fachada.Repositorio
                 this.c.Connection().Close();
             }
         }
-           
-        public DataSet ListarEstabelecimento()
+
+        public DataSet ListarEstabelecimento(String sFiltro, List<CampoBD> lsCampos)
         {
             MySqlDataAdapter da = new MySqlDataAdapter();
             Conectar c = new Conectar();
@@ -197,7 +198,11 @@ namespace Fachada.Repositorio
 
             try
             {
-                String sql = "select * from Estabelecimento";
+
+                sFiltro = Util.f_RetornaFiltroCad(sFiltro, lsCampos);
+                String sCampos = Util.f_RetornaSqlCampos(lsCampos);
+                String sql = " SELECT " + sCampos + " FROM ESTABELECIMENTO " + sFiltro;
+
                 c.Connection().Open();
                 c.Command().CommandText = sql;
                 da.SelectCommand = c.Command();

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Fachada.Basicas;
 using System.Data;
+using PCampoBD;
 
 namespace Fachada.Interface
 {
@@ -13,6 +14,6 @@ namespace Fachada.Interface
         void AlterarEstabelecimento(Estabelecimento objEstabelecimento);
         Estabelecimento ConsultarEstabelecimento(Estabelecimento objEst);
         void ExcluirEstabelecimento(Estabelecimento objEst);     
-        DataSet ListarEstabelecimento();
+        DataSet ListarEstabelecimento(String sFiltro, List<CampoBD> lsCampos);
     }
 }
