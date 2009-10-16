@@ -95,9 +95,9 @@ namespace Fachada.Fachada
             return this.IntAssociado.consultarAssociado(Asso);
         }
 
-        public DataSet ListarAssociado()
+        public DataSet ListarAssociado(String sFiltro, List<CampoBD> lsCampos)
         {
-            return this.IntAssociado.ListarAssociado();
+            return this.IntAssociado.ListarAssociado(sFiltro, lsCampos);
         }
 
         #endregion
@@ -119,9 +119,10 @@ namespace Fachada.Fachada
         {
             return this.IntEstabelecimento.ConsultarEstabelecimento(objEst);
         }
-        public List<Estabelecimento> ListarEstabelecimento()
+
+        public DataSet ListarEstabelecimento(String sFiltro, List<CampoBD> lsCampos)
         {
-            return this.IntEstabelecimento.ListarEstabelecimento();
+            return this.IntEstabelecimento.ListarEstabelecimento(sFiltro, lsCampos);
         }
         #endregion
 
