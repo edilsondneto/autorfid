@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using Fachada.Basicas;
 using System.Data;
+using PCampoBD;
 
 namespace AutoRFID_Desktop
 {
@@ -97,7 +98,7 @@ namespace AutoRFID_Desktop
         }
         private void CarregarCampos(String idEstab, String cnpj)
         {
-            this.objFachada = Fachada.Fachada.Fachada.ObterFachada();
+            this.objFachada       = Fachada.Fachada.Fachada.ObterFachada();
             this.objEstabConsulta = new Estabelecimento();
 
             try
@@ -108,6 +109,7 @@ namespace AutoRFID_Desktop
                     this.objEstabConsulta.IdEstabelecimento = 0;
 
             }
+
             catch (Exception ex) { }
             this.objEstabConsulta.Cnpj = cnpj;
 
@@ -116,18 +118,18 @@ namespace AutoRFID_Desktop
             //Preencher campos do form
             //this.textCodigo.Text = this.objAssociado.Idassociado.ToString();
             
-            this.cnpj.Text = this.objEstabConsulta.Cnpj;
+            this.cnpj.Text            = this.objEstabConsulta.Cnpj;
             this.textRazaoSocial.Text = this.objEstabConsulta.Razaosocial;
-            this.textEndereco.Text = this.objEstabConsulta.Endereco;
-            this.textBairro.Text = this.objEstabConsulta.Bairro;
-            this.textCidade.Text = this.objEstabConsulta.Cidade;
-            this.textNumero.Text = this.objEstabConsulta.Numero.ToString();
-            this.comboEstado.Text = this.objEstabConsulta.Estado;
-            this.maskedTextCep.Text = this.objEstabConsulta.Cep;
-            this.textEmail.Text = this.objEstabConsulta.Email;
-            this.textQuantidade.Text = this.objEstabConsulta.QtdVagas.ToString();
-            this.fone.Text = this.objEstabConsulta.Fone;
-            this.fonecelular.Text = this.objEstabConsulta.Fonecelular;
+            this.textEndereco.Text    = this.objEstabConsulta.Endereco;
+            this.textBairro.Text      = this.objEstabConsulta.Bairro;
+            this.textCidade.Text      = this.objEstabConsulta.Cidade;
+            this.textNumero.Text      = this.objEstabConsulta.Numero.ToString();
+            this.comboEstado.Text     = this.objEstabConsulta.Estado;
+            this.maskedTextCep.Text   = this.objEstabConsulta.Cep;
+            this.textEmail.Text       = this.objEstabConsulta.Email;
+            this.textQuantidade.Text  = this.objEstabConsulta.QtdVagas.ToString();
+            this.fone.Text            = this.objEstabConsulta.Fone;
+            this.fonecelular.Text     = this.objEstabConsulta.Fonecelular;
         }
 
         private void FrEstabCad_Load(object sender, EventArgs e)
@@ -152,11 +154,35 @@ namespace AutoRFID_Desktop
 
         }
 
+        protected override void preencheListaCamposFiltro()
+        {
+
+            this.lCamposFiltros = new List<CampoBD>();
+
+            CampoBD campoNome = new CampoBD("RAZAOSOCIAL", "Razão Social", true, 200);
+            CampoBD campoCidade = new CampoBD("CNPJ", "CNPJ", true, 80);
+            CampoBD campoCPF = new CampoBD("BAIRRO", "Bairro", false, 100);
+
+            this.lCamposFiltros.Add(campoNome);
+            this.lCamposFiltros.Add(campoCidade);
+            this.lCamposFiltros.Add(campoCPF);
+        }
+
+
         private void btPesquisar_Click(object sender, EventArgs e)
         {
-            DataSet dsEstabelecimento = new DataSet();
-            dsEstabelecimento = this.objFachada.ListarEstabelecimento();
+            this.pesquisar(); 
+        }
+        protected override void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            String idConsulta = this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            this.CarregarCampos(idConsulta, null);
+        }
 
+        private void pesquisar()
+        {
+            DataSet dsEstabelecimento = new DataSet();
+            dsEstabelecimento = this.objFachada.ListarEstabelecimento(this.sFiltro, this.lCamposFiltros);
 
             DataTableReader dtr = new DataTableReader(dsEstabelecimento.Tables[0]);
 
@@ -165,12 +191,12 @@ namespace AutoRFID_Desktop
             dtEstab.Load(dtr, LoadOption.OverwriteChanges);
 
             this.dataGridView1.DataSource = dtEstab;
+        }
 
-        }
-        protected override void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
+        private void btnPesquisarTexto_Click(object sender, EventArgs e)
         {
-            String idConsulta = this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-            this.CarregarCampos(idConsulta, null);
+            this.pesquisar();
         }
+
     }
 }
