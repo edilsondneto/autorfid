@@ -6,6 +6,7 @@ using Fachada.Interface;
 using Fachada.Repositorio;
 using Fachada.Basicas;
 using System.Data;
+using PCampoBD;
 
 namespace Fachada.Controlador
 {
@@ -15,7 +16,7 @@ namespace Fachada.Controlador
 
         public ControladorEstabelecimento()
         {
-            this.re =new RepositorioEstabelecimento();
+            this.re = new RepositorioEstabelecimento();
         }
 
         #region IEstabelecimento Members
@@ -75,9 +76,9 @@ namespace Fachada.Controlador
             this.re.ExcluirEstabelecimento(objEst);
         }
 
-        public DataSet ListarEstabelecimento()
+        public DataSet ListarEstabelecimento(String sFiltro, List<CampoBD> lsCampos)
         {
-            return this.re.ListarEstabelecimento();        
+            return this.re.ListarEstabelecimento(sFiltro, lsCampos);        
         }
         #endregion
     }
