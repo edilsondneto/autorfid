@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using Fachada.Basicas;
 using Fachada.Fachada;
-
+using PCampoBD;
 
 namespace AutoRFID_Desktop
 {
@@ -112,7 +112,7 @@ namespace AutoRFID_Desktop
             catch (Exception ex) { }
 
 
-            //this.objConsulta = this.objFachada.ConsultarAssociado(this.objAssociado);
+            this.objConsulta = this.objFachada.ConsultarAssociado(this.objAssociado);
 
             if (this.objAssociado.Idassociado.Equals(0))
             {
@@ -130,11 +130,7 @@ namespace AutoRFID_Desktop
             {
                 MessageBox.Show(ex.Message,"Atenção! Registro não foi gravado.");
             }
-
-            
-          
         }
-    
 
         private void btCancelar_Click(object sender, EventArgs e)
         {
@@ -150,6 +146,7 @@ namespace AutoRFID_Desktop
             {
                 this.objAssociado.Idassociado = int.Parse(idAssoc);
             }
+
             catch (Exception ex) { }
             this.objAssociado.Cpf_cnpj    = cpf_cnpj;
 
@@ -196,26 +193,9 @@ namespace AutoRFID_Desktop
 
         }
 
-        private void btAlterar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btPesquisar_Click(object sender, EventArgs e)
         {
-
-            DataSet dsAssociado = new DataSet();
-            dsAssociado = this.objFachada.ListarAssociado();
-
-
-            DataTableReader dtr = new DataTableReader(dsAssociado.Tables[0]);
-
-            DataTable dtAssoc = new DataTable(); 
-
-            dtAssoc.Load(dtr, LoadOption.OverwriteChanges);
-
-            this.dataGridView1.DataSource = dtAssoc;
-
+           pesquisar();            
         }
 
         protected override void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
@@ -224,6 +204,37 @@ namespace AutoRFID_Desktop
            this.CarregarCampos(idConsulta, null);
         }
 
+        private void pesquisar() { 
 
-     }
+            DataSet dsAssociado = new DataSet();
+            dsAssociado = this.objFachada.ListarAssociado(this.sFiltro,this.lCamposFiltros);
+
+            DataTableReader dtr = new DataTableReader(dsAssociado.Tables[0]);
+
+            DataTable dtAssoc = new DataTable(); 
+
+            dtAssoc.Load(dtr, LoadOption.OverwriteChanges);
+
+            this.dataGridView1.DataSource = dtAssoc;
+        }
+
+        private void btnPesquisarTexto_Click(object sender, EventArgs e)
+        {
+            pesquisar();
+        }
+        
+        protected override void preencheListaCamposFiltro(){
+
+        this.lCamposFiltros = new List<CampoBD>();
+
+        CampoBD campoNome = new CampoBD("NOME_RAZAOSOCIAL", "Nome/Razão Social", true, 200);
+        CampoBD campoCidade = new CampoBD("CPF_CNPJ", "CPF/CNPJ", true, 80);
+        CampoBD campoCPF = new CampoBD("BAIRRO", "Bairro", false, 100);
+
+        this.lCamposFiltros.Add(campoNome);
+        this.lCamposFiltros.Add(campoCidade);
+        this.lCamposFiltros.Add(campoCPF);
+        }
+
+    }
 }
