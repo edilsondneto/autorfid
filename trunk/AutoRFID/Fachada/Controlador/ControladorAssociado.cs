@@ -7,6 +7,7 @@ using Fachada.Interface;
 using Fachada.Basicas;
 using Fachada.Controlador;
 using System.Data;
+using PCampoBD;
 
 namespace Fachada.Controlador
 {
@@ -124,10 +125,10 @@ namespace Fachada.Controlador
          
         }
 
-        public DataSet ListarAssociado()
+        public DataSet ListarAssociado(String sFiltro, List<CampoBD> lsCampos)
         {
 
-            return this.objRepAss.ListarAssociado();
+            return this.objRepAss.ListarAssociado(sFiltro, lsCampos);
         }
         #endregion
     }
