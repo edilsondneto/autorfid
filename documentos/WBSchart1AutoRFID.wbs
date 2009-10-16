@@ -13,8 +13,8 @@
 			<dow day="sat" working="no"/>
 		</calendar>
 		<currency symbol="R$ " digits="2" positiveOrder="0" negativeOrder="9"/>
-		<summary ScheduleFromStart="yes" CalculateCostProgress="no" MultipleCriticalPaths="no" CriticalSlack="0d" Name="ProjetoAutoRFID" Title="WBSchart1AutoRFID" Work="-0.0167h" Duration="85.125d" Start="2009-08-28T08:00" Finish="2009-12-07T09:00"/>
-		<DataSource path="C:\6&#186;Per&#237;odo\Projeto\ProjetoAutoRFID.mpp" type="12.0"/>
+		<summary ScheduleFromStart="yes" CalculateCostProgress="no" MultipleCriticalPaths="no" CriticalSlack="0d" Name="ProjetoAutoRFID" Title="WBSchart1AutoRFID" Work="-0.0167h" ActualWork="1430h" Duration="85.125d" ActualDuration="81.9458d" PercentComplete="96%" PercentWorkComplete="96%" Start="2009-08-28T08:00" Finish="2009-12-07T09:00" ActualStart="2009-08-10T08:00"/>
+		<DataSource path="C:\Workspac\documentos\ProjetoAutoRFID.mpp" type="12.0"/>
 	</proj>
 	<printInfo mode="scale" orient="landscape" pagesWide="1" pagesHigh="1" scale="100%" bw="no" enlarge="no" byColumn="no" adjustPageBreaks="no" marginTop="36pt" marginLeft="36pt" marginBottom="36pt" marginRight="36pt"/>
 	<pageLayouts>
