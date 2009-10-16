@@ -92,8 +92,9 @@ namespace AutoRFID_Desktop
 
         private void CarregarCampos(String idFunc, String cpfFunc)
         {
-            this.objFachada = Fachada.Fachada.Fachada.ObterFachada();
+            this.objFachada     = Fachada.Fachada.Fachada.ObterFachada();
             this.objFuncionario = new Funcionario();
+            
             try
             {
                 List<Funcionario> l = this.objFachada.ListarFuncionario();
@@ -106,6 +107,7 @@ namespace AutoRFID_Desktop
                     this.objFuncionario = this.objFachada.ConsultarFuncionario(int.Parse(idFunc));
                 }
             }
+
             catch (Exception ex) { }
             /*this.objFuncionario.Cpf = cpfFunc;
 
@@ -167,10 +169,12 @@ namespace AutoRFID_Desktop
             
             this.lCamposFiltros = new List<CampoBD>();
 
+            CampoBD campoCod    = new CampoBD("IDFUNCIONARIO", "Código", true, 60);
             CampoBD campoNome   = new CampoBD("NOME"  ,"Nome do Funcionário",true,200);
             CampoBD campoCidade = new CampoBD("CIDADE", "Cidade"            ,true,80);
             CampoBD campoCPF    = new CampoBD("CPF"   ,"CPF"                ,false,100);
 
+            this.lCamposFiltros.Add(campoCod);
             this.lCamposFiltros.Add(campoNome);
             this.lCamposFiltros.Add(campoCidade);
             this.lCamposFiltros.Add(campoCPF);
