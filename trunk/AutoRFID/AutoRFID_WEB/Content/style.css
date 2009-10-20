@@ -1,0 +1,98 @@
+body
+{
+	/*background:#13181e;*/
+	background:url("degrade.jpg"); 
+		
+}
+
+div.container
+{
+	width: 750px;
+	height: 580px;
+	top: 50%;
+	left: 50%;
+	margin-top: -290px;
+	margin-left: -375px;
+	position: absolute;
+}
+
+div.cabecalho
+{
+	position:relative;
+	height: 65px;
+	background:url('teste1.jpg');
+}
+
+div.logomarca
+{
+	position:relative;
+	height: 120px;
+	background: url('bg_header.jpg');
+}
+
+div.menubar
+{
+	position:relative;
+	height:30px;
+	background: url('menudegrade.jpg');
+}
+
+div.principal
+{
+	position:relative;
+	height:350px;
+	background:#f4f6fa;
+}
+
+div.login
+{
+	position: relative;
+	top: 30%;
+	margin-left: 275px;
+}
+
+div.cad
+{
+	margin-left: 10px;
+}
+
+.principal p
+{
+	text-indent: 50px;
+	margin-left: 15px;
+	margin-right: 15px;
+	text-align: justify;
+    height: 215px;
+}
+
+table.contato
+{
+	margin-left: 20px;
+}
+
+div.cad
+{
+	margin-left:220px;
+	
+}
+
+div.conteudoEsq {
+	position:absolute;
+	width:400px;
+	top:60px;
+	left:5px;
+	color:#99f;
+	padding-bottom:20px;
+	
+}
+div.conteudoDir {
+	position:absolute;
+	width:340px;
+	top:60px;
+	right:5px;
+	color:#99f;
+	padding-bottom:20px;
+	
+}
+
+

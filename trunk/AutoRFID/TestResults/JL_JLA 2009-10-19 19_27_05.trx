@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3e686156-64a6-4ea5-94af-cd9ffcdbb25e" name="JL@JLA 2009-10-19 19:27:05" runUser="JLA\JL" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="ddf0a898-0e29-4648-b4ed-936846171b10">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\TestResults\JL_JLA 2009-10-19 19_27_05">
+      <DeploymentItem filename="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Fachada\bin\Debug\Fachada.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="9" executed="2" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="7" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2009-10-19T19:27:05.5468750-03:00" queuing="2009-10-19T19:27:06.2812500-03:00" start="2009-10-19T19:27:06.3281250-03:00" finish="2009-10-19T19:27:07.3906250-03:00" />
+  <TestDefinitions>
+    <UnitTest name="ConsultarEtiquetaAssociadoTest" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\bin\debug\testes.dll" id="6daf6e12-84e1-8f87-2826-35954f9ffe97">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaEtiquetaAssociadoTest, Testes" name="ConsultarEtiquetaAssociadoTest" />
+    </UnitTest>
+    <OrderedTest name="EtiquetaAssociado" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\etiquetaassociado.orderedtest" id="250f42c6-4245-4932-81f7-19a9c0183508">
+      <Css projectStructure="" iteration="" />
+      <Execution timeOut="2147483647" id="599775e3-a219-4edf-bee2-c79da44b9e08" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestLinks>
+        <TestLink id="87327a55-2eb5-c89b-f626-62d0a881ed95" name="IncluirEtiquetaAssociadoTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="6daf6e12-84e1-8f87-2826-35954f9ffe97" name="ConsultarEtiquetaAssociadoTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="75b6b1f3-752d-c6ef-8f82-707e1b9e9c53" name="AlterarEtiquetaAssociadoTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="f1eba473-0d2b-6437-6911-0fbf14d4e95d" name="ExcluirEtiquetaAssociadoTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="895ee7cf-359c-df0b-bf1b-2a505af58b16" name="ListarEtiquetaAssociadoTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="abcf1357-bc8b-e65f-ba11-a8c2c1bdb006" name="ListarEtiquetaAssociadoTest1" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="9f870456-3710-7582-a031-14c8ed8eeb88" name="ListarEtiquetaAssociadoTest2" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="100cdab3-99ea-9543-0f30-2499d013a1ed" name="ListarEtiquetaAssociadoTest3" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      </TestLinks>
+    </OrderedTest>
+    <UnitTest name="ListarEtiquetaAssociadoTest2" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\bin\debug\testes.dll" id="9f870456-3710-7582-a031-14c8ed8eeb88">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaEtiquetaAssociadoTest, Testes" name="ListarEtiquetaAssociadoTest2" />
+    </UnitTest>
+    <UnitTest name="ListarEtiquetaAssociadoTest3" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\bin\debug\testes.dll" id="100cdab3-99ea-9543-0f30-2499d013a1ed">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaEtiquetaAssociadoTest, Testes" name="ListarEtiquetaAssociadoTest3" />
+    </UnitTest>
+    <UnitTest name="ExcluirEtiquetaAssociadoTest" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\bin\debug\testes.dll" id="f1eba473-0d2b-6437-6911-0fbf14d4e95d">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaEtiquetaAssociadoTest, Testes" name="ExcluirEtiquetaAssociadoTest" />
+    </UnitTest>
+    <UnitTest name="ListarEtiquetaAssociadoTest" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\bin\debug\testes.dll" id="895ee7cf-359c-df0b-bf1b-2a505af58b16">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaEtiquetaAssociadoTest, Testes" name="ListarEtiquetaAssociadoTest" />
+    </UnitTest>
+    <UnitTest name="ListarEtiquetaAssociadoTest1" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\bin\debug\testes.dll" id="abcf1357-bc8b-e65f-ba11-a8c2c1bdb006">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaEtiquetaAssociadoTest, Testes" name="ListarEtiquetaAssociadoTest1" />
+    </UnitTest>
+    <UnitTest name="AlterarEtiquetaAssociadoTest" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\bin\debug\testes.dll" id="75b6b1f3-752d-c6ef-8f82-707e1b9e9c53">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaEtiquetaAssociadoTest, Testes" name="AlterarEtiquetaAssociadoTest" />
+    </UnitTest>
+    <UnitTest name="IncluirEtiquetaAssociadoTest" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\bin\debug\testes.dll" id="87327a55-2eb5-c89b-f626-62d0a881ed95">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaEtiquetaAssociadoTest, Testes" name="IncluirEtiquetaAssociadoTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="250f42c6-4245-4932-81f7-19a9c0183508" executionId="599775e3-a219-4edf-bee2-c79da44b9e08" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <TestEntries>
+        <TestEntry testId="87327a55-2eb5-c89b-f626-62d0a881ed95" executionId="3473beac-1e75-4ad0-84f4-a12a068b5e40" parentExecutionId="599775e3-a219-4edf-bee2-c79da44b9e08" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="6daf6e12-84e1-8f87-2826-35954f9ffe97" executionId="20c98bae-dd10-44d5-b583-9ab75a828c82" parentExecutionId="599775e3-a219-4edf-bee2-c79da44b9e08" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="75b6b1f3-752d-c6ef-8f82-707e1b9e9c53" executionId="aced0826-1a59-446b-a1df-d8aabfe62d38" parentExecutionId="599775e3-a219-4edf-bee2-c79da44b9e08" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="f1eba473-0d2b-6437-6911-0fbf14d4e95d" executionId="302d6acc-44ac-4611-819e-107914fde875" parentExecutionId="599775e3-a219-4edf-bee2-c79da44b9e08" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="895ee7cf-359c-df0b-bf1b-2a505af58b16" executionId="a7b7517b-a027-4302-9c84-73471165b8fc" parentExecutionId="599775e3-a219-4edf-bee2-c79da44b9e08" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="abcf1357-bc8b-e65f-ba11-a8c2c1bdb006" executionId="4923db37-c042-45ca-be5e-049f80da7ea3" parentExecutionId="599775e3-a219-4edf-bee2-c79da44b9e08" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="9f870456-3710-7582-a031-14c8ed8eeb88" executionId="e1044a6f-e487-4baa-9b9d-449202a6212e" parentExecutionId="599775e3-a219-4edf-bee2-c79da44b9e08" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="100cdab3-99ea-9543-0f30-2499d013a1ed" executionId="7786eb71-fb9e-4aed-b597-679677d0ea94" parentExecutionId="599775e3-a219-4edf-bee2-c79da44b9e08" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+      </TestEntries>
+    </TestEntry>
+  </TestEntries>
+  <Results>
+    <TestResultAggregation executionId="599775e3-a219-4edf-bee2-c79da44b9e08" testId="250f42c6-4245-4932-81f7-19a9c0183508" testName="EtiquetaAssociado" computerName="JLA" duration="00:00:01.0253887" startTime="2009-10-19T19:27:06.3281250-03:00" endTime="2009-10-19T19:27:07.3750000-03:00" testType="ec4800e8-40e5-4ab3-8510-b8bf29b1904d" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Counters error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="7" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+      <InnerResults>
+        <UnitTestResult executionId="3473beac-1e75-4ad0-84f4-a12a068b5e40" parentExecutionId="599775e3-a219-4edf-bee2-c79da44b9e08" testId="87327a55-2eb5-c89b-f626-62d0a881ed95" testName="IncluirEtiquetaAssociadoTest" computerName="JLA" duration="00:00:00.3412606" startTime="2009-10-19T19:27:06.3437500-03:00" endTime="2009-10-19T19:27:07.3750000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+          <Output>
+            <ErrorInfo>
+              <Message>Test method Testes.FachadaEtiquetaAssociadoTest.IncluirEtiquetaAssociadoTest threw exception:  System.Exception: Erro no repositório EtiquetaAssociado Cannot add or update a child row: a foreign key constraint fails (`autorfid/etiquetaassociado`, CONSTRAINT `R_41` FOREIGN KEY (`idAssociado`) REFERENCES `associado` (`idAssociado`)).</Message>
+              <StackTrace>    at Fachada.Repositorio.RepositorioEtiqAssociado.InserirEtiquetaAssociado(EtiquetaAssociado etiquetaAssociado) in C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Fachada\Repositorio\RepositorioEtiqAssociado.cs:line 43
+   at Fachada.Controlador.ControladorEtiquetaAssociado.InserirEtiquetaAssociado(EtiquetaAssociado etiquetaAssociado) in C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Fachada\Controlador\ControladorEtiquetaAssociado.cs:line 31
+   at Fachada.Fachada.Fachada.IncluirEtiquetaAssociado(EtiquetaAssociado etiquetaAssociado) in C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Fachada\Fachada\Fachada.cs:line 195
+   at Testes.FachadaEtiquetaAssociadoTest.IncluirEtiquetaAssociadoTest() in C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\FachadaEtiquetaAssociadoTest.cs:line 119
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <TestResult executionId="20c98bae-dd10-44d5-b583-9ab75a828c82" parentExecutionId="599775e3-a219-4edf-bee2-c79da44b9e08" testId="6daf6e12-84e1-8f87-2826-35954f9ffe97" testName="ConsultarEtiquetaAssociadoTest" computerName="JLA" duration="00:00:00" startTime="0001-01-01T00:00:00.0000000-03:00" endTime="0001-01-01T00:00:00.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestResult executionId="aced0826-1a59-446b-a1df-d8aabfe62d38" parentExecutionId="599775e3-a219-4edf-bee2-c79da44b9e08" testId="75b6b1f3-752d-c6ef-8f82-707e1b9e9c53" testName="AlterarEtiquetaAssociadoTest" computerName="JLA" duration="00:00:00" startTime="0001-01-01T00:00:00.0000000-03:00" endTime="0001-01-01T00:00:00.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestResult executionId="302d6acc-44ac-4611-819e-107914fde875" parentExecutionId="599775e3-a219-4edf-bee2-c79da44b9e08" testId="f1eba473-0d2b-6437-6911-0fbf14d4e95d" testName="ExcluirEtiquetaAssociadoTest" computerName="JLA" duration="00:00:00" startTime="0001-01-01T00:00:00.0000000-03:00" endTime="0001-01-01T00:00:00.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestResult executionId="a7b7517b-a027-4302-9c84-73471165b8fc" parentExecutionId="599775e3-a219-4edf-bee2-c79da44b9e08" testId="895ee7cf-359c-df0b-bf1b-2a505af58b16" testName="ListarEtiquetaAssociadoTest" computerName="JLA" duration="00:00:00" startTime="0001-01-01T00:00:00.0000000-03:00" endTime="0001-01-01T00:00:00.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestResult executionId="4923db37-c042-45ca-be5e-049f80da7ea3" parentExecutionId="599775e3-a219-4edf-bee2-c79da44b9e08" testId="abcf1357-bc8b-e65f-ba11-a8c2c1bdb006" testName="ListarEtiquetaAssociadoTest1" computerName="JLA" duration="00:00:00" startTime="0001-01-01T00:00:00.0000000-03:00" endTime="0001-01-01T00:00:00.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestResult executionId="e1044a6f-e487-4baa-9b9d-449202a6212e" parentExecutionId="599775e3-a219-4edf-bee2-c79da44b9e08" testId="9f870456-3710-7582-a031-14c8ed8eeb88" testName="ListarEtiquetaAssociadoTest2" computerName="JLA" duration="00:00:00" startTime="0001-01-01T00:00:00.0000000-03:00" endTime="0001-01-01T00:00:00.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestResult executionId="7786eb71-fb9e-4aed-b597-679677d0ea94" parentExecutionId="599775e3-a219-4edf-bee2-c79da44b9e08" testId="100cdab3-99ea-9543-0f30-2499d013a1ed" testName="ListarEtiquetaAssociadoTest3" computerName="JLA" duration="00:00:00" startTime="0001-01-01T00:00:00.0000000-03:00" endTime="0001-01-01T00:00:00.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+      </InnerResults>
+    </TestResultAggregation>
+  </Results>
+</TestRun>

@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRFID_Desktop", "AutoRFID_Desktop\AutoRFID_Desktop.csproj", "{94B9034F-12D3-4036-B300-111CB2159FBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRFID_WEB", "AutoRFID_WEB\AutoRFID_WEB.csproj", "{5BC083B3-BE13-4545-9AE6-49FC84FB4696}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fachada", "Fachada\Fachada.csproj", "{CF12D5AC-78D9-4244-8F40-EFF52F5A3246}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E56AC71E-0000-4D09-88E0-47D416E4E9FE}"
+	ProjectSection(SolutionItems) = preProject
+		AutoRFID.vsmdi = AutoRFID.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testes", "Testes\Testes.csproj", "{CA9F25CF-38C0-48CF-B0E7-B83A18282B2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boleto.Net", "Boleto.Net\Boleto.Net.csproj", "{F173E80B-E36B-48AD-B483-A27F8CA86F3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImpressaoTicket", "ImpressaoTicket\ImpressaoTicket.csproj", "{C29858D5-E512-4079-93EA-76DC0F2044D1}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = AutoRFID.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94B9034F-12D3-4036-B300-111CB2159FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94B9034F-12D3-4036-B300-111CB2159FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94B9034F-12D3-4036-B300-111CB2159FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94B9034F-12D3-4036-B300-111CB2159FBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BC083B3-BE13-4545-9AE6-49FC84FB4696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BC083B3-BE13-4545-9AE6-49FC84FB4696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BC083B3-BE13-4545-9AE6-49FC84FB4696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BC083B3-BE13-4545-9AE6-49FC84FB4696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF12D5AC-78D9-4244-8F40-EFF52F5A3246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF12D5AC-78D9-4244-8F40-EFF52F5A3246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF12D5AC-78D9-4244-8F40-EFF52F5A3246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF12D5AC-78D9-4244-8F40-EFF52F5A3246}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA9F25CF-38C0-48CF-B0E7-B83A18282B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA9F25CF-38C0-48CF-B0E7-B83A18282B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA9F25CF-38C0-48CF-B0E7-B83A18282B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA9F25CF-38C0-48CF-B0E7-B83A18282B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F173E80B-E36B-48AD-B483-A27F8CA86F3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F173E80B-E36B-48AD-B483-A27F8CA86F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F173E80B-E36B-48AD-B483-A27F8CA86F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F173E80B-E36B-48AD-B483-A27F8CA86F3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C29858D5-E512-4079-93EA-76DC0F2044D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C29858D5-E512-4079-93EA-76DC0F2044D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C29858D5-E512-4079-93EA-76DC0F2044D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C29858D5-E512-4079-93EA-76DC0F2044D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
