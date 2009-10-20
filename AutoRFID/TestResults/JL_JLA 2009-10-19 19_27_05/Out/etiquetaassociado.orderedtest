@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="OrderedTest1" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\orderedtest1.orderedtest" id="250f42c6-4245-4932-81f7-19a9c0183508" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <Css projectStructure="" iteration="" />
+  <Execution timeOut="2147483647" />
+  <Owners>
+    <Owner name="" />
+  </Owners>
+  <TestLinks>
+    <TestLink id="87327a55-2eb5-c89b-f626-62d0a881ed95" name="IncluirEtiquetaAssociadoTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="6daf6e12-84e1-8f87-2826-35954f9ffe97" name="ConsultarEtiquetaAssociadoTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="75b6b1f3-752d-c6ef-8f82-707e1b9e9c53" name="AlterarEtiquetaAssociadoTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="f1eba473-0d2b-6437-6911-0fbf14d4e95d" name="ExcluirEtiquetaAssociadoTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="895ee7cf-359c-df0b-bf1b-2a505af58b16" name="ListarEtiquetaAssociadoTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="abcf1357-bc8b-e65f-ba11-a8c2c1bdb006" name="ListarEtiquetaAssociadoTest1" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="9f870456-3710-7582-a031-14c8ed8eeb88" name="ListarEtiquetaAssociadoTest2" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="100cdab3-99ea-9543-0f30-2499d013a1ed" name="ListarEtiquetaAssociadoTest3" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

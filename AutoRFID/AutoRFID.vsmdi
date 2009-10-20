@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestLists xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestList name="Lists of Tests" id="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <RunConfiguration id="ddf0a898-0e29-4648-b4ed-936846171b10" name="Local Test Run" storage="localtestrun.testrunconfig" type="Microsoft.VisualStudio.TestTools.Common.TestRunConfiguration, Microsoft.VisualStudio.QualityTools.Common,   PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestList>
+  <TestList name="test" id="b4e5f9a8-b5c0-4611-8f00-7c937e4738ec" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <Description>experiencia</Description>
+    <TestLinks>
+      <TestLink id="41519cc5-c300-645b-3399-81e4cd93d8f4" name="ConsultarFuncionarioTest1" storage="testes\bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="b1e2b982-79fa-53c4-daa2-de2d38a329e1" name="ListarFuncionarioTest" storage="testes\bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="405addab-7262-0a5a-cd4d-2ab022f9b0be" name="AlterarFuncionarioTest" storage="testes\bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="dfad1513-8f2d-ec2d-3033-169b501e8432" name="InserirFuncionarioTest" storage="testes\bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+</TestLists>

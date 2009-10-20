@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="orderedtest1" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\orderedtest1.orderedtest" id="f292b473-d7f4-4447-bbb3-a75cc811df35" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <Css projectStructure="" iteration="" />
+  <Execution timeOut="2147483647" />
+  <Owners>
+    <Owner name="" />
+  </Owners>
+  <TestLinks>
+    <TestLink id="dfad1513-8f2d-ec2d-3033-169b501e8432" name="InserirFuncionarioTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="01df817c-d4d2-b5dc-4542-87cb4a13f565" name="ConsultarFuncionarioTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="41519cc5-c300-645b-3399-81e4cd93d8f4" name="ConsultarFuncionarioTest1" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="405addab-7262-0a5a-cd4d-2ab022f9b0be" name="AlterarFuncionarioTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="b1e2b982-79fa-53c4-daa2-de2d38a329e1" name="ListarFuncionarioTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="c85d0891-d82a-3991-df87-b3aa1b18518a" name="ListarFuncionarioTest1" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

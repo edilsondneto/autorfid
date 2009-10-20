@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ca40abea-de0c-4aeb-8a84-1be940459700" name="JL@JLA 2009-10-19 19:28:02" runUser="JLA\JL" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="ddf0a898-0e29-4648-b4ed-936846171b10">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\TestResults\JL_JLA 2009-10-19 19_28_02">
+      <DeploymentItem filename="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Fachada\bin\Debug\Fachada.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="7" executed="7" passed="1" error="0" failed="6" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2009-10-19T19:28:02.3437500-03:00" queuing="2009-10-19T19:28:03.0156250-03:00" start="2009-10-19T19:28:03.0468750-03:00" finish="2009-10-19T19:28:04.2343750-03:00" />
+  <TestDefinitions>
+    <OrderedTest name="Funcionario" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\funcionario.orderedtest" id="f292b473-d7f4-4447-bbb3-a75cc811df35" continueAfterFailure="true">
+      <Css projectStructure="" iteration="" />
+      <Execution timeOut="2147483647" id="87af5282-5622-49c3-82ec-0c819c85d573" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestLinks>
+        <TestLink id="dfad1513-8f2d-ec2d-3033-169b501e8432" name="InserirFuncionarioTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="01df817c-d4d2-b5dc-4542-87cb4a13f565" name="ConsultarFuncionarioTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="41519cc5-c300-645b-3399-81e4cd93d8f4" name="ConsultarFuncionarioTest1" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="405addab-7262-0a5a-cd4d-2ab022f9b0be" name="AlterarFuncionarioTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="b1e2b982-79fa-53c4-daa2-de2d38a329e1" name="ListarFuncionarioTest" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="c85d0891-d82a-3991-df87-b3aa1b18518a" name="ListarFuncionarioTest1" storage="bin\debug\testes.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      </TestLinks>
+    </OrderedTest>
+    <UnitTest name="ListarFuncionarioTest" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\bin\debug\testes.dll" id="b1e2b982-79fa-53c4-daa2-de2d38a329e1">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaFuncionarioTest, Testes" name="ListarFuncionarioTest" />
+    </UnitTest>
+    <UnitTest name="InserirFuncionarioTest" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\bin\debug\testes.dll" id="dfad1513-8f2d-ec2d-3033-169b501e8432">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaFuncionarioTest, Testes" name="InserirFuncionarioTest" />
+    </UnitTest>
+    <UnitTest name="AlterarFuncionarioTest" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\bin\debug\testes.dll" id="405addab-7262-0a5a-cd4d-2ab022f9b0be">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaFuncionarioTest, Testes" name="AlterarFuncionarioTest" />
+    </UnitTest>
+    <UnitTest name="ListarFuncionarioTest1" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\bin\debug\testes.dll" id="c85d0891-d82a-3991-df87-b3aa1b18518a">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaFuncionarioTest, Testes" name="ListarFuncionarioTest1" />
+    </UnitTest>
+    <UnitTest name="ConsultarFuncionarioTest1" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\bin\debug\testes.dll" id="41519cc5-c300-645b-3399-81e4cd93d8f4">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaFuncionarioTest, Testes" name="ConsultarFuncionarioTest1" />
+    </UnitTest>
+    <UnitTest name="ConsultarFuncionarioTest" storage="c:\documents and settings\jl\my documents\visual studio 2008\projects\autorfid_jlversion\trunk\autorfid\testes\bin\debug\testes.dll" id="01df817c-d4d2-b5dc-4542-87cb4a13f565">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\Testes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Testes.FachadaFuncionarioTest, Testes" name="ConsultarFuncionarioTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f292b473-d7f4-4447-bbb3-a75cc811df35" executionId="87af5282-5622-49c3-82ec-0c819c85d573" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <TestEntries>
+        <TestEntry testId="dfad1513-8f2d-ec2d-3033-169b501e8432" executionId="6bec083c-26ae-4a39-826d-347b59e78619" parentExecutionId="87af5282-5622-49c3-82ec-0c819c85d573" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="01df817c-d4d2-b5dc-4542-87cb4a13f565" executionId="fb694591-18f5-45c7-87bc-0519233142b6" parentExecutionId="87af5282-5622-49c3-82ec-0c819c85d573" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="41519cc5-c300-645b-3399-81e4cd93d8f4" executionId="abb8c06e-313e-482c-a609-5fd123145ae6" parentExecutionId="87af5282-5622-49c3-82ec-0c819c85d573" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="405addab-7262-0a5a-cd4d-2ab022f9b0be" executionId="9a187035-a0d0-4d64-8ee5-02c17bc2424a" parentExecutionId="87af5282-5622-49c3-82ec-0c819c85d573" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="b1e2b982-79fa-53c4-daa2-de2d38a329e1" executionId="2436f3da-caa8-41a4-b9a4-fd045310799a" parentExecutionId="87af5282-5622-49c3-82ec-0c819c85d573" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="c85d0891-d82a-3991-df87-b3aa1b18518a" executionId="5ae949ce-894e-4781-af06-8c335bb6b7a3" parentExecutionId="87af5282-5622-49c3-82ec-0c819c85d573" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+      </TestEntries>
+    </TestEntry>
+  </TestEntries>
+  <Results>
+    <TestResultAggregation executionId="87af5282-5622-49c3-82ec-0c819c85d573" testId="f292b473-d7f4-4447-bbb3-a75cc811df35" testName="Funcionario" computerName="JLA" duration="00:00:01.1574524" startTime="2009-10-19T19:28:03.0468750-03:00" endTime="2009-10-19T19:28:04.2031250-03:00" testType="ec4800e8-40e5-4ab3-8510-b8bf29b1904d" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Counters error="0" failed="5" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="1" completed="0" inProgress="0" pending="0" />
+      <InnerResults>
+        <UnitTestResult executionId="6bec083c-26ae-4a39-826d-347b59e78619" parentExecutionId="87af5282-5622-49c3-82ec-0c819c85d573" testId="dfad1513-8f2d-ec2d-3033-169b501e8432" testName="InserirFuncionarioTest" computerName="JLA" duration="00:00:00.2202514" startTime="2009-10-19T19:28:03.0468750-03:00" endTime="2009-10-19T19:28:04.0312500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+          <Output>
+            <ErrorInfo>
+              <Message>Test method Testes.FachadaFuncionarioTest.InserirFuncionarioTest threw exception:  System.Exception: Erro no Repositorio --&gt; Cannot add or update a child row: a foreign key constraint fails (`autorfid/funcionario`, CONSTRAINT `R_18` FOREIGN KEY (`idEstabelecimento`) REFERENCES `estabelecimento` (`idEstabelecimento`)).</Message>
+              <StackTrace>    at Fachada.Repositorio.RepositorioFuncionario.InserirFuncionario(Funcionario f) in C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Fachada\Repositorio\RepositorioFuncionario.cs:line 56
+   at Fachada.Controlador.ControladorFuncionario.InserirFuncionario(Funcionario f) in C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Fachada\Controlador\ControladorFuncionario.cs:line 50
+   at Fachada.Fachada.Fachada.InserirFuncionario(Funcionario f) in C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Fachada\Fachada\Fachada.cs:line 42
+   at Testes.FachadaFuncionarioTest.InserirFuncionarioTest() in C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\FachadaFuncionarioTest.cs:line 110
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="fb694591-18f5-45c7-87bc-0519233142b6" parentExecutionId="87af5282-5622-49c3-82ec-0c819c85d573" testId="01df817c-d4d2-b5dc-4542-87cb4a13f565" testName="ConsultarFuncionarioTest" computerName="JLA" duration="00:00:00.0421818" startTime="2009-10-19T19:28:04.0312500-03:00" endTime="2009-10-19T19:28:04.0781250-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+          <Output>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="abb8c06e-313e-482c-a609-5fd123145ae6" parentExecutionId="87af5282-5622-49c3-82ec-0c819c85d573" testId="41519cc5-c300-645b-3399-81e4cd93d8f4" testName="ConsultarFuncionarioTest1" computerName="JLA" duration="00:00:00.0048103" startTime="2009-10-19T19:28:04.0781250-03:00" endTime="2009-10-19T19:28:04.0781250-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+          <Output>
+            <ErrorInfo>
+              <Message>Test method Testes.FachadaFuncionarioTest.ConsultarFuncionarioTest1 threw exception:  System.Exception: Funcionário Inexistente.</Message>
+              <StackTrace>    at Fachada.Controlador.ControladorFuncionario.ConsultarFuncionario(String cpf) in C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Fachada\Controlador\ControladorFuncionario.cs:line 125
+   at Fachada.Fachada.Fachada.ConsultarFuncionario(String cpf) in C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Fachada\Fachada\Fachada.cs:line 67
+   at Testes.FachadaFuncionarioTest.ConsultarFuncionarioTest1() in C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\FachadaFuncionarioTest.cs:line 146
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="9a187035-a0d0-4d64-8ee5-02c17bc2424a" parentExecutionId="87af5282-5622-49c3-82ec-0c819c85d573" testId="405addab-7262-0a5a-cd4d-2ab022f9b0be" testName="AlterarFuncionarioTest" computerName="JLA" duration="00:00:00.0029520" startTime="2009-10-19T19:28:04.0781250-03:00" endTime="2009-10-19T19:28:04.0937500-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+          <Output>
+            <ErrorInfo>
+              <Message>Test method Testes.FachadaFuncionarioTest.AlterarFuncionarioTest threw exception:  System.Exception: Funcionário Inexistente.</Message>
+              <StackTrace>    at Fachada.Controlador.ControladorFuncionario.ConsultarFuncionario(String cpf) in C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Fachada\Controlador\ControladorFuncionario.cs:line 125
+   at Fachada.Fachada.Fachada.ConsultarFuncionario(String cpf) in C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Fachada\Fachada\Fachada.cs:line 67
+   at Testes.FachadaFuncionarioTest.AlterarFuncionarioTest() in C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\FachadaFuncionarioTest.cs:line 167
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="2436f3da-caa8-41a4-b9a4-fd045310799a" parentExecutionId="87af5282-5622-49c3-82ec-0c819c85d573" testId="b1e2b982-79fa-53c4-daa2-de2d38a329e1" testName="ListarFuncionarioTest" computerName="JLA" duration="00:00:00.1035857" startTime="2009-10-19T19:28:04.0937500-03:00" endTime="2009-10-19T19:28:04.2031250-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+          <Output>
+            <ErrorInfo>
+              <Message>Assert.Fail failed. Verify the correctness of this test method.</Message>
+              <StackTrace>   at Testes.FachadaFuncionarioTest.ListarFuncionarioTest() in C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\FachadaFuncionarioTest.cs:line 100
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="5ae949ce-894e-4781-af06-8c335bb6b7a3" parentExecutionId="87af5282-5622-49c3-82ec-0c819c85d573" testId="c85d0891-d82a-3991-df87-b3aa1b18518a" testName="ListarFuncionarioTest1" computerName="JLA" duration="00:00:00.0039870" startTime="2009-10-19T19:28:04.2031250-03:00" endTime="2009-10-19T19:28:04.2031250-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+          <Output>
+            <ErrorInfo>
+              <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;2&gt;. </Message>
+              <StackTrace>   at Testes.FachadaFuncionarioTest.ListarFuncionarioTest1() in C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\FachadaFuncionarioTest.cs:line 91
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+      </InnerResults>
+    </TestResultAggregation>
+  </Results>
+</TestRun>
