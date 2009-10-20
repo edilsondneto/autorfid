@@ -1,5 +1,0 @@
-D:\UNIBRATEC\6 PER\PROJETO PROGRAMACAO\autorfid\trunk\AutoRFID\CampoBD\bin\Debug\CampoBD.dll
-D:\UNIBRATEC\6 PER\PROJETO PROGRAMACAO\autorfid\trunk\AutoRFID\CampoBD\bin\Debug\CampoBD.pdb
-D:\UNIBRATEC\6 PER\PROJETO PROGRAMACAO\autorfid\trunk\AutoRFID\CampoBD\obj\Debug\ResolveAssemblyReference.cache
-D:\UNIBRATEC\6 PER\PROJETO PROGRAMACAO\autorfid\trunk\AutoRFID\CampoBD\obj\Debug\CampoBD.dll
-D:\UNIBRATEC\6 PER\PROJETO PROGRAMACAO\autorfid\trunk\AutoRFID\CampoBD\obj\Debug\CampoBD.pdb
