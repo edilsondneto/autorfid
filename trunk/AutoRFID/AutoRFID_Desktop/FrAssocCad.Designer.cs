@@ -55,6 +55,7 @@
             this.textCodigo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlBotoes.SuspendLayout();
+            this.panelConsulta.SuspendLayout();
             this.panelManutencao.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,6 +112,10 @@
             this.panelManutencao.Controls.Add(this.textCodigo);
             this.panelManutencao.Controls.Add(this.label2);
             this.panelManutencao.TabIndex = 0;
+            // 
+            // btnPesquisarTexto
+            // 
+            this.btnPesquisarTexto.Click += new System.EventHandler(this.btnPesquisarTexto_Click);
             // 
             // cpfcnpj
             // 
@@ -379,6 +384,8 @@
             this.Text = "Manutenção de Associado";
             this.Load += new System.EventHandler(this.FrAssocCad_Load);
             this.pnlBotoes.ResumeLayout(false);
+            this.panelConsulta.ResumeLayout(false);
+            this.panelConsulta.PerformLayout();
             this.panelManutencao.ResumeLayout(false);
             this.panelManutencao.PerformLayout();
             this.ResumeLayout(false);

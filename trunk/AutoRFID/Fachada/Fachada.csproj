@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{CF12D5AC-78D9-4244-8F40-EFF52F5A3246}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -31,7 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.1.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.1.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -51,14 +51,12 @@
     <Compile Include="Basicas\Estabelecimento.cs" />
     <Compile Include="Basicas\EtiquetaAssociado.cs" />
     <Compile Include="Basicas\Funcionario.cs" />
-    <Compile Include="Basicas\TipoPag.cs" />
     <Compile Include="BDcon\Conectar.cs" />
     <Compile Include="Controlador\ControladorEtiquetaAssociado.cs" />
     <Compile Include="Controlador\ControladorMovCredito.cs" />
     <Compile Include="Controlador\ControladorAssociado.cs" />
     <Compile Include="Controlador\ControladorEstabelecimento.cs" />
     <Compile Include="Controlador\ControladorFuncionario.cs" />
-    <Compile Include="Controlador\ControladorTipoPag.cs" />
     <Compile Include="Controlador\Validacao.cs" />
     <Compile Include="Fachada\Fachada.cs" />
     <Compile Include="Interface\IetiquetaAssociado.cs" />
@@ -66,7 +64,6 @@
     <Compile Include="Interface\IAssociado.cs" />
     <Compile Include="Interface\IEstabelecimento.cs" />
     <Compile Include="Interface\Ifuncionario.cs" />
-    <Compile Include="Interface\ITipoPag.cs" />
     <Compile Include="Basicas\MovCredito.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -79,7 +76,6 @@
     <Compile Include="Repositorio\RepositorioAssociado.cs" />
     <Compile Include="Repositorio\RepositorioEstabelecimento.cs" />
     <Compile Include="Repositorio\RepositorioFuncionario.cs" />
-    <Compile Include="Repositorio\RepositorioTipoPag.cs" />
     <Compile Include="Repositorio\Util.cs" />
     <Compile Include="Settings.cs" />
   </ItemGroup>

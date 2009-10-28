@@ -124,21 +124,20 @@ namespace Fachada.Repositorio
                 da.Fill(ds, "lista");
                 foreach (DataRow item in ds.Tables["lista"].Rows)
                 {
-                    
-                    est.IdEstabelecimento = (int)item[0];
-                    est.Cnpj = (String)item[1];
-                    est.Razaosocial = (String)item[2];
-                    est.Endereco = (String)item[3];
-                    est.Numero = (int)item[4];
-                    est.Bairro = (String)item[5];
-                    est.Cidade = (String)item[6];
-                    est.Estado = (String)item[7];
-                    est.Cep = (string)item[8];
-                    est.Email = (String)item[9];
-                    est.Fone = (String)item[10];
-                    est.Fonecelular = (String)item[11];
-                    est.QtdVagas = (int)item[12];
-                    est.QtdVagasOcupadas = (int)item[13];
+                    est.IdEstabelecimento = (Convert.IsDBNull(item[0]))? 0 : (int)item[0];
+                    est.Cnpj = Convert.ToString(item[1]);
+                    est.Razaosocial = Convert.ToString(item[2]);
+                    est.Endereco = Convert.ToString(item[3]);
+                    est.Numero = (Convert.IsDBNull(item[4])) ? 0 : (int)item[4];
+                    est.Bairro = Convert.ToString(item[5]);
+                    est.Cidade = Convert.ToString(item[6]);
+                    est.Estado = Convert.ToString(item[7]);
+                    est.Cep = Convert.ToString(item[8]);
+                    est.Email = Convert.ToString(item[9]);
+                    est.Fone = Convert.ToString(item[10]);
+                    est.Fonecelular = Convert.ToString(item[11]);
+                    est.QtdVagas = (Convert.IsDBNull(item[12])) ? 0 : (int)item[12];
+                    est.QtdVagasOcupadas = (Convert.IsDBNull(item[13]))? 0 : (int)item[13];
                 }
             }
             catch (Exception e)
@@ -176,20 +175,20 @@ namespace Fachada.Repositorio
                 da.Fill(ds, "lista");
                 foreach (DataRow item in ds.Tables["lista"].Rows)
                 {
-                    est.IdEstabelecimento = (int)item[0];
-                    est.Cnpj = (String)item[1];
-                    est.Razaosocial = (String)item[2];
-                    est.Endereco = (String)item[3];
-                    est.Numero = (int)item[4];
-                    est.Bairro = (String)item[5];
-                    est.Cidade = (String)item[6];
-                    est.Estado = (String)item[7];
-                    est.Cep = (string)item[8];
-                    est.Email = (String)item[9];
-                    est.Fone = (String)item[10];
-                    est.Fonecelular = (String)item[11];
-                    est.QtdVagas = (int)item[12];
-                    est.QtdVagasOcupadas = (int)item[13];
+                    est.IdEstabelecimento = (Convert.IsDBNull(item[0])) ? 0 : (int)item[0];
+                    est.Cnpj = Convert.ToString(item[1]);
+                    est.Razaosocial = Convert.ToString(item[2]);
+                    est.Endereco = Convert.ToString(item[3]);
+                    est.Numero = (Convert.IsDBNull(item[4])) ? 0 : (int)item[4];
+                    est.Bairro = Convert.ToString(item[5]);
+                    est.Cidade = Convert.ToString(item[6]);
+                    est.Estado = Convert.ToString(item[7]);
+                    est.Cep = Convert.ToString(item[8]);
+                    est.Email = Convert.ToString(item[9]);
+                    est.Fone = Convert.ToString(item[10]);
+                    est.Fonecelular = Convert.ToString(item[11]);
+                    est.QtdVagas = (Convert.IsDBNull(item[12])) ? 0 : (int)item[12];
+                    est.QtdVagasOcupadas = (Convert.IsDBNull(item[13])) ? 0 : (int)item[13];
                 }
             }
             catch (Exception e)
@@ -226,26 +225,26 @@ namespace Fachada.Repositorio
                 da.Fill(ds, "lista");
                 foreach (DataRow item in ds.Tables["lista"].Rows)
                 {
-                    est.IdEstabelecimento = (int)item[0];
-                    est.Cnpj = (String)item[1];
-                    est.Razaosocial = (String)item[2];
-                    est.Endereco = (String)item[3];
-                    est.Numero = (int)item[4];
-                    est.Bairro = (String)item[5];
-                    est.Cidade = (String)item[6];
-                    est.Estado = (String)item[7];
-                    est.Cep = (string)item[8];
-                    est.Email = (String)item[9];
-                    est.Fone = (String)item[10];
-                    est.Fonecelular = (String)item[11];
-                    est.QtdVagas = (int)item[12];
-                    est.QtdVagasOcupadas = (int)item[13];
+                    est.IdEstabelecimento = (Convert.IsDBNull(item[0])) ? 0 : (int)item[0];
+                    est.Cnpj = Convert.ToString(item[1]);
+                    est.Razaosocial = Convert.ToString(item[2]);
+                    est.Endereco = Convert.ToString(item[3]);
+                    est.Numero = (Convert.IsDBNull(item[4])) ? 0 : (int)item[4];
+                    est.Bairro = Convert.ToString(item[5]);
+                    est.Cidade = Convert.ToString(item[6]);
+                    est.Estado = Convert.ToString(item[7]);
+                    est.Cep = Convert.ToString(item[8]);
+                    est.Email = Convert.ToString(item[9]);
+                    est.Fone = Convert.ToString(item[10]);
+                    est.Fonecelular = Convert.ToString(item[11]);
+                    est.QtdVagas = (Convert.IsDBNull(item[12])) ? 0 : (int)item[12];
+                    est.QtdVagasOcupadas = (Convert.IsDBNull(item[13])) ? 0 : (int)item[13];
                 }
             }
-            catch (Exception e)
+            catch (MySqlException e)
             {
                 //this.c.Rolback();
-                throw new Exception("Erro no Repositório Estabelecimento");
+                throw new Exception("Erro no Repositório Estabelecimento"+ e);
             }
             finally
             {
@@ -306,6 +305,32 @@ namespace Fachada.Repositorio
             return ds;
         }
 
+        public DataSet ListarEstabelecimento(String sFiltro, List<CampoBD> lsCampos)
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            DataSet ds = new DataSet();
+            Conectar c = new Conectar();
+            try
+            {
+                sFiltro = Util.f_RetornaFiltroCad(sFiltro, lsCampos);
+                String sCampos = Util.f_RetornaSqlCampos(lsCampos);
+                String sql = " SELECT " + sCampos + " FROM estabelecimento " + sFiltro;
+
+                c.Connection().Open();
+                c.Command().CommandText = sql;
+                da.SelectCommand = c.Command();
+                da.Fill(ds, "lista");
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Erro no Repositorio" + e.Message);
+            }
+            finally
+            {
+                c.Connection().Close();
+            }
+            return ds;
+        }
 
         #endregion
         

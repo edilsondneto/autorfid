@@ -41,6 +41,7 @@
             this.txtSaldo = new System.Windows.Forms.MaskedTextBox();
             this.txtValor = new System.Windows.Forms.MaskedTextBox();
             this.pnlBotoes.SuspendLayout();
+            this.panelConsulta.SuspendLayout();
             this.panelManutencao.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.associadoBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -81,6 +82,10 @@
             this.panelManutencao.Controls.Add(this.cmbAssociado);
             this.panelManutencao.Controls.Add(this.txtCodigo);
             this.panelManutencao.Controls.Add(this.lblCodigo);
+            // 
+            // btnPesquisarTexto
+            // 
+            this.btnPesquisarTexto.Click += new System.EventHandler(this.btnPesquisarTexto_Click);
             // 
             // lblCodigo
             // 
@@ -189,6 +194,8 @@
             this.Text = "Etiqueta Associado";
             this.Load += new System.EventHandler(this.FrEtiqAssociado_Load);
             this.pnlBotoes.ResumeLayout(false);
+            this.panelConsulta.ResumeLayout(false);
+            this.panelConsulta.PerformLayout();
             this.panelManutencao.ResumeLayout(false);
             this.panelManutencao.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.associadoBindingSource)).EndInit();

@@ -54,3 +54,10 @@ C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_J
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Boleto.Net\obj\Debug\Boleto.Net.csproj.GenerateResource.Cache
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Boleto.Net\obj\Debug\Boleto.Net.dll
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Boleto.Net\obj\Debug\Boleto.Net.pdb
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Boleto.Net\bin\Debug\Boleto.Net.dll
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Boleto.Net\bin\Debug\Boleto.Net.pdb
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Boleto.Net\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Boleto.Net\obj\Debug\BoletoNet.Html.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Boleto.Net\obj\Debug\Boleto.Net.csproj.GenerateResource.Cache
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Boleto.Net\obj\Debug\Boleto.Net.dll
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Boleto.Net\obj\Debug\Boleto.Net.pdb

@@ -138,6 +138,11 @@ namespace Fachada.Controlador
         {
             return this.re.ListarEstabelecimento();        
         }
+
+        public DataSet ListarEstabelecimento(String sFiltro, List<CampoBD> lsCampos)
+        {
+            return this.re.ListarEstabelecimento(sFiltro,lsCampos);
+        }
         #endregion
     }
 }

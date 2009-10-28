@@ -53,6 +53,7 @@
             this.fone = new System.Windows.Forms.MaskedTextBox();
             this.fonecelular = new System.Windows.Forms.MaskedTextBox();
             this.pnlBotoes.SuspendLayout();
+            this.panelConsulta.SuspendLayout();
             this.panelManutencao.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,6 +104,10 @@
             this.panelManutencao.Controls.Add(this.lblRazãoSocial);
             this.panelManutencao.Controls.Add(this.lblCnpj);
             this.panelManutencao.Size = new System.Drawing.Size(745, 278);
+            // 
+            // btnPesquisarTexto
+            // 
+            this.btnPesquisarTexto.Click += new System.EventHandler(this.btnPesquisarTexto_Click);
             // 
             // cnpj
             // 
@@ -349,6 +354,8 @@
             this.Text = "Manutenção de Estabelecimento ";
             this.Load += new System.EventHandler(this.FrEstabCad_Load);
             this.pnlBotoes.ResumeLayout(false);
+            this.panelConsulta.ResumeLayout(false);
+            this.panelConsulta.PerformLayout();
             this.panelManutencao.ResumeLayout(false);
             this.panelManutencao.PerformLayout();
             this.ResumeLayout(false);

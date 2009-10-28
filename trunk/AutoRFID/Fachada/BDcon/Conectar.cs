@@ -21,7 +21,7 @@ namespace Fachada.BDcon
             //this.strConexao = Properties.Settings.Default.Constring;
 
             this.strConexao = global::Fachada.Properties.Settings.Default.autorfidConnectionString;
-            ///this.strConexao = "server=localhost;user id=root;database=autorfid;";
+            //this.strConexao = "server=localhost;user id=root;database=autorfid;password=123456";
             this.conexao = new MySqlConnection(this.strConexao);
             this.comando = new MySqlCommand();
             this.comando.Connection = this.conexao;

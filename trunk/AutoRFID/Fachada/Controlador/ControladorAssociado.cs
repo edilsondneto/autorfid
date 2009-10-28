@@ -19,8 +19,17 @@ namespace Fachada.Controlador
             this.objRepAss = new RepositorioAssociado();
         }
 
-
         #region Iassociado Members
+        public DataSet ListarAssociado(string sFiltro, List<CampoBD> lsCampos)
+        {
+            return objRepAss.ListarAssociado(sFiltro, lsCampos);
+        }
+
+        public DataSet ListarAssociado()
+        {
+            return objRepAss.ListarAssociado();
+        }
+        
 
         public void inserirAssociado(Associado objAssociado)
         {
@@ -106,7 +115,7 @@ namespace Fachada.Controlador
                 throw new Exception("E-mail inválido");
             }
 
-            if (this.objRepAss.consultarAssociado(objAssociado.Cpf_cnpj).Idassociado == 0)
+            if (this.objRepAss.consultarAssociado(objAssociado.Idassociado).Idassociado == 0)
             {
                 throw new Exception("Associado não cadastrado!");
             }
@@ -144,12 +153,6 @@ namespace Fachada.Controlador
             return this.objRepAss.consultarAssociado();
         }
 
-
-        public DataSet ListarAssociado()
-        {
-
-            return this.objRepAss.ListarAssociado();
-        }
         #endregion
     }
 }

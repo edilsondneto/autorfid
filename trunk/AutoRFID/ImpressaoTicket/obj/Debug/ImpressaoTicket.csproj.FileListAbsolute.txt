@@ -46,3 +46,15 @@ C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_J
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\ImpressaoTicket\obj\Debug\RdlCompile.compiled
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\ImpressaoTicket\obj\Debug\ImpressaoTicket.exe
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\ImpressaoTicket\obj\Debug\ImpressaoTicket.pdb
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\ImpressaoTicket\bin\Debug\ImpressaoTicket.exe
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\ImpressaoTicket\bin\Debug\ImpressaoTicket.pdb
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\ImpressaoTicket\bin\Debug\Fachada.dll
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\ImpressaoTicket\bin\Debug\Fachada.pdb
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\ImpressaoTicket\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\ImpressaoTicket\obj\Debug\ImpressaoTicket.Ticket.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\ImpressaoTicket\obj\Debug\ImpressaoTicket.Properties.Resources.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\ImpressaoTicket\obj\Debug\ImpressaoTicket.csproj.GenerateResource.Cache
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\ImpressaoTicket\obj\Debug\RdlCompile.cache
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\ImpressaoTicket\obj\Debug\RdlCompile.compiled
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\ImpressaoTicket\obj\Debug\ImpressaoTicket.exe
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\ImpressaoTicket\obj\Debug\ImpressaoTicket.pdb

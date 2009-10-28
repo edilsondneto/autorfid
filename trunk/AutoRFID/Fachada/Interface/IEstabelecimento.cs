@@ -18,5 +18,6 @@ namespace Fachada.Interface
 
         void ExcluirEstabelecimento(int idEstab);     
         DataSet ListarEstabelecimento();
+        DataSet ListarEstabelecimento(String sFiltro, List<CampoBD> lsCampos);
     }
 }
