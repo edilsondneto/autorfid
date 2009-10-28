@@ -84,3 +84,5 @@ C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_J
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\obj\Debug\Testes.pdb
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\EtiquetaAssociado.orderedtest
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\Associado.orderedtest
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Testes\bin\Debug\EtiquetaAssociado.orderedtest
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Testes\bin\Debug\Associado.orderedtest

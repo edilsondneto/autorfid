@@ -15,6 +15,7 @@ namespace AutoRFID_Desktop
         private Fachada.Fachada.Fachada objFachada;
         private EtiquetaAssociado objEtiquetaAssociado;
         private EtiquetaAssociado objConsulta;
+        private string sAcao;
 
         public FrEtiqAssociado()
         {
@@ -30,9 +31,9 @@ namespace AutoRFID_Desktop
             objFachada = Fachada.Fachada.Fachada.ObterFachada();
             objEtiquetaAssociado = new EtiquetaAssociado();
             //this.associadoTableAdapter.Fill(this.autorfidDataSet.associado);
-            CarregarCampos(null);
             this.PreencherCmbSitucao();
             PreencherCmbAssociado();
+            CarregarCampos(null);
             
 
         }
@@ -56,16 +57,15 @@ namespace AutoRFID_Desktop
 
         public void PreencherCmbAssociado()
         {
-            //this.cmbAssociado.Tex = (string)Session["user"];
             this.cmbAssociado.DisplayMember = "nome_razaosocial";
             this.cmbAssociado.ValueMember = "idAssociado";
             this.cmbAssociado.DataSource = Fachada.Fachada.Fachada.ObterFachada().ListarAssociado().Tables[0].DefaultView;
-            //this.cmbAssociado.b;
+
         }
 
         private void btCancelar_Click(object sender, EventArgs e)
         {
-
+            this.sAcao = "";
         }
 
         private void CarregarCampos(String codigo)
@@ -86,8 +86,8 @@ namespace AutoRFID_Desktop
 
             try
             {
-                this.cmbAssociado.SelectedIndex = int.Parse(this.objEtiquetaAssociado.CodigoEtiqueta);
-                this.cmbSituacao.SelectedIndex = int.Parse(this.objEtiquetaAssociado.Situacao);
+                this.cmbAssociado.SelectedText = this.objEtiquetaAssociado.Associado.Nome_razaosocial;
+                this.cmbSituacao.SelectedText = this.objEtiquetaAssociado.Situacao;
             }
             catch (Exception ex) { }
 
@@ -100,7 +100,7 @@ namespace AutoRFID_Desktop
 
         private void btIncluir_Click(object sender, EventArgs e)
         {
-            txtCodigo.Focus();
+            this.sAcao = "I";
         }
 
         private void btConfirmar_Click(object sender, EventArgs e)
@@ -115,6 +115,7 @@ namespace AutoRFID_Desktop
             }
             else
             {
+                objEtiquetaAssociado.CodigoEtiqueta = this.txtCodigo.Text;
                 objEtiquetaAssociado.Associado.Idassociado = Convert.ToInt32(cmbAssociado.SelectedValue);
                 objEtiquetaAssociado.Saldo = Convert.ToDecimal(txtSaldo.Text);
                 objEtiquetaAssociado.Situacao = cmbSituacao.SelectedValue.ToString();
@@ -126,28 +127,32 @@ namespace AutoRFID_Desktop
                 this.objFachada = Fachada.Fachada.Fachada.ObterFachada();
                 //this.objEtiquetaAssociado = new EtiquetaAssociado();
 
-
-                try//se for alteração
+                if (this.sAcao == "A")
                 {
-                    string codigo = this.txtCodigo.Text;
-                    objConsulta = new EtiquetaAssociado();
-                    objConsulta.CodigoEtiqueta = codigo;
-                    objConsulta = objFachada.ConsultarEtiquetaAssociado(objConsulta.CodigoEtiqueta);
-
-                    if (!string.IsNullOrEmpty(objConsulta.CodigoEtiqueta))
+                    try//se for alteração
                     {
-                        this.objEtiquetaAssociado.CodigoEtiqueta = codigo;
-                        objFachada.AlterarEtiquetaAssociado(objEtiquetaAssociado);
-                        return;
-                    }
-                }
-                catch
-                { }
+                        string codigo = this.txtCodigo.Text;
+                        objConsulta = new EtiquetaAssociado();
+                        objConsulta.CodigoEtiqueta = codigo;
+                        objConsulta = objFachada.ConsultarEtiquetaAssociado(objConsulta.CodigoEtiqueta);
 
+                        if (!string.IsNullOrEmpty(objConsulta.CodigoEtiqueta))
+                        {
+                            this.objEtiquetaAssociado.CodigoEtiqueta = codigo;
+                            objFachada.AlterarEtiquetaAssociado(objEtiquetaAssociado);
+                            return;
+                        }
+                    }
+                    catch
+                    { }
+                }
+                if (sAcao == "I")
+                {
                     this.objFachada.IncluirEtiquetaAssociado(objEtiquetaAssociado);
                     this.CarregarCampos(null);
-                
+                }
 
+                sAcao = "";
                 base.habilita();
             }
             catch (Exception ex)
@@ -156,9 +161,6 @@ namespace AutoRFID_Desktop
             }
 
         }
-
-       
-
 
         protected override void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
@@ -181,27 +183,47 @@ namespace AutoRFID_Desktop
 
         }
 
+        protected override void preencheListaCamposFiltro()
+        {
+            this.lCamposFiltros = new List<CampoBD>();
+
+            CampoBD campoCod = new CampoBD("codigo_etiqueta", "Código Etiqueta", true, 60);
+            CampoBD campoNome = new CampoBD("idassociado", "Associado", true, 200);
+            CampoBD campoCPF = new CampoBD("saldo", "saldo", true, 100);
+            CampoBD campo2 = new CampoBD("situacao", "Situação", true, 100);
+
+            this.lCamposFiltros.Add(campoCod);
+            this.lCamposFiltros.Add(campoNome);
+            this.lCamposFiltros.Add(campoCPF);
+            this.lCamposFiltros.Add(campo2);
+        }
+
+        private void pesquisar()
+        {
+            DataSet ds = this.objFachada.ListarEtiquetaAssociado(this.sFiltro, this.lCamposFiltros);
+
+            DataTableReader dtr = new DataTableReader(ds.Tables[0]);
+
+            DataTable dt = new DataTable();
+
+            dt.Load(dtr, LoadOption.OverwriteChanges);
+
+            this.dataGridView1.DataSource = dt;
+        }
+
         private void btPesquisar_Click(object sender, EventArgs e)
         {
-            //dataGridView1.DataSource = objFachada.ListarEtiquetaAssociado().Tables[0];
-            DataSet dsAssociado = new DataSet();
-            dsAssociado = this.objFachada.ListarEtiquetaAssociado();
-
-
-            DataTableReader dtr = new DataTableReader(dsAssociado.Tables[0]);
-
-            DataTable dtAssoc = new DataTable();
-
-            dtAssoc.Load(dtr, LoadOption.OverwriteChanges);
-
-            this.dataGridView1.DataSource = dtAssoc;
+            this.pesquisar();
         }
 
         private void btAlterar_Click(object sender, EventArgs e)
         {
-            
-                txtCodigo.Focus();    
-          
+            this.sAcao = "A";
+        }
+
+        private void btnPesquisarTexto_Click(object sender, EventArgs e)
+        {
+            this.pesquisar();
         }
 
 

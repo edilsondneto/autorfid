@@ -14,7 +14,6 @@ namespace AutoRFID_Desktop
     {
         private Fachada.Fachada.Fachada objFachada;
         private Funcionario objFuncionario;
-        private Funcionario objConsulta;
         private string sAcao;
 
         public FrFuncCad()
@@ -117,6 +116,7 @@ namespace AutoRFID_Desktop
 
         private void CarregarCampos(int idFunc, String cpfFunc)
         {
+            this.objFachada = Fachada.Fachada.Fachada.ObterFachada();
             this.objFuncionario = new Funcionario();
 
             try
@@ -144,7 +144,7 @@ namespace AutoRFID_Desktop
                 this.maskedTextBox2.Text = this.objFuncionario.Fone;
                 this.maskedTextBox3.Text = this.objFuncionario.Fonecelular;
 
-                if (this.objFuncionario.Funcao != null)
+                if ((this.objFuncionario.Funcao != null) && (this.objFuncionario.Funcao != ""))
                 {
                     this.boxTipo.SelectedIndex = int.Parse(this.objFuncionario.Funcao);
                 }
@@ -157,10 +157,35 @@ namespace AutoRFID_Desktop
 
         }
 
+        private void btPesquisar_Click(object sender, EventArgs e)
+        {
+            this.pesquisar();    
+        }
+
+        protected override void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            String idConsulta = this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            this.CarregarCampos(int.Parse(idConsulta), null);
+        }
+
         private void FrFuncCad_Load(object sender, EventArgs e)
         {
             this.CarregarCampos(0, null);
         }
+
+        protected override void preencheListaCamposFiltro()
+        {            
+            this.lCamposFiltros = new List<CampoBD>();
+
+            CampoBD campoCod    = new CampoBD("IDFUNCIONARIO", "Código", true, 60);
+            CampoBD campoNome   = new CampoBD("NOME"  ,"Nome do Funcionário",true,200);
+            CampoBD campoCPF    = new CampoBD("CPF"   ,"CPF"                ,true,100);
+
+            this.lCamposFiltros.Add(campoCod);
+            this.lCamposFiltros.Add(campoNome);
+            this.lCamposFiltros.Add(campoCPF);
+        }
+        
 
         private void btAlterar_Click(object sender, EventArgs e)
         {
@@ -170,33 +195,25 @@ namespace AutoRFID_Desktop
         private void btCancelar_Click(object sender, EventArgs e)
         {
             this.sAcao = "";
-        }
+        }        
 
-        private void btPesquisar_Click(object sender, EventArgs e)
+        private void pesquisar()
         {
-            DataSet ds = null;
-            try
-            {
-                ds = Fachada.Fachada.Fachada.ObterFachada().ListarFuncionario();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            DataSet ds = this.objFachada.ListarFuncionario(this.sFiltro,this.lCamposFiltros);
 
             DataTableReader dtr = new DataTableReader(ds.Tables[0]);
+
             DataTable dt = new DataTable();
 
             dt.Load(dtr, LoadOption.OverwriteChanges);
-            this.dataGridView1.DataSource = dt;
+
+            this.dataGridView1.DataSource = dt;                         
         }
 
-        protected override void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
+        private void btnPesquisarTexto_Click(object sender, EventArgs e)
         {
-            String idConsulta = this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-            this.CarregarCampos(int.Parse(idConsulta), null);
+            this.pesquisar();
         }
-
 
     }
 }

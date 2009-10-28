@@ -150,11 +150,16 @@ namespace AutoRFID_Desktop
             if (idAssoc > 0)
             {
               this.objAssociado = this.objFachada.ConsultarAssociado(idAssoc);
-            }else if (cpf_cnpj.Length > 0)
-            {
-              this.objAssociado = this.objFachada.ConsultarAssociado(cpf_cnpj);
             }
-              this.objAssociado = this.objFachada.ConsultarAssociado();
+            else if (cpf_cnpj.Length > 0)
+            {
+                this.objAssociado = this.objFachada.ConsultarAssociado(cpf_cnpj);
+            }
+            else
+            {
+                this.objAssociado = this.objFachada.ConsultarAssociado();
+            }
+              
 
             //Preencher campos do form
             this.textCodigo.Text = this.objAssociado.Idassociado.ToString();
@@ -204,18 +209,7 @@ namespace AutoRFID_Desktop
 
         private void btPesquisar_Click(object sender, EventArgs e)
         {
-
-            DataSet dsAssociado = new DataSet();
-            dsAssociado = this.objFachada.ListarAssociado();
-
-
-            DataTableReader dtr = new DataTableReader(dsAssociado.Tables[0]);
-
-            DataTable dtAssoc = new DataTable(); 
-
-            dtAssoc.Load(dtr, LoadOption.OverwriteChanges);
-
-            this.dataGridView1.DataSource = dtAssoc;
+            this.pesquisar();
 
         }
 
@@ -224,6 +218,41 @@ namespace AutoRFID_Desktop
            int idAsso = int.Parse(this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
            this.CarregarCampos(idAsso,"");
         }
+
+        protected override void preencheListaCamposFiltro()
+        {
+            this.lCamposFiltros = new List<CampoBD>();
+
+            CampoBD campoCod = new CampoBD("IDASSOCIADO", "Código", true, 60);
+            CampoBD campoNome = new CampoBD("NOME_RAZAOSOCIAL", "Nome do Associado", true, 200);
+            CampoBD campoCPF = new CampoBD("CPF_CNPJ", "CPF-CNPJ", true, 100);
+
+            this.lCamposFiltros.Add(campoCod);
+            this.lCamposFiltros.Add(campoNome);
+            this.lCamposFiltros.Add(campoCPF);
+        }
+
+        private void pesquisar()
+        {
+            DataSet dsAssociado = new DataSet();
+            dsAssociado = this.objFachada.ListarAssociado(sFiltro, lCamposFiltros);
+
+
+            DataTableReader dtr = new DataTableReader(dsAssociado.Tables[0]);
+
+            DataTable dtAssoc = new DataTable();
+
+            dtAssoc.Load(dtr, LoadOption.OverwriteChanges);
+
+            this.dataGridView1.DataSource = dtAssoc;
+
+        }
+
+        private void btnPesquisarTexto_Click(object sender, EventArgs e)
+        {
+            this.pesquisar();
+        }
+
 
 
      }

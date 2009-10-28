@@ -87,3 +87,5 @@ C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_J
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.dll
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.pdb
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_WEB\bin\Boleto.Net.dll
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_WEB\bin\Boleto.Net.pdb

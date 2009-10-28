@@ -67,9 +67,9 @@ namespace Fachada.Repositorio
             try
             {
 
-                String sql = "update funcionario set cpf = @cpf,"+
-                "nome = @nome, endereco = @endereco, numero = @numero, bairro = @bairro, cidade = @cidade, estado = @estado, "+
-                "cep = @cep , email = @email, fone = @fone, fonecelular = @fonecelular, idestabelecimento = @idestabelecimento, funcao = @funcao "+
+                String sql = "update funcionario set cpf = @cpf," +
+                "nome = @nome, endereco = @endereco, numero = @numero, bairro = @bairro, cidade = @cidade, estado = @estado, " +
+                "cep = @cep , email = @email, fone = @fone, fonecelular = @fonecelular, idestabelecimento = @idestabelecimento, funcao = @funcao " +
                 "where idfuncionario = @idfuncionario";
 
                 c.Connection().Open();
@@ -185,20 +185,20 @@ namespace Fachada.Repositorio
 
                 foreach (DataRow item in ds.Tables["lista"].Rows)
                 {
-                    func.Idfuncionario = (int)item[0];
-                    func.Cpf = (String)item[1];
-                    func.Nome = (String)item[2];
-                    func.Endereco = (String)item[3];
-                    func.Numero = (int)item[4];
-                    func.Bairro = (String)item[5];
-                    func.Cidade = (String)item[6];
-                    func.Estado = (String)item[7];
-                    func.Cep = (String)item[8];
-                    func.Email = (String)item[9];
-                    func.Fone = (String)item[10];
-                    func.Fonecelular = (String)item[11];
-                    func.Idestabelecimento = (int)item[12];
-                    func.Funcao = (String)item[13];
+                    func.Idfuncionario = (Convert.IsDBNull(item[0])) ? 0 : (int)item[0];
+                    func.Cpf = Convert.ToString(item[1]);
+                    func.Nome = Convert.ToString(item[2]);
+                    func.Endereco = Convert.ToString(item[3]);
+                    func.Numero = (Convert.IsDBNull(item[4])) ? 0 : (int)item[4];
+                    func.Bairro = Convert.ToString(item[5]);
+                    func.Cidade = Convert.ToString(item[6]);
+                    func.Estado = Convert.ToString(item[7]);
+                    func.Cep = Convert.ToString(item[8]);
+                    func.Email = Convert.ToString(item[9]);
+                    func.Fone = Convert.ToString(item[10]);
+                    func.Fonecelular = Convert.ToString(item[11]);
+                    func.Idestabelecimento = (Convert.IsDBNull(item[12])) ? 0 : (int)item[12];
+                    func.Funcao = Convert.ToString(item[13]);
                 }
             }
             catch (MySqlException e)
@@ -231,20 +231,20 @@ namespace Fachada.Repositorio
 
                 foreach (DataRow item in ds.Tables["lista"].Rows)
                 {
-                    func.Idfuncionario = (int)item[0];
-                    func.Cpf = (String)item[1];
-                    func.Nome = (String)item[2];
-                    func.Endereco = (String)item[3];
-                    func.Numero = (int)item[4];
-                    func.Bairro = (String)item[5];
-                    func.Cidade = (String)item[6];
-                    func.Estado = (String)item[7];
-                    func.Cep = (String)item[8];
-                    func.Email = (String)item[9];
-                    func.Fone = (String)item[10];
-                    func.Fonecelular = (String)item[11];
-                    func.Idestabelecimento = (int)item[12];
-                    func.Funcao = (String)item[13];
+                    func.Idfuncionario = (Convert.IsDBNull(item[0])) ? 0 : (int)item[0];
+                    func.Cpf = Convert.ToString(item[1]);
+                    func.Nome = Convert.ToString(item[2]);
+                    func.Endereco = Convert.ToString(item[3]);
+                    func.Numero = (Convert.IsDBNull(item[4])) ? 0 : (int)item[4];
+                    func.Bairro = Convert.ToString(item[5]);
+                    func.Cidade = Convert.ToString(item[6]);
+                    func.Estado = Convert.ToString(item[7]);
+                    func.Cep = Convert.ToString(item[8]);
+                    func.Email = Convert.ToString(item[9]);
+                    func.Fone = Convert.ToString(item[10]);
+                    func.Fonecelular = Convert.ToString(item[11]);
+                    func.Idestabelecimento = (Convert.IsDBNull(item[12])) ? 0 : (int)item[12];
+                    func.Funcao = Convert.ToString(item[13]);
                 }
             }
             catch (MySqlException e)
@@ -297,7 +297,7 @@ namespace Fachada.Repositorio
                 c.Connection().Open();
                 c.Command().CommandText = sql;
                 da.SelectCommand = c.Command();
-                da.Fill(ds,"lista");
+                da.Fill(ds, "lista");
             }
             catch (MySqlException e)
             {

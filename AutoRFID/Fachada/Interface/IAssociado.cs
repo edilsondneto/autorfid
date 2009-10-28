@@ -22,7 +22,9 @@ namespace Fachada.Interface
         //Carregar o último registro de associado
         Associado consultarAssociado();
 
-        DataSet ListarAssociado();
+        //DataSet ListarAssociado();
+        DataSet ListarAssociado(String sFiltro, List<CampoBD> lsCampos);
 
+        DataSet ListarAssociado();
     }
 }

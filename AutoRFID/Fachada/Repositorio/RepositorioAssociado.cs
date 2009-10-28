@@ -153,19 +153,19 @@ namespace Fachada.Repositorio
 
                 foreach (DataRow item in ds.Tables["lista"].Rows)
                 {
-                    objAssoc.Idassociado = (int)item[0];
-                    objAssoc.Cpf_cnpj = (String)item[1];
-                    objAssoc.Nome_razaosocial = (String)item[2];
-                    objAssoc.Tipo_pf_pj = (String)item[3];
-                    objAssoc.Endereco = (String)item[4];
-                    objAssoc.Numero = (int)item[5];
-                    objAssoc.Bairro = (String)item[6];
-                    objAssoc.Cidade = (String)item[7];
-                    objAssoc.Estado = (String)item[8];
-                    objAssoc.Cep    = (String)item[9];
-                    objAssoc.Email  = (String)item[10];
-                    objAssoc.Fone   = (String)item[11];
-                    objAssoc.Fonecel= (String)item[12];
+                    objAssoc.Idassociado = (Convert.IsDBNull(item[0]))? 0 :(int) item[0];
+                    objAssoc.Cpf_cnpj = Convert.ToString(item[1]);
+                    objAssoc.Nome_razaosocial = Convert.ToString(item[2]);
+                    objAssoc.Tipo_pf_pj = Convert.ToString(item[3]);
+                    objAssoc.Endereco = Convert.ToString(item[4]);
+                    objAssoc.Numero = Convert.ToInt32(item[5]);
+                    objAssoc.Bairro = Convert.ToString(item[6]);
+                    objAssoc.Cidade = Convert.ToString(item[7]);
+                    objAssoc.Estado = Convert.ToString(item[8]);
+                    objAssoc.Cep    = Convert.ToString(item[9]);
+                    objAssoc.Email  = Convert.ToString(item[10]);
+                    objAssoc.Fone   = Convert.ToString(item[11]);
+                    objAssoc.Fonecel= Convert.ToString(item[12]);
 
                 }
             }
@@ -202,19 +202,19 @@ namespace Fachada.Repositorio
 
                 foreach (DataRow item in ds.Tables["lista"].Rows)
                 {
-                    objAssoc.Idassociado = (int)item[0];
-                    objAssoc.Cpf_cnpj = (String)item[1];
-                    objAssoc.Nome_razaosocial = (String)item[2];
-                    objAssoc.Tipo_pf_pj = (String)item[3];
-                    objAssoc.Endereco = (String)item[4];
-                    objAssoc.Numero = (int)item[5];
-                    objAssoc.Bairro = (String)item[6];
-                    objAssoc.Cidade = (String)item[7];
-                    objAssoc.Estado = (String)item[8];
-                    objAssoc.Cep = (String)item[9];
-                    objAssoc.Email = (String)item[10];
-                    objAssoc.Fone = (String)item[11];
-                    objAssoc.Fonecel = (String)item[12];
+                    objAssoc.Idassociado = (Convert.IsDBNull(item[0])) ? 0 : (int)item[0];
+                    objAssoc.Cpf_cnpj = Convert.ToString(item[1]);
+                    objAssoc.Nome_razaosocial = Convert.ToString(item[2]);
+                    objAssoc.Tipo_pf_pj = Convert.ToString(item[3]);
+                    objAssoc.Endereco = Convert.ToString(item[4]);
+                    objAssoc.Numero = Convert.ToInt32(item[5]);
+                    objAssoc.Bairro = Convert.ToString(item[6]);
+                    objAssoc.Cidade = Convert.ToString(item[7]);
+                    objAssoc.Estado = Convert.ToString(item[8]);
+                    objAssoc.Cep = Convert.ToString(item[9]);
+                    objAssoc.Email = Convert.ToString(item[10]);
+                    objAssoc.Fone = Convert.ToString(item[11]);
+                    objAssoc.Fonecel = Convert.ToString(item[12]);
 
                 }
             }
@@ -248,19 +248,19 @@ namespace Fachada.Repositorio
 
                 foreach (DataRow item in ds.Tables["lista"].Rows)
                 {
-                    objAssoc.Idassociado = (int)item[0];
-                    objAssoc.Cpf_cnpj = (String)item[1];
-                    objAssoc.Nome_razaosocial = (String)item[2];
-                    objAssoc.Tipo_pf_pj = (String)item[3];
-                    objAssoc.Endereco = (String)item[4];
-                    objAssoc.Numero = (int)item[5];
-                    objAssoc.Bairro = (String)item[6];
-                    objAssoc.Cidade = (String)item[7];
-                    objAssoc.Estado = (String)item[8];
-                    objAssoc.Cep = (String)item[9];
-                    objAssoc.Email = (String)item[10];
-                    objAssoc.Fone = (String)item[11];
-                    objAssoc.Fonecel = (String)item[12];
+                    objAssoc.Idassociado = (Convert.IsDBNull(item[0])) ? 0 : (int)item[0];
+                    objAssoc.Cpf_cnpj = Convert.ToString(item[1]);
+                    objAssoc.Nome_razaosocial = Convert.ToString(item[2]);
+                    objAssoc.Tipo_pf_pj = Convert.ToString(item[3]);
+                    objAssoc.Endereco = Convert.ToString(item[4]);
+                    objAssoc.Numero = Convert.ToInt32(item[5]);
+                    objAssoc.Bairro = Convert.ToString(item[6]);
+                    objAssoc.Cidade = Convert.ToString(item[7]);
+                    objAssoc.Estado = Convert.ToString(item[8]);
+                    objAssoc.Cep = Convert.ToString(item[9]);
+                    objAssoc.Email = Convert.ToString(item[10]);
+                    objAssoc.Fone = Convert.ToString(item[11]);
+                    objAssoc.Fonecel = Convert.ToString(item[12]);
 
                 }
             }
@@ -275,23 +275,23 @@ namespace Fachada.Repositorio
             return objAssoc;
         }
 
-
-        public DataSet ListarAssociado()
+        public DataSet ListarAssociado(string sFiltro, List<CampoBD> lsCampos)
         {
             MySqlDataAdapter da = new MySqlDataAdapter();
             Conectar c = new Conectar();
             DataSet ds = new DataSet();
-            DataTable dtAssociados = new DataTable();
 
             try
             {
-                String sql = "select * from Associado";
+                sFiltro = Util.f_RetornaFiltroCad(sFiltro, lsCampos);
+                String sCampos = Util.f_RetornaSqlCampos(lsCampos);
+                String sql = " SELECT " + sCampos + " FROM Associado " + sFiltro;
+
                 c.Connection().Open();
                 c.Command().CommandText = sql;
                 da.SelectCommand = c.Command();
 
-                da.Fill(dtAssociados);
-                ds.Tables.Add(dtAssociados);	
+                da.Fill(ds,"lista");
             }
             catch (MySqlException e)
             {
@@ -304,6 +304,31 @@ namespace Fachada.Repositorio
             return ds;
         }
 
+        public DataSet ListarAssociado()
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            Conectar c = new Conectar();
+            DataSet ds = new DataSet();
+ 
+            try
+            {
+                String sql = " SELECT  * FROM Associado;";
+
+                c.Connection().Open();
+                c.Command().CommandText = sql;
+                da.SelectCommand = c.Command();
+                da.Fill(ds,"lista");
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Erro no Repositorio" + e.Message);
+            }
+            finally
+            {
+                c.Connection().Close();
+            }
+            return ds;
+        }
 
         #endregion
     }

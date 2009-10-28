@@ -113,7 +113,7 @@ namespace Fachada.Repositorio
             {
                 String sql = "";
 
-                if (!codigoetiqueta.Equals("0"))
+                if (codigoetiqueta != null)
                 {
                     sql = "select * from etiquetaassociado where codigo_etiqueta = @codigo_etiqueta";
                 }

@@ -39,6 +39,8 @@
             this.btIncluir = new System.Windows.Forms.Button();
             this.btAlterar = new System.Windows.Forms.Button();
             this.panelConsulta = new System.Windows.Forms.GroupBox();
+            this.btnPesquisarTexto = new System.Windows.Forms.Button();
+            this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panelManutencao = new System.Windows.Forms.GroupBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -125,10 +127,26 @@
             // 
             // panelConsulta
             // 
+            this.panelConsulta.Controls.Add(this.btnPesquisarTexto);
+            this.panelConsulta.Controls.Add(this.txtPesquisa);
             this.panelConsulta.Controls.Add(this.dataGridView1);
             resources.ApplyResources(this.panelConsulta, "panelConsulta");
             this.panelConsulta.Name = "panelConsulta";
             this.panelConsulta.TabStop = false;
+            // 
+            // btnPesquisarTexto
+            // 
+            this.btnPesquisarTexto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPesquisarTexto.Image = global::AutoRFID_Desktop.Properties.Resources.system_search;
+            resources.ApplyResources(this.btnPesquisarTexto, "btnPesquisarTexto");
+            this.btnPesquisarTexto.Name = "btnPesquisarTexto";
+            this.btnPesquisarTexto.UseVisualStyleBackColor = true;
+            this.btnPesquisarTexto.Click += new System.EventHandler(this.btnPesquisarTexto_Click);
+            // 
+            // txtPesquisa
+            // 
+            resources.ApplyResources(this.txtPesquisa, "txtPesquisa");
+            this.txtPesquisa.Name = "txtPesquisa";
             // 
             // dataGridView1
             // 
@@ -137,12 +155,14 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.ColumnAdded += new System.Windows.Forms.DataGridViewColumnEventHandler(this.dataGridView1_ColumnAdded);
             // 
             // panelManutencao
             // 
             resources.ApplyResources(this.panelManutencao, "panelManutencao");
             this.panelManutencao.Name = "panelManutencao";
             this.panelManutencao.TabStop = false;
+            this.panelManutencao.Enter += new System.EventHandler(this.panelManutencao_Enter);
             // 
             // timer1
             // 
@@ -163,6 +183,7 @@
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frCadPad_KeyPress);
             this.pnlBotoes.ResumeLayout(false);
             this.panelConsulta.ResumeLayout(false);
+            this.panelConsulta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -182,5 +203,7 @@
         protected System.Windows.Forms.GroupBox panelManutencao;
         protected System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Timer timer1;
+        protected System.Windows.Forms.Button btnPesquisarTexto;
+        private System.Windows.Forms.TextBox txtPesquisa;
     }
 }

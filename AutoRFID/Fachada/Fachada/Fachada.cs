@@ -79,7 +79,6 @@ namespace Fachada.Fachada
         }
         #endregion
 
-
         #region Associado Metodos
 
         public void InserirAssociado(Associado Asso)
@@ -112,10 +111,14 @@ namespace Fachada.Fachada
             return this.IntAssociado.consultarAssociado();
         }
 
-        
         public DataSet ListarAssociado()
         {
             return this.IntAssociado.ListarAssociado();
+        }
+        
+        public DataSet ListarAssociado(String sFiltro, List<CampoBD> lsCampos)
+        {
+            return this.IntAssociado.ListarAssociado(sFiltro,lsCampos);
         }
 
         #endregion
@@ -153,6 +156,12 @@ namespace Fachada.Fachada
         {
             return this.IntEstabelecimento.ListarEstabelecimento();
         }
+
+        public DataSet ListarEstabelecimento(String sFiltro, List<CampoBD> lsCampos)
+        {
+            return this.IntEstabelecimento.ListarEstabelecimento(sFiltro, lsCampos);
+        }
+
         #endregion
 
         #region MovCreditos Metodos
@@ -187,7 +196,6 @@ namespace Fachada.Fachada
 
         #endregion
 
-    
         #region Etiqueta Associado
 
         public void IncluirEtiquetaAssociado(EtiquetaAssociado etiquetaAssociado)

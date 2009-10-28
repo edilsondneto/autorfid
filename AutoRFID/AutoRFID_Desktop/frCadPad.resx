@@ -117,11 +117,120 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;btSair.Name" xml:space="preserve">
+    <value>btSair</value>
+  </data>
+  <data name="&gt;&gt;btSair.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btSair.Parent" xml:space="preserve">
+    <value>pnlBotoes</value>
+  </data>
+  <data name="&gt;&gt;btSair.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btConfirmar.Name" xml:space="preserve">
+    <value>btConfirmar</value>
+  </data>
+  <data name="&gt;&gt;btConfirmar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btConfirmar.Parent" xml:space="preserve">
+    <value>pnlBotoes</value>
+  </data>
+  <data name="&gt;&gt;btConfirmar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btPesquisar.Name" xml:space="preserve">
+    <value>btPesquisar</value>
+  </data>
+  <data name="&gt;&gt;btPesquisar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btPesquisar.Parent" xml:space="preserve">
+    <value>pnlBotoes</value>
+  </data>
+  <data name="&gt;&gt;btPesquisar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btCancelar.Name" xml:space="preserve">
+    <value>btCancelar</value>
+  </data>
+  <data name="&gt;&gt;btCancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btCancelar.Parent" xml:space="preserve">
+    <value>pnlBotoes</value>
+  </data>
+  <data name="&gt;&gt;btCancelar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btExcluir.Name" xml:space="preserve">
+    <value>btExcluir</value>
+  </data>
+  <data name="&gt;&gt;btExcluir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btExcluir.Parent" xml:space="preserve">
+    <value>pnlBotoes</value>
+  </data>
+  <data name="&gt;&gt;btExcluir.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btIncluir.Name" xml:space="preserve">
+    <value>btIncluir</value>
+  </data>
+  <data name="&gt;&gt;btIncluir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btIncluir.Parent" xml:space="preserve">
+    <value>pnlBotoes</value>
+  </data>
+  <data name="&gt;&gt;btIncluir.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btAlterar.Name" xml:space="preserve">
+    <value>btAlterar</value>
+  </data>
+  <data name="&gt;&gt;btAlterar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btAlterar.Parent" xml:space="preserve">
+    <value>pnlBotoes</value>
+  </data>
+  <data name="&gt;&gt;btAlterar.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pnlBotoes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pnlBotoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 248</value>
+  </data>
+  <data name="pnlBotoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>744, 30</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pnlBotoes.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;pnlBotoes.Name" xml:space="preserve">
+    <value>pnlBotoes</value>
+  </data>
+  <data name="&gt;&gt;pnlBotoes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlBotoes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlBotoes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btSair.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btSair.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -134,7 +243,6 @@
   <data name="btSair.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 23</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btSair.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
@@ -285,19 +393,19 @@
   <data name="btIncluir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAANzwAA
-        Dc8BL7aD1wAAAoBJREFUOE+Nkd1PUmEcxw823brpj2m+1FXdtLC8YQVqJ+MKaa5x40Viy1bNzWqrTZNS
-        TEM5pyBGpCu05pQlc1yYxIsKgiKKvDmr1UJA+PY8j9PpVunZPjvPznl+n9+bhOd5bv+TL2S3JBLJMQDk
-        JWG/SkpK2Lm0tDTw+9fWmbKysvReTGtr64BWq93YRVF3GZlMBtlsFrlcDvl8nrG9vY3BoUHwV+tWSNIT
-        NDFL3tLS8t3lcmF6ehpTU1OQ115CMBiE1+tleDwezM7OYmZmBsViEV1dnUX+2hWfXC4/zgTNzc3fnE4n
-        bDYbLBYLE4RCIfS96DuA3+9jgkKhAN0zXZFvqO9lAo1Gs+lwTLJgs9kM2kI0GsXy8jKWlpYY4XAYkUgE
-        yWQSsVgMbrcbDUr+BxM0NTVtjI+Pw2QyQRAEJlhfX8fAy35SgX4PKlldXWW4v7pBKvjJBCqVKm232yGK
-        IgwGA2rr5Uin00ilUgyalZJIJBjxeByBQIAMs36nAqVSmRwZGcHZGwJOXd+hilDZuEMFw7hHucqIXarU
-        4hpdRdJqtbKLk/7UX3GQ7465g3zyJIhIKHIKhSJO+6dZPpNLne8XD6V7NIQxdxzljcYCJ5PJYoJgJOUa
-        4ZxP4/lY+FC67SGMfonTqvNcTU3NGh1elVrAhCcJ/ccwev+BjgQ+GQ7ikW0B71xrVJDjpFJpVK/Xs+EJ
-        jhU8Hg7g4dsFtFvmcd88h7smP9pe+aAd8uLmoIdxS/Ci+8MiKtTiFlddXR3p6enBaSJ4Svq/Z/bjtuj7
-        L3de+9D+xk+3lKEVRNo6dEwg75iA4sHkkbjYZkelWgxw5y7I+vfv9qjnCpVx86RKOP8Hckqu3SnPB+oA
-        AAAASUVORK5CYII=
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAANzAAA
+        DcwBgg+iugAAAntJREFUOE+Nkt9PklEYx9/bbrrrH2midddNC8sbVqD4aqwLpLnmjReJLVs1N6utNk1K
+        MQ3lfQtiRrpCa05ZMsYFQfxQQVBEkF/Oal2g/Pp2zmE63Sq9+Oy8O3vO53yf57wcz/PcYRRN13YblfIi
+        WUtkZSj5xnJzS1NZdaN1SS6Xnzlcz3V3d49ptdrtfchB5PN57O3toVAooFgsMkqlEsYnxsG3NG0Qwel9
+        CdfV1fXT5XLB6XRicXER8sarCIfD8Pv9DJ/PB4/HA7fbjUqlgoGB/gp/vTlAkpyiEq6zs/OHw+GA1WqF
+        xWJhgkgkgpFXI0cIBgNMUC6XoXuhq/CtymEm6Ojo2LHbF9hhs9kM2kI8Hsf6+jrW1tYY0WgUsVgMmUwG
+        yWQSXq8XrSr+FxO0t7dvz83NwWQyQRAEJtja2sLY61GSQH8AlWxubjK8370gCX4zgVqtztlsNoiiCIPB
+        ADJ15HI5ZLNZBr2Vkk6nGalUCqFQiAxTWU2gUqky09PTuHBLwLmbVeoItW1VJAzjATVqI/ap04gJ+g9k
+        JicnWeFCMPtX7GTfvnSUL740EQkVTqFQpGj/9JavpKj/4+qxDM5EMOtNoabNWOZkMllSEIwkrhGO5Rxe
+        zkaPZdAWwcy3FE1d5BoaGhJ0eHUaAfO+DPSfoxj+Bzpy8NlUGE+sK/jgSlBBgZNKpXG9Xs+GJ9g38HQq
+        hMfvV9BrWcZD8xLum4LoeROAdsKP2+M+xh3Bj8FPq5BoxF2uvr4+NjQ0hPNE8Jz0/8AcxF0x8F/uvQ2g
+        912QvlKeJoj19OmYQN43D8WjhRNxpceGWo0Y4i5elo0eftuTfkvUxp2zauHSH4lNulZIvAiJAAAAAElF
+        TkSuQmCC
 </value>
   </data>
   <data name="btIncluir.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
@@ -360,38 +468,29 @@
   <data name="&gt;&gt;btAlterar.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="pnlBotoes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
+  <data name="&gt;&gt;btnPesquisarTexto.Name" xml:space="preserve">
+    <value>btnPesquisarTexto</value>
   </data>
-  <data name="pnlBotoes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 248</value>
+  <data name="&gt;&gt;btnPesquisarTexto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pnlBotoes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>744, 30</value>
+  <data name="&gt;&gt;btnPesquisarTexto.Parent" xml:space="preserve">
+    <value>panelConsulta</value>
   </data>
-  <data name="pnlBotoes.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;pnlBotoes.Name" xml:space="preserve">
-    <value>pnlBotoes</value>
-  </data>
-  <data name="&gt;&gt;pnlBotoes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlBotoes.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnlBotoes.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnPesquisarTexto.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 19</value>
+  <data name="&gt;&gt;txtPesquisa.Name" xml:space="preserve">
+    <value>txtPesquisa</value>
   </data>
-  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>717, 215</value>
+  <data name="&gt;&gt;txtPesquisa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;txtPesquisa.Parent" xml:space="preserve">
+    <value>panelConsulta</value>
+  </data>
+  <data name="&gt;&gt;txtPesquisa.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
     <value>dataGridView1</value>
@@ -403,7 +502,7 @@
     <value>panelConsulta</value>
   </data>
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="panelConsulta.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 5</value>
@@ -430,6 +529,75 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelConsulta.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnPesquisarTexto.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="btnPesquisarTexto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnPesquisarTexto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 183</value>
+  </data>
+  <data name="btnPesquisarTexto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 23</value>
+  </data>
+  <data name="btnPesquisarTexto.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnPesquisarTexto.Name" xml:space="preserve">
+    <value>btnPesquisarTexto</value>
+  </data>
+  <data name="&gt;&gt;btnPesquisarTexto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPesquisarTexto.Parent" xml:space="preserve">
+    <value>panelConsulta</value>
+  </data>
+  <data name="&gt;&gt;btnPesquisarTexto.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtPesquisa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 183</value>
+  </data>
+  <data name="txtPesquisa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 20</value>
+  </data>
+  <data name="txtPesquisa.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtPesquisa.Name" xml:space="preserve">
+    <value>txtPesquisa</value>
+  </data>
+  <data name="&gt;&gt;txtPesquisa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtPesquisa.Parent" xml:space="preserve">
+    <value>panelConsulta</value>
+  </data>
+  <data name="&gt;&gt;txtPesquisa.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
+  </data>
+  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>717, 158</value>
+  </data>
+  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
+    <value>dataGridView1</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
+    <value>panelConsulta</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="panelManutencao.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">

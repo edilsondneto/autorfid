@@ -164,25 +164,46 @@ namespace AutoRFID_Desktop
 
         }
 
+        protected override void preencheListaCamposFiltro()
+        {
+            this.lCamposFiltros = new List<CampoBD>();
+
+            CampoBD campoCod = new CampoBD("IDESTABELECIMENTO", "Código", true, 60);
+            CampoBD campoNome = new CampoBD("razaosocial", "Nome do Funcionário", true, 200);
+            CampoBD campoCPF = new CampoBD("CNPJ", "CNPJ", true, 100);
+
+            this.lCamposFiltros.Add(campoCod);
+            this.lCamposFiltros.Add(campoNome);
+            this.lCamposFiltros.Add(campoCPF);
+        }
+
+        private void pesquisar()
+        {
+            DataSet ds = this.objFachada.ListarEstabelecimento(this.sFiltro, this.lCamposFiltros);
+
+            DataTableReader dtr = new DataTableReader(ds.Tables[0]);
+
+            DataTable dt = new DataTable();
+
+            dt.Load(dtr, LoadOption.OverwriteChanges);
+
+            this.dataGridView1.DataSource = dt;
+        }
+
         private void btPesquisar_Click(object sender, EventArgs e)
         {
-            DataSet dsEstabelecimento = new DataSet();
-            dsEstabelecimento = this.objFachada.ListarEstabelecimento();
-
-
-            DataTableReader dtr = new DataTableReader(dsEstabelecimento.Tables[0]);
-
-            DataTable dtEstab = new DataTable();
-
-            dtEstab.Load(dtr, LoadOption.OverwriteChanges);
-
-            this.dataGridView1.DataSource = dtEstab;
-
+            this.pesquisar();
         }
+
         protected override void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
             int idConsulta = int.Parse(this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
             this.CarregarCampos(idConsulta, null);
+        }
+
+        private void btnPesquisarTexto_Click(object sender, EventArgs e)
+        {
+            this.pesquisar();
         }
     }
 }
