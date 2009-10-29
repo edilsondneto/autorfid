@@ -86,3 +86,14 @@ C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_J
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Testes\bin\Debug\Associado.orderedtest
 C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Testes\bin\Debug\EtiquetaAssociado.orderedtest
 C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Testes\bin\Debug\Associado.orderedtest
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Testes\bin\Debug\EtiquetaAssociado.orderedtest
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Testes\bin\Debug\Associado.orderedtest
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Testes\bin\Debug\Testes.dll
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Testes\bin\Debug\Testes.pdb
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Testes\bin\Debug\Fachada.dll
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Testes\bin\Debug\Fachada.pdb
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Testes\bin\Debug\Fachada_Accessor.dll
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Testes\bin\Debug\Fachada_Accessor.pdb
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Testes\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Testes\obj\Debug\Testes.dll
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Testes\obj\Debug\Testes.pdb
