@@ -66,7 +66,7 @@ namespace AutoRFID_Desktop
                 this.objFuncionario.Numero = int.Parse(maskedTextBox4.Text);
             }
 
-            this.objFuncionario.Idestabelecimento = 2;
+            this.objFuncionario.Idestabelecimento = 1;
 
             this.maskedTextBox3.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             this.objFuncionario.Fonecelular = maskedTextBox3.Text;

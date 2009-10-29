@@ -17,6 +17,7 @@ namespace Fachada.Fachada
         private IEstabelecimento IntEstabelecimento;
         private IMovCredito IntMovCredito;
         private IEtiquetaAssociado ietiquetaAssociado;
+        private IMovDebito IntMovDebito;
 
         private Fachada()
         {
@@ -25,6 +26,7 @@ namespace Fachada.Fachada
             this.IntEstabelecimento = new ControladorEstabelecimento();
             this.IntMovCredito = new ControladorMovCredito();
             this.ietiquetaAssociado = new ControladorEtiquetaAssociado();
+            this.IntMovDebito = new ControladorMovDebito();
         }
 
         public static Fachada ObterFachada()
@@ -239,5 +241,33 @@ namespace Fachada.Fachada
         }
 
         #endregion 
+
+        #region MovimentoDebito
+        public void InserirMovDebito(MovDebito md)
+        {
+            this.IntMovDebito.InserirMovDedito(md);
+        }
+
+        public void ExcluirMovDebito(int idmov)
+        {
+            this.IntMovDebito.ExcluirMovDedito(idmov);
+        }
+
+        public MovDebito ConsultarMovDebito(int codigo)
+        {
+            return this.IntMovDebito.ConsultarMovDebito(codigo);
+        }
+
+        public List<MovDebito> ListarMovDebito()
+        {
+            return this.IntMovDebito.ListarMovDebito();
+        }
+
+        public DataSet ListarMovDebitoDataset()
+        {
+            return this.IntMovDebito.ListarMovDebitoDataset();
+        }
+
+        #endregion
     }
     }

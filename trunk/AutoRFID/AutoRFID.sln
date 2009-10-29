@@ -17,12 +17,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testes", "Testes\Testes.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boleto.Net", "Boleto.Net\Boleto.Net.csproj", "{F173E80B-E36B-48AD-B483-A27F8CA86F3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImpressaoTicket", "ImpressaoTicket\ImpressaoTicket.csproj", "{C29858D5-E512-4079-93EA-76DC0F2044D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GravaMovDebito", "GravaMovDebito\GravaMovDebito.csproj", "{C4A49885-1DF9-484F-9D9B-5BAF16B71B50}"
 EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = AutoRFID.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -48,10 +45,10 @@ Global
 		{F173E80B-E36B-48AD-B483-A27F8CA86F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F173E80B-E36B-48AD-B483-A27F8CA86F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F173E80B-E36B-48AD-B483-A27F8CA86F3C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C29858D5-E512-4079-93EA-76DC0F2044D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C29858D5-E512-4079-93EA-76DC0F2044D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C29858D5-E512-4079-93EA-76DC0F2044D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C29858D5-E512-4079-93EA-76DC0F2044D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4A49885-1DF9-484F-9D9B-5BAF16B71B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4A49885-1DF9-484F-9D9B-5BAF16B71B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4A49885-1DF9-484F-9D9B-5BAF16B71B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4A49885-1DF9-484F-9D9B-5BAF16B71B50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

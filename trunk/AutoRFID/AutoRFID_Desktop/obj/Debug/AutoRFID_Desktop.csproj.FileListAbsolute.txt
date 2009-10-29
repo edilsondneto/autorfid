@@ -196,3 +196,22 @@ C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_J
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.pdb
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrEtiqAssociado.resources
 C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrEtiqAssociado.resources
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\bin\Debug\AutoRFID_Desktop.exe
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\bin\Debug\AutoRFID_Desktop.pdb
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\bin\Debug\Fachada.dll
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\bin\Debug\Fachada.pdb
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrAssocCad.resources
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.frCadPad.resources
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrEstabCad.resources
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrEtiqAssociado.resources
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrEtiqCad.resources
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrFuncCad.resources
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.frMenuPrincipal.resources
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrSobreAutoRFID.resources
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrTelaLogin.resources
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrVenda.resources
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.Properties.Resources.resources
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.csproj.GenerateResource.Cache
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.exe
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.pdb

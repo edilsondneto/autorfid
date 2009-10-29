@@ -171,20 +171,22 @@
             // txtSaldo
             // 
             this.txtSaldo.Location = new System.Drawing.Point(250, 44);
-            this.txtSaldo.Mask = "00000000000000000";
+            this.txtSaldo.Mask = "999.99";
             this.txtSaldo.Name = "txtSaldo";
             this.txtSaldo.PromptChar = ' ';
+            this.txtSaldo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtSaldo.Size = new System.Drawing.Size(100, 20);
             this.txtSaldo.TabIndex = 13;
             // 
             // txtValor
             // 
             this.txtValor.Location = new System.Drawing.Point(487, 45);
-            this.txtValor.Mask = "000000000000000000";
+            this.txtValor.Mask = "9999.99";
             this.txtValor.Name = "txtValor";
             this.txtValor.PromptChar = ' ';
             this.txtValor.Size = new System.Drawing.Size(100, 20);
             this.txtValor.TabIndex = 14;
+            this.txtValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // FrEtiqAssociado
             // 

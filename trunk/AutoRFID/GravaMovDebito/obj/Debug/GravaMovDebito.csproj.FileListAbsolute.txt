@@ -1,0 +1,54 @@
+C:\Workspace2\autorfid\trunk\AutoRFID\GravaMovDebito\obj\Debug\ResolveAssemblyReference.cache
+C:\Workspace2\autorfid\trunk\AutoRFID\GravaMovDebito\obj\Debug\AutoRFID_Desktop.FrMovDebito.resources
+C:\Workspace2\autorfid\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.Properties.Resources.resources
+C:\Workspace2\autorfid\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.csproj.GenerateResource.Cache
+C:\Workspace2\autorfid\trunk\AutoRFID\GravaMovDebito\bin\Debug\GravaMovDebito.exe
+C:\Workspace2\autorfid\trunk\AutoRFID\GravaMovDebito\bin\Debug\GravaMovDebito.pdb
+C:\Workspace2\autorfid\trunk\AutoRFID\GravaMovDebito\bin\Debug\Fachada.dll
+C:\Workspace2\autorfid\trunk\AutoRFID\GravaMovDebito\bin\Debug\Fachada.pdb
+C:\Workspace2\autorfid\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.exe
+C:\Workspace2\autorfid\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.pdb
+C:\Workspace2\autorfid\trunk\AutoRFID\GravaMovDebito\bin\Debug\SerialComunicacao.pdb
+C:\Workspace2\autorfid\trunk\AutoRFID\GravaMovDebito\bin\Debug\SerialComunicacao.dll
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\bin\Debug\GravaMovDebito.exe
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\bin\Debug\GravaMovDebito.pdb
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\bin\Debug\Fachada.dll
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\bin\Debug\SerialComunicacao.dll
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\bin\Debug\SerialComunicacao.pdb
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\bin\Debug\Fachada.pdb
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.Properties.Resources.resources
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.csproj.GenerateResource.Cache
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.exe
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.pdb
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.FrMovDebito.resources
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\bin\Debug\AutoRFID_Desktop.exe
+C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\bin\Debug\AutoRFID_Desktop.pdb
+C:\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.exe
+C:\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.pdb
+C:\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\bin\Debug\GravaMovDebito.exe
+C:\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\bin\Debug\GravaMovDebito.pdb
+C:\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\bin\Debug\AutoRFID_Desktop.exe
+C:\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\bin\Debug\Fachada.dll
+C:\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\bin\Debug\SerialComunicacao.dll
+C:\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\bin\Debug\Fachada.pdb
+C:\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\bin\Debug\AutoRFID_Desktop.pdb
+C:\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\bin\Debug\SerialComunicacao.pdb
+C:\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\obj\Debug\ResolveAssemblyReference.cache
+C:\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.FrMovDebito.resources
+C:\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.Properties.Resources.resources
+C:\AutoRFID_JLversion\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.csproj.GenerateResource.Cache
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.FrMovDebito.resources
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.Properties.Resources.resources
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.csproj.GenerateResource.Cache
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\RdlCompile.cache
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\RdlCompile.compiled
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.Ticket.Ticket.resources
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\bin\Debug\GravaMovDebito.exe.config
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\bin\Debug\GravaMovDebito.exe
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\bin\Debug\GravaMovDebito.pdb
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\bin\Debug\Fachada.dll
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\bin\Debug\Fachada.pdb
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.exe
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.pdb

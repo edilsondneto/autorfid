@@ -53,3 +53,9 @@ C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_J
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Fachada\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Fachada\obj\Debug\Fachada.dll
 C:\Documents and Settings\JL\My Documents\Visual Studio 2008\Projects\AutoRFID_JLversion\trunk\AutoRFID\Fachada\obj\Debug\Fachada.pdb
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Fachada\bin\Debug\Fachada.dll.config
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Fachada\bin\Debug\Fachada.dll
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Fachada\bin\Debug\Fachada.pdb
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Fachada\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Fachada\obj\Debug\Fachada.dll
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Fachada\obj\Debug\Fachada.pdb

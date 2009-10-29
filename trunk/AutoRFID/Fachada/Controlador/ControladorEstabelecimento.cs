@@ -98,7 +98,7 @@ namespace Fachada.Controlador
                 }
             }
 
-            if (this.re.ConsultarEstabelecimento(objEstabelecimento.Cnpj).Cnpj != null)
+            if (this.re.ConsultarEstabelecimento(objEstabelecimento.Cnpj).IdEstabelecimento == null)
             {
                 throw new Exception("Estabelecimento não cadastrado!");
             }

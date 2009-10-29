@@ -117,9 +117,17 @@ namespace AutoRFID_Desktop
             {
                 objEtiquetaAssociado.CodigoEtiqueta = this.txtCodigo.Text;
                 objEtiquetaAssociado.Associado.Idassociado = Convert.ToInt32(cmbAssociado.SelectedValue);
-                objEtiquetaAssociado.Saldo = Convert.ToDecimal(txtSaldo.Text);
+                try
+                {
+                    objEtiquetaAssociado.Saldo = Convert.ToDecimal(txtSaldo.Text);
+                }
+                catch { objEtiquetaAssociado.Saldo = 0m; }
                 objEtiquetaAssociado.Situacao = cmbSituacao.SelectedValue.ToString();
-                objEtiquetaAssociado.Valor = Convert.ToDecimal(txtValor.Text);
+                try
+                {
+                    objEtiquetaAssociado.Valor = Convert.ToDecimal(txtValor.Text);
+                }
+                catch { objEtiquetaAssociado.Valor = 0m; }
             }
 
             try

@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="localhost_autorfid_">
+      <rd:DataSourceID>d9539398-06a7-452c-9b9e-cd008104b015</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>server=localhost;user id=root;database=autorfid;persist security info=True</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+    <DataSource Name="autorfidConnectionString">
+      <rd:DataSourceID>811ec443-df16-4f41-8fca-5e8f48d61245</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>server=localhost;user id=root;database=autorfid</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>2.5cm</RightMargin>
+  <LeftMargin>2.5cm</LeftMargin>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:ReportID>ec6a46dd-9b97-41c1-9aa4-27e9bf5c7361</rd:ReportID>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="autorfidDataSet_movdebitos">
+      <Fields>
+        <Field Name="idMovDebito">
+          <DataField>idMovDebito</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="codigo_etiqueta">
+          <DataField>codigo_etiqueta</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="idAssociado">
+          <DataField>idAssociado</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="idEstabelecimento">
+          <DataField>idEstabelecimento</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="dtEntrada">
+          <DataField>dtEntrada</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="dtSaida">
+          <DataField>dtSaida</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="horaEntrada">
+          <DataField>horaEntrada</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="horaSaida">
+          <DataField>horaSaida</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="valorDebitado">
+          <DataField>valorDebitado</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>autorfidConnectionString</DataSourceName>
+        <CommandText>SELECT `idMovDebito`, `dtEntrada`, `horaEntrada` FROM `autorfid`.`movdebitos`</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>autorfidDataSet</rd:DataSetName>
+        <rd:TableName>movdebitos</rd:TableName>
+        <rd:TableAdapterName>movdebitosTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>5cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Rectangle Name="rectangle1">
+        <Left>0.25cm</Left>
+        <ReportItems>
+          <Textbox Name="horaEntrada">
+            <rd:DefaultName>horaEntrada</rd:DefaultName>
+            <Top>5.5cm</Top>
+            <Width>2.53968cm</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>6</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=First(Fields!horaEntrada.Value)</Value>
+          </Textbox>
+          <Textbox Name="dtEntrada">
+            <rd:DefaultName>dtEntrada</rd:DefaultName>
+            <Top>4.25cm</Top>
+            <Width>2.53968cm</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>5</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=First(Fields!dtEntrada.Value)</Value>
+          </Textbox>
+          <Textbox Name="idMovDebito">
+            <rd:DefaultName>idMovDebito</rd:DefaultName>
+            <Top>3cm</Top>
+            <Width>2.53968cm</Width>
+            <Style>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=First(Fields!idMovDebito.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox8">
+            <rd:DefaultName>textbox8</rd:DefaultName>
+            <Top>7.75cm</Top>
+            <Width>4cm</Width>
+            <Style>
+              <FontFamily>C39HrP24DhTt</FontFamily>
+              <FontSize>18pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>1.5cm</Height>
+            <Value>129121220091025</Value>
+          </Textbox>
+          <Line Name="line2">
+            <Top>7.25cm</Top>
+            <Width>4.14418cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <Left>0.10582cm</Left>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line1">
+            <Top>2cm</Top>
+            <Width>4.14418cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <Left>0.10582cm</Left>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="textbox1">
+            <rd:DefaultName>textbox1</rd:DefaultName>
+            <Top>0.75cm</Top>
+            <Width>3.25cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>White</Default>
+              </BorderColor>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Left>0.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Ticket AutoRFID</Value>
+          </Textbox>
+        </ReportItems>
+        <Top>0.25cm</Top>
+        <Width>4.5cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <BorderWidth>
+            <Default>4pt</Default>
+          </BorderWidth>
+        </Style>
+        <Height>9.5cm</Height>
+      </Rectangle>
+    </ReportItems>
+    <Height>10cm</Height>
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

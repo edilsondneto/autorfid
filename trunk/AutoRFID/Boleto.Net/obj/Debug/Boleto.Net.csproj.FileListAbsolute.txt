@@ -61,3 +61,10 @@ C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Boleto.Ne
 C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Boleto.Net\obj\Debug\Boleto.Net.csproj.GenerateResource.Cache
 C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Boleto.Net\obj\Debug\Boleto.Net.dll
 C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\Boleto.Net\obj\Debug\Boleto.Net.pdb
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Boleto.Net\bin\Debug\Boleto.Net.dll
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Boleto.Net\bin\Debug\Boleto.Net.pdb
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Boleto.Net\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Boleto.Net\obj\Debug\BoletoNet.Html.resources
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Boleto.Net\obj\Debug\Boleto.Net.csproj.GenerateResource.Cache
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Boleto.Net\obj\Debug\Boleto.Net.dll
+C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\Boleto.Net\obj\Debug\Boleto.Net.pdb
