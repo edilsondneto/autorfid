@@ -195,8 +195,8 @@ namespace AutoRFID_Desktop
         {
             this.lCamposFiltros = new List<CampoBD>();
 
-            CampoBD campoCod = new CampoBD("codigo_etiqueta", "Código Etiqueta", true, 60);
-            CampoBD campoNome = new CampoBD("idassociado", "Associado", true, 200);
+            CampoBD campoCod = new CampoBD("codigo_etiqueta", "Código Etiqueta", true, 120);
+            CampoBD campoNome = new CampoBD("idassociado", "Associado", true, 390);
             CampoBD campoCPF = new CampoBD("saldo", "saldo", true, 100);
             CampoBD campo2 = new CampoBD("situacao", "Situação", true, 100);
 

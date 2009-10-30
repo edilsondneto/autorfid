@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.btnLeEtiqueta = new System.Windows.Forms.Button();
             this.lblMensagem = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -43,16 +42,6 @@
             this.button1.Text = "IMPRIMIR TICKET AVULSO";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnLeEtiqueta
-            // 
-            this.btnLeEtiqueta.Location = new System.Drawing.Point(37, 151);
-            this.btnLeEtiqueta.Name = "btnLeEtiqueta";
-            this.btnLeEtiqueta.Size = new System.Drawing.Size(192, 60);
-            this.btnLeEtiqueta.TabIndex = 1;
-            this.btnLeEtiqueta.Text = "LÊR ETIQUETA RFID";
-            this.btnLeEtiqueta.UseVisualStyleBackColor = true;
-            this.btnLeEtiqueta.Click += new System.EventHandler(this.btnLeEtiqueta_Click);
             // 
             // lblMensagem
             // 
@@ -77,7 +66,6 @@
             this.ClientSize = new System.Drawing.Size(284, 264);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblMensagem);
-            this.Controls.Add(this.btnLeEtiqueta);
             this.Controls.Add(this.button1);
             this.Name = "FrMovDebito";
             this.Text = "FrMovDebito";
@@ -91,7 +79,6 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnLeEtiqueta;
         private System.Windows.Forms.Label lblMensagem;
         private System.Windows.Forms.TextBox textBox1;
     }

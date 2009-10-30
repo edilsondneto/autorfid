@@ -26,9 +26,9 @@ namespace GravaMovDebito
             {
                 MovDebito movDeb = new MovDebito();
                 movDeb.Associado = new Associado();
-                movDeb.Associado.Idassociado = 1;
+                movDeb.Associado.Idassociado = 0;
                 movDeb.IdCodigoEtiqueta = "AVULSOS";
-                movDeb.Estabelecimento = new Estabelecimento { IdEstabelecimento = 5 };
+                movDeb.Estabelecimento = new Estabelecimento { IdEstabelecimento = 4 };
                 movDeb.DataEntrada = Convert.ToDateTime(DateTime.Today.ToShortDateString());
                 movDeb.HoraEntrada = DateTime.Now.ToShortTimeString();
                 //movDeb.IdCodigoEtiqueta = "1";             
@@ -49,26 +49,7 @@ namespace GravaMovDebito
 
         }
 
-        private void btnLeEtiqueta_Click(object sender, EventArgs e)
-        {
-
-
-            try
-            {
-                EtiquetaAssociado etiqueta = Fachada.Fachada.Fachada.ObterFachada().ConsultarEtiquetaAssociado("2");
-                Fachada.Fachada.Fachada.ObterFachada().InserirMovDebito(PreencherMovDeb(etiqueta));
-
-
-                lblMensagem.Text = "Etiqueta válida.";
-            }
-            catch (Exception ex)
-            {
-                lblMensagem.Text = ex.Message;
-            }
-
-
-        }
-
+       
         public MovDebito PreencherMovDeb(EtiquetaAssociado etiqueta)
         {
             MovDebito movDeb = new MovDebito();
@@ -88,7 +69,10 @@ namespace GravaMovDebito
             {
                 EtiquetaAssociado etiqueta = Fachada.Fachada.Fachada.ObterFachada().ConsultarEtiquetaAssociado(this.textBox1.Text);
                 Fachada.Fachada.Fachada.ObterFachada().InserirMovDebito(PreencherMovDeb(etiqueta));
-              
+                MovDebito movDeb = new MovDebito() { Estabelecimento = new Estabelecimento() {IdEstabelecimento = 4 } };
+                Estabelecimento estabelecimento = Fachada.Fachada.Fachada.ObterFachada().ConsultarEstabelecimento(movDeb.Estabelecimento.IdEstabelecimento);
+                estabelecimento.QtdVagasOcupadas += 1;
+               
                 lblMensagem.Text = "Etiqueta válida.";
             }
             catch (Exception ex)

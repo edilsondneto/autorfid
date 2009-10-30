@@ -169,7 +169,7 @@ namespace AutoRFID_Desktop
             this.lCamposFiltros = new List<CampoBD>();
 
             CampoBD campoCod = new CampoBD("IDESTABELECIMENTO", "Código", true, 60);
-            CampoBD campoNome = new CampoBD("razaosocial", "Nome do Funcionário", true, 200);
+            CampoBD campoNome = new CampoBD("razaosocial", "Nome do Funcionário", true, 550);
             CampoBD campoCPF = new CampoBD("CNPJ", "CNPJ", true, 100);
 
             this.lCamposFiltros.Add(campoCod);
