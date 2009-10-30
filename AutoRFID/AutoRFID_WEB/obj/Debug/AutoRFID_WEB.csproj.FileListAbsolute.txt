@@ -98,3 +98,5 @@ C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_WEB\bin\Boleto.Net.pdb
 C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.dll
 C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_WEB\obj\Debug\AutoRFID_WEB.pdb
+C:\AutoRFID\trunk\AutoRFID\AutoRFID_WEB\bin\Boleto.Net.dll
+C:\AutoRFID\trunk\AutoRFID\AutoRFID_WEB\bin\Boleto.Net.pdb
