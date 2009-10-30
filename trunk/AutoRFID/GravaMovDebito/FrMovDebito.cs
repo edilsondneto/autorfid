@@ -28,7 +28,7 @@ namespace GravaMovDebito
                 movDeb.Associado = new Associado();
                 movDeb.Associado.Idassociado = 1;
                 movDeb.IdCodigoEtiqueta = "AVULSOS";
-                movDeb.Estabelecimento = new Estabelecimento { IdEstabelecimento = 6 };
+                movDeb.Estabelecimento = new Estabelecimento { IdEstabelecimento = 5 };
                 movDeb.DataEntrada = Convert.ToDateTime(DateTime.Today.ToShortDateString());
                 movDeb.HoraEntrada = DateTime.Now.ToShortTimeString();
                 //movDeb.IdCodigoEtiqueta = "1";             

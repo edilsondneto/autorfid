@@ -30,15 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.autorfidDataSet = new GravaMovDebito.autorfidDataSet();
-            this.autorfidDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.movdebitosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.movdebitosTableAdapter = new GravaMovDebito.autorfidDataSetTableAdapters.movdebitosTableAdapter();
+            this.movdebitosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.autorfidDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.autorfidDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movdebitosBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // autorfidDataSet
+            // 
+            this.autorfidDataSet.DataSetName = "autorfidDataSet";
+            this.autorfidDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -52,24 +55,14 @@
             this.reportViewer1.Size = new System.Drawing.Size(470, 365);
             this.reportViewer1.TabIndex = 0;
             // 
-            // autorfidDataSet
+            // movdebitosTableAdapter
             // 
-            this.autorfidDataSet.DataSetName = "autorfidDataSet";
-            this.autorfidDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // autorfidDataSetBindingSource
-            // 
-            this.autorfidDataSetBindingSource.DataSource = this.autorfidDataSet;
-            this.autorfidDataSetBindingSource.Position = 0;
+            this.movdebitosTableAdapter.ClearBeforeFill = true;
             // 
             // movdebitosBindingSource
             // 
             this.movdebitosBindingSource.DataMember = "movdebitos";
-            this.movdebitosBindingSource.DataSource = this.autorfidDataSetBindingSource;
-            // 
-            // movdebitosTableAdapter
-            // 
-            this.movdebitosTableAdapter.ClearBeforeFill = true;
+            this.movdebitosBindingSource.DataSource = this.autorfidDataSet;
             // 
             // Ticket
             // 
@@ -81,7 +74,6 @@
             this.Text = "Ticket";
             this.Load += new System.EventHandler(this.Ticket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.autorfidDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.autorfidDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movdebitosBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -91,8 +83,7 @@
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private autorfidDataSet autorfidDataSet;
-        private System.Windows.Forms.BindingSource autorfidDataSetBindingSource;
-        private System.Windows.Forms.BindingSource movdebitosBindingSource;
         private GravaMovDebito.autorfidDataSetTableAdapters.movdebitosTableAdapter movdebitosTableAdapter;
+        private System.Windows.Forms.BindingSource movdebitosBindingSource;
     }
 }

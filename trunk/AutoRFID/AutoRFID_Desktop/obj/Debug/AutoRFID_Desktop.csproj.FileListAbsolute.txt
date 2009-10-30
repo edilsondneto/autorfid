@@ -89,8 +89,6 @@ C:\AutoRFID\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrFuncCad
 C:\AutoRFID\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.frMenuPrincipal.resources
 C:\AutoRFID\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrSobreAutoRFID.resources
 C:\AutoRFID\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrTelaLogin.resources
-C:\AutoRFID\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrTpFuncCad.resources
-C:\AutoRFID\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrTpPagCad.resources
 C:\AutoRFID\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrVenda.resources
 C:\AutoRFID\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.Properties.Resources.resources
 C:\AutoRFID\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.csproj.GenerateResource.Cache
@@ -215,3 +213,4 @@ C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID
 C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.csproj.GenerateResource.Cache
 C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.exe
 C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.pdb
+C:\AutoRFID\trunk\AutoRFID\AutoRFID_Desktop\obj\Debug\AutoRFID_Desktop.FrEtiqAssociado.resources

@@ -52,3 +52,17 @@ C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\bin\Debug\Fachada.dl
 C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\bin\Debug\Fachada.pdb
 C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.exe
 C:\Users\hp\Desktop\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.pdb
+C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\bin\Debug\GravaMovDebito.exe.config
+C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.exe
+C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.pdb
+C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\bin\Debug\GravaMovDebito.exe
+C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\bin\Debug\GravaMovDebito.pdb
+C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\bin\Debug\Fachada.dll
+C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\bin\Debug\Fachada.pdb
+C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\obj\Debug\ResolveAssemblyReference.cache
+C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.FrMovDebito.resources
+C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.Properties.Resources.resources
+C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.Ticket.Ticket.resources
+C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.csproj.GenerateResource.Cache
+C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\obj\Debug\RdlCompile.cache
+C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\obj\Debug\RdlCompile.compiled
