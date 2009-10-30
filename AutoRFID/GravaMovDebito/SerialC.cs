@@ -133,7 +133,7 @@ namespace GravaMovDebito
 
          public void Read3()
         {
-          /*  this.sp.Open();
+            this.sp.Open();
             
             while (status)
             {
@@ -157,7 +157,7 @@ namespace GravaMovDebito
             }
 
             this.sp.Close();
-           */ 
+            
         }
              
     }

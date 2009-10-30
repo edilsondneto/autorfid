@@ -224,7 +224,7 @@ namespace AutoRFID_Desktop
             this.lCamposFiltros = new List<CampoBD>();
 
             CampoBD campoCod = new CampoBD("IDASSOCIADO", "Código", true, 60);
-            CampoBD campoNome = new CampoBD("NOME_RAZAOSOCIAL", "Nome do Associado", true, 200);
+            CampoBD campoNome = new CampoBD("NOME_RAZAOSOCIAL", "Nome do Associado", true, 530);
             CampoBD campoCPF = new CampoBD("CPF_CNPJ", "CPF-CNPJ", true, 100);
 
             this.lCamposFiltros.Add(campoCod);
