@@ -197,7 +197,7 @@ namespace AutoRFID_Desktop
             this.sAcao = "";
         }        
 
-        private void pesquisar()
+        protected new void pesquisar()
         {
             DataSet ds = this.objFachada.ListarFuncionario(this.sFiltro,this.lCamposFiltros);
 

@@ -15,8 +15,7 @@ namespace Fachada.Interface
         Estabelecimento ConsultarEstabelecimento(String cnpj);
         //carregar o último registro
         Estabelecimento ConsultarEstabelecimento();
-
-        void ExcluirEstabelecimento(int idEstab);     
+        void ExcluirEstabelecimento(int idEstab);
         DataSet ListarEstabelecimento();
         DataSet ListarEstabelecimento(String sFiltro, List<CampoBD> lsCampos);
     }

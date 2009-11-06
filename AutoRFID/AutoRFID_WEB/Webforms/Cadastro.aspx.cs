@@ -10,6 +10,8 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Xml.Linq;
+using Fachada.Fachada;
+using Fachada.Basicas;
 
 namespace AutoRFID_WEB.Webforms
 {
@@ -25,6 +27,18 @@ namespace AutoRFID_WEB.Webforms
             if (validaCampos())
             {
                 Alert.Show("Cadastro Efetuado");
+                Associado a = new Associado();
+                a.Cpf_cnpj = this.txtCnpj.Text;
+                a.Nome_razaosocial = this.txtNome.Text;
+                a.Endereco = this.txtEndereco.Text;
+                a.Numero = Convert.ToInt32(this.txtNumero.Text);
+                a.Bairro = this.txtBairro.Text;
+                a.Cidade = this.TextCidade.Text;
+                a.Cep = this.txtCep.Text;
+                a.Fone = this.txtFone.Text;
+                a.Fonecel = this.txtCelular.Text;
+                a.Email = this.txtEmail.Text;
+                Fachada.Fachada.Fachada.ObterFachada().InserirAssociado(a);
                 Response.Redirect("/WebForms/Principal.aspx");
             }
         }

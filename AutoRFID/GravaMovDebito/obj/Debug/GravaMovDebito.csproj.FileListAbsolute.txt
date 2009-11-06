@@ -66,3 +66,17 @@ C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.Ticket.Ticket
 C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.csproj.GenerateResource.Cache
 C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\obj\Debug\RdlCompile.cache
 C:\AutoRFID\trunk\AutoRFID\GravaMovDebito\obj\Debug\RdlCompile.compiled
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.FrMovDebito.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.Properties.Resources.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.Ticket.Ticket.resources
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.csproj.GenerateResource.Cache
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\RdlCompile.cache
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\RdlCompile.compiled
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.exe
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\GravaMovDebito\obj\Debug\GravaMovDebito.pdb
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\GravaMovDebito\bin\Debug\GravaMovDebito.exe.config
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\GravaMovDebito\bin\Debug\GravaMovDebito.exe
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\GravaMovDebito\bin\Debug\GravaMovDebito.pdb
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\GravaMovDebito\bin\Debug\Fachada.dll
+C:\Documents and Settings\RFM\Meus documentos\Workspace\trunk\AutoRFID\GravaMovDebito\bin\Debug\Fachada.pdb

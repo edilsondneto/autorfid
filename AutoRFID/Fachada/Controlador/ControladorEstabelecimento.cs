@@ -98,7 +98,7 @@ namespace Fachada.Controlador
                 }
             }
 
-            if (this.re.ConsultarEstabelecimento(objEstabelecimento.Cnpj).IdEstabelecimento == null)
+            if (this.re.ConsultarEstabelecimento(objEstabelecimento.Cnpj).IdEstabelecimento == 0)
             {
                 throw new Exception("Estabelecimento não cadastrado!");
             }
@@ -143,6 +143,7 @@ namespace Fachada.Controlador
         {
             return this.re.ListarEstabelecimento(sFiltro,lsCampos);
         }
+
         #endregion
     }
 }

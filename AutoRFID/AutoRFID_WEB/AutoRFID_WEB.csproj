@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{5BC083B3-BE13-4545-9AE6-49FC84FB4696}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -71,6 +71,13 @@
     </Compile>
     <Compile Include="Webforms\ComprarCreditos.aspx.designer.cs">
       <DependentUpon>ComprarCreditos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webforms\ConsultarVagas.aspx.cs">
+      <DependentUpon>ConsultarVagas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webforms\ConsultarVagas.aspx.designer.cs">
+      <DependentUpon>ConsultarVagas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Webforms\Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
@@ -168,6 +175,7 @@
   <ItemGroup>
     <Content Include="Content\imagens\AccessTMSPhoto2.jpg" />
     <Content Include="Content\imagens\chip.jpg" />
+    <Content Include="Content\imagens\cone.png" />
     <Content Include="Content\imagens\credito.png" />
     <Content Include="Content\imagens\credito1.jpg" />
     <Content Include="Content\imagens\credito2.png" />
@@ -176,6 +184,7 @@
     <Content Include="Content\imagens\vaga1.jpg" />
     <Content Include="Webforms\BancodoBrasil.aspx" />
     <Content Include="Webforms\ComprarCreditos.aspx" />
+    <Content Include="Webforms\ConsultarVagas.aspx" />
     <Content Include="Webforms\MasterPrint.master" />
     <Content Include="Webforms\MenuAssociado.aspx" />
   </ItemGroup>
@@ -202,9 +211,6 @@
           <IISUrl>
           </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

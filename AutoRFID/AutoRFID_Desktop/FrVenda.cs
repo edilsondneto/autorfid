@@ -6,10 +6,8 @@ namespace AutoRFID_Desktop
 {
     public partial class FrVenda : frCadPad
     {
-        private Fachada.Fachada.Fachada objFachada;
-        private MovCredito objMovCredito;
-        private MovCredito objConsulta;
         private string sAcao;
+
         public FrVenda()
         {
             InitializeComponent();

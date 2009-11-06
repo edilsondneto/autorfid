@@ -16,6 +16,7 @@ namespace AutoRFID_Desktop
         private EtiquetaAssociado objEtiquetaAssociado;
         private EtiquetaAssociado objConsulta;
         private string sAcao;
+        private string str;
 
         public FrEtiqAssociado()
         {
@@ -206,7 +207,7 @@ namespace AutoRFID_Desktop
             this.lCamposFiltros.Add(campo2);
         }
 
-        private void pesquisar()
+        protected new void pesquisar()
         {
             DataSet ds = this.objFachada.ListarEtiquetaAssociado(this.sFiltro, this.lCamposFiltros);
 
@@ -233,12 +234,5 @@ namespace AutoRFID_Desktop
         {
             this.pesquisar();
         }
-
-
-
-
-
-
-
     }
 }
