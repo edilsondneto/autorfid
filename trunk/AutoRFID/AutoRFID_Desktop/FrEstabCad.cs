@@ -177,7 +177,7 @@ namespace AutoRFID_Desktop
             this.lCamposFiltros.Add(campoCPF);
         }
 
-        private void pesquisar()
+        protected new void pesquisar()
         {
             DataSet ds = this.objFachada.ListarEstabelecimento(this.sFiltro, this.lCamposFiltros);
 

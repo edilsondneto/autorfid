@@ -171,10 +171,8 @@
             // txtSaldo
             // 
             this.txtSaldo.Location = new System.Drawing.Point(250, 44);
-            this.txtSaldo.Mask = "999.99";
             this.txtSaldo.Name = "txtSaldo";
             this.txtSaldo.PromptChar = ' ';
-            this.txtSaldo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtSaldo.Size = new System.Drawing.Size(100, 20);
             this.txtSaldo.TabIndex = 13;
             // 

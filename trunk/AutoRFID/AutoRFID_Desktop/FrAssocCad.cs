@@ -232,7 +232,7 @@ namespace AutoRFID_Desktop
             this.lCamposFiltros.Add(campoCPF);
         }
 
-        private void pesquisar()
+        protected new void pesquisar()
         {
             DataSet dsAssociado = new DataSet();
             dsAssociado = this.objFachada.ListarAssociado(sFiltro, lCamposFiltros);
