@@ -35,7 +35,7 @@ namespace AutoRFID_Desktop
             this.PreencherCmbSitucao();
             PreencherCmbAssociado();
             CarregarCampos(null);
-            
+
 
         }
 
@@ -75,7 +75,7 @@ namespace AutoRFID_Desktop
 
             try
             {
-                this.objEtiquetaAssociado.CodigoEtiqueta= codigo;
+                this.objEtiquetaAssociado.CodigoEtiqueta = codigo;
             }
             catch (Exception ex) { }
             //this.objAssociado.Cpf_cnpj = cpf_cnpj;
@@ -95,8 +95,8 @@ namespace AutoRFID_Desktop
             txtCodigo.Text = objEtiquetaAssociado.CodigoEtiqueta;
             txtSaldo.Text = objEtiquetaAssociado.Saldo.ToString();
             txtValor.Text = objEtiquetaAssociado.Valor.ToString();
-            
-            
+
+
         }
 
         private void btIncluir_Click(object sender, EventArgs e)
@@ -233,6 +233,53 @@ namespace AutoRFID_Desktop
         private void btnPesquisarTexto_Click(object sender, EventArgs e)
         {
             this.pesquisar();
+        }
+
+        private void txtSaldo_Leave(object sender, EventArgs e)
+        {
+            this.txtSaldo.Text = Convert.ToDouble(this.txtSaldo.Text).ToString("C");
+        }
+
+        private void txtSaldo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar < '0' || e.KeyChar > '9') &&
+              (e.KeyChar != ',' && e.KeyChar != '.' &&
+               e.KeyChar != (Char)13 && e.KeyChar != (Char)8))
+            {
+                e.KeyChar = (Char)0;
+            }
+            else
+            {
+                if (e.KeyChar == '.' || e.KeyChar == ',')
+                {
+                    if (!this.txtSaldo.Text.Contains(","))
+                    {
+                        e.KeyChar = ',';
+                    }
+                    else
+                    {
+                        e.KeyChar = (Char)0;
+                    }
+                }
+            }
+
+        }
+
+        private void txtSaldo_Enter(object sender, EventArgs e)
+        {
+            String x = "";
+            for (int i = 0; i <= this.txtSaldo.Text.Length - 1; i++)
+            {
+                if ((this.txtSaldo.Text[i] >= '0' &&
+                    this.txtSaldo.Text[i] <= '9') ||
+                    this.txtSaldo.Text[i] == ',')
+                {
+                    x += this.txtSaldo.Text[i];
+                }
+            }
+            this.txtSaldo.Text = x;
+            this.txtSaldo.SelectAll();
+
         }
     }
 }
