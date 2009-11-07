@@ -7,53 +7,64 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="principal">
         <div class="vagas">
-            <asp:Label ID="Label1" runat="server" Text="Estabelecimento"></asp:Label><br />
-            <asp:DropDownList ID="DropDownList1" runat="server" Height="29px" Width="296px" 
-                onselectedindexchanged="DropDownList1_SelectedIndexChanged" 
-                AutoPostBack="True" onload="DropDownList1_Load">
-            </asp:DropDownList>
-            <br />
-            &nbsp;<asp:Label ID="Label2" runat="server" Text="Localização"></asp:Label><br />
-            <table style="width: 427px" border="2">
+            <table style="width: 427px" border="2" class="vagas">
                 <tr>
-                    <td colspan="2">
+                    <td colspan="3">
+                        <asp:Label ID="Label1" runat="server" Text="Estabelecimento"></asp:Label><br />
+                        <asp:DropDownList ID="DropDownList1" runat="server" Height="29px" Width="413px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"
+                            AutoPostBack="True" OnLoad="DropDownList1_Load">
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
                         Endereço:
                     </td>
                 </tr>
                 <tr>
-                    <td td colspan="2">
-                        <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
+                    <td td colspan="3">
+                        <asp:Label ID="Lblendereco" runat="server" Text=""></asp:Label>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         Cidade:
                     </td>
-                    <td>
+                    <td colspan="2">
                         Bairro:
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <asp:Label ID="Label4" runat="server" Text=""></asp:Label>
+                        <asp:Label ID="Lblcidade" runat="server" Text=""></asp:Label>
                     </td>
-                    <td>
-                        <asp:Label ID="Label5" runat="server" Text=""></asp:Label>
+                    <td colspan="2">
+                        <asp:Label ID="Lblbairro" runat="server" Text=""></asp:Label>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
-                        Quantidade de Vagas:
-                        <asp:Label ID="Label6" runat="server" Text=""></asp:Label>
+                    <td align="center">
+                        Quantidade Vagas
+                    </td>
+                    <td align="center">
+                        Vagas Ocupadas
+                    </td>
+                    <td align="center">
+                        Total Disponivel
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <asp:Label ID="lblquantvagas" runat="server" Text=""></asp:Label>
+                    </td>
+                    <td align="center">
+                        <asp:Label ID="lblvagasocupadas" runat="server" Text=""></asp:Label>
+                    </td>
+                    <td align="center">
+                        <asp:Label ID="lbltotaldisponivel" runat="server" Text=""></asp:Label>
                     </td>
                 </tr>
             </table>
-        </div>
-        <div class="test">
-        Vagas Ocupadas
-        <br />
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label7" 
-                runat="server" Text="" Font-Size="X-Large"></asp:Label>
         </div>
     </div>
 </asp:Content>

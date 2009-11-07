@@ -175,6 +175,9 @@
             this.txtSaldo.PromptChar = ' ';
             this.txtSaldo.Size = new System.Drawing.Size(100, 20);
             this.txtSaldo.TabIndex = 13;
+            this.txtSaldo.Leave += new System.EventHandler(this.txtSaldo_Leave);
+            this.txtSaldo.Enter += new System.EventHandler(this.txtSaldo_Enter);
+            this.txtSaldo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSaldo_KeyPress);
             // 
             // txtValor
             // 

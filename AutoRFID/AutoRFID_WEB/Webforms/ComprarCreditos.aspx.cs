@@ -15,6 +15,7 @@ namespace AutoRFID_WEB.Webforms
             this.NomeAssociado.Text = (string)Session["user"];
             this.DropDownList1.DataTextField = "codigo_etiqueta";
             this.DropDownList1.DataValueField = "codigo_etiqueta";
+            this.TextBox1.Attributes.Add("onkeyup", "formataValor(this)");
           //  this.DropDownList1.DataSource = Fachada.Fachada.Fachada.ObterFachada().ListarEtiquetasIdAssociado(1).Tables["lista"].DefaultView;
             this.DropDownList1.DataBind();
         }

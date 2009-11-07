@@ -24,11 +24,12 @@ namespace AutoRFID_WEB.Webforms
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Estabelecimento est = Fachada.Fachada.Fachada.ObterFachada().ConsultarEstabelecimento(Convert.ToInt32(this.DropDownList1.SelectedValue));
-            this.Label3.Text = est.Endereco;
-            this.Label4.Text = est.Cidade;
-            this.Label5.Text = est.Bairro;
-            this.Label6.Text = est.QtdVagas.ToString();
-            this.Label7.Text = est.QtdVagasOcupadas.ToString();
+            this.Lblendereco.Text = est.Endereco;
+            this.Lblcidade.Text = est.Cidade;
+            this.Lblbairro.Text = est.Bairro;
+            this.lblquantvagas.Text = est.QtdVagas.ToString();
+            this.lblvagasocupadas.Text = est.QtdVagasOcupadas.ToString();
+            this.lbltotaldisponivel.Text = (est.QtdVagas - est.QtdVagasOcupadas).ToString();
         }
 
         protected void DropDownList1_Load(object sender, EventArgs e)
@@ -39,6 +40,13 @@ namespace AutoRFID_WEB.Webforms
                 this.DropDownList1.DataValueField = "idEstabelecimento";
                 this.DropDownList1.DataSource = Fachada.Fachada.Fachada.ObterFachada().ListarEstabelecimento();
                 this.DropDownList1.DataBind();
+                Estabelecimento est = Fachada.Fachada.Fachada.ObterFachada().ConsultarEstabelecimento(Convert.ToInt32(this.DropDownList1.SelectedValue));
+                this.Lblendereco.Text = est.Endereco;
+                this.Lblcidade.Text = est.Cidade;
+                this.Lblbairro.Text = est.Bairro;
+                this.lblquantvagas.Text = est.QtdVagas.ToString();
+                this.lblvagasocupadas.Text = est.QtdVagasOcupadas.ToString();
+                this.lbltotaldisponivel.Text = (est.QtdVagas - est.QtdVagasOcupadas).ToString();
             }
         }
     }
