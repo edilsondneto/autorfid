@@ -182,12 +182,14 @@
             // txtValor
             // 
             this.txtValor.Location = new System.Drawing.Point(487, 45);
-            this.txtValor.Mask = "9999.99";
             this.txtValor.Name = "txtValor";
             this.txtValor.PromptChar = ' ';
             this.txtValor.Size = new System.Drawing.Size(100, 20);
             this.txtValor.TabIndex = 14;
             this.txtValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtValor.Leave += new System.EventHandler(this.txtValor_Leave);
+            this.txtValor.Enter += new System.EventHandler(this.txtValor_Enter);
+            this.txtValor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValor_KeyPress);
             // 
             // FrEtiqAssociado
             // 
