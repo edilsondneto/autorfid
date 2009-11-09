@@ -101,13 +101,7 @@ div.vagas
 
 table.vagas
 {
-	border-collapse: collapse;
-	border: 2px solid black;
+	border: 2px solid;
 	color: #363636;
 	text-align: left;
-}
-
-.vagas tr
-{
-	border-color:black;
 }

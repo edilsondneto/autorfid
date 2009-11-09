@@ -281,5 +281,50 @@ namespace AutoRFID_Desktop
             this.txtSaldo.SelectAll();
 
         }
+
+        private void txtValor_Enter(object sender, EventArgs e)
+        {
+            String x = "";
+            for (int i = 0; i <= this.txtValor.Text.Length - 1; i++)
+            {
+                if ((this.txtValor.Text[i] >= '0' &&
+                    this.txtValor.Text[i] <= '9') ||
+                    this.txtValor.Text[i] == ',')
+                {
+                    x += this.txtValor.Text[i];
+                }
+            }
+            this.txtValor.Text = x;
+            this.txtValor.SelectAll();
+        }
+
+        private void txtValor_Leave(object sender, EventArgs e)
+        {
+            this.txtValor.Text = Convert.ToDouble(this.txtValor.Text).ToString("C");
+        }
+
+        private void txtValor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar < '0' || e.KeyChar > '9') &&
+              (e.KeyChar != ',' && e.KeyChar != '.' &&
+               e.KeyChar != (Char)13 && e.KeyChar != (Char)8))
+            {
+                e.KeyChar = (Char)0;
+            }
+            else
+            {
+                if (e.KeyChar == '.' || e.KeyChar == ',')
+                {
+                    if (!this.txtValor.Text.Contains(","))
+                    {
+                        e.KeyChar = ',';
+                    }
+                    else
+                    {
+                        e.KeyChar = (Char)0;
+                    }
+                }
+            }
+        }
     }
 }
