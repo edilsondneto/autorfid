@@ -24,24 +24,26 @@ namespace Fachada.Repositorio
             try
             {
                 String sql = "insert into movcreditos"
-                + "(idmovcreditos,idfuncionario,idestabelecimento,idassociado,codigo_etiqueta,"
+                + "(idfuncionario,idestabelecimento,idassociado,codigo_etiqueta,"
                 + "idformapagamento,dtcompra,dtcredito,valorcreditado,tipopagamento)"
-                + " values(@idmovcreditos,@idfuncionario,@idestabelecimento,@idassociado,@codigo_etiqueta,"
+                + " values(@idfuncionario,@idestabelecimento,@idassociado,@codigo_etiqueta,"
                 + "@idformapagamento,@dtcompra,@dtcredito,@valorcreditado,@tipopagamento)";
+                
 
                 c.Connection().Open();
                 c.IniciarTransacao();
                 c.Command().CommandText = sql;
 
-                c.Command().Parameters.Add("@idmovcreditos", MySqlDbType.Int32).Value = mov.IdMovCredito;
+                //c.Command().Parameters.Add("@idmovcreditos", MySqlDbType.Int32).Value = mov.IdMovCredito;
                 c.Command().Parameters.Add("@idfuncionario", MySqlDbType.Int32).Value = mov.Funcionario.Idfuncionario;
                 c.Command().Parameters.Add("@idestabelecimento", MySqlDbType.Int32).Value = mov.Estabelecimento.IdEstabelecimento;
                 c.Command().Parameters.Add("@idassociado", MySqlDbType.Int32).Value = mov.Associado.Idassociado;
                 c.Command().Parameters.Add("@codigo_etiqueta", MySqlDbType.VarChar, 10).Value = mov.Etiquetaassociado.CodigoEtiqueta;
-                c.Command().Parameters.Add("@idformapagamento", MySqlDbType.Int32).Value = mov.FormaPag;
+                c.Command().Parameters.Add("@tipopagamento", MySqlDbType.VarChar,1).Value = mov.FormaPag;
                 c.Command().Parameters.Add("@dtcompra", MySqlDbType.Date).Value = mov.DtCompra;
                 c.Command().Parameters.Add("@dtcredito", MySqlDbType.Date).Value = mov.DtCredito;
                 c.Command().Parameters.Add("@valorcreditado", MySqlDbType.Float).Value = mov.VlCredito;
+                c.Command().Parameters.Add("@idformapagamento",MySqlDbType.Int32).Value = 1;
                 c.Command().ExecuteNonQuery();
                 c.Comitar();
 
@@ -107,25 +109,18 @@ namespace Fachada.Repositorio
 
                 foreach (DataRow item in ds.Tables["lista"].Rows)
                 {
-                    mc.IdMovCredito = (int) item[0];
-                    mc.Funcionario = rf.ConsultarFuncionario((int) item[1]);
-                    
-                    Estabelecimento e = new Estabelecimento();
-                    e.IdEstabelecimento = (int)item[2];
-                    mc.Estabelecimento = re.ConsultarEstabelecimento(e.IdEstabelecimento);
-
-                    Associado a = new Associado();
-                    a.Idassociado = (int)item[3];
-                    mc.Associado = ra.consultarAssociado(a.Idassociado);
-
-                    EtiquetaAssociado ea = new EtiquetaAssociado();
-                    ea.CodigoEtiqueta = (string)item[4];
-                  //  mc.Etiquetaassociado = rea.ConsultarEtiquetaAssociado(ea);
-
-                    mc.DtCompra = (DateTime)item[5];
-                    mc.DtCredito = (DateTime)item[6];
-                    mc.VlCredito = (float)item[7];
-                    mc.FormaPag = (string)item[8];
+                    mc.IdMovCredito = (Convert.IsDBNull(item[0])) ? 0 : Convert.ToInt32(item[0]);
+                    mc.Funcionario = rf.ConsultarFuncionario((Convert.IsDBNull(item[1])) ? 0 :Convert.ToInt32( item[1]));
+                    mc.Estabelecimento = re.ConsultarEstabelecimento((Convert.IsDBNull(item[2])) ? 0 : Convert.ToInt32(item[2]));
+                    mc.Associado = ra.consultarAssociado((Convert.IsDBNull(item[3])) ? 0 : Convert.ToInt32(item[3]));
+                    mc.Etiquetaassociado = rea.ConsultarEtiquetaAssociado((Convert.IsDBNull(item[4])) ? " " : Convert.ToString(item[4]));
+                    mc.DtCredito = Convert.ToDateTime(item[6]);
+                    if (!Convert.IsDBNull(item[7]))
+                    {
+                        mc.DtCredito = Convert.ToDateTime(item[7]);
+                    }
+                    mc.VlCredito = (Convert.IsDBNull(item[8])) ? 0 : (float.Parse(item[8].ToString().Replace('.', ',')));
+                    mc.FormaPag = (Convert.IsDBNull(item[9])) ? " " : Convert.ToString(item[9]);
 
                 }
 
@@ -164,25 +159,17 @@ namespace Fachada.Repositorio
                 foreach (DataRow item in ds.Tables["lista"].Rows)
                 {
                     MovCredito mc = new MovCredito();
-                    mc.IdMovCredito = (int)item[0];
-                    mc.Funcionario = rf.ConsultarFuncionario((int)item[1]);
-
-                    Estabelecimento e = new Estabelecimento();
-                    e.IdEstabelecimento = (int)item[2];
-                    mc.Estabelecimento = re.ConsultarEstabelecimento(e.IdEstabelecimento);
-
-                    Associado a = new Associado();
-                    a.Idassociado = (int)item[3];
-                    mc.Associado = ra.consultarAssociado(a.Idassociado);
-
-                    EtiquetaAssociado ea = new EtiquetaAssociado();
-                    ea.CodigoEtiqueta = (string)item[4];
-             //       mc.Etiquetaassociado = rea.ConsultarEtiquetaAssociado(ea);
-
-                    mc.DtCompra = (DateTime)item[5];
-                    mc.DtCredito = (DateTime)item[6];
-                    mc.VlCredito = (float)item[7];
-                    mc.FormaPag = (string)item[8];
+                    mc.IdMovCredito = (Convert.IsDBNull(item[0])) ? 0 : Convert.ToInt32(item[0]);
+                    mc.Funcionario = rf.ConsultarFuncionario((Convert.IsDBNull(item[1])) ? 0 : Convert.ToInt32(item[1]));
+                    mc.Estabelecimento = re.ConsultarEstabelecimento((Convert.IsDBNull(item[2])) ? 0 : Convert.ToInt32(item[2]));
+                    mc.Associado = ra.consultarAssociado((Convert.IsDBNull(item[3])) ? 0 : Convert.ToInt32(item[3]));
+                    mc.Etiquetaassociado = rea.ConsultarEtiquetaAssociado((Convert.IsDBNull(item[4])) ? " " : Convert.ToString(item[4]));
+                    mc.DtCompra = Convert.ToDateTime(item[6]);
+                    if(!Convert.IsDBNull(item[7])){
+                        mc.DtCredito = Convert.ToDateTime(item[7]);
+                    }
+                    mc.VlCredito = (Convert.IsDBNull(item[8])) ? 0 : (float.Parse(item[8].ToString().Replace('.',',')));
+                    mc.FormaPag = (Convert.IsDBNull(item[9])) ? " " : Convert.ToString(item[9]);
                     lmv.Add(mc);
                 }
 
@@ -198,12 +185,14 @@ namespace Fachada.Repositorio
             return lmv;
         }
 
-        public DataSet ListarMovCreditoDataset()
+        public DataSet ListarMovCreditoDataset(String sFiltro, List<CampoBD> lsCampos)
         {
             Conectar c = new Conectar();
             MySqlDataAdapter da = new MySqlDataAdapter();
-            DataSet ds = new DataSet();
-            String sql = "select * from movcreditos";
+            DataSet ds = new DataSet(); 
+            sFiltro = Util.f_RetornaFiltroCad(sFiltro, lsCampos);
+            String sCampos = Util.f_RetornaSqlCampos(lsCampos);
+            String sql = " SELECT " + sCampos + " FROM MOVCREDITOS " + sFiltro;
             try
             {
                 c.Connection().Open();
