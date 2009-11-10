@@ -28,13 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.idMovimento = new System.Windows.Forms.TextBox();
-            this.idFuncionario = new System.Windows.Forms.TextBox();
-            this.idEstabelecimento = new System.Windows.Forms.TextBox();
-            this.idAssociado = new System.Windows.Forms.TextBox();
             this.cbEtiqueta = new System.Windows.Forms.ComboBox();
-            this.valorCreditado = new System.Windows.Forms.TextBox();
-            this.cbPagamento = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,17 +40,30 @@
             this.label9 = new System.Windows.Forms.Label();
             this.dtCompra = new System.Windows.Forms.MaskedTextBox();
             this.dtCredito = new System.Windows.Forms.MaskedTextBox();
+            this.cbEstab = new System.Windows.Forms.ComboBox();
+            this.cbFunc = new System.Windows.Forms.ComboBox();
+            this.cbAssoc = new System.Windows.Forms.ComboBox();
+            this.cbPagamento = new System.Windows.Forms.ComboBox();
+            this.idMovimento = new System.Windows.Forms.Label();
+            this.valorCreditado = new System.Windows.Forms.TextBox();
             this.pnlBotoes.SuspendLayout();
+            this.panelConsulta.SuspendLayout();
             this.panelManutencao.SuspendLayout();
             this.SuspendLayout();
             // 
             // btConfirmar
             // 
             this.btConfirmar.Location = new System.Drawing.Point(537, 3);
+            this.btConfirmar.Click += new System.EventHandler(this.btConfirmar_Click);
+            // 
+            // btPesquisar
+            // 
+            this.btPesquisar.Click += new System.EventHandler(this.btPesquisar_Click);
             // 
             // btCancelar
             // 
             this.btCancelar.Location = new System.Drawing.Point(424, 3);
+            this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
             // btExcluir
             // 
@@ -69,6 +76,8 @@
             // 
             // btAlterar
             // 
+            this.btAlterar.Enabled = false;
+            this.btAlterar.Visible = false;
             this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
             // 
             // pnlBotoes
@@ -77,6 +86,12 @@
             // 
             // panelManutencao
             // 
+            this.panelManutencao.Controls.Add(this.valorCreditado);
+            this.panelManutencao.Controls.Add(this.idMovimento);
+            this.panelManutencao.Controls.Add(this.cbPagamento);
+            this.panelManutencao.Controls.Add(this.cbAssoc);
+            this.panelManutencao.Controls.Add(this.cbFunc);
+            this.panelManutencao.Controls.Add(this.cbEstab);
             this.panelManutencao.Controls.Add(this.dtCompra);
             this.panelManutencao.Controls.Add(this.dtCredito);
             this.panelManutencao.Controls.Add(this.label9);
@@ -88,42 +103,13 @@
             this.panelManutencao.Controls.Add(this.label3);
             this.panelManutencao.Controls.Add(this.label2);
             this.panelManutencao.Controls.Add(this.label1);
-            this.panelManutencao.Controls.Add(this.cbPagamento);
-            this.panelManutencao.Controls.Add(this.valorCreditado);
             this.panelManutencao.Controls.Add(this.cbEtiqueta);
-            this.panelManutencao.Controls.Add(this.idAssociado);
-            this.panelManutencao.Controls.Add(this.idEstabelecimento);
-            this.panelManutencao.Controls.Add(this.idFuncionario);
-            this.panelManutencao.Controls.Add(this.idMovimento);
             this.panelManutencao.Size = new System.Drawing.Size(753, 278);
+            this.panelManutencao.Enter += new System.EventHandler(this.panelManutencao_Enter);
             // 
-            // idMovimento
+            // btnPesquisarTexto
             // 
-            this.idMovimento.Location = new System.Drawing.Point(16, 38);
-            this.idMovimento.Name = "idMovimento";
-            this.idMovimento.Size = new System.Drawing.Size(121, 20);
-            this.idMovimento.TabIndex = 2;
-            // 
-            // idFuncionario
-            // 
-            this.idFuncionario.Location = new System.Drawing.Point(150, 38);
-            this.idFuncionario.Name = "idFuncionario";
-            this.idFuncionario.Size = new System.Drawing.Size(121, 20);
-            this.idFuncionario.TabIndex = 3;
-            // 
-            // idEstabelecimento
-            // 
-            this.idEstabelecimento.Location = new System.Drawing.Point(286, 38);
-            this.idEstabelecimento.Name = "idEstabelecimento";
-            this.idEstabelecimento.Size = new System.Drawing.Size(121, 20);
-            this.idEstabelecimento.TabIndex = 4;
-            // 
-            // idAssociado
-            // 
-            this.idAssociado.Location = new System.Drawing.Point(16, 85);
-            this.idAssociado.Name = "idAssociado";
-            this.idAssociado.Size = new System.Drawing.Size(121, 20);
-            this.idAssociado.TabIndex = 5;
+            this.btnPesquisarTexto.Click += new System.EventHandler(this.btnPesquisarTexto_Click);
             // 
             // cbEtiqueta
             // 
@@ -132,23 +118,8 @@
             this.cbEtiqueta.Location = new System.Drawing.Point(150, 84);
             this.cbEtiqueta.Name = "cbEtiqueta";
             this.cbEtiqueta.Size = new System.Drawing.Size(121, 21);
-            this.cbEtiqueta.TabIndex = 6;
-            // 
-            // valorCreditado
-            // 
-            this.valorCreditado.Location = new System.Drawing.Point(286, 85);
-            this.valorCreditado.Name = "valorCreditado";
-            this.valorCreditado.Size = new System.Drawing.Size(121, 20);
-            this.valorCreditado.TabIndex = 7;
-            // 
-            // cbPagamento
-            // 
-            this.cbPagamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbPagamento.FormattingEnabled = true;
-            this.cbPagamento.Location = new System.Drawing.Point(16, 129);
-            this.cbPagamento.Name = "cbPagamento";
-            this.cbPagamento.Size = new System.Drawing.Size(121, 21);
-            this.cbPagamento.TabIndex = 8;
+            this.cbEtiqueta.TabIndex = 4;
+            this.cbEtiqueta.Tag = "1";
             // 
             // label1
             // 
@@ -171,7 +142,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(286, 22);
+            this.label3.Location = new System.Drawing.Point(295, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 13);
             this.label3.TabIndex = 11;
@@ -207,7 +178,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(286, 111);
+            this.label7.Location = new System.Drawing.Point(295, 111);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 13);
             this.label7.TabIndex = 15;
@@ -216,7 +187,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(286, 69);
+            this.label8.Location = new System.Drawing.Point(295, 69);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(58, 13);
             this.label8.TabIndex = 16;
@@ -233,11 +204,12 @@
             // 
             // dtCompra
             // 
-            this.dtCompra.Location = new System.Drawing.Point(286, 129);
+            this.dtCompra.Location = new System.Drawing.Point(295, 129);
             this.dtCompra.Mask = "00/00/0000";
             this.dtCompra.Name = "dtCompra";
             this.dtCompra.Size = new System.Drawing.Size(118, 20);
-            this.dtCompra.TabIndex = 19;
+            this.dtCompra.TabIndex = 8;
+            this.dtCompra.Tag = "1";
             this.dtCompra.ValidatingType = typeof(System.DateTime);
             // 
             // dtCredito
@@ -246,8 +218,73 @@
             this.dtCredito.Mask = "00/00/0000";
             this.dtCredito.Name = "dtCredito";
             this.dtCredito.Size = new System.Drawing.Size(118, 20);
-            this.dtCredito.TabIndex = 18;
+            this.dtCredito.TabIndex = 7;
+            this.dtCredito.Tag = "1";
             this.dtCredito.ValidatingType = typeof(System.DateTime);
+            // 
+            // cbEstab
+            // 
+            this.cbEstab.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEstab.FormattingEnabled = true;
+            this.cbEstab.Location = new System.Drawing.Point(298, 38);
+            this.cbEstab.Name = "cbEstab";
+            this.cbEstab.Size = new System.Drawing.Size(121, 21);
+            this.cbEstab.TabIndex = 2;
+            this.cbEstab.Tag = "1";
+            // 
+            // cbFunc
+            // 
+            this.cbFunc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbFunc.FormattingEnabled = true;
+            this.cbFunc.Location = new System.Drawing.Point(153, 37);
+            this.cbFunc.Name = "cbFunc";
+            this.cbFunc.Size = new System.Drawing.Size(121, 21);
+            this.cbFunc.TabIndex = 1;
+            this.cbFunc.Tag = "1";
+            // 
+            // cbAssoc
+            // 
+            this.cbAssoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbAssoc.FormattingEnabled = true;
+            this.cbAssoc.Location = new System.Drawing.Point(16, 85);
+            this.cbAssoc.Name = "cbAssoc";
+            this.cbAssoc.Size = new System.Drawing.Size(121, 21);
+            this.cbAssoc.TabIndex = 3;
+            this.cbAssoc.Tag = "1";
+            // 
+            // cbPagamento
+            // 
+            this.cbPagamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPagamento.FormattingEnabled = true;
+            this.cbPagamento.Items.AddRange(new object[] {
+            "CAIXA",
+            "BOLETO"});
+            this.cbPagamento.Location = new System.Drawing.Point(16, 129);
+            this.cbPagamento.Name = "cbPagamento";
+            this.cbPagamento.Size = new System.Drawing.Size(121, 21);
+            this.cbPagamento.TabIndex = 6;
+            this.cbPagamento.Tag = "1";
+            this.cbPagamento.SelectedIndexChanged += new System.EventHandler(this.cbPagamento_SelectedIndexChanged);
+            // 
+            // idMovimento
+            // 
+            this.idMovimento.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.idMovimento.Location = new System.Drawing.Point(20, 39);
+            this.idMovimento.Name = "idMovimento";
+            this.idMovimento.Size = new System.Drawing.Size(105, 21);
+            this.idMovimento.TabIndex = 18;
+            // 
+            // valorCreditado
+            // 
+            this.valorCreditado.Location = new System.Drawing.Point(298, 87);
+            this.valorCreditado.Name = "valorCreditado";
+            this.valorCreditado.Size = new System.Drawing.Size(121, 20);
+            this.valorCreditado.TabIndex = 5;
+            this.valorCreditado.Tag = "1";
+            this.valorCreditado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.valorCreditado.Leave += new System.EventHandler(this.valorCreditado_Leave);
+            this.valorCreditado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.valorCreditado_KeyPress);
+            this.valorCreditado.Enter += new System.EventHandler(this.valorCreditado_Enter);
             // 
             // FrVenda
             // 
@@ -257,6 +294,8 @@
             this.Text = "Vendas de crédito";
             this.Load += new System.EventHandler(this.FrVenda_Load);
             this.pnlBotoes.ResumeLayout(false);
+            this.panelConsulta.ResumeLayout(false);
+            this.panelConsulta.PerformLayout();
             this.panelManutencao.ResumeLayout(false);
             this.panelManutencao.PerformLayout();
             this.ResumeLayout(false);
@@ -265,13 +304,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox idMovimento;
         private System.Windows.Forms.ComboBox cbEtiqueta;
-        private System.Windows.Forms.TextBox idAssociado;
-        private System.Windows.Forms.TextBox idEstabelecimento;
-        private System.Windows.Forms.TextBox idFuncionario;
-        private System.Windows.Forms.TextBox valorCreditado;
-        private System.Windows.Forms.ComboBox cbPagamento;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -283,6 +316,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.MaskedTextBox dtCompra;
         private System.Windows.Forms.MaskedTextBox dtCredito;
+        private System.Windows.Forms.ComboBox cbAssoc;
+        private System.Windows.Forms.ComboBox cbFunc;
+        private System.Windows.Forms.ComboBox cbEstab;
+        private System.Windows.Forms.ComboBox cbPagamento;
+        private System.Windows.Forms.Label idMovimento;
+        private System.Windows.Forms.TextBox valorCreditado;
 
     }
 }
