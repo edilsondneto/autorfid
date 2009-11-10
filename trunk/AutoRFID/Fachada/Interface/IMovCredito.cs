@@ -13,6 +13,6 @@ namespace Fachada.Interface
         void ExcluirMovCredito(int idMov);
         MovCredito ConsultarMovCredito(int idCredito);
         List<MovCredito> ListarMovCredito();
-        DataSet ListarMovCreditoDataset();
+        DataSet ListarMovCreditoDataset(String sFiltro, List<CampoBD> lsCampos);
     }
 }
