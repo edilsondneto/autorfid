@@ -47,15 +47,15 @@ namespace Fachada.Controlador
             return mc;
         }
 
-        
+
         public List<MovCredito> ListarMovCredito()
         {
             return this.rmc.ListarMovCredito();
         }
 
-        public DataSet ListarMovCreditoDataset()
+        public DataSet ListarMovCreditoDataset(String sFiltro, List<CampoBD> lsCampos)
         {
-            return this.rmc.ListarMovCreditoDataset();
+            return this.rmc.ListarMovCreditoDataset( sFiltro,  lsCampos);
         }
 
     }
